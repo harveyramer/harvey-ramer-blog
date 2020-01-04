@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: The Pursuit of Clarity
+title: In Pursuit of Clarity
 image: /img/GuggenheimBilbao.jpg
 heading: Clarity in software architecture
 subheading: No to perfection. Yes to excellence.
