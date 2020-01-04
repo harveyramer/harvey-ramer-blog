@@ -9,7 +9,7 @@ mainpitch:
   title: Why pursuit?
   description: Software is never perfect. It is always in process.
 description: >-
-  Without vision, workers are stifled by micro-management. Vision allows
+  Without vision, workers are stifled by *micro-management*. Vision allows
   managers to hire smart, motivated people and free them from bureaucracy.
 intro:
   blurbs:
