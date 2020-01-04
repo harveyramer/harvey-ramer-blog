@@ -3,7 +3,7 @@ templateKey: index-page
 title: In Pursuit of Clarity
 image: >-
   /img/us_navy_101031-m-1823l-257_runners_participate_in_the_35th_marine_corps_marathon.jpg
-heading: See where you're going
+heading: Avoid the cardinal sin
 subheading: 'Demystifying software design, code, and collaboration.'
 mainpitch:
   title: Why pursuit?
