@@ -14,11 +14,9 @@ description: >-
 intro:
   blurbs:
     - image: /img/sir_winston_churchill_-_19086236948.jpg
-      text: >
+      text: >-
         Winston Churchill led Britain through dark times with vision and clear
-        communication. Despite confronting difficulties in the market, business
-        leaders can understand their tech teams and manage them more effectively
-        with clear vision and communication.
+        communication. Leaders of software development teams can do the same.
     - image: /img/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and
