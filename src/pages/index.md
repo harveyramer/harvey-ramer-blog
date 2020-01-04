@@ -1,7 +1,8 @@
 ---
 templateKey: index-page
 title: In Pursuit of Clarity
-image: /img/GuggenheimBilbao.jpg
+image: >-
+  /img/us_navy_101031-m-1823l-257_runners_participate_in_the_35th_marine_corps_marathon.jpg
 heading: Succeed with Clear Vision
 subheading: 'Demystifying design, code, and collaboration.'
 mainpitch:
