@@ -17,12 +17,11 @@ intro:
       text: >-
         Winston Churchill led Britain through dark times with vision and clear
         communication. Leaders of software development teams can do the same.
-    - image: /img/coffee-gear.png
+    - image: /img/git-logo-black.png
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
+        A well-defined vision enabled the Linux team to develop Git in a matter
+        of weeks. They were focused on improving their existing source code
+        management.
     - image: /img/tutorials.png
       text: >
         Love a great cup of coffee, but never knew how to make one? Bought a
