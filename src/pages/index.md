@@ -2,8 +2,8 @@
 templateKey: index-page
 title: Great coffee with a conscience
 image: /img/GuggenheimBilbao.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Pursuing clarity in software architecture
+subheading: No to perfection. Yes to excellence
 mainpitch:
   title: Why Kaldi
   description: >
