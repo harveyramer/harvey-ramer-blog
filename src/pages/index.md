@@ -7,9 +7,7 @@ heading: 'Vision: The Ultimate Pursuit'
 subheading: 'Demystifying software design, code, and collaboration.'
 mainpitch:
   title: Why Pursuit?
-  description: >-
-    Software is never perfect. It is always in process. Success requires
-    relentless pursuit of customer-focused solutions.
+  description: Software is never perfect. It is always in process.
 description: >-
   Without vision, workers are stifled by micro-management. Vision allows
   managers to hire smart, motivated people and free them from bureaucracy.
