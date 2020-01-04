@@ -1,9 +1,8 @@
 ---
 templateKey: index-page
 title: In Pursuit of Clarity
-image: >-
-  /img/us_navy_101031-m-1823l-257_runners_participate_in_the_35th_marine_corps_marathon.jpg
-heading: Avoid the cardinal sin
+image: /img/GuggenheimBilbao.jpg
+heading: The Pursuit of Vision
 subheading: 'Demystifying software design, code, and collaboration.'
 mainpitch:
   title: Why pursuit?
@@ -19,9 +18,8 @@ intro:
         communication. Leaders of software development teams can do the same.
     - image: /img/git-logo-black.png
       text: >
-        A well-defined vision enabled the Linux team to develop Git in a matter
-        of weeks. They were focused on improving their existing source code
-        management.
+        Vision enabled the Linux team to develop Git in a matter of weeks. They
+        focused on improving their existing source code management.
   heading: Pursuit.
   description: |
     Pursuit.
