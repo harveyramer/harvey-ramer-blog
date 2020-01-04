@@ -3,7 +3,7 @@ templateKey: index-page
 title: In Pursuit of Clarity
 image: /img/GuggenheimBilbao.jpg
 heading: Clarity in software architecture
-subheading: Eradicate confusion in your code, design, and process.
+subheading: Eradicating confusion in design, code, and process.
 mainpitch:
   title: Why Kaldi
   description: >
