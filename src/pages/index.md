@@ -2,19 +2,17 @@
 templateKey: index-page
 title: In Pursuit of Clarity
 image: /img/GuggenheimBilbao.jpg
-heading: Clarity in software architecture
+heading: Succeed with Clear Vision
 subheading: 'Demystifying design, code, and collaboration.'
 mainpitch:
-  title: Confusion Is the Enemy
+  title: Why Pursuit?
   description: >-
-    Successful software development teams need a clear vision. Software
-    developers resent micro-management above all else. Hire smart, motivated
-    people, give them a clear vision and free them from needless rules.
+    Software is never perfect. It is an artifact created by teams and businesses
+    in process. It is a relentless pursuit of solutions to customer needs.
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  To succeed, teams need clear vision. Without it, technical workers are stifled
+  micro-management. Hire smart, motivated people, give them a clear vision and
+  free them from needless rules.
 intro:
   blurbs:
     - image: /img/coffee.png
