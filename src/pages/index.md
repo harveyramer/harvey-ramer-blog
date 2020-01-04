@@ -11,9 +11,8 @@ mainpitch:
     Software is never perfect. It is always in process. Success requires
     relentless pursuit of customer-focused solutions.
 description: >-
-  Without vision, workers are stifled by micro-management. With clear vision,
-  managers can hire smart, motivated people, give them a clear vision and free
-  them from needless rules.
+  Without vision, workers are stifled by micro-management. Vision allows
+  managers to hire smart, motivated people and free them from bureaucracy.
 intro:
   blurbs:
     - image: /img/sir_winston_churchill_-_19086236948.jpg
