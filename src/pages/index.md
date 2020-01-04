@@ -3,24 +3,24 @@ templateKey: index-page
 title: In Pursuit of Clarity
 image: /img/GuggenheimBilbao.jpg
 heading: Succeed with Clear Vision
-subheading: "Demystifying design, code, and collaboration."
+subheading: 'Demystifying design, code, and collaboration.'
 mainpitch:
   title: Why Pursuit?
   description: >-
-    Software is never perfect. It is always in process. Success requires relentless pursuit of customer-centered solutions.
+    Software is never perfect. It is always in process. Success requires
+    relentless pursuit of customer-centered solutions.
 description: >-
   To succeed, teams need clear vision. Without it, technical workers are stifled
   micro-management. Hire smart, motivated people, give them a clear vision and
   free them from needless rules.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/sir_winston_churchill_-_19086236948.jpg
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+        Winston Churchill led Britain through dark times with vision and clear
+        communication. Despite confronting difficulties in the market, business
+        leaders can understand their tech teams and manage them more effectively
+        with clear vision and communication.
     - image: /img/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and
@@ -41,12 +41,9 @@ intro:
         space where you can hang out with fellow coffee lovers and learn about
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+  heading: Pursuit.
+  description: |
+    Pursuit.
 main:
   heading: Great coffee with no compromises
   description: >
@@ -64,3 +61,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
