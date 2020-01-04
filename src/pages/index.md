@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: The Pursuit of Clarity
 image: /img/GuggenheimBilbao.jpg
-heading: Pursuing clarity in software architecture
-subheading: No to perfection. Yes to excellence
+heading: Clarity in software architecture
+subheading: No to perfection. Yes to excellence.
 mainpitch:
   title: Why Kaldi
   description: >
