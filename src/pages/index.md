@@ -9,7 +9,7 @@ mainpitch:
   title: Why Pursuit?
   description: >-
     Software is never perfect. It is always in process. Success requires
-    relentless pursuit of customer-centered solutions.
+    relentless pursuit of customer-focused solutions.
 description: >-
   To succeed, teams need clear vision. Without it, technical workers are stifled
   micro-management. Hire smart, motivated people, give them a clear vision and
