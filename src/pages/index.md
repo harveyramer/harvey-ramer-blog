@@ -9,7 +9,7 @@ mainpitch:
   title: Why pursuit?
   description: Software is never perfect. It is always in process.
 description: >-
-  Without vision, workers are stifled by *micro-management*. Vision allows
+  Without vision, workers are stifled by micro-management. Vision allows
   managers to hire smart, motivated people and free them from bureaucracy.
 intro:
   blurbs:
@@ -22,20 +22,6 @@ intro:
         A well-defined vision enabled the Linux team to develop Git in a matter
         of weeks. They were focused on improving their existing source code
         management.
-    - image: /img/tutorials.png
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
   heading: Pursuit.
   description: |
     Pursuit.
