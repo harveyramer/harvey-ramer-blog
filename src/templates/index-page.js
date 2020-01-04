@@ -24,8 +24,7 @@ export const IndexPageTemplate = ({
             })`,
           backgroundPosition: `top center`,
           backgroundAttachment: `fixed`,
-          backgroundSize: `auto`,
-          backgroundRepeat: `no-repeat`,
+          backgroundSize: `cover`,
         }}
       >
         <div
