@@ -3,14 +3,13 @@ templateKey: index-page
 title: In Pursuit of Clarity
 image: /img/GuggenheimBilbao.jpg
 heading: Clarity in software architecture
-subheading: Simplicity in design, code, and process.
+subheading: 'Demystifying design, code, and collaboration.'
 mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+  title: Confusion Is the Enemy
+  description: >-
+    Successful software development teams need a clear vision. Software
+    developers resent micro-management above all else. Hire smart, motivated
+    people, give them a clear vision and free them from needless rules.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -68,3 +67,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
