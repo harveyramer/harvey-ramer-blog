@@ -68,21 +68,22 @@ export const IndexPageTemplate = ({
       </div>
       <section className="section section--gradient">
         <div className="container">
-          <div className="columns">
-            <div className="column is-12">
-              <div className="content">
-                <LatestPost />
-                <h3 className="has-text-weight-semibold is-size-2">
-                  Latest articles
-                  </h3>
-                <BlogRoll />
-                <div className="column is-12 has-text-centered">
-                  <Link className="btn" to="/blog">
-                    Read more
-                    </Link>
-                </div>
-              </div>
+          <div className="column is-10 is-offset-1">
+            <div className="content">
+              <LatestPost />
+
             </div>
+          </div>
+          <div className="column is-12">
+            <h3 className="has-text-weight-semibold is-size-2">
+              Latest articles
+                  </h3>
+            <BlogRoll />
+          </div>
+          <div className="column is-12 has-text-centered">
+            <Link className="btn" to="/blog">
+              Read more
+                    </Link>
           </div>
         </div>
       </section>
