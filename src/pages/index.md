@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: In Pursuit of Clarity
+title: In Pursuit of Software
 image: /img/GuggenheimBilbao.jpg
 heading: The Pursuit of Vision
 subheading: 'Demystifying software design, code, and collaboration.'
