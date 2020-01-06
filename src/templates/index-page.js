@@ -56,12 +56,13 @@ export const IndexPageTemplate = ({
             </div>
           </div>
           <div className="column is-12">
-            <h3 className="has-text-weight-semibold is-size-3">
+            <h3 className="has-text-weight-semibold is-size-3"
+              style={{ marginTop: '3rem' }}>
               Latest Articles
                   </h3>
             <BlogRoll />
           </div>
-          <div className="column is-12 has-text-centered">
+          <div className="column is-12 has-text-centered" style={{ marginTop: '2rem' }}>
             <Link className="btn" to="/blog">
               Read more
                     </Link>
