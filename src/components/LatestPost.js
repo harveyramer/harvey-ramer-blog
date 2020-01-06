@@ -17,7 +17,6 @@ class LatestPost extends React.Component {
             <div key={post.id}>
               <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
                 <Link
-                  className="title has-text-primary is-size-4 is-block"
                   to={post.fields.slug}
                 >{post.frontmatter.title}
                 </Link>
