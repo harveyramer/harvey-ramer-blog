@@ -15,12 +15,12 @@ const Footer = class extends React.Component {
           <img
             src={logo}
             alt="Harvey Ramer"
-            style={{ width: '14em', height: 'auto' }}
+            style={{ width: '14rem', height: '3rem' }}
           />
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
           <div className="container has-background-black has-text-white-ter"
-            style={{ paddingBottom: '3rem', }}>
+            style={{ paddingBottom: '3rem' }}>
             <div className="columns">
               <div className="column is-4">
                 <section className="menu">
