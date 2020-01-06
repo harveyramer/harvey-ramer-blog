@@ -9,7 +9,6 @@ import LatestPost from '../components/LatestPost'
 export const IndexPageTemplate = ({
   image,
   title,
-  subheading,
 }) => (
     <div>
       <div
@@ -46,19 +45,6 @@ export const IndexPageTemplate = ({
           >
             {title}
           </h1>
-          <h3
-            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-            style={{
-              boxShadow:
-                'rgb(0, 159, 254) 0.5rem 0px 0px, rgb(0, 159, 254) -0.5rem 0px 0px',
-              backgroundColor: 'rgb(0, 159, 254)',
-              color: 'white',
-              lineHeight: '1',
-              padding: '0.25em',
-            }}
-          >
-            {subheading}
-          </h3>
         </div>
       </div>
       <section className="section section--gradient">
@@ -89,7 +75,6 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
-  subheading: PropTypes.string,
   description: PropTypes.string,
 }
 
@@ -102,7 +87,6 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
         description={frontmatter.description}
       />
     </Layout>
@@ -131,7 +115,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        subheading
       }
     }
   }
