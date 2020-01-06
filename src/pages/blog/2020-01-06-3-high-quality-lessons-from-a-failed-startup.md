@@ -21,7 +21,7 @@ We had many potential customer conversations and even ran a pilot project.
 
 But when we launched, sales did not materialize.
 
-### What I Learned about Customers
+#### What I Learned about Customers
 
 This lesson is a simple one. **A customer is someone who gives you money.** 
 
@@ -42,7 +42,7 @@ Our team was a success because of clear vision:
 2. We optimized for adaptability to respond to what we learned as our vision clarified
 3. We worked as a unit in alignment to our purpose
 
-### What I Learned about Vision
+#### What I Learned about Vision
 
 Vision needs give way to the voice of the customer, but vision is indispensable. Without vision, paralysis-by-analysis rules the day. Fear of failure haunts every decision. I would rather follow a visionary leader than a timid, fearful one.
 
@@ -54,6 +54,6 @@ Let's get to the heart it all. A business is a team of people working toward pro
 
 We found and hired people who shared the vision and gave every ounce of their talent to realize it. That was a success!
 
-### What I Learned about Teams
+#### What I Learned about Teams
 
 There is nothing better than knowing your team has your back. I am humbled to have been part of a company whose leadership believed in and supported their team. Each team member played an important part, and they are some of the finest human beings I have ever known. **After it all ends, all we have is friendship.**
