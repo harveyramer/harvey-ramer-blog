@@ -6,7 +6,7 @@ const BlogPostPreview = ({ entry, widgetFor }) => {
   const tags = entry.getIn(['data', 'tags'])
   return (
     <BlogPostTemplate
-      featuredimage={entry.featuredimage}
+      featuredimage={entry.getIn(['data', 'featuredimage'])}
       content={widgetFor('body')}
       description={entry.getIn(['data', 'description'])}
       tags={tags && tags.toJS()}
