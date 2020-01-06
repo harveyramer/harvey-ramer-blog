@@ -16,7 +16,11 @@ class LatestPost extends React.Component {
           posts.map(({ node: post }) => (
             <div key={post.id}>
               <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-                {post.frontmatter.title}
+                <Link
+                  className="title has-text-primary is-size-4 is-block"
+                  to={post.fields.slug}
+                >{post.frontmatter.title}
+                </Link>
               </h1>
               <p className="is-size-3">{post.frontmatter.description}</p>
               <PostContent content={post.html} />
