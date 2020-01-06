@@ -7,7 +7,7 @@ description: >-
   involved in a process involving multiple stakeholders. Despite the startup's
   closing, I've gained a few insights that might be of use to others.
 featuredpost: false
-featuredimage: /img/Hernando_de_Soto_Bridge_Memphis.jpg
+featuredimage: /img/startup-life.jpg
 tags:
   - startups
 ---
