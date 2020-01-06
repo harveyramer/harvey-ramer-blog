@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Pursuit. Gaining clarity in software architecture.',
+    title: 'Harvey Ramer | Thoughts on cloud architecture, software, and teams',
     description:
-      'Software engineer, Harvey Ramer, shares ideas on software, design, and the pursuit of excellence.',
+      'Software engineer, Harvey Ramer, shares ideas on cloud architecture, software, and teams.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
