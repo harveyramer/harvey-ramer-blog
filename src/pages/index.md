@@ -1,5 +1,5 @@
 ---
 templateKey: index-page
-title: Thoughts on Software
+title: On Software
 image: /img/GuggenheimBilbao.jpg
 ---
