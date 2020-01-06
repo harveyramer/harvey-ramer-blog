@@ -1,19 +1,43 @@
 ---
-templateKey: 'about-page'
-path: /about
-title: About our values
+templateKey: about-page
+title: Software Engineer
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+## Personal Profile
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Harvey Ramer is a full stack Web developer and JavaScript engineer who works with collaborative teams to create industry leading web applications. His sixteen-year career includes a Fortune 500 company’s e-commerce platform and a startup. As a leader, he helps others succeed through mentoring and collaborative problem solving. He is a ready learner, who is always focused on his employer’s success.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+## Core Competencies
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+* **Conceptual Skills:** Cloud Architecture, APIs, JavaScript Applications, Responsive Web Development, Graphic Design
+* **Front-End Web Development:** HTML, CSS, JavaScript: Vue, React, Angular
+* **Data Transfer:** REST, GraphQL
+* **Server Side Development:** NodeJS, AWS
+* **Marketing:** Search Engine Visibility, Search Marketing
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+## Professional Experience
+
+**Senior Software Engineer, ProofPort, LLC.; Memphis, TN — 2018 - 2020**
+
+Harvey takes a foundational role in the development of a cloud-based web application. He discusses business requirements and helps the team prioritize the highest impact work. In this role, he works as an AWS cloud architect, back-end developer with NodeJS, GraphQL, REST, and SQL. He also works on a front-end application with Vue.JS.
+
+**Project Engineer, Green Mountain Technology; Memphis, TN — 2015 - 2018**
+
+Harvey helps a team transitioning to single page JavaScript applications build their first Angular application and launch it successfully. He facilitates the creation of a design system built with the popular CSS framework, Bootstrap. He leads a team of developers who build a JavaScript application focused on exposing real-time scan data from parcel shipments.
+
+**Web Developer, AutoZone, Inc.; Memphis, TN — 2013 - 2015**
+
+Harvey works with a small team of front-end developers. He helps implement SASS for modular CSS, teaches other developers to work with Java-style JavaScript classes, and implements a JavaScript build with RequireJS.
+
+**JavaScript Developer, PointRoll; King of Prussia, PA — 2012 - 2013**
+
+Harvey works closely with a team of talented developers to build industry leading tools for digital marketers. Using ExtJS, jQuery, HTML, CSS, and Jasmine for testing.
+
+**Senior Web Developer, AutoZone, Inc.; Memphis, TN — 2011 - 2012**
+
+Harvey manages workflow for the front-end development team. This task requires him to know each team member’s strengths, to assess the effort required to complete tasks, and to prioritize competing tasks.
+
+**Web Developer II, AutoZone, Inc.; Memphis, TN — 2010 - 2011**
+
+**Freelance, Abound Marketing; Norwood, NY — 2004 - 2010**
+
+**Technical Support Specialist, Frazer Computing, Inc.; Canton, NY — 2006 - 2008**
