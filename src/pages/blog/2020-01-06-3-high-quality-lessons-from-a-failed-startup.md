@@ -4,7 +4,7 @@ title: 3 High-Quality Lessons from a Failed Startup
 date: 2020-01-06T21:26:17.194Z
 description: >-
   In May of 2018, I joined a small team focused on a goal: removing the pain
-  involved in a process involving multiple stakeholders. Despite the startup's
+  from a complex process involving multiple stakeholders. Despite the startup's
   closing, I've gained a few insights that might be of use to others.
 featuredpost: false
 featuredimage: /img/startup-life.jpg
