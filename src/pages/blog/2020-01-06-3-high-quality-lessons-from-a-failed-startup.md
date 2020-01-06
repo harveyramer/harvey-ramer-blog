@@ -11,21 +11,22 @@ featuredimage: /img/startup-life.jpg
 tags:
   - startups
 ---
+
 ## Customers Are Everything
 
- Our initial conversations with customers were promising.  Everyone agreed the problem we were addressing was painful indeed. 
+Our initial conversations with customers were promising. Everyone agreed the problem we were addressing was painful indeed.
 
 Energized by this discovery, we built a tool that would enable our customers to remove most of the pain we had identified.
 
-We had many potential customer conversations and even ran a pilot project. 
+We had many potential customer conversations and even ran a pilot project.
 
 But when we launched, sales did not materialize.
 
 #### What I Learned about Customers
 
-This lesson is a simple one. **A customer is someone who gives you money.** 
+This lesson is a simple one. **A customer is someone who gives you money.**
 
-No one in the company would have felt we needed this lesson, but we did. We listened to potential customers and ran too long on the hints of interest they showed. The **Lean Startup** method *might* have helped us. But this lesson is harder to learn than it might seem:
+No one in the company would have felt we needed this lesson, but we did. We listened to potential customers and ran too long on the hints of interest they showed. The **Lean Startup** method _might_ have helped us. But this lesson is harder to learn than it might seem:
 
 1. Everything starts with vision and ends with a customer
 2. How long a project needs to be vision-led depends in part on its complexity
@@ -50,7 +51,7 @@ Vision needs give way to the voice of the customer, but vision is indispensable.
 
 ## The Team Is (Also) Everything
 
-Let's get to the heart it all. A business is a team of people working toward producing revenue through value creation. Teams bond with clear vision, and we had plenty. Teams collaborate to reach goals. Teams connect us with life-long relationships and knowledge that enriches us. 
+Let's get to the heart it all. A business is a team of people working toward producing revenue through value creation. Teams bond with clear vision, and we had plenty. Teams collaborate to reach goals. Teams connect us with life-long relationships and knowledge that enriches us.
 
 We found and hired people who shared the vision and gave every ounce of their talent to realize it. That was a success!
 
