@@ -25,7 +25,7 @@ But when we launched, sales did not materialize.
 
 This lesson is a simple one. **A customer is someone who gives you money.** 
 
-No one in the company would have felt we needed this lesson, but we did. We listened to potential customers and ran too long on verbal discussions. The **Lean Startup** method *might* have helped us. But this lesson is harder to learn than it might seem:
+No one in the company would have felt we needed this lesson, but we did. We listened to potential customers and ran too long on the hints of interest they showed. The **Lean Startup** method *might* have helped us. But this lesson is harder to learn than it might seem:
 
 1. Everything starts with vision and ends with a customer
 2. How long a project needs to be vision-led depends in part on its complexity
