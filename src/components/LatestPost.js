@@ -18,7 +18,7 @@ class LatestPost extends React.Component {
               <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
                 {post.frontmatter.title}
               </h1>
-              <p>{post.frontmatter.description}</p>
+              <p className="is-size-3">{post.frontmatter.description}</p>
               <PostContent content={post.html} />
             </div>
           ))

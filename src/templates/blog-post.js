@@ -59,7 +59,7 @@ export const BlogPostTemplate = ({
         <div className="container">
           <div className="column is-10 is-offset-1">
             <div className="content">
-              <p>{description}</p>
+              <p className="is-size-3">{description}</p>
               <PostContent content={content} />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
