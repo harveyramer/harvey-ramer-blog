@@ -18,7 +18,7 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={`${withPrefix('/')}img/apple-touch-icon.png`}
+          href={`${withPrefix('/')}img/apple-icon180x180.png`}
         />
         <link
           rel="icon"
@@ -32,12 +32,6 @@ const TemplateWrapper = ({ children }) => {
           href={`${withPrefix('/')}img/favicon-16x16.png`}
           sizes="16x16"
         />
-
-        <link
-          rel="mask-icon"
-          href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
-          color="#ff4400"
-        />
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
@@ -45,7 +39,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
-          content={`${withPrefix('/')}img/og-image.jpg`}
+          content={`${withPrefix('/')}img/og-image.png`}
         />
       </Helmet>
       <Navbar />
