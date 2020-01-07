@@ -47,7 +47,7 @@ Our team was a success because of clear vision:
 
 Vision needs give way to the voice of the customer, but vision is indispensable. Without vision, paralysis-by-analysis rules the day. Fear of failure haunts every decision. I would rather follow a visionary leader than a timid, fearful one.
 
-**Visionary leaders need competent voices to interrupt their vision with reality.** This is not the fault of those with vision. Followers need to know when to run with a vision, and when to ask questions and challenge assumptions. This is a difficult balance—wisdom required.
+**Visionary leaders need competent voices to interrupt their vision with reality.** This is not the fault of those with vision. Followers need to know when to run with a vision, and when to ask questions and challenge assumptions. This is a difficult balance—wisdom is required.
 
 ## The Team Is (Also) Everything
 
