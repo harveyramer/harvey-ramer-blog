@@ -42,6 +42,12 @@ export default class Index extends React.Component {
 
               <div class="column is-10 is-offset-1">
                 <h1>Contact</h1>
+                <p>I am seeking opportunities.</p>
+                <p>
+                  <address>
+                    Email: <a href="mailto:harvey@harveyramer.com">harvey@harveyramer.com</a><br />
+                    Phone: <a href="tel:+19016502438">(901) 650-2438</a>
+                  </address></p>
                 <form
                   name="contact"
                   method="post"
