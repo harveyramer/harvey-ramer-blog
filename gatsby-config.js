@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Harvey Ramer | Thoughts on cloud architecture, software, and teams',
+    title: 'Harvey Ramer | On Software',
     description:
       'Software engineer, Harvey Ramer, shares ideas on cloud architecture, software, and teams.',
+    siteUrl: `https://www.harveyramer.com`,
   },
-  plugins: [
+  plugins: [`gatsby-plugin-sitemap`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
