@@ -11,7 +11,6 @@ featuredimage: /img/startup-life.jpg
 tags:
   - startups
 ---
-
 ## Customers Are Everything
 
 Our initial conversations with customers were promising. Everyone agreed the problem we were addressing was painful indeed.
@@ -26,14 +25,14 @@ But when we launched, sales did not materialize.
 
 This lesson is a simple one. **A customer is someone who gives you money.**
 
-No one in the company would have felt we needed this lesson, but we did. We listened to potential customers and ran too long on the hints of interest they showed. The **Lean Startup** method _might_ have helped us. But this lesson is harder to learn than it might seem:
+No one in the company would have felt we needed this lesson, but we did. We listened to potential customers and ran too long on the hints of interest they showed. The **Lean Startup** method *might* have helped us. But this lesson is harder to learn than it might seem:
 
 1. Everything starts with vision and ends with a customer
 2. How long a project needs to be vision-led depends in part on its complexity
 3. Selling to a customer means putting our best foot forward
 4. It is difficult to determine when you're ready to sell, because software is never finished
 
-## Vision Is Still Vital
+## Vision Is Vital
 
 It is easy to pin the blame of missing the market on visionary leadership, but the reality is that most startups, no matter how innovative fail. The cost of shaky or unclear vision is high. The pain we were remedying was real. Our tactics aligned with our vision.
 
