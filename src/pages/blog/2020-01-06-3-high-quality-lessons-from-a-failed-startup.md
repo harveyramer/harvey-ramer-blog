@@ -51,7 +51,7 @@ Vision needs give way to the voice of the customer, but vision is indispensable.
 
 ## The Team Is (Also) Everything
 
-Let's get to the heart it all. A business is a team of people working toward producing revenue through value creation. Teams bond with clear vision, and we had plenty. Teams collaborate to reach goals. Teams connect us with life-long relationships and knowledge that enriches us.
+Let's get to the heart it all. A business is a team of people working toward producing revenue through value creation. Teams bond with clear vision, and our sense of purpose brought us together. Teams collaborate to reach goals. Teams connect us with life-long relationships and knowledge that enriches us.
 
 We found and hired people who shared the vision and gave every ounce of their talent to realize it. That was a success!
 
