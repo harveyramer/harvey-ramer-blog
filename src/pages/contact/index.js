@@ -45,8 +45,7 @@ export default class Index extends React.Component {
                 <p>I am seeking opportunities.</p>
                 <p>
                   <address>
-                    Email: <a href="mailto:harvey@harveyramer.com">harvey@harveyramer.com</a><br />
-                    Phone: <a href="tel:+19016502438">(901) 650-2438</a>
+                    Email: <a href="mailto:harvey@harveyramer.com">harvey@harveyramer.com</a>
                   </address></p>
                 <form
                   name="contact"
