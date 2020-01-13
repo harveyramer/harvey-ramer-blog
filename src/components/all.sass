@@ -3,6 +3,7 @@
 // Config vars
 // Kaldi logo brand color: #FD461E
 $pursuit-blue: rgb(0, 159, 254)
+$pursuit-blue-light: rgba(0, 159, 254, .05)
 $pursuit-blue-invert: #fff
 
 $primary: $pursuit-blue
@@ -121,13 +122,16 @@ $menu-label-color: $white-ter
     display: inline
 
 // blog roll
-.blog-list-item.is-featured
-  background-color: rgba(0, 159, 254, .05);
+.blog-list-item.box
+  margin-bottom: 2rem;
+  background-color: $pursuit-blue-light;
+.blog-list-item.box.is-featured
+  background-color: $pursuit-blue;
 .blog-list-item header
   display: flex;
   margin-bottom: 1em;
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
+  flex: 0 0 200px;
   margin: 0 1.5em 0 0;
 
 
