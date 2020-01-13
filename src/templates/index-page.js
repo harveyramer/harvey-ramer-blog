@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
-import LatestPost from '../components/LatestPost'
 
 export const IndexPageTemplate = ({
   image,
@@ -49,23 +48,11 @@ export const IndexPageTemplate = ({
       </div>
       <section className="section section--gradient">
         <div className="container">
-          <div className="column is-10 is-offset-1">
-            <div className="content">
-              <LatestPost />
-
-            </div>
-          </div>
           <div className="column is-12">
-            <h3 className="has-text-weight-semibold is-size-3"
-              style={{ marginTop: '3rem' }}>
-              Latest Articles
-                  </h3>
+            <h2 className="has-text-weight-semibold is-size-2">
+              Articles
+            </h2>
             <BlogRoll />
-          </div>
-          <div className="column is-12 has-text-centered" style={{ marginTop: '2rem' }}>
-            <Link className="btn" to="/blog">
-              Read more
-                    </Link>
           </div>
         </div>
       </section>

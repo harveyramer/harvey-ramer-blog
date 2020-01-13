@@ -1,5 +1,5 @@
 ---
 templateKey: index-page
 title: On Software
-image: /img/GuggenheimBilbao.jpg
+image: /img/keyboard.jpg
 ---
