@@ -109,6 +109,10 @@ const BlogPost = ({ data }) => {
               content={`${post.frontmatter.description}`}
             />
             <meta
+              property="og:description"
+              content={`${post.frontmatter.description}`}
+            />
+            <meta
               property="og:image"
               content={`${site.siteMetadata.siteUrl}${post.frontmatter.featuredimage.childImageSharp.fluid.src}`}
             />
