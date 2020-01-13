@@ -93,7 +93,6 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post, site } = data
-  console.log(post, site)
   return (
     <Layout>
       <BlogPostTemplate
@@ -109,6 +108,10 @@ const BlogPost = ({ data }) => {
               content={`${post.frontmatter.description}`}
             />
             <meta
+              name="author"
+              content={`${post.frontmatter.author}`}
+            />
+            <meta
               property="og:description"
               content={`${post.frontmatter.description}`}
             />
@@ -117,6 +120,8 @@ const BlogPost = ({ data }) => {
               content={`${site.siteMetadata.siteUrl}${post.frontmatter.featuredimage.childImageSharp.fluid.src}`}
             />
             <meta property="og:type" content="article" />
+            <meta property="article:author" content={`${post.frontmatter.author}`} />
+            <meta property="article:published_time" content={`${post.frontmatter.date}`} />
             <meta property="og:title" content={`${post.frontmatter.title}`} />
             <meta property="og:url" content={`${site.siteMetadata.siteUrl}${post.fields.slug}`} />
             <link rel="canonical" href={`${site.siteMetadata.siteUrl}${post.fields.slug}`} />
@@ -150,6 +155,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        author
         tags
         featuredimage {
           childImageSharp {
