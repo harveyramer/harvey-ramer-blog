@@ -9,7 +9,6 @@ class LatestPost extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
     const PostContent = HTMLContent || Content
-    console.log(posts)
     return (
       <div>
         {posts &&

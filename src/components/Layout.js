@@ -9,13 +9,12 @@ import { withPrefix } from 'gatsby'
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <div class="site">
-      <div class="site__content">
+    <div className="site">
+      <div className="site__content">
         <Helmet>
           <html lang="en" />
           <title>{title}</title>
           <meta name="description" content={description} />
-
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -34,8 +33,8 @@ const TemplateWrapper = ({ children }) => {
             sizes="16x16"
           />
           <meta name="theme-color" content="#fff" />
-
-          <meta property="og:type" content="business.business" />
+          <link rel="canonical" href="https://www.harveyramer.com/" />
+          <meta property="og:type" content="blog" />
           <meta property="og:title" content={title} />
           <meta property="og:url" content="/" />
           <meta

@@ -19,7 +19,8 @@ export const BlogPostTemplate = ({
 
   return (
     <div>
-      {helmet || ''}<div
+      {helmet || ''}
+      <div
         className="full-width-image margin-top-0"
         style={{
           backgroundImage: `url(${
@@ -91,8 +92,8 @@ BlogPostTemplate.propTypes = {
 }
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
-
+  const { markdownRemark: post, site } = data
+  console.log(post, site)
   return (
     <Layout>
       <BlogPostTemplate
@@ -101,12 +102,20 @@ const BlogPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | Articles">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
               content={`${post.frontmatter.description}`}
             />
+            <meta
+              property="og:image"
+              content={`${site.siteMetadata.siteUrl}${post.frontmatter.featuredimage.childImageSharp.fluid.src}`}
+            />
+            <meta property="og:type" content="article" />
+            <meta property="og:title" content={`${post.frontmatter.title}`} />
+            <meta property="og:url" content={`${site.siteMetadata.siteUrl}${post.fields.slug}`} />
+            <link rel="canonical" href={`${site.siteMetadata.siteUrl}${post.fields.slug}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -119,6 +128,7 @@ const BlogPost = ({ data }) => {
 BlogPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
+    site: PropTypes.object,
   }),
 }
 
@@ -129,6 +139,9 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      fields {
+        slug
+      } 
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
@@ -141,6 +154,12 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+    }
+     
+    site(siteMetadata: {siteUrl: {}}) {
+      siteMetadata{
+        siteUrl
       }
     }
   }

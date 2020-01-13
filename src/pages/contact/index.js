@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import Helmet from 'react-helmet'
 
 function encode(data) {
   return Object.keys(data)
@@ -36,6 +37,9 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
+        <Helmet>
+          <title>Contact Harvey Ramer</title>
+        </Helmet>
         <section className="section">
           <div className="container">
             <div className="content">
@@ -43,10 +47,9 @@ export default class Index extends React.Component {
               <div class="column is-10 is-offset-1">
                 <h1>Contact</h1>
                 <p>I am seeking opportunities.</p>
-                <p>
-                  <address>
-                    Email: <a href="mailto:harvey@harveyramer.com">harvey@harveyramer.com</a>
-                  </address></p>
+                <address style={{ marginBottom: "2rem" }}>
+                  Email: <a href="mailto:harvey@harveyramer.com">harvey@harveyramer.com</a>
+                </address>
                 <form
                   name="contact"
                   method="post"
