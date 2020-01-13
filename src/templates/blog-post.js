@@ -117,7 +117,7 @@ const BlogPost = ({ data }) => {
             />
             <meta
               property="og:image"
-              content={`${site.siteMetadata.siteUrl}${post.frontmatter.featuredimage.childImageSharp.fluid.src}`}
+              content={`${site.siteMetadata.siteUrl}${post.frontmatter.featuredimage.childImageSharp.fixed.src}`}
             />
             <meta property="og:type" content="article" />
             <meta property="article:author" content={`${post.frontmatter.author}`} />
@@ -159,6 +159,9 @@ export const pageQuery = graphql`
         tags
         featuredimage {
           childImageSharp {
+            fixed(width:1200){
+              src
+            }
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
