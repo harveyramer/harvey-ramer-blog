@@ -5,7 +5,9 @@ module.exports = {
       'Software engineer, Harvey Ramer, shares ideas on cloud architecture, software, and teams.',
     siteUrl: `https://www.harveyramer.com`,
   },
-  plugins: [`gatsby-plugin-sitemap`,
+  plugins: [
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-feed',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
