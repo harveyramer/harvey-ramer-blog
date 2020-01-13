@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: 3 High-Quality Lessons from a Failed Startup
 date: 2020-01-06T21:26:17.194Z
+author: Harvey Ramer
 description: >-
   In May of 2018, I joined a small team focused on a goal: removing the pain
   from a complex process involving multiple stakeholders. Despite the startup's
