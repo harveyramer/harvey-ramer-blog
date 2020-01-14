@@ -44,7 +44,7 @@ class BlogRoll extends React.Component {
                       {post.frontmatter.description}
                       <br />
                       <br />
-                      <Link className="button is-small is-info is-outlined" to={post.fields.slug}>
+                      <Link className="button is-info is-outlined" to={post.fields.slug}>
                         Keep Reading →
                       </Link>
                     </p>
