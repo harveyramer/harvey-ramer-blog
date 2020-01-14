@@ -3,8 +3,10 @@ import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
+
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import { isMobile } from '../components/IsMobile';
 
 export const BlogPostTemplate = ({
   featuredimage,
@@ -27,7 +29,7 @@ export const BlogPostTemplate = ({
             !!featuredimage.childImageSharp ? featuredimage.childImageSharp.fluid.src : featuredimage
             })`,
           backgroundPosition: `bottom center`,
-          backgroundAttachment: `fixed`,
+          backgroundAttachment: isMobile() ? `scroll` : `fixed`,
           backgroundSize: `cover`,
         }}
       >
@@ -44,12 +46,10 @@ export const BlogPostTemplate = ({
           <h1
             className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
             style={{
-              boxShadow:
-                'rgb(0, 159, 254) 0.5rem 0px 0px, rgb(0, 159, 254) -0.5rem 0px 0px',
               backgroundColor: 'rgb(0, 159, 254)',
               color: 'white',
               lineHeight: '1',
-              padding: '0.25em',
+              padding: '0.5em',
             }}
           >
             {title}
