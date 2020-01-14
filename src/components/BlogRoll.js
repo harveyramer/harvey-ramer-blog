@@ -14,7 +14,7 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div className="is-parent" key={post.id}>
               <article
-                className={`blog-list-item card is-child box ${
+                className={`blog-list-item is-child box ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                   }`}
               >
@@ -44,9 +44,9 @@ class BlogRoll extends React.Component {
                       {post.frontmatter.description}
                       <br />
                       <br />
-                      <Link className="button" to={post.fields.slug}>
+                      <Link className="button is-small is-info is-outlined" to={post.fields.slug}>
                         Keep Reading →
-                  </Link>
+                      </Link>
                     </p>
                   </div>
                 </header>
