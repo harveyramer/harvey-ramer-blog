@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
+import { isMobile } from '../components/IsMobile';
 
 export const IndexPageTemplate = ({
   image,
@@ -17,7 +18,7 @@ export const IndexPageTemplate = ({
             !!image.childImageSharp ? image.childImageSharp.fluid.src : image
             })`,
           backgroundPosition: `bottom center`,
-          backgroundAttachment: `fixed`,
+          backgroundAttachment: isMobile() ? `scroll` : `fixed`,
           backgroundSize: `cover`,
         }}
       >
@@ -34,12 +35,10 @@ export const IndexPageTemplate = ({
           <h1
             className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
             style={{
-              boxShadow:
-                'rgb(0, 159, 254) 0.5rem 0px 0px, rgb(0, 159, 254) -0.5rem 0px 0px',
               backgroundColor: 'rgb(0, 159, 254)',
               color: 'white',
               lineHeight: '1',
-              padding: '0.25em',
+              padding: '0.5em',
             }}
           >
             {title}
