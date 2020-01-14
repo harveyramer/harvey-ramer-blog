@@ -18,7 +18,8 @@ const Footer = class extends React.Component {
             style={{ width: '240px', height: '40px' }}
           />
         </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
+
+        <div className="section has-text-centered has-background-black has-text-white-ter">
           <div className="container has-background-black has-text-white-ter"
             style={{ paddingBottom: '3rem' }}>
             <div className="columns">
