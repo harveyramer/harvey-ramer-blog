@@ -8,7 +8,7 @@ description: >-
   2019, I decided to experiment with the CDK using my language of choice,
   TypeScript. 
 featuredpost: false
-featuredimage: /img/GuggenheimBilbao.jpg
+featuredimage: /img/img_0675.jpg
 tags:
   - software
   - AWS
