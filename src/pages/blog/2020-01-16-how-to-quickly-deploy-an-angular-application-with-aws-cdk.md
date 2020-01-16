@@ -5,8 +5,7 @@ date: 2020-01-16T03:27:29.527Z
 description: >-
   Amazon's Cloud Development Kit (CDK) has taken much of the pain out of
   deploying resources to the AWS cloud. After hearing about it at re:Invent
-  2019, I decided to experiment with the CDK using my language of choice,
-  TypeScript. 
+  2019, I decided to experiment with the CDK using TypeScript. 
 featuredpost: false
 featuredimage: /img/img_0675.jpg
 tags:
