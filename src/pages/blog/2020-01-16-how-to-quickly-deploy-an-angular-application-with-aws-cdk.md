@@ -7,7 +7,7 @@ description: >-
   deploying resources to the AWS cloud. After hearing about it at re:Invent
   2019, I decided to experiment with the CDK using my language of choice,
   TypeScript. 
-featuredpost: true
+featuredpost: false
 featuredimage: /img/GuggenheimBilbao.jpg
 tags:
   - software
