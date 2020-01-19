@@ -1,18 +1,19 @@
 ---
-templateKey: about-page
+templateKey: resume-page
 title: Software Engineer
 ---
+
 ## Personal Profile
 
 Harvey Ramer is a full stack Web developer and JavaScript engineer who works with collaborative teams to create industry leading web applications. His sixteen-year career includes a Fortune 500 company’s e-commerce platform and a startup. As a leader, he helps others succeed through mentoring and collaborative problem solving. He is a ready learner, who is always focused on his employer’s success.
 
 ## Core Competencies
 
-* **Conceptual Skills:** Cloud Architecture, APIs, JavaScript Applications, Responsive Web Development, Graphic Design
-* **Front-End Web Development:** HTML, CSS, JavaScript: Vue, React, Angular
-* **Data Transfer:** REST, GraphQL
-* **Server Side Development:** NodeJS, AWS
-* **Marketing:** Search Engine Visibility, Search Marketing
+- **Conceptual Skills:** Cloud Architecture, APIs, JavaScript Applications, Responsive Web Development, Graphic Design
+- **Front-End Web Development:** HTML, CSS, JavaScript: Vue, React, Angular
+- **Data Transfer:** REST, GraphQL
+- **Server Side Development:** NodeJS, AWS
+- **Marketing:** Search Engine Visibility, Search Marketing
 
 ## Professional Experience
 
