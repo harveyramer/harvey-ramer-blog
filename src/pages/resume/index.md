@@ -8,7 +8,7 @@ title: Software Engineer
 <div style="content: ''; display: table; clear: both;">
 <div style="float:left;width:100px; margin-right: 1rem">
 
-![Harvey Ramer](/static/img/harvey-photo.jpg)
+![Harvey Ramer](/img/harvey-photo.jpg)
 
 </div>
 
