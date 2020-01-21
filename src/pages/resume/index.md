@@ -7,6 +7,8 @@ title: Software Engineer
 
 Harvey Ramer is a full stack Web developer and JavaScript engineer who works with collaborative teams to create industry leading web applications. His sixteen-year career includes a Fortune 500 company’s e-commerce platform and a startup. As a leader, he helps others succeed through mentoring and collaborative problem solving. He is a ready learner, who is always focused on his employer’s success.
 
+![Harvey Ramer](/static/img/harvey-photo.jpg)
+
 ## Core Competencies
 
 - **Conceptual Skills:** Cloud Architecture, APIs, JavaScript Applications, Responsive Web Development, Graphic Design
