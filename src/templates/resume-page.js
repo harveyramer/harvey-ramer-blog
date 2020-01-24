@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
@@ -9,6 +10,9 @@ export const ResumePageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <div className="container">
+      <Helmet titleTemplate="%s">
+        <title>{`${title}`}</title>
+      </Helmet>
       <div className="columns">
         <div className="column is-10 is-offset-1">
           <div className="section">

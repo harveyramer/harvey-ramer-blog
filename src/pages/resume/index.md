@@ -1,6 +1,6 @@
 ---
 templateKey: resume-page
-title: Software Engineer
+title: JavaScript and AWS Developer
 ---
 
 ## Personal Profile
