@@ -9,11 +9,11 @@ author: Harvey Ramer
 ## Personal Profile
 
 <div style="content: ''; display: table; clear: both;">
-<div style="float:left;width:100px; margin-right: 1rem">
+  <div style="float:left;width:100px; margin-right: 1rem">
 
 ![Harvey Ramer](/img/harvey-photo.jpg)
 
-</div>
+  </div>
 
 Harvey Ramer is a full stack Web developer and JavaScript engineer who works with collaborative teams to create industry leading web applications. His sixteen-year career includes a Fortune 500 company’s e-commerce platform and a startup.
 

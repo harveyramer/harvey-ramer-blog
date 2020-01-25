@@ -5,47 +5,21 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const ResumePageTemplate = ({ page, title, contentComponent, site }) => {
+export const ResumePageTemplate = ({ helmet, page, title, contentComponent }) => {
   const PageContent = contentComponent || Content
-  const author = page.frontmatter.author;
-  const nameTokens = author.split(" ");
   return (
-    <div className="container">
-      <Helmet titleTemplate="%s | Resume">
-        <title>{`${title}`}</title>
-        <meta
-          name="description"
-          content={`${page.frontmatter.description}`}
-        />
-        <meta
-          name="author"
-          content={`${author}`}
-        />
-        <meta
-          property="og:description"
-          content={`${page.frontmatter.description}`}
-        />
-        <meta
-          property="og:image"
-          content={`${site.siteMetadata.siteUrl}${page.frontmatter.image.childImageSharp.fluid.src}`}
-        />
-        <meta property="og:type" content="profile" />
-        <meta property="og:first_name" content={`${nameTokens[0]}`} />
-        <meta property="og:last_name" content={`${nameTokens[1]}`} />
-        <meta property="og:title" content={`${title}`} />
-        <meta property="og:url" content={`${site.siteMetadata.siteUrl}${page.fields.slug}`} />
-        <link rel="canonical" href={`${site.siteMetadata.siteUrl}${page.fields.slug}`} />
-      </Helmet>
-      <div className="columns">
-        <div className="column is-10 is-offset-1">
-          <div className="section">
+    <div>
+      {helmet || ''}
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="column is-10 is-offset-1">
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
               {title}
             </h2>
             <PageContent className="content" content={page.html} />
           </div>
         </div>
-      </div>
+      </section>
     </div>
   )
 }
@@ -54,19 +28,45 @@ ResumePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   page: PropTypes.object,
   contentComponent: PropTypes.func,
-  site: PropTypes.object,
+  helmet: PropTypes.object,
 }
 
 const ResumePage = ({ data }) => {
   const { markdownRemark: post, site } = data
-  console.log(post)
+  const author = post.frontmatter.author;
+  const nameTokens = author.split(" ");
+
   return (
     <Layout>
       <ResumePageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         page={post}
-        site={site}
+        helmet={<Helmet titleTemplate="%s | Resume">
+          <title>{`${post.frontmatter.title}`}</title>
+          <meta
+            name="description"
+            content={`${post.frontmatter.description}`}
+          />
+          <meta
+            name="author"
+            content={`${author}`}
+          />
+          <meta
+            property="og:description"
+            content={`${post.frontmatter.description}`}
+          />
+          <meta
+            property="og:image"
+            content={`${site.siteMetadata.siteUrl}${post.frontmatter.image.childImageSharp.fluid.src}`}
+          />
+          <meta property="og:type" content="profile" />
+          <meta property="og:first_name" content={`${nameTokens[0]}`} />
+          <meta property="og:last_name" content={`${nameTokens[1]}`} />
+          <meta property="og:title" content={`${post.frontmatter.title}`} />
+          <meta property="og:url" content={`${site.siteMetadata.siteUrl}${post.fields.slug}`} />
+          <link rel="canonical" href={`${site.siteMetadata.siteUrl}${post.fields.slug}`} />
+        </Helmet>}
       />
     </Layout>
   )
