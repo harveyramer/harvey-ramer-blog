@@ -38,3 +38,7 @@ If you want test CDK for your own Angular projects, I have simplified the proces
 Using this project, you will have an Angular application hosted on S3 in an hour or two. The initial deployment takes about 30 minutes to provision AWS infrastructure.
 
 If you find bugs or have questions, please [contact me](http://localhost:8000/contact).
+
+## Other Resources
+
+[Elad Ben-Israel](https://twitter.com/intent/user?screen_name=emeshbi) from AWS offers a CDK Intro Workshop in [TypeScript](https://cdkworkshop.com/20-typescript.html), [Python](https://cdkworkshop.com/30-python.html), [.NET](https://cdkworkshop.com/40-dotnet.html), and [Java](https://cdkworkshop.com/50-java.html). Use this workshop to learn more about how to use CDK to manage your AWS infrastructure as code.

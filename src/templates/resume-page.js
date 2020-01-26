@@ -4,15 +4,36 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Img from 'gatsby-image'
 
-export const ResumePageTemplate = ({ helmet, page, title, contentComponent }) => {
-  const PageContent = contentComponent || Content
+export const ResumePageTemplate = ({ helmet, page, title, image, contentComponent }) => {
+  const PageContent = contentComponent || Content;
   return (
     <div>
       {helmet || ''}
       <section className="section section--gradient">
-        <div className="container">
-          <div className="column is-10 is-offset-1">
+        <div className="container columns">
+          <div className="column is-1">
+
+            <Img
+              fluid={image.childImageSharp.resize}
+              alt="Harvey Ramer, software engineer"
+              className="customImg"
+              style={
+                {
+                  width: "100%",
+                  height: "auto",
+                  borderRadius: "50%",
+                  maxWidth: "260px",
+                  margin: "0 auto",
+                }
+              }
+              imgStyle={{
+              }}
+              placeholderStyle={{ "backgroundColor": "black" }}
+            />
+          </div>
+          <div className="column is-10">
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
               {title}
             </h2>
@@ -41,6 +62,7 @@ const ResumePage = ({ data }) => {
       <ResumePageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        image={post.frontmatter.image}
         page={post}
         helmet={<Helmet titleTemplate="%s | Resume">
           <title>{`${post.frontmatter.title}`}</title>
@@ -89,6 +111,12 @@ export const resumePageQuery = graphql`
         description
         image {
           childImageSharp {
+            resize(width: 300, height: 300, cropFocus: ENTROPY){
+              src
+              width
+              height
+              aspectRatio
+            }
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }

@@ -1,25 +1,16 @@
 ---
 templateKey: resume-page
 title: Harvey Ramer, JavaScript and AWS Developer
-image: /img/harvey-photo.jpg
+image: /img/harvey-web.jpg
 description: Harvey Ramer is a full stack Web developer and JavaScript engineer who works with collaborative teams to create industry leading web applications.
 author: Harvey Ramer
 ---
 
 ## Personal Profile
 
-<div style="content: ''; display: table; clear: both;">
-  <div style="float:left;width:100px; margin-right: 1rem">
-
-![Harvey Ramer](/img/harvey-photo.jpg)
-
-  </div>
-
 Harvey Ramer is a full stack Web developer and JavaScript engineer who works with collaborative teams to create industry leading web applications. His sixteen-year career includes a Fortune 500 company’s e-commerce platform and a startup.
 
 As a leader, he helps others succeed through mentoring and collaborative problem solving. He is a ready learner, who is always focused on his employer’s success.
-
-</div>
 
 ## Core Competencies
 
