@@ -9,11 +9,11 @@ import Img from 'gatsby-image'
 export const ResumePageTemplate = ({ helmet, page, title, image, contentComponent }) => {
   const PageContent = contentComponent || Content;
   return (
-    <div>
+    <section className="section section--gradient">
       {helmet || ''}
-      <section className="section section--gradient">
-        <div className="container columns">
-          <div className="column is-1">
+      <div className="container">
+        <div className="columns">
+          <div className="column is-2">
 
             <Img
               fluid={image.childImageSharp.resize}
@@ -40,8 +40,8 @@ export const ResumePageTemplate = ({ helmet, page, title, image, contentComponen
             <PageContent className="content" content={page.html} />
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 
@@ -111,7 +111,7 @@ export const resumePageQuery = graphql`
         description
         image {
           childImageSharp {
-            resize(width: 300, height: 300, cropFocus: ENTROPY){
+            resize(width: 400, height: 400, cropFocus: ENTROPY){
               src
               width
               height
