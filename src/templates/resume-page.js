@@ -33,7 +33,7 @@ export const ResumePageTemplate = ({ helmet, page, title, image, contentComponen
               placeholderStyle={{ "backgroundColor": "black" }}
             />
           </div>
-          <div className="column is-10">
+          <div className="column is-9">
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
               {title}
             </h2>
