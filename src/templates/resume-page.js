@@ -43,7 +43,7 @@ export const ResumePageTemplate = ({ helmet, page, title, image, contentComponen
                 marginBottom: "1rem",
               }
             }>
-              <a title="twitter" href="/files/harvey-ramer-resume.docx" style={{
+              <a title="resume" href="/files/harvey-ramer-resume.docx" style={{
                 lineHeight: "1.25rem",
                 fontSize: "1rem",
               }}>
