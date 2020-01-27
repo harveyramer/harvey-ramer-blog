@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Img from 'gatsby-image'
 import download from '../img/download.svg'
+import linkedin from '../img/social/linkedin.svg'
 
 export const ResumePageTemplate = ({ helmet, page, title, image, contentComponent }) => {
   const PageContent = contentComponent || Content;
@@ -37,28 +38,41 @@ export const ResumePageTemplate = ({ helmet, page, title, image, contentComponen
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light is-marginless">
               {title}
             </h2>
-            <h4 style={
+            <ul style={
               {
                 marginTop: "1rem",
                 marginBottom: "1rem",
               }
             }>
-              <a title="resume" href="/files/harvey-ramer-resume.docx" style={{
-                lineHeight: "1.25rem",
-                fontSize: "1rem",
-              }}>
-                <img
-                  src={download}
-                  alt="Download Resume"
-                  style={{
-                    width: '1rem',
-                    height: '1rem',
-                  }}
-                />
-                &nbsp;
-                Download Resume
-            </a>
-            </h4>
+              <li>
+                <a title="resume" href="/files/harvey-ramer-resume.docx" style={{
+                  lineHeight: "1.25rem",
+                  fontSize: "1rem",
+                }}>
+                  <img
+                    src={download}
+                    alt="Download Resume"
+                    style={{
+                      width: '1rem',
+                      height: '1rem',
+                    }}
+                  />
+                  &nbsp;
+                  Download Resume
+                </a>
+              </li>
+              <li>
+                <a title="linkedin" href="https://linkedin.com/in/harveyramer">
+                  <img
+                    src={linkedin}
+                    alt="LinkedIn"
+                    style={{ width: '1em', height: '1em' }}
+                  />
+                  &nbsp;
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
             <PageContent className="content" content={page.html} />
           </div>
         </div>
