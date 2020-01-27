@@ -38,7 +38,7 @@ export const ResumePageTemplate = ({ helmet, page, title, image, contentComponen
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light is-marginless">
               {title}
             </h2>
-            <ul style={
+            <ul className="is-size-5" style={
               {
                 marginTop: "1rem",
                 marginBottom: "1rem",
@@ -46,15 +46,13 @@ export const ResumePageTemplate = ({ helmet, page, title, image, contentComponen
             }>
               <li>
                 <a title="resume" href="/files/harvey-ramer-resume.docx" style={{
-                  lineHeight: "1.25rem",
-                  fontSize: "1rem",
                 }}>
                   <img
                     src={download}
                     alt="Download Resume"
                     style={{
-                      width: '1rem',
-                      height: '1rem',
+                      width: '1em',
+                      height: '1em',
                     }}
                   />
                   &nbsp;
