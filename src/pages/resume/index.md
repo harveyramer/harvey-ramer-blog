@@ -59,6 +59,6 @@ Harvey manages workflow for the front-end development team. This task requires h
 
 ### Other Experience
 
-**Freelance, Abound Marketing; Norwood, NY (2004 - 2010)**
+#### Freelance, Abound Marketing; Norwood, NY (2004 - 2010)
 
-**Technical Support Specialist, Frazer Computing; Canton, NY (2006 - 2008)**
+#### Technical Support Specialist, [Frazer Computing](https://www.frazer.com/); Canton, NY (2006 - 2008)
