@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Img from 'gatsby-image'
+import download from '../img/download.svg'
 
 export const ResumePageTemplate = ({ helmet, page, title, image, contentComponent }) => {
   const PageContent = contentComponent || Content;
@@ -14,7 +15,6 @@ export const ResumePageTemplate = ({ helmet, page, title, image, contentComponen
       <div className="container">
         <div className="columns">
           <div className="column is-2">
-
             <Img
               fluid={image.childImageSharp.resize}
               alt="Harvey Ramer, software engineer"
@@ -34,9 +34,31 @@ export const ResumePageTemplate = ({ helmet, page, title, image, contentComponen
             />
           </div>
           <div className="column is-9">
-            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+            <h2 className="title is-size-3 has-text-weight-bold is-bold-light is-marginless">
               {title}
             </h2>
+            <h4 style={
+              {
+                marginTop: "1rem",
+                marginBottom: "1rem",
+              }
+            }>
+              <a title="twitter" href="/files/harvey-ramer-resume.docx" style={{
+                lineHeight: "1.25rem",
+                fontSize: "1rem",
+              }}>
+                <img
+                  src={download}
+                  alt="Download Resume"
+                  style={{
+                    width: '1rem',
+                    height: '1rem',
+                  }}
+                />
+                &nbsp;
+                Download Resume
+            </a>
+            </h4>
             <PageContent className="content" content={page.html} />
           </div>
         </div>
