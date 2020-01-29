@@ -32,6 +32,12 @@ As a leader, he helps others succeed through mentoring and collaborative problem
 > Harvey worked for Green Mountain Technology for almost 3 years. During that time he learned about our business and assumed the leadership role for one of our Development teams. He is extremely knowledgeable from a web development perspective and I would say he fit nicely into our culture as a team leader. His team was extremely productive and delivered solutions on time and on target functionally. If you are looking for a excellent senior developer or a leader for one of your mission critical dev teams, you will not be disappointed in Harvey.  
 > – [Craig Russell](https://www.linkedin.com/in/craig-russell-86a8888/)
 
+> Harvey is a great person to work with! He works very well with colleagues, cares about the customer, and leads by example in both what he does and how he does it. He has a very strong work ethic, will work on difficult problems until they are solved, always shows integrity, and is an encourager to those around him. Any team is better with Harvey on it!  
+> – [Micaela Hamm](https://www.linkedin.com/in/micaela-hamm/)
+
+> Harvey is a highly skilled web developer who possesses a natural ability to understand and transform business needs into technical solutions successfully. I had the pleasure of working with him on new product initiatives that were key to achieving the strategic objectives of Green Mountain Technology. This gave me the opportunity to experience Harvey's proficiency for leading development teams first-hand. He is a very effective communicator with a customer focus and a drive to consistently exceed expectations. As a team member or a leader, Harvey earns my highest recommendation.  
+> – [Kris Taylor](https://www.linkedin.com/in/kris-taylor-1382447/)
+
 ## Professional Experience
 
 ### Senior Software Engineer
