@@ -151,7 +151,7 @@ export const resumePageQuery = graphql`
               height
               aspectRatio
             }
-            fluid(maxWidth: 2048, quality: 100) {
+            fluid(maxWidth: 2048, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }
