@@ -5,6 +5,7 @@
 $pursuit-blue: rgb(0, 159, 254)
 $pursuit-blue-light: rgba(0, 159, 254, .05)
 $pursuit-blue-invert: #fff
+$link: $pursuit-blue
 
 $primary: $pursuit-blue
 $primary-invert: $pursuit-blue-invert
@@ -133,16 +134,16 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item
-  margin-bottom: 4rem;
-  box-shadow: none;
+  margin-bottom: 4rem
+  box-shadow: none
 .blog-list-item.is-featured
-  background-color: $pursuit-blue-light;
+  background-color: $pursuit-blue-light
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex: 0 0 200px;
-  margin: 0 1.5em 0 0;
+  flex: 0 0 200px
+  margin: 0 1.5em 0 0
 
 $sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7
 @import "~bulma"
@@ -152,6 +153,24 @@ body
 
 .content 
   font-size: 1em
+
+
+// blockquote
+.content
+  blockquote
+    quotes: "“" "”"
+    padding-left: 2.5rem;
+    border: none;
+    background: none;
+
+  blockquote:before
+      content: open-quote
+      position: absolute
+      margin-left: -2.5rem
+      margin-top: -1rem
+      font-size: 4rem
+      color: $pursuit-blue
+
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
