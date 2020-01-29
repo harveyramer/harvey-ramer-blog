@@ -40,6 +40,12 @@ As a leader, he helps others succeed through mentoring and collaborative problem
 
 ## Professional Experience
 
+### Senior System Architect
+
+#### [Ducks Unlimited](https://www.ducks.org); Memphis, TN (2020 – Present)
+
+Harvey provides technical guidance, application development, and implementation support on all aspects of the Ducks Unlimited technology footprint. Additionally, he is responsible for working closely with business users to solicit business requirements, outline and present technical solutions, and roadmap future development.
+
 ### Senior Software Engineer
 
 #### [ProofPort](https://www.proofport.com); Memphis, TN (2018 – 2020)
