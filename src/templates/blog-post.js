@@ -6,7 +6,6 @@ import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import { isMobile } from '../components/IsMobile';
 
 export const BlogPostTemplate = ({
   featuredimage,
@@ -29,7 +28,6 @@ export const BlogPostTemplate = ({
             !!featuredimage.childImageSharp ? featuredimage.childImageSharp.fluid.src : featuredimage
             })`,
           backgroundPosition: `bottom center`,
-          backgroundAttachment: isMobile() ? `scroll` : `fixed`,
           backgroundSize: `cover`,
         }}
       >

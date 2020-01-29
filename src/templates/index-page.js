@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
-import { isMobile } from '../components/IsMobile';
 
 export const IndexPageTemplate = ({
   image,
@@ -18,7 +17,6 @@ export const IndexPageTemplate = ({
             !!image.childImageSharp ? image.childImageSharp.fluid.src : image
             })`,
           backgroundPosition: `bottom center`,
-          backgroundAttachment: isMobile() ? `scroll` : `fixed`,
           backgroundSize: `cover`,
         }}
       >
