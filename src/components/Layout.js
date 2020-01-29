@@ -42,6 +42,7 @@ const TemplateWrapper = ({ children }) => {
             property="og:image"
             content={`${withPrefix('/')}img/og-image.png`}
           />
+          <meta property="fb:app_id" content="526426944640037" />
         </Helmet>
         <Navbar />
         <div>{children}</div>
