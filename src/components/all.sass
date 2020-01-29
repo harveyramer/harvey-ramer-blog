@@ -63,13 +63,17 @@ $size-7: .8rem
   align-items: center
 
 .full-width-image
-    width: 100vw
-    height: 400px
-    background-size: cover
-    background-position: bottom
-    display: flex
-    justify-content: center
-    align-items: center
+  width: 100vw
+  height: 400px
+  background-size: cover
+  background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
+  background-attachment: fixed
+  @media screen and (max-width: $desktop)
+    background-attachment: scroll
+  
 
 .btn
     display: inline-block
