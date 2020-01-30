@@ -42,7 +42,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Harvey Ramer" style={{ width: '190px' }} />
+              <img style={{ width: '190px' }} src={logo} alt="Harvey Ramer" />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -50,9 +50,6 @@ const Navbar = class extends React.Component {
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
             >
-              <span />
-              <span />
-              <span />
             </div>
           </div>
           <div
