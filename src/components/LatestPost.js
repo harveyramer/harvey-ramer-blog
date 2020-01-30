@@ -20,7 +20,7 @@ class LatestPost extends React.Component {
                 >{post.frontmatter.title}
                 </Link>
               </h1>
-              <p className="is-size-3">{post.frontmatter.description}</p>
+              <p className="is-size-4">{post.frontmatter.description}</p>
               <PostContent content={post.html} />
             </div>
           ))
