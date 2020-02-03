@@ -14,6 +14,7 @@ const TemplateWrapper = ({ children }) => {
         <Helmet>
           <html lang="en" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="google-site-verification" content="WfXmKXeyLM09X3hfug4Apob41VO_8q1AqYcgnulwNWI" />
           <title>{title}</title>
           <meta name="description" content={description} />
           <link
