@@ -56,4 +56,7 @@ To add a newer version of Node, we would do the following:
 
 To switch back to version 12, after this, we would once again use the command: `Set-NodeVersion 12`
 
+<br />
+<br />
+
 Featured Image Credit: [Donar Reiskoffer](https://commons.wikimedia.org/wiki/File:Brussels_Zonienwoud.jpg)  / [CC BY-SA](http://creativecommons.org/licenses/by-sa/3.0/)
