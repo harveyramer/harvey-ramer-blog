@@ -25,6 +25,6 @@ Let's take care of some things before we begin:
 
 ### Log In to Azure CLI
 
-Open your terminal and enter `az login`. This will launch a browser window you will use to log in with the credentials from your new Azure account.
+Open your terminal in Visual Studio Code (Windows: ``Ctrl+``` and enter `az login`. This will launch a browser window you will use to log in with the credentials from your new Azure account.
 
 Image credit: [Stebbes87](https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
