@@ -14,3 +14,5 @@ tags:
 Though we can install NodeJS directly on a Windows 10 computer, it is better to use a package manager. Versions change quickly, and you may need to switch between projects that require different versions. 
 
 Download the latest \[Node Version Manager for Windows](https://github.com/coreybutler/nvm-windows/releases).
+
+Featured Image Credit: <a href="https://commons.wikimedia.org/wiki/File:Brussels_Zonienwoud.jpg" title="via Wikimedia Commons">Donar Reiskoffer</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>
