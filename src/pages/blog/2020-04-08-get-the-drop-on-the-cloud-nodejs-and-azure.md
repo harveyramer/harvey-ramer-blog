@@ -18,11 +18,13 @@ Let's take care of some things before we begin:
 
 1. [Create a free Azure account](https://azure.microsoft.com/en-us/free/)
 2. [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+3. [Install Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
+4. [Add the Azure App Service Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
 
 ### Log In to Azure CLI
 
-```
-az login
-```
+Open your terminal and enter `az login`. This will launch a browser window you will use to log in with the credentials from your new Azure account (created in step 2 above).
+
+
 
 Image credit: [Stebbes87](https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
