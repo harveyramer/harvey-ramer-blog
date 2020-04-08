@@ -6,7 +6,7 @@ description: >-
   Deploying applications to the cloud can be intimidating. Don't worry though,
   this guide will stick to the bare essentials. When you've finished here, you
   will know the simplest way to get a NodeJS web application running on Azure.
-featuredpost: false
+featuredpost: true
 featuredimage: /img/sunshine_above_clouds.jpg
 tags:
   - software
