@@ -15,7 +15,7 @@ tags:
 
 Though we can install NodeJS on a Windows 10 computer, it is better to use a package manager. Versions change often, so we need to make it easy to switch between them. 
 
-To install NVM, we will use Windows PowerShell. To do so, we need to run Powershell as Administrator. In your Windows Start Menu, type "Powershell" and choose "Run as Administrator" from the menu.
+To install NVM, we will use Windows PowerShell. To do so, we need to run Powershell as Administrator. In your Windows Start Menu, enter \`Powershell\` and choose "Run as Administrator" from the menu.
 
 ![](/img/sc5ox6zxr9.png)
 
