@@ -11,12 +11,49 @@ tags:
   - software
   - azure
 ---
-Though we can install NodeJS directly on a Windows 10 computer, it is better to use a package manager. Versions change quickly, and you may need to switch between projects that require different versions. 
+## Install NVM and NodeJS
 
-Download the latest [Node Version Manager for Windows](https://github.com/coreybutler/nvm-windows/releases).
+Though we can install NodeJS on a Windows 10 computer, it is better to use a package manager. Versions change often, so we need to make it easy to switch between them. 
 
-![](/img/chrome_h63a4ls2g5.png)
+To install NVM, we will use Windows PowerShell. To do so, we need to run Powershell as Administrator. In your Windows Start Menu, type "Powershell" and choose "Run as Administrator" from the menu.
 
-Extract the contents of the downloaded ZIP archive. 
+![](/img/sc5ox6zxr9.png)
+
+When the terminal opens, type the following commands:
+
+1. `Install-Module nvm`
+2. `Install-NodeVersion 12`
+3. `Set-NodeVersion 12`
+4. When that completes, 
+
+   * `node -v` should output `v12.16.2`
+   * `npm -v` should output `6.14.4`
+
+You are ready to write code with NodeJS!
+
+## Hello World!
+
+In your PowerShell terminal, enter `node`. This will launch the Node REPL terminal. 
+
+In the terminal enter `console.log("Hello World!")` and you will see your statement printed for you. 
+
+To exit the REPL, enter`.exit`.
+
+![](/img/chrome_t4wfpemoyk.png)
+
+Congratulations, your work has paid off!
+
+## Adding More Versions of NodeJS
+
+To add a newer version of Node, we would do the following:
+
+1. `Install-NodeVersion 13`
+2. `Set-NodeVersion 13`
+3. Then,
+
+   * `node -v` should output `v13.12.0`
+   * `npm -v` should output `6.14.4`
+
+To switch back to version 12, after this, we would once again use the command: `Set-NodeVersion 12`
 
 Featured Image Credit: [Donar Reiskoffer](https://commons.wikimedia.org/wiki/File:Brussels_Zonienwoud.jpg)  / [CC BY-SA](http://creativecommons.org/licenses/by-sa/3.0/)
