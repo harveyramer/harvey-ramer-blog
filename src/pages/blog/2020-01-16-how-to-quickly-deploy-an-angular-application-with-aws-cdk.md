@@ -10,7 +10,7 @@ featuredpost: false
 featuredimage: /img/cloud-computing.jpg
 tags:
   - software
-  - AWS
+  - aws
 ---
 
 My goal was simple: to deploy a static site on AWS. But I wanted to make it a bit more interesting by including an Angular application. I bootstrapped a vanilla Angular install any developer could use and deploy.
