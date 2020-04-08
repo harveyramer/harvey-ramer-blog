@@ -12,12 +12,11 @@ tags:
   - software
   - azure
 ---
-Body here. asfasfdasdfasdfasdf fsassdfasdfasdfasf  asdf af
+## Prerequisites
 
+Let's take care of some things before we begin:
 
+1. [Create a free Azure account](https://azure.microsoft.com/en-us/free/)
+2. [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 
-
-
-
-
-Image credit: <a href="https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg" title="via Wikimedia Commons">Stebbes87</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA</a>
+Image credit: [Stebbes87](https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
