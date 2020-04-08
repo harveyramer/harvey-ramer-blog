@@ -13,3 +13,11 @@ tags:
   - azure
 ---
 Body here. asfasfdasdfasdfasdf fsassdfasdfasdfasf  asdf af
+
+
+
+
+
+
+
+Image credit: <a href="https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg" title="via Wikimedia Commons">Stebbes87</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA</a>
