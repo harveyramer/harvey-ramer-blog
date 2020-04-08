@@ -32,11 +32,10 @@ Open your terminal in VS Code (``Ctrl+` ``) and enter `az login`. This will laun
 
 ![Logging in to Azure](/img/gkpaytxsfy.png "Logging in to Azure")
 
-
 ### Start Coding
+
 First, select a folder in VS Code (`Ctrl+k Ctrl+o`). If you need to create and select one, you can do that in the dialog that opens. I have created and selected the folder `nodejs-azure`. 
 
 In our open terminal panel, let's initialize a node project:
 
-
-Featured image credit: [Stebbes87](https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
+Featured Image Credit: [Stebbes87](https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
