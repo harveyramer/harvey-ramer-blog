@@ -18,15 +18,25 @@ Let's take care of some things before we begin:
 
 1. [Create a free Azure account](https://azure.microsoft.com/en-us/free/)
 2. [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
-3. [Install Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
+3. [Install Visual Studio Code (VS Code)](https://code.visualstudio.com/docs/setup/setup-overview)
 4. [Add the Azure App Service Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) to Visual Studio Code
+5. Install NodeJS
 
 ![Azure App Service Extension Installed](/img/o16ldo5k8g.png "Azure App Service Extension Installed")
 
+**Note:** Screenshots and shortcuts are all Windows specific.
+
 ### Log In to Azure CLI
 
-Open your terminal in Visual Studio Code (Windows: ``Ctrl+` ``, Mac: ``^` `` and enter `az login`. This will launch a browser window you will use to log in with the credentials from your new Azure account.
+Open your terminal in VS Code (``Ctrl+` ``) and enter `az login`. This will launch a browser window you will use to log in with the credentials from your new Azure account.
 
 ![Logging in to Azure](/img/gkpaytxsfy.png "Logging in to Azure")
+
+
+### Start Coding
+First, select a folder in VS Code (`Ctrl+k Ctrl+o`). If you need to create and select one, you can do that in the dialog that opens. I have created and selected the folder `nodejs-azure`. 
+
+In our open terminal panel, let's initialize a node project:
+
 
 Featured image credit: [Stebbes87](https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
