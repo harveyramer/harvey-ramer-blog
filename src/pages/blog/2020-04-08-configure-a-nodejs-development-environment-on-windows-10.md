@@ -35,7 +35,7 @@ Expect output like this:
 
 ## Install Node Version Manager (NVM)
 
-Now we can use our Chocolatey Package Manager to download and install [NVM](https://github.com/nvm-sh/nvm/blob/master/README.md)!
+Now we can use our Chocolatey Package Manager to download and install [NVM](https://github.com/nvm-sh/nvm/blob/master/README.md)! It is common to work on projects that require different versions of NodeJS. If we installed NodeJS directly, switching between such projects would present a conundrum. But NVM will make that an easy problem to solve.
 
 This time, use Windows Terminal. Type \`cmd\` in the Windows Start Menu and choose "Run as Administrator".
 
