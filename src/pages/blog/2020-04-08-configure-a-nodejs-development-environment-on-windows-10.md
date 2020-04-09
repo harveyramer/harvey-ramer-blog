@@ -11,6 +11,10 @@ tags:
   - software
   - nodejs
 ---
+## Overview
+
+If you want to learn programming, configuring a development environment on Windows can be a confusing barrier to entry. In this tutorial, I offer a straightforward way to install all the tools needed to begin working with server side JavaScript using NodeJS.
+
 **Note**: When a command should produce an output of a certain type, you will see `command` → `output`. 
 
 ## Install Chocolatey: the Windows Package Manager
@@ -49,7 +53,7 @@ Close that terminal window and open a new one (again, as Administrator). This al
 
 Try this commmand: `nvm version` → `1.1.7`. If you get a numeric version result, we're good!
 
-Let's install node next.
+Let's install NodeJS next.
 
 ## Install NodeJS
 
@@ -82,7 +86,9 @@ To exit the REPL, enter`.exit`.
 
 ## Adding More Versions of NodeJS (optional)
 
-To add a newer version of Node, we would do the following in Windows Terminal:
+As I mentioned earlier, it is common to contribute to multiple NodeJS projects requiring different versions of NodeJS. For example, you could choose to write your own project in NodeJS version **13.12.0**, but need to help another developer working on a project using NodeJS **12.16.2**. This will help you with that problem.
+
+To add another version of Node, open Windows Terminal:
 
 ```
 nvm install node@12.16.2
@@ -115,6 +121,8 @@ When the installation completes. Open a new Windows Terminal and enter the comma
 ## You're Finished!
 
 You have configured NVM to manage two versions of NodeJS. To top it off, you installed Git to make sure you never lose any of your code changes. Congratulations!
+
+I am working on several more NodeJS tutorials that will make use of this one as a prerequisite. Come back in a few days for more.
 
 <br />
 <br />
