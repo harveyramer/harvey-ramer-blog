@@ -72,7 +72,7 @@ You are ready to write code to test NodeJS!
 
 ## Hello World!
 
-In your PowerShell terminal, enter `node`. This will launch the Node REPL terminal. 
+In your Windows Terminal, enter `node`. This will launch the Node REPL terminal. 
 
 In the terminal enter `console.log("Hello World!")` and you will see your statement printed for you. 
 
