@@ -210,6 +210,8 @@ First, let's make this look more like a real Web app. In Visual Studio Code Term
 ```
 npm install pug --save
 ```
+If you are interested, you can learn more about [getting started with Pug](https://pugjs.org/api/getting-started.html). 
+
 Next, we will add our Pug views: one for each page.
 ```
 cd src
@@ -217,6 +219,7 @@ mdkir views
 cd views
 type nul > home.pug
 type nul > about.pug
+type nul > layout.pug
 cd..
 mkdir public
 cd public
