@@ -113,6 +113,7 @@ Next, open the **package.json** file and add `"start": "node src/index",` to the
   }
 }
 ```
+
 Remember to save both your **index.js** and **package.json** files.
 
 ### Test the Hello World App
@@ -134,10 +135,13 @@ Ok. Now that you've tested your app, let's shut down your server. In the termina
 ### Handle Multiple Routes
 
 In your `src` directory, create a file named **routes.js**. In your terminal, if you are already in the `src` directory, do this.
+
 ```
 type null > routes.js
 ```
+
 Next, open your routes.js file, and paste this code:
+
 ```
 var express = require('express');
 var router = express.Router();
@@ -154,9 +158,11 @@ router.get('/about', function (req, res) {
 
 module.exports = router;
 ```
+
 As you can see, this defines two routes. One at `/` and the other at `/about`.
 
 Open **index.js** and make the following changes.
+
 ```
 const express = require('express');
 const routes = require('./routes');
@@ -167,19 +173,25 @@ app.use('/', routes);
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
 ```
+
 With these changes, we are importing the `./routes` module we just created, and rather than implementing the router in this file, we are now configuring the application to use the router with an `app.use` function call.
 
 To test these changes we will start our server again.
+
 ```
 npm start
 ```
+
 Open http://localhost:3000 in your browser and click the **about this app** link to load the **About** page.
 
 These pages don't look like much, but they demonstrate a fully functional Web server responding to HTTP requests. This the foundation on which the Web is built!
 
+![Our grown-up Hello World app with multiple routes](/img/chrome_r6cetpk0lp.png "Our grown-up Hello World app with multiple routes")
+
 ## COVID-19 Tracker
 
- 
+ Now it's time to get real. We have created the framework on which our COVID-19 Tracker can be built.
+
 
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
