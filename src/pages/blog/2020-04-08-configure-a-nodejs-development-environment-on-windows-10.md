@@ -110,7 +110,7 @@ When the download completes, install using the defaults. No fuss. We can configu
 
 ![Happy install dialog](/img/Git-2.26.0-64-bit.tmp_gcNQ427NNs.png)
 
-When the installation completes. Open a new PowerShell terminal as Administrator and enter the command `git --version`. It should output something like `git version 2.26.0.windows.1`.
+When the installation completes. Open a new Windows Terminal and enter the command `git --version`. It should output something like `git version 2.26.0.windows.1`.
 
 ## You're Finished!
 
