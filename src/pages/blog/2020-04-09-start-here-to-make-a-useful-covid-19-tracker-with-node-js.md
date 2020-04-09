@@ -190,8 +190,15 @@ These pages don't look like much, but they demonstrate a fully functional Web se
 
 ## COVID-19 Tracker
 
- Now it's time to get real. We have created the framework on which our COVID-19 Tracker can be built.
+ Now it's time to get real. We have created the framework on which our COVID-19 Tracker can be built. But before we move on, let's commit our files to Git so we can make changes without losing any of our past work. In Visual Studio Code Terminal make sure you are in the root of your project. The path in your terminal should look something like `C:\Users\hramer\covid19-tracker` and not like `C:\Users\hramer\covid19-tracker\src`. If it looks like the latter, `cd..` will fix your problem. 
 
+Let's commit our code changes.
 
+```
+git add .
+git commit -m "A hello  world Web app"
+```
+
+![Adding files to Git](/img/code_e8crgvguuy.png "Adding files to Git")
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
