@@ -44,7 +44,10 @@ Now we can use our Chocolatey Package Manager to download and install [NVM](http
 
 This time, use Windows Terminal. Type \`cmd\` in the Windows Start Menu and choose "Run as Administrator".
 
-To install NVM, enter `choco install -y nvm` in the terminal.
+To install NVM, enter the command:
+```
+choco install -y nvm
+```
 
 Expect output like this:
 
@@ -52,7 +55,7 @@ Expect output like this:
 
 Close that terminal window and open a new one (again, as Administrator). This allows the terminal to look up environment information and see our newly installed package manager.
 
-Try this commmand: `nvm version` → `1.1.7`. If you get a numeric version result, we're good!
+Try the command `nvm version` → `1.1.7`. If you get a numeric version result, we're good!
 
 Let's install NodeJS next.
 
@@ -60,7 +63,9 @@ Let's install NodeJS next.
 
 Now we can use NVM to download and install [NodeJS](https://nodejs.org/en/about/)! Open the Windows Terminal again (you should not need Administrator privileges). Enter the command:
 
-`nvm install node@13.12.0`
+```
+nvm install node@13.12.0
+```
 
 Expect output like this:
 
@@ -79,9 +84,13 @@ You are ready to write code to test NodeJS!
 
 In your Windows Terminal, enter `node`. This will launch the Node REPL terminal. 
 
-In the terminal enter `console.log("Hello World!")` and you will see your statement printed for you. 
+In the terminal enter the command:
+```
+console.log("Hello World!")
+```
+Your "Hello World" statement will be printed to the terminal 
 
-To exit the REPL, enter`.exit`.
+Then, exit the REPL, by entering `.exit`.
 
 ![Hello World!](/img/cmd_SHOGeflu9a.png "Hello World!")
 
@@ -117,7 +126,7 @@ When the download completes, install using the defaults. No fuss. We can configu
 
 ![Happy install dialog](/img/Git-2.26.0-64-bit.tmp_gcNQ427NNs.png)
 
-When the installation completes. Open a new Windows Terminal and enter the command `git --version`. It should output something like `git version 2.26.0.windows.1`.
+When the installation completes. Open a new Windows Terminal and enter the command `git --version` → `git version 2.26.0.windows.1`. If you see a version as described, Git is configured correctly.
 
 ## You're Finished!
 
