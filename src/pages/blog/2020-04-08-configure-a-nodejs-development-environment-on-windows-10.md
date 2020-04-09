@@ -9,30 +9,64 @@ featuredpost: false
 featuredimage: /img/brussels_zonienwoud.jpg
 tags:
   - software
-  - azure
+  - nodejs
 ---
-## Install Node Version Manager (NVM) and NodeJS
+**Note**: When a command should produce an output of a certain type, you will see `command` → `output`. 
 
-Though we can install NodeJS on a Windows 10 computer, it is better to use a package manager. Versions change often, so we need to make it easy to switch between them. 
+## Install Chocolatey: the Windows Package Manager
 
-To install NVM, launch Powershell. In your Windows Start Menu, enter `Powershell` and choose "Run as Administrator" from the menu.
+[Chocolatey](https://chocolatey.org/) allows us to download and install open source packages from the Web. Chocolatey is as secure as the practices of the user. Mitigate risk by downloading known safe packages for your development machine.
+
+We will use [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7) to install Chocolatey. 
+
+To launch PowerShell enter `PowerShell` in your Windows Start Menu and choose "Run as Administrator" from the menu.
 
 ![](/img/sc5ox6zxr9.png)
 
-To install remote packages, you will need the **RemoteSigned** execution policy. When the terminal opens, type the following commands to configure security:
+In your PowerShell terminal, enter the command:
 
-1. `Get-ExecutionPolicy` should return `RemoteSigned`. If not, 
-2. `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm`
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
 
-Now that you have the required execution policy, enter these commands:
+Expect output like this:
 
-1. `Install-Module nvm`
-2. `Install-NodeVersion 12`
-3. `Set-NodeVersion 12`
-4. When that completes, 
+![](/img/powershell_Wb8r3lS2bU.png)
 
-   * `node -v` should output `v12.16.2`
-   * `npm -v` should output `6.14.4`
+## Install Node Version Manager (NVM)
+
+Now we can use our Chocolatey Package Manager to download and install [NVM](https://github.com/nvm-sh/nvm/blob/master/README.md)!
+
+This time, use Windows Terminal. Type \`cmd\` in the Windows Start Menu and choose "Run as Administrator".
+
+To install NVM, enter `choco install -y nvm` in the terminal.
+
+Expect output like this:
+
+![](/img/cmd_4rbXM91m6u.png)
+
+Close that terminal window and open a new one (again, as Administrator). This allows the terminal to look up environment information and see our newly installed package manager.
+
+Try this commmand: `nvm version` → `1.1.7`. If you get a numeric version result, we're good!
+
+Let's install node next.
+
+## Install NodeJS
+
+Now we can use NVM to download and install [NodeJS](https://nodejs.org/en/about/)! Open the Windows Terminal again (you should not need Administrator privileges). Enter the command:
+
+`nvm install node@13.12.0`
+
+Expect output like this:
+
+![](/img/cmd_pN3qtBIZHC.png)
+
+Before celebrating too much, let's set our default NodeJS version with the command, `nvm use 13.12.0`.
+
+Validate your install:
+
+ `node -v` → `v13.12.0`\
+ `npm -v` → `6.14.4`
 
 You are ready to write code to test NodeJS!
 
@@ -44,20 +78,27 @@ In the terminal enter `console.log("Hello World!")` and you will see your statem
 
 To exit the REPL, enter`.exit`.
 
-![](/img/chrome_t4wfpemoyk.png)
+![Hello World!](/img/cmd_SHOGeflu9a.png "Hello World!")
 
 ## Adding More Versions of NodeJS (optional)
 
-To add a newer version of Node, we would do the following:
+To add a newer version of Node, we would do the following in Windows Terminal:
 
-1. `Install-NodeVersion 13`
-2. `Set-NodeVersion 13`
-3. Then,
+```
+nvm install node@12.16.2
+nvm use 12.16.2
+```
 
-   * `node -v` → `v13.12.0`
-   * `npm -v` → `6.14.4`
+Validate your newest install:
 
-To switch back to version 12, after this, we would once again use the command: `Set-NodeVersion 12`
+ `node -v` → `v12.16.2`\
+ `npm -v` → `6.14.4`
+
+To switch back to version 13, after this, we would once again use the command: `nvm use 13.12.0`.
+
+At any time, you can see your locally installed versions of NodeJS with `nvm ls`.
+
+![See local NodeJS versions](/img/cmd_RycmFqBtls.png "See local NodeJS versions")
 
 ## Installing Git
 
@@ -69,10 +110,11 @@ When the download completes, install using the defaults. No fuss. We can configu
 
 ![Happy install dialog](/img/Git-2.26.0-64-bit.tmp_gcNQ427NNs.png)
 
-When the installation completes. Open a new Powershell terminal as Administrator and enter the command `git --version`. It should output something like `git version 2.26.0.windows.1`.
+When the installation completes. Open a new PowerShell terminal as Administrator and enter the command `git --version`. It should output something like `git version 2.26.0.windows.1`.
 
 ## You're Finished!
-You have configured NVM to manage multiple versions of NodeJS and installed Git to allow effective versioning of your code. Congratulations!
+
+You have configured NVM to manage two versions of NodeJS. To top it off, you installed Git to make sure you never lose any of your code changes. Congratulations!
 
 <br />
 <br />
