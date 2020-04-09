@@ -11,7 +11,7 @@ import linkedin from '../img/social/linkedin.svg'
 export const ResumePageTemplate = ({ helmet, page, title, image, contentComponent }) => {
   const PageContent = contentComponent || Content;
   return (
-    <section className="section section--gradient">
+    <section className="section">
       {helmet || ''}
       <div className="container">
         <div className="columns">
