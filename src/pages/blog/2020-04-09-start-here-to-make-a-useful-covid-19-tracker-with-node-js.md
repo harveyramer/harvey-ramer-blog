@@ -64,24 +64,24 @@ npm install express axios --save
 
 ## Hello World!
 
-If you're feeling adventurous, create an empty **index.js** file in the terminal.
+Create an empty **index.js** file in the terminal.
 
 ```
+mkdir src
+cd src
 type null > index.js
 ```
 
 This command will display some errors as it creates your file, but it will succeed. This is a handy shortcut for creating files in code. It may come in handy later.
 
-You will see your file in the File Explorer. 
-
-For the rest, *the unadventurous*, create your file in the File Explorer, and name it **index.js**.
-
-![Creating a file in the Visual Studio Code File Explorer](/img/code_qfkuligdpw.png "Creating a file in the Visual Studio Code File Explorer")
+You will see your new `src` directory and file in the File Explorer. 
 
 Open your empty **index.js** file and let's start writing some code!
 
 ### Our First Code
+
 Copy and paste (Ctrl+C Ctrl+V) the following code, and save your **index.js** file.
+
 ```
 const express = require('express');
 const app = express();
@@ -92,7 +92,8 @@ app.get('/', (req, res) => res.send('Hello World!'));
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
 ```
 
-Next, open the package.json file and add `"start": "node index",` to the `scripts` block. The result should look like this:
+Next, open the **package.json** file and add `"start": "node src/index",` to the `scripts` block. The result should look like this:
+
 ```
 {
   "name": "covid19-tracker",
@@ -100,7 +101,7 @@ Next, open the package.json file and add `"start": "node index",` to the `scrip
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
+    "start": "node src/index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -112,11 +113,22 @@ Next, open the package.json file and add `"start": "node index",` to the `scrip
   }
 }
 ```
+Remember to save both your **index.js** and **package.json** files.
+
 ### Test the Hello World App
+
 In the Visual Studio Terminal, start the Express server via the NPM script we just created.
+
 ```
 npm start
 ```
+
+![Running server](/img/chrome_lgnp0rdpe8.png "Running server")
+
+Open <http://localhost:3000> in your browser.
+
+![Hello World in browser](/img/chrome_bqk5uaxq7h.png "Hello World in browser")
+
 
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
