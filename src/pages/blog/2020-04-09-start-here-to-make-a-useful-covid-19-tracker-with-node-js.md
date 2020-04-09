@@ -215,8 +215,13 @@ Next, we will add our Pug views: one for each page.
 cd src
 type nul > home.pug
 type nul > about.pug
+cd..
+mkdir public
+cd public
+type nul > style.css
+cd..
 ```
-You should see your new Pug files in the `src` directory.
+You should see your new Pug files in the `src` directory, and an empty **style.css** file in the `public` directory.
 
 
 
