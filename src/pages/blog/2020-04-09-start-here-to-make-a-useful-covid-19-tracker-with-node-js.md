@@ -14,8 +14,109 @@ tags:
   - tutorial
   - api
 ---
-\## Prerequisites
+## Prerequisites
 
 Before beginning this tutorial, you will need Node.js, NPM, Git, and Visual Studio Code installed. For help, use my tutorial on [configuring a development environment](/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
+
+## Getting Started
+
+Open your Windows Terminal (Type `cmd` in your Windows Start Menu to find it). Make a directory for your new app, and open it:
+
+```
+mkdir covid19-tracker
+cd covid19-tracker
+```
+
+Then, open it in Visual Studio Code:
+
+```
+code .
+```
+
+Then, open the Terminal in Visual Studio Code (``Ctrl+` ``).
+
+![Open the Terminal in Visual Studio Code](/img/code_qck1owdhjr.png "Open the Terminal in Visual Studio Code")
+
+In our terminal, we will initialize our new Node.js project.
+
+```
+npm init -y
+git init
+```
+
+![Initializing a new Node.js project](/img/code_vr7kovcecm.png "Initializing a new Node.js project")
+
+Now that we've initialized the project, we'll install some dependencies.
+
+## Install Express.js and Axios
+
+Express is a simple-to-use framework for building Web applications in Node.js. We will use it to handle our HTTP requests and direct URL routes to our Node.js functions. 
+
+Axios is a powerful tool for making requests to other servers. We will use Axios to retrieve our COVID-19 data from a public API.
+
+To do this, we will use our Visual Studio Code Terminal.
+
+```
+npm install express axios --save
+```
+
+![Installing express and axios](/img/code_cpv5ebkavw.png "Installing express and axios")
+
+## Hello World!
+
+If you're feeling adventurous, create an empty **index.js** file in the terminal.
+
+```
+type null > index.js
+```
+
+This command will display some errors as it creates your file, but it will succeed. This is a handy shortcut for creating files in code. It may come in handy later.
+
+You will see your file in the File Explorer. 
+
+For the rest, *the unadventurous*, create your file in the File Explorer, and name it **index.js**.
+
+![Creating a file in the Visual Studio Code File Explorer](/img/code_qfkuligdpw.png "Creating a file in the Visual Studio Code File Explorer")
+
+Open your empty **index.js** file and let's start writing some code!
+
+### Our First Code
+Copy and paste (Ctrl+C Ctrl+V) the following code, and save your **index.js** file.
+```
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => res.send('Hello World!'));
+
+app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+```
+
+Next, open the package.json file and add `"start": "node index",` to the `scripts` block. The result should look like this:
+```
+{
+  "name": "covid19-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1"
+  }
+}
+```
+### Test the Hello World App
+In the Visual Studio Terminal, start the Express server via the NPM script we just created.
+```
+npm start
+```
+
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
