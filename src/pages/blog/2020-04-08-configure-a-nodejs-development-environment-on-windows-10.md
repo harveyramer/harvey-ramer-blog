@@ -45,6 +45,7 @@ Now we can use our Chocolatey Package Manager to download and install [NVM](http
 This time, use Windows Terminal. Type \`cmd\` in the Windows Start Menu and choose "Run as Administrator".
 
 To install NVM, enter the command:
+
 ```
 choco install -y nvm
 ```
@@ -85,16 +86,18 @@ You are ready to write code to test Node.js!
 In your Windows Terminal, enter `node`. This will launch the Node REPL terminal. 
 
 In the terminal enter the command:
+
 ```
 console.log("Hello World!")
 ```
+
 Your "Hello World" statement will be printed to the terminal 
 
 Then, exit the REPL, by entering `.exit`.
 
 ![Hello World!](/img/cmd_SHOGeflu9a.png "Hello World!")
 
-## Adding More Versions of Node.js (optional)
+## Add More Versions of Node.js (optional)
 
 As I mentioned earlier, it is common to contribute to multiple Node.js projects requiring different versions of Node.js. For example, you could choose to write your own project in Node.js version **13.12.0**, but need to help another developer working on a project using Node.js **12.16.2**. This will help you with that problem.
 
@@ -116,7 +119,7 @@ At any time, you can see your locally installed versions of Node.js with `nvm ls
 
 ![See local Node.js versions](/img/cmd_RycmFqBtls.png "See local Node.js versions")
 
-## Installing Git
+## Install Git
 
 In most cases, you will write code that requires version control. For that purpose, nothing works better than Git. Let's do that before we wrap up. It will be easy. I promise. 
 
@@ -126,11 +129,34 @@ When the download completes, install using the defaults. No fuss. We can configu
 
 ![Happy install dialog](/img/Git-2.26.0-64-bit.tmp_gcNQ427NNs.png)
 
+
+
 When the installation completes. Open a new Windows Terminal and enter the command `git --version` → `git version 2.26.0.windows.1`. If you see a version as described, Git is configured correctly.
+
+## Install Visual Studio Code
+
+Visual Studio Code is my preferred development environment for Node.js. There are many excellent guides on [getting started](https://code.visualstudio.com/docs/introvideos/basics).
+
+In short, download the latest binary of [Visual Studio Code](https://code.visualstudio.com/) for windows.
+
+![Downloading Visual Studio Code](/img/chrome_9n74ygwamo.png "Downloading Visual Studio Code")
+
+When the download completes, install using the defaults. No fuss. 
+
+One final step, visit the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/VSCode), and install:
+
+* [Node.js Modules Intellisense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense)
+* [Node.js Extension Pack](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack)
+
+![Install Node.js Modules Intellisense](/img/chrome_rtjxzfmak7.png "Install Node.js Modules Intellisense")
+
+![Install Node.js Extension Pack](/img/chrome_1klnojkfy0.png "Install Node.js Extension Pack")
+
+When those are both installed, restart Visual Studio Code and poke around on to get a sense of the tools available to you.
 
 ## You're Finished!
 
-You have configured NVM to manage two versions of Node.js. To top it off, you installed Git to make sure you never lose any of your code changes. Congratulations!
+You have configured NVM to manage two versions of Node.js. You installed Git to make sure you never lose any of your code changes. To top it off, you added and configured your own code editor. Congratulations!
 
 I am working on several more Node.js tutorials that will make use of this one as a prerequisite. Come back in a few days for more.
 
