@@ -1,20 +1,20 @@
 ---
 templateKey: blog-post
-title: Configure a NodeJS Development Environment on Windows 10
+title: Configure a Node.js Development Environment on Windows 10
 date: 2020-04-08T22:36:23.975Z
 description: >-
-  Don't get lost in the woods on your way to learning NodeJS. Everything you
+  Don't get lost in the woods on your way to learning Node.js. Everything you
   need to get started writing server side JavaScript on Windows 10.
 featuredpost: false
 featuredimage: /img/brussels_zonienwoud.jpg
 tags:
   - software
-  - nodejs
+  - node.js
   - tutorial
 ---
 ## Overview
 
-If you want to learn programming, get set up can be a confusing barrier to entry. In this tutorial, I offer a straightforward way to install all the tools you will need to start working with NodeJS on Windows 10.
+If you want to learn programming, get set up can be a confusing barrier to entry. In this tutorial, I offer a straightforward way to install all the tools you will need to start working with Node.js on Windows 10.
 
 **Note**: When a simple command should produce an output of a certain type, you will see `command` → `output`. 
 
@@ -40,7 +40,7 @@ Expect output like this:
 
 ## Install Node Version Manager (NVM)
 
-Now we can use our Chocolatey Package Manager to download and install [NVM](https://github.com/nvm-sh/nvm/blob/master/README.md)! It is common to work on projects that require different versions of NodeJS. If we installed NodeJS directly, switching between such projects would present a conundrum. But NVM will make that an easy problem to solve.
+Now we can use our Chocolatey Package Manager to download and install [NVM](https://github.com/nvm-sh/nvm/blob/master/README.md)! It is common to work on projects that require different versions of Node.js. If we installed Node.js directly, switching between such projects would present a conundrum. But NVM will make that an easy problem to solve.
 
 This time, use Windows Terminal. Type \`cmd\` in the Windows Start Menu and choose "Run as Administrator".
 
@@ -57,11 +57,11 @@ Close that terminal window and open a new one (again, as Administrator). This al
 
 Try the command `nvm version` → `1.1.7`. If you get a numeric version result, we're good!
 
-Let's install NodeJS next.
+Let's install Node.js next.
 
-## Install NodeJS
+## Install Node.js
 
-Now we can use NVM to download and install [NodeJS](https://nodejs.org/en/about/)! Open the Windows Terminal again (you should not need Administrator privileges). Enter the command:
+Now we can use NVM to download and install [Node.js](https://nodejs.org/en/about/)! Open the Windows Terminal again (you should not need Administrator privileges). Enter the command:
 
 ```
 nvm install node@13.12.0
@@ -71,14 +71,14 @@ Expect output like this:
 
 ![](/img/cmd_pN3qtBIZHC.png)
 
-Before celebrating too much, let's set our default NodeJS version with the command, `nvm use 13.12.0`.
+Before celebrating too much, let's set our default Node.js version with the command, `nvm use 13.12.0`.
 
 Validate your install:
 
  `node -v` → `v13.12.0`\
  `npm -v` → `6.14.4`
 
-You are ready to write code to test NodeJS!
+You are ready to write code to test Node.js!
 
 ## Hello World!
 
@@ -94,9 +94,9 @@ Then, exit the REPL, by entering `.exit`.
 
 ![Hello World!](/img/cmd_SHOGeflu9a.png "Hello World!")
 
-## Adding More Versions of NodeJS (optional)
+## Adding More Versions of Node.js (optional)
 
-As I mentioned earlier, it is common to contribute to multiple NodeJS projects requiring different versions of NodeJS. For example, you could choose to write your own project in NodeJS version **13.12.0**, but need to help another developer working on a project using NodeJS **12.16.2**. This will help you with that problem.
+As I mentioned earlier, it is common to contribute to multiple Node.js projects requiring different versions of Node.js. For example, you could choose to write your own project in Node.js version **13.12.0**, but need to help another developer working on a project using Node.js **12.16.2**. This will help you with that problem.
 
 To add another version of Node, open Windows Terminal:
 
@@ -112,9 +112,9 @@ Validate your newest install:
 
 To switch back to version 13, after this, we would once again use the command: `nvm use 13.12.0`.
 
-At any time, you can see your locally installed versions of NodeJS with `nvm ls`.
+At any time, you can see your locally installed versions of Node.js with `nvm ls`.
 
-![See local NodeJS versions](/img/cmd_RycmFqBtls.png "See local NodeJS versions")
+![See local Node.js versions](/img/cmd_RycmFqBtls.png "See local Node.js versions")
 
 ## Installing Git
 
@@ -130,9 +130,9 @@ When the installation completes. Open a new Windows Terminal and enter the comma
 
 ## You're Finished!
 
-You have configured NVM to manage two versions of NodeJS. To top it off, you installed Git to make sure you never lose any of your code changes. Congratulations!
+You have configured NVM to manage two versions of Node.js. To top it off, you installed Git to make sure you never lose any of your code changes. Congratulations!
 
-I am working on several more NodeJS tutorials that will make use of this one as a prerequisite. Come back in a few days for more.
+I am working on several more Node.js tutorials that will make use of this one as a prerequisite. Come back in a few days for more.
 
 <br />
 <br />
