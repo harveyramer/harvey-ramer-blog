@@ -13,9 +13,9 @@ tags:
 ---
 ## Overview
 
-If you want to learn programming, configuring a development environment on Windows can be a confusing barrier to entry. In this tutorial, I offer a straightforward way to install all the tools needed to begin working with server side JavaScript using NodeJS.
+If you want to learn programming, get set up can be a confusing barrier to entry. In this tutorial, I offer a straightforward way to install all the tools you will need to start working with NodeJS on Windows 10.
 
-**Note**: When a command should produce an output of a certain type, you will see `command` → `output`. 
+**Note**: When a simple command should produce an output of a certain type, you will see `command` → `output`. 
 
 ## Install Chocolatey: the Windows Package Manager
 
