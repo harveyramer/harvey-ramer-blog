@@ -188,9 +188,9 @@ These pages don't look like much, but they demonstrate a fully functional Web se
 
 ![Our grown-up Hello World app with multiple routes](/img/chrome_r6cetpk0lp.png "Our grown-up Hello World app with multiple routes")
 
-## COVID-19 Tracker
+## Housekeeping: Versioning Our Code
 
- Now it's time to get real. We have created the framework on which our COVID-19 Tracker can be built. But before we move on, let's commit our files to Git so we can make changes without losing any of our past work. In Visual Studio Code Terminal make sure you are in the root of your project. The path in your terminal should look something like `C:\Users\hramer\covid19-tracker` and not like `C:\Users\hramer\covid19-tracker\src`. If it looks like the latter, `cd..` will fix your problem. 
+Before we move on to write some more substantial code, let's commit our files to Git so we can make changes without losing any of our past work. In Visual Studio Code Terminal make sure you are in the root of your project. The path in your terminal should look something like `C:\Users\hramer\covid19-tracker` and not like `C:\Users\hramer\covid19-tracker\src`. If it looks like the latter, `cd..` will fix your problem. 
 
 Let's commit our code changes.
 
@@ -200,5 +200,24 @@ git commit -m "A hello  world Web app"
 ```
 
 ![Adding files to Git](/img/code_e8crgvguuy.png "Adding files to Git")
+
+## COVID-19 Tracker
+
+Now it's time to get real. We have created the framework on which our COVID-19 Tracker can be built. Let's build the real thing!
+
+First, let's make this look more like a real Web app. In Visual Studio Code Terminal, let's add a library to help us manage our HTML.
+
+```
+npm install pug --save
+```
+Next, we will add our Pug views: one for each page.
+```
+cd src
+type nul > home.pug
+type nul > about.pug
+```
+You should see your new Pug files in the `src` directory.
+
+
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
