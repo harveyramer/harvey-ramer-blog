@@ -129,6 +129,45 @@ Open <http://localhost:3000> in your browser.
 
 ![Hello World in browser](/img/chrome_bqk5uaxq7h.png "Hello World in browser")
 
+### Handle Multiple Routes
+
+In your `src` directory, create a file named **routes.js**. In your terminal, if you are already in the `src` directory, do this.
+```
+type null > routes.js
+```
+Next, open your routes.js file, and paste this code:
+```
+var express = require('express');
+var router = express.Router();
+
+// Home page route.
+router.get('/', function (req, res) {
+  res.send('Hello World. Learn <a href="/about">about this app</a>');
+})
+
+// About page route.
+router.get('/about', function (req, res) {
+  res.send('About this COVID-19 Tracker. Go <a href="/">home</a>');
+})
+
+module.exports = router;
+```
+As you can see, this defines two routes. One at `/` and the other at `/about`.
+
+Open **index.js** and make the following changes.
+```
+const express = require('express');
+const routes = require('./routes');
+const app = express();
+const port = 3000;
+
+app.use('/', routes);
+
+app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+```
+With these changes, we are importing the `./routes` module we just created, and rather than implementing the router in this file, we are now configuring the application to use the router with an `app.use` function call.
+
+To 
 
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
