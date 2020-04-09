@@ -7,7 +7,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-feed',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
@@ -31,7 +30,7 @@ module.exports = {
         path: `${__dirname}/src/img`,
         name: 'images',
       },
-    },
+    }, 
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -73,7 +72,7 @@ module.exports = {
       options: {
         develop: true, // Activates purging in npm run develop
         purgeOnly: ['/all.sass'], // applies purging only on the bulma css file
-        whitelist: ['blockquote']
+        whitelist: ['blockquote', 'code', 'pre'],
       },
     }, // must be after other CSS plugins
     {
