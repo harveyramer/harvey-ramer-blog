@@ -129,6 +129,8 @@ Open <http://localhost:3000> in your browser.
 
 ![Hello World in browser](/img/chrome_bqk5uaxq7h.png "Hello World in browser")
 
+Ok. Now that you've tested your app, let's shut down your server. In the terminal, `Ctrl+C` and your server will stop running.
+
 ### Handle Multiple Routes
 
 In your `src` directory, create a file named **routes.js**. In your terminal, if you are already in the `src` directory, do this.
@@ -167,7 +169,17 @@ app.listen(port, () => console.log(`Example app listening at http://localhost:${
 ```
 With these changes, we are importing the `./routes` module we just created, and rather than implementing the router in this file, we are now configuring the application to use the router with an `app.use` function call.
 
-To 
+To test these changes we will start our server again.
+```
+npm start
+```
+Open http://localhost:3000 in your browser and click the **about this app** link to load the **About** page.
+
+These pages don't look like much, but they demonstrate a fully functional Web server responding to HTTP requests. This the foundation on which the Web is built!
+
+## COVID-19 Tracker
+
+ 
 
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
