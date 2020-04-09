@@ -80,7 +80,7 @@ export default class EmailSignup extends React.Component {
                                     </div>
                                 </div>
                                 <div class="field">
-                                    <label htmlFor="email" class="label">Email</label>
+                                    <label htmlFor="email" class="label">Email (required)</label>
                                     <div class="control">
                                         <input id="email" class="input" type="email" name="EMAIL" value={this.state.EMAIL} onChange={this.handleChange} />
                                     </div>
