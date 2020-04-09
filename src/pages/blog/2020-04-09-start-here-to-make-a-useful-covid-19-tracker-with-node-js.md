@@ -213,6 +213,8 @@ npm install pug --save
 Next, we will add our Pug views: one for each page.
 ```
 cd src
+mdkir views
+cd views
 type nul > home.pug
 type nul > about.pug
 cd..
@@ -221,7 +223,7 @@ cd public
 type nul > style.css
 cd..
 ```
-You should see your new Pug files in the `src` directory, and an empty **style.css** file in the `public` directory.
+You should see your new Pug files in the `src/views` directory, and an empty **style.css** file in the `src/public` directory.
 
 
 
