@@ -14,7 +14,8 @@ tags:
   - tutorial
   - api
 ---
-Test
+\## Prerequisites
 
+Before beginning this tutorial, you will need Node.js, NPM, Git, and Visual Studio Code installed. For help, use my tutorial on [configuring a development environment](/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
