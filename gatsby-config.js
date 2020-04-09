@@ -30,7 +30,7 @@ module.exports = {
         path: `${__dirname}/src/img`,
         name: 'images',
       },
-    }, 
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -100,6 +100,12 @@ module.exports = {
         // sampleRate: 5,
         // siteSpeedSampleRate: 10,
         cookieDomain: "harveyramer.com",
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://harveyramer.us5.list-manage.com/subscribe/post?u=2869b8f44e0357dd55570c534&amp;id=269b82f15c',
       },
     },
     'gatsby-plugin-netlify', // make sure to keep it last in the array

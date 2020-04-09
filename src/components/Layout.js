@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import EmailSignup from '../components/EmailSignup'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
@@ -48,6 +49,7 @@ const TemplateWrapper = ({ children }) => {
         <Navbar />
         <div>{children}</div>
       </div>
+      <EmailSignup />
       <Footer />
     </div>
   )
