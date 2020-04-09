@@ -3,8 +3,8 @@ templateKey: blog-post
 title: Configure a NodeJS Development Environment on Windows 10
 date: 2020-04-08T22:36:23.975Z
 description: >-
-  Everything you need to get started writing server side JavaScript on Windows
-  10.
+  Don't get lost in the woods on your way to learning NodeJS. Everything you
+  need to get started writing server side JavaScript on Windows 10.
 featuredpost: false
 featuredimage: /img/brussels_zonienwoud.jpg
 tags:
