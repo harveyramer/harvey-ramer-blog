@@ -606,7 +606,7 @@ I hit you hard with this tutorial. We have introduced
 * compiling HTML with dynamic data via Pug
 * requesting data from an API with Axios
 
-You may have found interesting jumping-off-places to learn more, and I hope you did. You should have your first Web application running. Let me know if you succeeded or if you need help. 
+You may have found interesting jumping-off-places to learn more, and I hope you did. You should have your first Web application running. [Let me know if you succeeded or if you need help](/contact). 
 
 What should to improve the utility of this demonstration application? Make a list of things, and give it a try. Keep coding. It's always a challenge, but it gets easier.
 
