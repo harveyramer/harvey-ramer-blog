@@ -274,8 +274,8 @@ section {
 .card .count {
     font-weight: bold;
     text-align: center;
-    padding: 2rem 0;
-    font-size: 3rem;
+    padding: 1rem 0;
+    font-size: 1.25rem;
 }
 .card .new,
 .card .total {
@@ -305,6 +305,7 @@ section {
         max-width: calc(25% - 1em);
     }
 }
+
 ```
 
 Copy the code below into your **layout.pug** file and save it.
