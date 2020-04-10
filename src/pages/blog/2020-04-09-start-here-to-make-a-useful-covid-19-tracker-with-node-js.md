@@ -37,7 +37,7 @@ Then, open the Terminal in Visual Studio Code (``Ctrl+` ``).
 
 ![Open the Terminal in Visual Studio Code](/img/code_qck1owdhjr.png "Open the Terminal in Visual Studio Code")
 
-In our terminal, we will initialize our new Node.js project.
+In our terminal, we will initialize our new [Node.js](http://nodejs.org/) project using [NPM](https://www.npmjs.com/) and [Git](https://git-scm.com/).
 
 ```
 npm init -y
@@ -48,11 +48,13 @@ git init
 
 Now that we've initialized the project, we'll install some dependencies.
 
-## Install Express.js and Axios
+## Install Express.js, Axios, and Pug
 
-Express is a simple-to-use framework for building Web applications in Node.js. We will use it to handle our HTTP requests and direct URL routes to our Node.js functions. 
+[Express ](https://expressjs.com/)is a simple-to-use framework for building Web applications in Node.js. We will use it to handle our HTTP requests and direct URL routes to our Node.js functions. 
 
-Axios is a powerful tool for making requests to other servers. We will use Axios to retrieve our COVID-19 data from a public API.
+[Axios](https://github.com/axios/axios) is a powerful tool for making requests to other servers. We will use Axios to retrieve our COVID-19 data from a public API.
+
+[Pug](https://pugjs.org/api/getting-started.html) compiles data to HTML. It will be useful.
 
 To do this, we will use our Visual Studio Code Terminal.
 
@@ -598,5 +600,20 @@ This code makes an asynchronous call to the COVID-19 API and returns the data fo
 ## What We Have Learned
 
 I hit you hard with this tutorial. We have introduced 
+
+* installing Node.js packages via NPM
+* using Git to version code
+* using Express.js as a Web server
+* styling HTML with CSS
+* compiling HTML with dynamic data via Pug
+* requesting data from an API with Axios
+
+You may have found interesting jumping-off-places to learn more, and I hope you did. You should have your first Web application running. Let me know if you succeeded or if you need help. 
+
+What should to improve the utility of this demonstration application? Make a list of things, and give it a try. Keep coding. It's always a challenge, but it gets easier.
+
+
+
+
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
