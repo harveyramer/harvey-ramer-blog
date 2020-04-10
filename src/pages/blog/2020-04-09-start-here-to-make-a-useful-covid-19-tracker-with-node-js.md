@@ -211,7 +211,7 @@ git commit -m "A hello  world Web app"
 
 We have created the framework we need to build our COVID-19 Tracker. Let's build the real thing!
 
-First, let's make this look more like a real Web app. In Visual Studio Code Terminal, let's use a library called Pug to help us manage our HTML. We used NPM to install Pug when we started this tutorial.
+First, we should make this look more like a real Web app. In Visual Studio Code Terminal, let's use a library called Pug to help us manage our HTML. We used NPM to install Pug when we started this tutorial.
 
 You can learn more about [getting started with Pug](https://pugjs.org/api/getting-started.html). 
 
@@ -448,20 +448,20 @@ block content
 
 There is quite a bit going on in these files, feel free to investigate to your heart's content. We are going on to bigger things.
 
-First, stop your server if it's running (Ctrl+C in the Visual Studio Code Terminal) and restart it (`npm start`). When you browse to [localhost:3000](http://localhost:3000), you should see something like the view below.
+To validate your work, stop your server if it's running (Ctrl+C in the Visual Studio Code Terminal) and restart it (`npm start`). When you browse to [localhost:3000](http://localhost:3000), you should see something like the view below.
 
 ![Static data mocking up the user interface](/img/chrome_sxmi7gwakd.png "Static data mocking up the user interface")
 
-This data is static. We added it inside the **home.pug** file. Next we will get real data from an API.
+This COVID-19 data is static. We added it inside the **home.pug** file. Next we will get real data from an API.
 
-Before we move on, let's commit our changes. Navigate to the root directory of your project (see above, Housekeeping: Versioning Our Code).
+It is time to preserve all of this hard work. Navigate to the root directory of your project (see above, Housekeeping: Versioning Our Code).
 
 ```
 git add .
 git commit -m "Static files mocking up our COVID-19 data"
 ```
 
-## Setting the Stage for Real Data
+## Getting Ready for Real Data
 
 Open the **routes.js** file and replace the Home Page Route with this code.
 
