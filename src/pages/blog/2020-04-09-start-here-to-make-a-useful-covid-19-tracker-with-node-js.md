@@ -229,8 +229,7 @@ You should see your new Pug files in the `src/views` directory, and an empty **s
 
 Copy the code below into your **style.css** file and save it.
 
-```
-html,
+```html,
 body {
     margin: 0;
     padding: 0;
@@ -265,7 +264,7 @@ section {
     overflow: hidden;
 }
 .row > * {
-    width: 50%;
+    width: 33.33%;
     float: left;
 }
 .card h4 {
@@ -293,18 +292,23 @@ section {
     color: #fff;
     background-color: #000;
 }
+.card .recovered .total {
+    color: #fff;
+    background-color: green;
+}
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 70em) {
     .card {
         max-width: calc(50% - 1em);
     }
 }
 
-@media screen and (min-width: 90em) {
+@media screen and (min-width: 110em) {
     .card {
         max-width: calc(25% - 1em);
     }
 }
+
 
 ```
 
@@ -365,6 +369,15 @@ block content
                             .total
                                 h4 Total
                                 .count 3
+                    .recovered
+                        h3 Recovered
+                        .row
+                            .new 
+                                h4 New
+                                .count 1
+                            .total
+                                h4 Total
+                                .count 3
             .card
                 h3 United States
                 .row
@@ -386,11 +399,20 @@ block content
                             .total
                                 h4 Total
                                 .count 3
+                    .recovered
+                        h3 Recovered
+                        .row
+                            .new 
+                                h4 New
+                                .count 1
+                            .total
+                                h4 Total
+                                .count 3
             .card
                 h3 Germany
                 .row
                     .cases
-                        h3 Confirmed Cases
+                        h3 Confirmed
                         .row
                             .new 
                                 h4 New
@@ -400,6 +422,15 @@ block content
                                 .count 24
                     .deaths
                         h3 Deaths
+                        .row
+                            .new 
+                                h4 New
+                                .count 1
+                            .total
+                                h4 Total
+                                .count 3
+                    .recovered
+                        h3 Recovered
                         .row
                             .new 
                                 h4 New
@@ -428,6 +459,111 @@ git commit -m "Static files mocking up our COVID-19 data"
 
 ## Loading Data from the COVID-19 API
 
+Open the **routes.js** file and replace the Home Page Route with this code.
+```
+// Home page route.
+router.get('/', (req, res) => {
+  const countries = [
+      {
+          "Country": "ALA Aland Islands",
+          "CountryCode": "AX",
+          "Slug": "ala-aland-islands",
+          "NewConfirmed": 0,
+          "TotalConfirmed": 0,
+          "NewDeaths": 0,
+          "TotalDeaths": 0,
+          "NewRecovered": 0,
+          "TotalRecovered": 0,
+          "Date": "2020-04-09T23:21:34Z"
+      },
+      {
+          "Country": "Afghanistan",
+          "CountryCode": "AF",
+          "Slug": "afghanistan",
+          "NewConfirmed": 21,
+          "TotalConfirmed": 444,
+          "NewDeaths": 0,
+          "TotalDeaths": 14,
+          "NewRecovered": 11,
+          "TotalRecovered": 29,
+          "Date": "2020-04-09T23:21:34Z"
+      },
+      {
+          "Country": "Albania",
+          "CountryCode": "AL",
+          "Slug": "albania",
+          "NewConfirmed": 17,
+          "TotalConfirmed": 400,
+          "NewDeaths": 0,
+          "TotalDeaths": 22,
+          "NewRecovered": 23,
+          "TotalRecovered": 154,
+          "Date": "2020-04-09T23:21:34Z"
+      },
+      {
+          "Country": "Algeria",
+          "CountryCode": "DZ",
+          "Slug": "algeria",
+          "NewConfirmed": 104,
+          "TotalConfirmed": 1572,
+          "NewDeaths": 12,
+          "TotalDeaths": 205,
+          "NewRecovered": 124,
+          "TotalRecovered": 237,
+          "Date": "2020-04-09T23:21:34Z"
+      },
+  ];
+  res.render("home", {
+    appName: "My COVID-19 Tracker",
+    pageName: "COVID-19 Cases",
+    data: countries,
+  });
+});
+```
+The **routes.js** file now creates an array (list) of country objects with the properties, _Country_, _CountryCode_, _Slug_, _NewConfirmed_, _TotalConfirmed_, _NewDeaths_, _TotalDeaths_, _NewRecovered_, _TotalRecovered_, and _Date_. We will use most of these properties in our view.
 
+Now we need to update the **home.pug** file to take this list of data instead of our hard-coded one. Replace the contents of that file with the code below.
+```
+extends layout
+
+block content
+    .centered
+        .cards
+            each val, index in data
+                .card
+                    h2 #{val.Country}
+                    i As of #{val.Date.split('T')[0]}
+                    .row
+                        .cases
+                            h3 Confirmed
+                            .row
+                                .new 
+                                    h4 New
+                                    .count #{val.NewConfirmed}
+                                .total 
+                                    h4 Total
+                                    .count  #{val.TotalConfirmed}
+                        .deaths
+                            h3 Deaths
+                            .row
+                                .new 
+                                    h4 New
+                                    .count  #{val.NewDeaths}
+                                .total
+                                    h4 Total
+                                    .count  #{val.TotalDeaths}
+                        .recovered
+                            h3 Recovered
+                            .row
+                                .new 
+                                    h4 New
+                                    .count  #{val.NewRecovered}
+                                .total
+                                    h4 Total
+                                    .count  #{val.TotalRecovered}
+    p Visit the  
+        a(href='/about') about page
+```
+This view now uses **iteration** to loop over each of the records in the country list we passed to it in **routes.js**.
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
