@@ -210,6 +210,7 @@ First, let's make this look more like a real Web app. In Visual Studio Code Term
 If you are interested, you can learn more about [getting started with Pug](https://pugjs.org/api/getting-started.html). 
 
 Let's add our Pug views: one for each page, and a layout helper to manage the code shared by both views.
+
 ```
 cd src
 mdkir views
@@ -223,9 +224,11 @@ cd public
 type nul > style.css
 cd..
 ```
+
 You should see your new Pug files in the `src/views` directory, and an empty **style.css** file in the `src/public` directory.
 
 Copy the code below into your **style.css** file and save it.
+
 ```
 html,
 body {
@@ -302,10 +305,10 @@ section {
         max-width: calc(25% - 1em);
     }
 }
-
 ```
 
 Copy the code below into your **layout.pug** file and save it.
+
 ```
 html
     head
@@ -321,6 +324,7 @@ html
 ```
 
 Copy the code below into your **about.pug** file and save it.
+
 ```
 extends layout
 
@@ -332,6 +336,7 @@ block content
 ```
 
 Copy the code below into you **home.pug** file and save it.
+
 ```
 extends layout
 
@@ -403,15 +408,18 @@ block content
                                 .count 3
     p Visit the  
         a(href='/about') about page
-
 ```
+
 There is quite a bit going on in these files, feel free to investigate to your heart's content. We are going on to bigger things.
 
 First, stop your server if it's running (Ctrl+C in the Visual Studio Code Terminal) and restart it (`npm start`). When you browse to [localhost:3000](http://localhost:3000), you should see something like the view below.
 
+![Static data mocking up the user interface](/img/code_g6t8g9eju5.png "Static data mocking up the user interface")
 
+This data is static. We added it inside the \*\*home.pug\*\* file. Next we will get real data from an API.
 
 ## Loading Data from the COVID-19 API
+
 
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
