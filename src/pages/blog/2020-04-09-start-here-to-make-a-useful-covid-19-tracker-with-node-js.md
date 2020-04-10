@@ -3,9 +3,8 @@ templateKey: blog-post
 title: Start Here to Make a Useful COVID-19 Tracker with Node.js
 date: 2020-04-09T16:57:36.723Z
 description: >-
-  Why not let worry spur you to action? Learn Node.js while building a simple
-  Web application that loads the latest COVID-19 statistics from a public REST
-  API. Don't worry, we'll make it simple and fun.
+  Why not let worry spur you to action? Let's build a Web application to display
+  the latest COVID-19 statistics. Don't worry, we'll make it simple and fun.
 featuredpost: false
 featuredimage: /img/stop_coronavirus_covid-19.jpg
 tags:
@@ -16,7 +15,7 @@ tags:
 ---
 ## Prerequisites
 
-Before beginning this tutorial, you will need Node.js, NPM, Git, and Visual Studio Code installed. For help, use my tutorial on [configuring a development environment](/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
+Before beginning this tutorial, you will need [Node.js](https://nodejs.org/), [NPM](https://npmjs.org), [Git](https://git-scm.org), and [Visual Studio Code](https://code.visualstudio.com/) installed. For help, use my tutorial on [configuring a development environment](/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
 
 ## Getting Started
 
@@ -37,7 +36,7 @@ Then, open the Terminal in Visual Studio Code (``Ctrl+` ``).
 
 ![Open the Terminal in Visual Studio Code](/img/code_qck1owdhjr.png "Open the Terminal in Visual Studio Code")
 
-In our terminal, we will initialize our new [Node.js](http://nodejs.org/) project using [NPM](https://www.npmjs.com/) and [Git](https://git-scm.com/).
+In our terminal, we will initialize our new project.
 
 ```
 npm init -y
@@ -120,7 +119,7 @@ Remember to save both your **index.js** and **package.json** files.
 
 ### Test the Hello World App
 
-In the Visual Studio Terminal, start the Express server via the NPM script we just created.
+In the Visual Studio Terminal, start the Express server via the NPM script we created.
 
 ```
 npm start
@@ -142,7 +141,7 @@ In your `src` directory, create a file named **routes.js**. In your terminal, if
 type null > routes.js
 ```
 
-Next, open your routes.js file, and paste this code:
+Next, open your **routes.js** file, and paste this code:
 
 ```
 var express = require('express');
@@ -175,8 +174,7 @@ app.use('/', routes);
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
 ```
-
-With these changes, we are importing the `./routes` module we just created, and rather than implementing the router in this file, we are now configuring the application to use the router with an `app.use` function call.
+Above, we are importing our new **routes.js** file as a module. We have also configured the application to use our **routes.js** module with an `app.use` function call.
 
 To test these changes we will start our server again.
 
@@ -186,7 +184,7 @@ npm start
 
 Open http://localhost:3000 in your browser and click the **about this app** link to load the **About** page.
 
-These pages don't look like much, but they demonstrate a fully functional Web server responding to HTTP requests. This the foundation on which the Web is built!
+These simple pages demonstrate a fully-functioning Web server responding to HTTP requests. This the foundation on which the Web is built!
 
 ![Our grown-up Hello World app with multiple routes](/img/chrome_r6cetpk0lp.png "Our grown-up Hello World app with multiple routes")
 
@@ -574,7 +572,7 @@ The view created in **home.pug** now uses ***iteration*** to loop over each of t
 
 We are almost done with our COVID-19 Dashboard. 
 
-Open the routes.js file, and replace the entire Home Page Route (including that big *countries* array) with the following code.
+Open the **routes.js** file, and replace the entire Home Page Route (including that big *countries* array) with the following code.
 
 ```javascript
 // Home page route.
