@@ -19,7 +19,7 @@ Before beginning this tutorial, you will need [Node.js](https://nodejs.org/), [N
 
 ## Getting Started
 
-Open your Windows Terminal (Type `cmd` in your Windows Start Menu to find it). Make a directory for your new app, and open it:
+Open your Terminal (Windows users type `cmd` in your Windows Start Menu to find it). Make a directory for your new app, and open it:
 
 ```
 mkdir covid19-tracker
@@ -70,7 +70,7 @@ Create an empty **index.js** file in the terminal.
 ```
 mkdir src
 cd src
-type null > index.js
+echo NUL > index.js
 ```
 
 This command will display some errors as it creates your file, but it will succeed. This is a handy shortcut for creating files in code. It may come in handy later.
@@ -138,7 +138,7 @@ Ok. Now that you've tested your app, let's shut down your server. In the termina
 In your `src` directory, create a file named **routes.js**. In your terminal, if you are already in the `src` directory, do this.
 
 ```
-type null > routes.js
+echo NUL > routes.js
 ```
 
 Next, open your **routes.js** file, and paste this code:
@@ -215,13 +215,13 @@ Let's add our Pug views: one for each page, and a layout helper to manage the co
 cd src
 mdkir views
 cd views
-type nul > home.pug
-type nul > about.pug
-type nul > layout.pug
+echo NUL > home.pug
+echo NUL > about.pug
+echo NUL > layout.pug
 cd..
 mkdir public
 cd public
-type nul > style.css
+echo NUL > style.css
 cd..
 ```
 
