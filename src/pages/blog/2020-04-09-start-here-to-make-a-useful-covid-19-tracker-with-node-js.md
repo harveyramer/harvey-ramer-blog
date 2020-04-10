@@ -308,8 +308,6 @@ section {
         max-width: calc(25% - 1em);
     }
 }
-
-
 ```
 
 Copy the code below into your **layout.pug** file and save it.
@@ -446,7 +444,7 @@ There is quite a bit going on in these files, feel free to investigate to your h
 
 First, stop your server if it's running (Ctrl+C in the Visual Studio Code Terminal) and restart it (`npm start`). When you browse to [localhost:3000](http://localhost:3000), you should see something like the view below.
 
-![Static data mocking up the user interface](/img/code_g6t8g9eju5.png "Static data mocking up the user interface")
+![Static data mocking up the user interface](/img/chrome_sxmi7gwakd.png "Static data mocking up the user interface")
 
 This data is static. We added it inside the **home.pug** file. Next we will get real data from an API.
 
@@ -460,6 +458,7 @@ git commit -m "Static files mocking up our COVID-19 data"
 ## Loading Data from the COVID-19 API
 
 Open the **routes.js** file and replace the Home Page Route with this code.
+
 ```
 // Home page route.
 router.get('/', (req, res) => {
@@ -520,9 +519,11 @@ router.get('/', (req, res) => {
   });
 });
 ```
-The **routes.js** file now creates an array (list) of country objects with the properties, _Country_, _CountryCode_, _Slug_, _NewConfirmed_, _TotalConfirmed_, _NewDeaths_, _TotalDeaths_, _NewRecovered_, _TotalRecovered_, and _Date_. We will use most of these properties in our view.
+
+The **routes.js** file now creates an array (list) of country objects with the properties, *Country*, *CountryCode*, *Slug*, *NewConfirmed*, *TotalConfirmed*, *NewDeaths*, *TotalDeaths*, *NewRecovered*, *TotalRecovered*, and *Date*. We will use most of these properties in our view.
 
 Now we need to update the **home.pug** file to take this list of data instead of our hard-coded one. Replace the contents of that file with the code below.
+
 ```
 extends layout
 
@@ -564,6 +565,7 @@ block content
     p Visit the  
         a(href='/about') about page
 ```
+
 This view now uses **iteration** to loop over each of the records in the country list we passed to it in **routes.js**.
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
