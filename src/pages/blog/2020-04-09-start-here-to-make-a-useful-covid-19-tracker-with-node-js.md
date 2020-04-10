@@ -610,8 +610,7 @@ You may have found interesting jumping-off-places to learn more, and I hope you 
 
 What should to improve the utility of this demonstration application? Make a list of things, and give it a try. Keep coding. It's always a challenge, but it gets easier.
 
-
-
-
+<br />
+<br />
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
