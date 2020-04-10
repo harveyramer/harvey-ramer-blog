@@ -209,7 +209,7 @@ git commit -m "A hello  world Web app"
 
 ## COVID-19 Tracker
 
-Now it's time to get real. We have created the framework we need to build our COVID-19 Tracker. Let's build the real thing!
+We have created the framework we need to build our COVID-19 Tracker. Let's build the real thing!
 
 First, let's make this look more like a real Web app. In Visual Studio Code Terminal, let's use a library called Pug to help us manage our HTML. We used NPM to install Pug when we started this tutorial.
 
