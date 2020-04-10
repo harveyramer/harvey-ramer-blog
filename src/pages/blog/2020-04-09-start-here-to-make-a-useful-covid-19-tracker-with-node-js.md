@@ -572,10 +572,31 @@ The view created in **home.pug** now uses ***iteration*** to loop over each of t
 
 We are almost done with our COVID-19 Dashboard. 
 
-Open the routes.js file, and replace the entire Home Page Route with the following code.
+Open the routes.js file, and replace the entire Home Page Route (including that big *countries* array) with the following code.
 
 ```javascript
-test
+// Home page route.
+router.get('/', (req, res) => {
+  const apiUrl = "https://api.covid19api.com/summary";
+  const countries = axios.get(apiUrl).then((response) => {
+      res.render("home", {
+        appName: "My COVID-19 Tracker",
+        pageName: "COVID-19 Cases",
+        data: response.data.Countries,
+      });
+    })
+    .catch(function (err) {
+      return console.error(err);
+    });
+});
 ```
+
+This code makes an asynchronous call to the COVID-19 API and returns the data for our view. When you restart your server and browse to [localhost:3000](http://localhost:3000), you should see something like this.
+
+![A list of COVID-19 cases by country](/img/chrome_8yyl9m8idf.png "A list of COVID-19 cases by country")
+
+## What We Have Learned
+
+I hit you hard with this tutorial. We have introduced 
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
