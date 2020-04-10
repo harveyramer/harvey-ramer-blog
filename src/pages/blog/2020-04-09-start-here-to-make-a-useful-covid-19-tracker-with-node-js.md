@@ -416,7 +416,14 @@ First, stop your server if it's running (Ctrl+C in the Visual Studio Code Termin
 
 ![Static data mocking up the user interface](/img/code_g6t8g9eju5.png "Static data mocking up the user interface")
 
-This data is static. We added it inside the \*\*home.pug\*\* file. Next we will get real data from an API.
+This data is static. We added it inside the **home.pug** file. Next we will get real data from an API.
+
+Before we move on, let's commit our changes. Navigate to the root directory of your project (see above, Housekeeping: Versioning Our Code).
+
+```
+git add .
+git commit -m "Static files mocking up our COVID-19 data"
+```
 
 ## Loading Data from the COVID-19 API
 
