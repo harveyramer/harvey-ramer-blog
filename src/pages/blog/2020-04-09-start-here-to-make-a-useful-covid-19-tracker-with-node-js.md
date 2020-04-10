@@ -57,7 +57,7 @@ Axios is a powerful tool for making requests to other servers. We will use Axios
 To do this, we will use our Visual Studio Code Terminal.
 
 ```
-npm install express axios --save
+npm install express axios pug --save
 ```
 
 ![Installing express and axios](/img/code_cpv5ebkavw.png "Installing express and axios")
@@ -205,14 +205,11 @@ git commit -m "A hello  world Web app"
 
 Now it's time to get real. We have created the framework on which our COVID-19 Tracker can be built. Let's build the real thing!
 
-First, let's make this look more like a real Web app. In Visual Studio Code Terminal, let's add a library to help us manage our HTML.
+First, let's make this look more like a real Web app. In Visual Studio Code Terminal, let's use a library called Pug to help us manage our HTML. We used NPM to install Pug when we started this tutorial.
 
-```
-npm install pug --save
-```
 If you are interested, you can learn more about [getting started with Pug](https://pugjs.org/api/getting-started.html). 
 
-Next, we will add our Pug views: one for each page.
+Let's add our Pug views: one for each page, and a layout helper to manage the code shared by both views.
 ```
 cd src
 mdkir views
@@ -228,6 +225,193 @@ cd..
 ```
 You should see your new Pug files in the `src/views` directory, and an empty **style.css** file in the `src/public` directory.
 
+Copy the code below into your **style.css** file and save it.
+```
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+section {
+    padding: 1rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1rem 0.25em;
+    padding: 0.5rem 1rem 1rem;
+    background-color: #e5e5e5;
+    border-radius: 0.5rem;
+}
+.row {
+    overflow: hidden;
+}
+.row > * {
+    width: 50%;
+    float: left;
+}
+.card h4 {
+    margin: 0;
+}
+.card .count {
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 3rem;
+}
+.card .new,
+.card .total {
+    width: 48%;
+    margin-right: 2%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.card .new {
+    background-color: #fff;
+}
+.card .total {
+    color: #fff;
+    background-color: #000;
+}
+
+@media screen and (min-width: 40em) {
+    .card {
+        max-width: calc(50% - 1em);
+    }
+}
+
+@media screen and (min-width: 90em) {
+    .card {
+        max-width: calc(25% - 1em);
+    }
+}
+
+```
+
+Copy the code below into your **layout.pug** file and save it.
+```
+html
+    head
+        title #{appName}
+        style
+            include ../public/style.css
+    body
+        .container
+            h1 #{pageName}
+
+            block content
+                p This page doesn't have any content yet.
+```
+
+Copy the code below into your **about.pug** file and save it.
+```
+extends layout
+
+block content
+    p This COVID-19 Tracker uses the publicly available REST API provided by 
+        a(href='https://www.covid19api.com') covid19api.com
+    p Visit the  
+        a(href='/') home page
+```
+
+Copy the code below into you **home.pug** file and save it.
+```
+extends layout
+
+block content
+    .centered
+        .cards
+            .card
+                h2 Afghanistan
+                .row
+                    .cases
+                        h3 Confirmed Cases
+                        .row
+                            .new 
+                                h4 New
+                                .count 6
+                            .total 
+                                h4 Total
+                                .count 24
+                    .deaths
+                        h3 Deaths
+                        .row
+                            .new 
+                                h4 New
+                                .count 1
+                            .total
+                                h4 Total
+                                .count 3
+            .card
+                h3 United States
+                .row
+                    .cases
+                        h3 Confirmed Cases
+                        .row
+                            .new 
+                                h4 New
+                                .count 6
+                            .total 
+                                h4 Total
+                                .count 24
+                    .deaths
+                        h3 Deaths
+                        .row
+                            .new 
+                                h4 New
+                                .count 1
+                            .total
+                                h4 Total
+                                .count 3
+            .card
+                h3 Germany
+                .row
+                    .cases
+                        h3 Confirmed Cases
+                        .row
+                            .new 
+                                h4 New
+                                .count 6
+                            .total 
+                                h4 Total
+                                .count 24
+                    .deaths
+                        h3 Deaths
+                        .row
+                            .new 
+                                h4 New
+                                .count 1
+                            .total
+                                h4 Total
+                                .count 3
+    p Visit the  
+        a(href='/about') about page
+
+```
+There is quite a bit going on in these files, feel free to investigate to your heart's content. We are going on to bigger things.
+
+First, stop your server if it's running (Ctrl+C in the Visual Studio Code Terminal) and restart it (`npm start`). When you browse to [localhost:3000](http://localhost:3000), you should see something like the view below.
+
+
+
+## Loading Data from the COVID-19 API
 
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
