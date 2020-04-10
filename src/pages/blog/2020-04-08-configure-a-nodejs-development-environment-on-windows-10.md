@@ -159,7 +159,7 @@ When those are both installed, restart Visual Studio Code and poke around on to 
 
 You have configured NVM to manage two versions of Node.js. You installed Git to make sure you never lose any of your code changes. To top it off, you added and configured your own code editor. Congratulations!
 
-I am working on several more Node.js tutorials that will make use of this one as a prerequisite. Come back in a few days for more. 
+Ready for a new challenge? [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/).
 
 And please [contact me](/contact) if you have any questions or feedback. 
 
