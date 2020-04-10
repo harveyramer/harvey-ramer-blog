@@ -15,11 +15,17 @@ tags:
 ---
 ## Prerequisites
 
-Before beginning this tutorial, you will need [Node.js](https://nodejs.org/), [NPM](https://npmjs.org), [Git](https://git-scm.org), and [Visual Studio Code](https://code.visualstudio.com/) installed. For help, use my tutorial on [configuring a development environment](/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
+Before beginning this tutorial, you will need these tools installed:
+  * [Node.js](https://nodejs.org/)
+  * [NPM](https://npmjs.org)
+  * [Git](https://git-scm.org)
+  * [Visual Studio Code](https://code.visualstudio.com/)
+
+For help, use my tutorial on [configuring a development environment](/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
 
 ## Getting Started
 
-Open your Windows Terminal (Type `cmd` in your Windows Start Menu to find it). Make a directory for your new app, and open it:
+Open your Terminal (Windows users type `cmd` in your Start Menu to find it). Make a directory for your new app, and open it:
 
 ```
 mkdir covid19-tracker
@@ -70,7 +76,7 @@ Create an empty **index.js** file in the terminal.
 ```
 mkdir src
 cd src
-type null > index.js
+echo NUL > index.js
 ```
 
 This command will display some errors as it creates your file, but it will succeed. This is a handy shortcut for creating files in code. It may come in handy later.
@@ -133,12 +139,12 @@ Open <http://localhost:3000> in your browser.
 
 Ok. Now that you've tested your app, let's shut down your server. In the terminal, `Ctrl+C` and your server will stop running.
 
-### Handle Multiple Routes
+### Handle Two Different Routes
 
 In your `src` directory, create a file named **routes.js**. In your terminal, if you are already in the `src` directory, do this.
 
 ```
-type null > routes.js
+echo NUL > routes.js
 ```
 
 Next, open your **routes.js** file, and paste this code:
@@ -190,7 +196,7 @@ These simple pages demonstrate a fully-functioning Web server responding to HTTP
 
 ## Housekeeping: Versioning Our Code
 
-Before we move on to write some more substantial code, let's commit our files to Git so we can make changes without losing any of our past work. In Visual Studio Code Terminal make sure you are in the root of your project. The path in your terminal should look something like `C:\Users\hramer\covid19-tracker` and not like `C:\Users\hramer\covid19-tracker\src`. If it looks like the latter, `cd..` will fix your problem. 
+Before we move on to write some exciting code, let's commit our files to Git so we can make changes without losing any of our past work. In Visual Studio Code Terminal make sure you are in the root of your project. The path in your terminal should look something like `C:\Users\hramer\covid19-tracker` and not like `C:\Users\hramer\covid19-tracker\src`. If it looks like the latter, `cd..` will fix your problem. 
 
 Let's commit our code changes.
 
@@ -203,11 +209,11 @@ git commit -m "A hello  world Web app"
 
 ## COVID-19 Tracker
 
-Now it's time to get real. We have created the framework on which our COVID-19 Tracker can be built. Let's build the real thing!
+Now it's time to get real. We have created the framework we need to build our COVID-19 Tracker. Let's build the real thing!
 
 First, let's make this look more like a real Web app. In Visual Studio Code Terminal, let's use a library called Pug to help us manage our HTML. We used NPM to install Pug when we started this tutorial.
 
-If you are interested, you can learn more about [getting started with Pug](https://pugjs.org/api/getting-started.html). 
+You can learn more about [getting started with Pug](https://pugjs.org/api/getting-started.html). 
 
 Let's add our Pug views: one for each page, and a layout helper to manage the code shared by both views.
 
@@ -215,13 +221,13 @@ Let's add our Pug views: one for each page, and a layout helper to manage the co
 cd src
 mdkir views
 cd views
-type nul > home.pug
-type nul > about.pug
-type nul > layout.pug
+echo NUL > home.pug
+echo NUL > about.pug
+echo NUL > layout.pug
 cd..
 mkdir public
 cd public
-type nul > style.css
+echo NUL > style.css
 cd..
 ```
 
@@ -520,7 +526,7 @@ router.get('/', (req, res) => {
 });
 ```
 
-The **routes.js** file now creates an ***array*** (list) of country objects with the properties, *Country*, *CountryCode*, *Slug*, *NewConfirmed*, *TotalConfirmed*, *NewDeaths*, *TotalDeaths*, *NewRecovered*, *TotalRecovered*, and *Date*. We will use most of these properties in our view.
+In the **routes.js** file we are creating an ***array*** (list) of country objects. Each object has the properties, *Country*, *CountryCode*, *Slug*, *NewConfirmed*, *TotalConfirmed*, *NewDeaths*, *TotalDeaths*, *NewRecovered*, *TotalRecovered*, and *Date*. We will use most of these properties in our view.
 
 Now we need to update the **home.pug** file to take this list of data instead of our hard-coded one. Replace the contents of that file with the code below.
 
@@ -610,7 +616,7 @@ You may have found interesting jumping-off-places to learn more, and I hope you 
 
 What should to improve the utility of this demonstration application? Make a list of things, and give it a try. Keep coding. It's always a challenge, but it gets easier.
 
-[A complete archive of code for this Web app](https://github.com/harveyramer/covid-19-demo-express-js-app) is available on Githb.
+[A complete archive of code for this Web app](https://github.com/harveyramer/covid-19-demo-express-js-app) is available on Github.
 
 
 <br />
