@@ -310,17 +310,26 @@ Will morph into this:
                     .card(data-name=val.Country.toLowerCase())
 ```
 
-**Note:** A word of warning. If you haven't discovered it yet, Pug uses semantic white space. This means indention is of extreme importance. When a line is indented more than a previous line, it is rendered as a child of it. For example:
+**Note:** A word of warning. If you haven't discovered it yet, Pug uses semantic white space. Languages such as [Python](https://www.python.org/) and [CoffeeScript](https://coffeescript.org/) also follow this pattern. In these languages indention is of extreme importance. When a line is indented more than a previous line, it implies a parent/child relationship.
+
+Some developers love using indention to describe relationships between objects, and [others feel it is harmful](https://wiki.c2.com/?SyntacticallySignificantWhitespaceConsideredHarmful). 
+
+Here is an example to illustrate the parent/child concept::
 
 ```
 p Hello
   span World
+
+p Hello
+span World
 ```
 
 The Pug template above is compiled to HTML like this:
 
 ```
 <p>Hello <span>World</span></p>
+<p>Hello</p>
+<span>World</span>
 ```
 
 The client side JavaScript illustrates some key concepts you will want to learn. Links to helpful resources are provided below:
@@ -345,6 +354,23 @@ In your Terminal save your changes with Git.
 git add .
 git commit -m "Added country list filter."
 ```
+
+## What We Have Learned
+
+Congratulations! You have built a Web application with both server side and client side JavaScript!
+
+In this tutorial we learned:
+
+* the importance of providing context and removing clutter
+* how data is passed between a router and view and accessed via properties
+* an overview of the options for rendering a grid view in CSS
+* the difference between server side and client side JavaScript
+* how different languages think about white space
+* an overview of JavaScript events, DOM selectors and iterators
+
+Hopefully your COVID-19 tracker is working well. [Let me know if you succeeded or if you need help](https://www.harveyramer.com/contact).
+
+A [complete archive of code for this Web app](https://github.com/harveyramer/covid-19-demo-express-js-app/tree/tutorial-2) is available on Github.
 
 <br />
 <br />
