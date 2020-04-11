@@ -16,10 +16,11 @@ tags:
 ## Prerequisites
 
 Before beginning this tutorial, you will need these tools installed:
-  * [Node.js](https://nodejs.org/)
-  * [NPM](https://npmjs.org)
-  * [Git](https://git-scm.org)
-  * [Visual Studio Code](https://code.visualstudio.com/)
+
+* [Node.js](https://nodejs.org/)
+* [NPM](https://npmjs.org)
+* [Git](https://git-scm.org)
+* [Visual Studio Code](https://code.visualstudio.com/)
 
 For help, use my tutorial on [configuring a development environment](/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
 
@@ -180,6 +181,7 @@ app.use('/', routes);
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
 ```
+
 Above, we are importing our new **routes.js** file as a module. We have also configured the application to use our **routes.js** module with an `app.use` function call.
 
 To test these changes we will start our server again.
@@ -526,7 +528,7 @@ router.get('/', (req, res) => {
 });
 ```
 
-In the **routes.js** file we are creating an _array_ of country objects. You can learn more [about JavaScript arrays](https://www.javascripttutorial.net/javascript-array/). Each object has the properties, *Country*, *CountryCode*, *Slug*, *NewConfirmed*, *TotalConfirmed*, *NewDeaths*, *TotalDeaths*, *NewRecovered*, *TotalRecovered*, and *Date*. We will use most of these properties in our view.
+In the **routes.js** file we are creating an *array* of country objects. You can learn more [about JavaScript arrays](https://www.javascripttutorial.net/javascript-array/). Each object has the properties, *Country*, *CountryCode*, *Slug*, *NewConfirmed*, *TotalConfirmed*, *NewDeaths*, *TotalDeaths*, *NewRecovered*, *TotalRecovered*, and *Date*. We will use most of these properties in our view.
 
 Now we need to update the **home.pug** file to take this list of data instead of our hard-coded one. Replace the contents of that file with the code below.
 
@@ -618,9 +620,9 @@ What should to improve the utility of this demonstration application? Make a lis
 
 [A complete archive of code for this Web app](https://github.com/harveyramer/covid-19-demo-express-js-app) is available on Github.
 
+When you're ready, move on to the next tutorial to [add interactivity to your COVID-19 tracker](https://www.harveyramer.com/blog/entries/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js).
 
 <br />
 <br />
-
 
 Featured Image Credit: [Drug Addiction Clinic Vita](https://commons.wikimedia.org/wiki/File:Stop_Coronavirus_COVID-19.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
