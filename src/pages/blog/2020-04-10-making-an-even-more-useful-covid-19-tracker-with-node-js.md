@@ -27,9 +27,11 @@ Before completing this tutorial, you will either need to either complete the fir
 
 ## Providing Context and Focus
 
-There are two simple things we can do:
+There are some simple things we can do:
 
 1. Provide summary information by displaying the global statistics
-2. Allow our users to filter countries by name to reduce the feeling of information overload
+2. Remove some information from the cards in the list
+3. Allow our users to filter countries by name to reduce the feeling of information overload
+4. Let users navigate to country details
 
 Let's get started.
