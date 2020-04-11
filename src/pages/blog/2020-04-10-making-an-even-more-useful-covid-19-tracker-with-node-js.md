@@ -23,7 +23,7 @@ What can we do to make this information easier to digest?
 
 ## Prerequisites
 
-Before completing this tutorial, you will either need to either complete the first tutorial, or take a shortcut by cloning the [Github repository for the tutorial](https://github.com/harveyramer/covid-19-demo-express-js-app/tree/tutorial-1).
+Before completing this tutorial, complete the [first tutorial](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/) or clone the [Github repository for the tutorial](https://github.com/harveyramer/covid-19-demo-express-js-app/tree/tutorial-1).
 
 You will start to see comments in the code examples. Comments allow developers to leave context for those who follow, but have no impact on the execution of code.
 
@@ -60,7 +60,7 @@ The data our API call returns has both a `Countries` *array* and a `Global` *obj
       });
 ```
 
-This change will break our Home Page view because it expects to be given an *array* of countries, and not an *object* containing Global data and an *array* of Countries. Replacing lines 5-6 of our **home.pug** file fixes that bug.
+Our Home Page view expects to be given an *array* of countries, and not an *object* containing Global data and an *array* of Countries. Replacing lines 5-6 of our **home.pug** file will keep it from breaking.
 
 ```
         h2 By Country
@@ -73,7 +73,7 @@ This adds a new heading **By Country** and looks for the countries list inside t
 
 ### Displaying the Global Summary
 
-To display the new Global Summary data, we will add a new section above the list of countries in the **home.pug** template. 
+To display the new Global Summary data, add a new section above the list of countries in the **home.pug** template. 
 
 ```
     .centered
@@ -265,7 +265,7 @@ So far, we have been writing JavaScript to load data from an external API and re
 
 When we filter our list of countries based on user input, we want to avoid the time it takes to query a remote data source. We already have our list. Let's just choose what we display based on user input.  All of this will happen inside the Web browser window. This is client side JavaScript.
 
-Open the **home.pug** file and look for the line `h2 By Country`. We will edit and replace a few lines here.
+Open the **home.pug** file and look for the line `h2 By Country` to make some changes.
 
 These lines:
 
@@ -312,7 +312,7 @@ Will morph into this:
 
 **Note:** A word of warning. If you haven't discovered it yet, Pug uses semantic white space. Languages such as [Python](https://www.python.org/) and [CoffeeScript](https://coffeescript.org/) also follow this pattern. In these languages indention is of extreme importance. When a line is indented more than a previous line, it implies a parent/child relationship.
 
-Some developers love using indention to describe relationships between objects, and [others feel it is harmful](https://wiki.c2.com/?SyntacticallySignificantWhitespaceConsideredHarmful). 
+Some developers love using indention to describe relationships between objects. [Others feel it is harmful](https://wiki.c2.com/?SyntacticallySignificantWhitespaceConsideredHarmful). 
 
 Here is an example to illustrate the parent/child concept::
 
