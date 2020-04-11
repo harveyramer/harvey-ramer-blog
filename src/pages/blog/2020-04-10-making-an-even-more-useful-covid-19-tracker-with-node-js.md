@@ -43,7 +43,6 @@ There are some simple things we can do:
 
 1. Provide summary information by displaying the global statistics
 2. Allow our users to filter countries by name to reduce the feeling of information overload
-3. Let users navigate to country details
 
 Let's get started.
 
@@ -269,6 +268,7 @@ When we filter our list of countries based on user input, we want to avoid the t
 Open the **home.pug** file and look for the line `h2 By Country`. We will edit and replace a few lines here.
 
 These lines:
+
 ```
     .centered
         h2 By Country
@@ -277,6 +277,7 @@ These lines:
             each val, index in data.Countries
                 .card
 ```
+
 Will morph into this:
 
 ```
@@ -285,7 +286,7 @@ Will morph into this:
             h3 Type to Filter
             form(onSubmit="handleSubmit(event)")
                 input#needle(placeholder="Country name", onkeyup="handleKeyup(event)")
-            
+            // This JavaScript will run in the Web browser.
             script(type="text/javascript").
                 filter = (needle) => {
                     const cards = document.querySelectorAll('#countryList .card');
@@ -308,17 +309,42 @@ Will morph into this:
                 each val, index in data.Countries
                     .card(data-name=val.Country.toLowerCase())
 ```
+
 **Note:** A word of warning. If you haven't discovered it yet, Pug uses semantic white space. This means indention is of extreme importance. When a line is indented more than a previous line, it is rendered as a child of it. For example:
+
 ```
 p Hello
   span World
 ```
+
 The Pug template above is compiled to HTML like this:
+
 ```
 <p>Hello <span>World</span></p>
 ```
 
+The client side JavaScript illustrates some key concepts you will want to learn. Links to helpful resources are provided below:
 
+1. [Events and Event Handlers](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+2. [DOM Selectors](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+3. [Iterators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+Each of these concepts merits deep study. The most effective deep study is *play*. Look over the concepts and try them out. What do they do? How do they break? Learning requires the discovery of misconceptions. Mistakes are a must-have for effective growth.
+
+### Check Your Work
+
+Verify the client side filter you added by starting your server (`npm start` in your Terminal) and navigating to <http://localhost:3000>. If it is already running, restart it (`Ctrl+C` followed by `npm start`). We should be able to enter text and see our list of countries filter.
+
+![Filtering countries](/img/chrome_5bioa1ikxi.png "Filtering countries")
+
+### Save Your Work
+
+In your Terminal save your changes with Git.
+
+```
+git add .
+git commit -m "Added country list filter."
+```
 
 <br />
 <br />
