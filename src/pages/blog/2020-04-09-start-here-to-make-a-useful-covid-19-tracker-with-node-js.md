@@ -526,7 +526,7 @@ router.get('/', (req, res) => {
 });
 ```
 
-In the **routes.js** file we are creating an ***array*** (list) of country objects. Each object has the properties, *Country*, *CountryCode*, *Slug*, *NewConfirmed*, *TotalConfirmed*, *NewDeaths*, *TotalDeaths*, *NewRecovered*, *TotalRecovered*, and *Date*. We will use most of these properties in our view.
+In the **routes.js** file we are creating an _array_ (Learn more [about JavaScript arrays](https://www.javascripttutorial.net/javascript-array/) of country objects. Each object has the properties, *Country*, *CountryCode*, *Slug*, *NewConfirmed*, *TotalConfirmed*, *NewDeaths*, *TotalDeaths*, *NewRecovered*, *TotalRecovered*, and *Date*. We will use most of these properties in our view.
 
 Now we need to update the **home.pug** file to take this list of data instead of our hard-coded one. Replace the contents of that file with the code below.
 
