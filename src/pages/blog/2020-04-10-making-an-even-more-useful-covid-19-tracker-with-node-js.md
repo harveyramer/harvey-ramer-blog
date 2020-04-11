@@ -42,9 +42,8 @@ It spans multiple lines.
 There are some simple things we can do:
 
 1. Provide summary information by displaying the global statistics
-2. Remove some information from the cards in the list
-3. Allow our users to filter countries by name to reduce the feeling of information overload
-4. Let users navigate to country details
+2. Allow our users to filter countries by name to reduce the feeling of information overload
+3. Let users navigate to country details
 
 Let's get started.
 
@@ -168,12 +167,12 @@ section {
 .card h4 {
     text-align: center;
     margin: 0;
-    padding: .5rem .5rem;
+    padding: 0.5rem 0.5rem;
 }
 .card .count {
     font-weight: bold;
     text-align: center;
-    padding: .25rem 0 1rem;
+    padding: 0.25rem 0 1rem;
     font-size: 1.25rem;
 }
 .card .new,
@@ -219,7 +218,6 @@ section {
     }
 }
 
-
 @media screen and (min-width: 140rem) {
     .cards {
         grid-template-columns: repeat(4, 1fr);
@@ -227,6 +225,19 @@ section {
     .cards.large {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.error {
+    font-size: 1.7em;
+    color: red;
+}
+
+/* Forms */
+
+input {
+    font-size: 1.5rem;
+    padding: 0.8rem 1rem;
+    width: 18rem;
 }
 ```
 
@@ -247,9 +258,67 @@ git commit -m "Adding global summary data."
 
 ![Committing changes with Gid](/img/code_b9hpp6nmfy.png "Committing changes with Gid")
 
-## One Country At a Time
+## Filtering The List
 
-If a user could begin typing the name of a country and see only countries that match in the list, some of the confusion and clutter would be removed.
+### Client Side JavaScript
+
+So far, we have been writing JavaScript to load data from an external API and render HTML in a browser. No JavaScript has executed in the context of the browser. It has been executed by Node.js and Express to produce our results. This is server side JavaScript.
+
+When we filter our list of countries based on user input, we want to avoid the time it takes to query a remote data source. We already have our list. Let's just choose what we display based on user input.  All of this will happen inside the Web browser window. This is client side JavaScript.
+
+Open the **home.pug** file and look for the line `h2 By Country`. We will edit and replace a few lines here.
+
+These lines:
+```
+    .centered
+        h2 By Country
+        .cards
+            // Our Countries array is now at data.Countries.
+            each val, index in data.Countries
+                .card
+```
+Will morph into this:
+
+```
+    .centered#countryList
+            h2 By Country
+            h3 Type to Filter
+            form(onSubmit="handleSubmit(event)")
+                input#needle(placeholder="Country name", onkeyup="handleKeyup(event)")
+            
+            script(type="text/javascript").
+                filter = (needle) => {
+                    const cards = document.querySelectorAll('#countryList .card');
+                    cards.forEach(el => {
+                        const name = el.getAttribute('data-name').toLowerCase();
+                        const isMatched = name && name.indexOf(needle) !== -1;
+                        el.style.display = isMatched ? 'block' : 'none';
+                    });
+                }
+                handleSubmit = (e) => {
+                    e.preventDefault(); // Prevent the form from reloading the page. We're handling this with JavaScript.
+                };
+                handleKeyup = (e) => {
+                    // Filter whenever content is entered.
+                    const needle = e.target.value.toLowerCase(); // Get the filter value.
+                    filter(needle);
+                };
+            .cards
+                // Our Countries array is now at data.Countries.
+                each val, index in data.Countries
+                    .card(data-name=val.Country.toLowerCase())
+```
+**Note:** A word of warning. If you haven't discovered it yet, Pug uses semantic white space. This means indention is of extreme importance. When a line is indented more than a previous line, it is rendered as a child of it. For example:
+```
+p Hello
+  span World
+```
+The Pug template above is compiled to HTML like this:
+```
+<p>Hello <span>World</span></p>
+```
+
+
 
 <br />
 <br />
