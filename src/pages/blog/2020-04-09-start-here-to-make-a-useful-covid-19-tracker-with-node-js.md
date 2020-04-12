@@ -22,7 +22,7 @@ Before beginning this tutorial, you will need these tools installed:
 * [Git](https://git-scm.org)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-For help, use my tutorial on [configuring a development environment](/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
+For help, use my tutorial on [configuring a development environment](https://www.harveyramer.com/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
 
 ## Getting Started
 
@@ -614,7 +614,7 @@ I hit you hard with this tutorial. We have introduced
 * compiling HTML with dynamic data via Pug
 * requesting data from an API with Axios
 
-You may have found interesting jumping-off-places to learn more, and I hope you did. You should have your first Web application running. [Let me know if you succeeded or if you need help](/contact). 
+You may have found interesting jumping-off-places to learn more, and I hope you did. You should have your first Web application running. [Let me know if you succeeded or if you need help](https://www.harveyramer.com/contact). 
 
 What should to improve the utility of this demonstration application? Make a list of things, and give it a try. Keep coding. It's always a challenge, but it gets easier.
 
