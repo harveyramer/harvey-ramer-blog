@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
+import rss from '../img/rss.svg'
 import logo from '../img/logo.svg'
 
 const Navbar = class extends React.Component {
@@ -76,6 +77,16 @@ const Navbar = class extends React.Component {
               >
                 <span className="icon">
                   <img src={github} alt="Github" />
+                </span>
+              </a>
+              <a
+                className="navbar-item"
+                href="/rss.xml"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="icon">
+                  <img src={rss} alt="RSS Feed" />
                 </span>
               </a>
             </div>
