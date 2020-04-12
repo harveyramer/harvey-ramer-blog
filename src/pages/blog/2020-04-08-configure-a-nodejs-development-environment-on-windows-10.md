@@ -161,7 +161,7 @@ You have configured NVM to manage two versions of Node.js. You installed Git to 
 
 Ready for a new challenge? [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/).
 
-And please [contact me](/contact) if you have any questions or feedback. 
+And please [contact me](https://www.harveyramer.com/contact) if you have any questions or feedback. 
 
 <br />
 <br />
