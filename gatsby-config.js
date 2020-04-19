@@ -168,6 +168,19 @@ module.exports = {
         endpoint: 'https://harveyramer.us5.list-manage.com/subscribe/post?u=2869b8f44e0357dd55570c534&amp;id=269b82f15c',
       },
     },
+    {
+      resolve: `gatsby-remark-footnotes`,
+      options: {
+        footnoteBackRefPreviousElementDisplay: "inline",
+        footnoteBackRefDisplay: "inline",
+        footnoteBackRefInnerText: "^", // Defaults to: "↩"
+        //use if you want the Wikipedia style ^ link without an underline beneath it
+        footnoteBackRefAnchorStyle: `text-decoration: none;`,
+        //use "front" for Wikipedia style ^ links
+        footnoteBackRefInnerTextStartPosition: "front",
+        useFootnoteMarkerText: false // Defaults to false
+      }
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
