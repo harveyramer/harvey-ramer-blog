@@ -128,6 +128,10 @@ As I said at the outset of this article, stress is a killer. I discussed this ar
 
 You might save the world—or at least your world.
 
+<br />
+
+Featured Image Credit: <a href="https://commons.wikimedia.org/wiki/File:The_Scream.jpg" title="via Wikimedia Commons">Edvard Munch</a> / Public domain
+
 ## Footnotes
 [^1]: Watkins, Michael D. _The First 90 Days_. Harvard Business Review Press, 2013, pp. 226-7.
 [^2]: Norman, Don. _Emotional Design: Why We Love (or Hate) Everyday Things_. Basic Books, 2004, p. 19.
@@ -138,7 +142,3 @@ You might save the world—or at least your world.
 [^7]: Neumeier, Marty. _The Designful Company: How to Build a Culture of Nonstop Innovation_. New Riders, 2009, p. 48.
 [^8]: Hunt, Andy. _Pragmatic Thinking & Learning: Refactor Your Wetware_. The Pragmatic Programmers, LLC., 2008, p. 133.
 [^9]: Graham, Paul. _Hackers & Painters: Big Ideas from the Computer Age_. O'Reilly Media, Inc., 2004, pp. 135-6.
-
-<br />
-
-Featured Image Credit: <a href="https://commons.wikimedia.org/wiki/File:The_Scream.jpg" title="via Wikimedia Commons">Edvard Munch</a> / Public domain
