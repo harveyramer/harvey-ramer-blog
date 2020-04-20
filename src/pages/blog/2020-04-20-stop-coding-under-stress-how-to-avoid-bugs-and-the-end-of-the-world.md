@@ -3,7 +3,9 @@ templateKey: blog-post
 title: 'Stop Coding Under Stress: How to Avoid Bugs and the End of the World'
 date: 2020-04-20T04:05:51.862Z
 description: >-
-  Vague requirements, unrealistic expectations, and a humorless outlook can put programmers at risk. Stress-related disease creeps up on us unaware. Stress and aging are unavoidable, but how we respond makes a difference.
+  Vague requirements, unrealistic expectations, and a humorless outlook can put
+  programmers at risk. Stress-related disease creeps up on us unaware. Stress
+  and aging are unavoidable, but how we respond makes a difference.
 featuredpost: false
 featuredimage: /img/the_scream.jpg
 tags:
@@ -42,13 +44,13 @@ Managers should see missing communication from a team member as a warning sign. 
 
 ## Causes of Programmer Stress
 
-Pell-mell completion of half-considered work is a knife in the chest of creativity and a significant cause of stress. The more frantic the pace, the greater the stress. And when rushed code gets into production, a bad user experience produces a bad developer experience. Managers then apply more pressure without realizing they are compounding the problem. This produces the result we fear: mediocrity and missed deadlines. 
+**We are always in a hurry.** Pell-mell completion of half-considered work is a knife in the chest of creativity and a significant cause of stress. The more frenetic the pace, the greater the stress. And when rushed code gets into production, a bad user experience produces a bad developer experience. Managers then apply more pressure without realizing they are compounding the problem. This produces the result we fear: mediocrity and missed deadlines. 
 
 This adds to the frustration of a team of motivated software developers. As the time for a production release approaches, anxiety mounts. This unease, Nicole Ferguson says, "highlights the friction and disconnect that exist between the activities used to develop and test software and the work done to maintain and keep software operational."[^4] An effective manager can shield their team from such toxic unrealistic expectations. 
 
-Change is also a stressor, and the pace of change in software development tools, languages, and methods is unrelenting. Last year's innovations belong in this year's dustbin. Many of our mental models remain, but our tactics are in continual flux. We must keep up. We must always be learning. But time spent learning is inefficient. It requires experimentation and time for reflection. 
+**The pace of change** is also a stressor, and change in software development tools, languages, and methods is unrelenting. Last year's innovations belong in this year's dustbin. Many of our mental models remain, but our tactics are in continual flux. We must keep up. We must always be learning. But time spent learning is inefficient. It requires experimentation and time for reflection. 
 
-We will never read all the technical articles, take all the courses, or try all the programming languages. Each new publication is a product vying for our attention. "Try this new framework." "Check out this fancy new language!" "All the advertising, promotions and pressure employed to tempt us one way or another," Simon Sinek says, "Ultimately yields one consistent result: stress." [^5] Filtering out the noise and focusing on what we need to know each day is a critical ability. 
+We will never read all the technical articles, take all the courses, or try all the programming languages. Each new publication is a product vying for our attention. "Try this new framework." "Check out this fancy new language!" "All the advertising, promotions and pressure employed to tempt us one way or another," Simon Sinek says, "ultimately yields one consistent result: stress." [^5] Filtering out the noise and focusing on what we need to know each day is a critical ability. 
 
 ## Stressed? Write Good Code Anyway
 
