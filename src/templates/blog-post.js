@@ -29,12 +29,13 @@ export const BlogPostTemplate = ({
             })`,
           backgroundPosition: `bottom center`,
           backgroundSize: `cover`,
+          height: 'calc(100vh - 52px)',
         }}
       >
         <div
           style={{
             display: 'flex',
-            height: '180px',
+            height: '150px',
             lineHeight: '1',
             justifyContent: 'space-around',
             alignItems: 'left',
@@ -47,7 +48,7 @@ export const BlogPostTemplate = ({
               backgroundColor: 'rgb(0, 159, 254)',
               color: 'white',
               lineHeight: '1.3',
-              padding: '0.5em',
+              padding: '.75em 1.5em',
             }}
           >
             {title}
