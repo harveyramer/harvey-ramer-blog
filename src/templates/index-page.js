@@ -24,7 +24,7 @@ export const IndexPageTemplate = ({
           style={{
             display: 'flex',
             height: '150px',
-            lineHeight: '1',
+            lineHeight: '1.3',
             justifyContent: 'space-around',
             alignItems: 'left',
             flexDirection: 'column',
