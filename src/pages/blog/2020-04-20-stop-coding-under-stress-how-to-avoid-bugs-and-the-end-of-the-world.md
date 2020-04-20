@@ -138,3 +138,7 @@ You might save the world—or at least your world.
 [^7]: Neumeier, Marty. _The Designful Company: How to Build a Culture of Nonstop Innovation_. New Riders, 2009, p. 48.
 [^8]: Hunt, Andy. _Pragmatic Thinking & Learning: Refactor Your Wetware_. The Pragmatic Programmers, LLC., 2008, p. 133.
 [^9]: Graham, Paul. _Hackers & Painters: Big Ideas from the Computer Age_. O'Reilly Media, Inc., 2004, pp. 135-6.
+
+<br />
+
+Featured Image Credit: <a href="https://commons.wikimedia.org/wiki/File:The_Scream.jpg" title="via Wikimedia Commons">Edvard Munch</a> / Public domain
