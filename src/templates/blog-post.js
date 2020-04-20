@@ -34,8 +34,8 @@ export const BlogPostTemplate = ({
         <div
           style={{
             display: 'flex',
-            height: '150px',
-            lineHeight: '1.3',
+            height: '180px',
+            lineHeight: '1',
             justifyContent: 'space-around',
             alignItems: 'left',
             flexDirection: 'column',
@@ -46,7 +46,7 @@ export const BlogPostTemplate = ({
             style={{
               backgroundColor: 'rgb(0, 159, 254)',
               color: 'white',
-              lineHeight: '1',
+              lineHeight: '1.3',
               padding: '0.5em',
             }}
           >
