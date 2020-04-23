@@ -49,14 +49,14 @@ export const ResumePageTemplate = ({ helmet, page, title, image, contentComponen
                 }}>
                   <img
                     src={download}
-                    alt="Download Resume"
+                    alt="Download R&eacute;sum&eacute;"
                     style={{
                       width: '1em',
                       height: '1em',
                     }}
                   />
                   &nbsp;
-                  Download Resume
+                  Download R&eacute;sum&eacute;
                 </a>
               </li>
               <li>
@@ -98,7 +98,7 @@ const ResumePage = ({ data }) => {
         title={post.frontmatter.title}
         image={post.frontmatter.image}
         page={post}
-        helmet={<Helmet titleTemplate="%s | Resume">
+        helmet={<Helmet titleTemplate="%s | R&eacute;sum&eacute;">
           <title>{`${post.frontmatter.title}`}</title>
           <meta
             name="description"
