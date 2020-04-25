@@ -48,7 +48,7 @@ export const BlogPostTemplate = ({
               backgroundColor: 'rgb(0, 159, 254)',
               color: 'white',
               lineHeight: '1.3',
-              padding: '.75em 1.5em',
+              padding: '.75em 1.25em',
             }}
           >
             {title}

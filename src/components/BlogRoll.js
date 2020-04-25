@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import newspaper from '../img/newspaper.svg'
 
 class BlogRoll extends React.Component {
   render() {
@@ -36,18 +37,18 @@ class BlogRoll extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
 
-                    <p>
-                      {post.frontmatter.description}
-                      <br />
-                      <br />
-                      <Link className="button is-info is-outlined" to={post.fields.slug}>
-                        Keep Reading →
-                      </Link>
-                    </p>
+                    <div>
+                      <p><strong>{post.frontmatter.date}</strong>—{post.frontmatter.description}</p>
+                      <div>
+                      <Link style={{marginTop:"1em"}} className="button is-small" to={post.fields.slug}>
+                        <span class="icon is-small">
+                          <img 
+                            src={newspaper} alt="Read news" 
+                            style={{ width: '1.25em', height: '1.25em'}}
+                          /></span> <span>Keep Reading</span>
+                      </Link></div>
+                    </div>
                   </div>
                 </header>
               </article>
