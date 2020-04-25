@@ -4,8 +4,7 @@ title: 'Stop Coding Under Stress: How to Avoid Bugs and the End of the World'
 date: 2020-04-20T04:05:51.862Z
 description: >-
   Vague requirements, unrealistic expectations, and a humorless outlook can put
-  programmers at risk. Stress-related disease creeps up on us unaware. Stress
-  and aging are unavoidable, but how we respond makes a difference.
+  programmers at risk.
 featuredpost: false
 featuredimage: /img/the_scream.jpg
 tags:
@@ -97,9 +96,9 @@ Letting go can make our work fun and our products fun to use. "Good design is of
 
 ## Save the World
 
-So how can stress management save the world? Well, it may not save the actual world. A little hyperbole makes a good title. But if you manage your own stress well, it takes a load off your coworkers, customers, friends, and loved ones. And, it _can_ save your life. 
+Stress management may not save the world, but it may save each one from early aging and health problems. When we manage stress, we take a load off our coworkers, customers, friends, and loved ones. And, managing or eliminating stress _can_ save your life. 
 
-As I said at the outset of this article, stress is a killer. I have a friend who has experienced this in a profound way. During his career in IT, he had several heart attacks which he attributes in large part to stress. When I discussed this article with him he said, "I now know stress almost killed me. Not sure how you can control yours but you need to." 
+Stress is a killer. One of my friends has experienced this in a profound way. During his career, he had several heart attacks due to stress. He says, "I now know stress almost killed me. Not sure how you can control yours, but you need to." 
 
 Take his words to heart. You might save the world—or at least your world.
 
