@@ -40,7 +40,7 @@ In VS Code, open the command palette (`Ctrl+P`) and enter `> Azure: Sign In`. Yo
 
 ### Start Coding
 
-First, select a folder in VS Code (`Ctrl+K Ctrl+O`). If you need to create and select one, you can do that in the dialog that opens. I have opened the folder containing the COVID-19 Tracker used in some JavaScript tutorials.\[^1] 
+First, select a folder in VS Code (`Ctrl+K Ctrl+O`). If you need to create and select one, you can do that in the dialog that opens. I have opened the folder containing the COVID-19 Tracker used in some JavaScript tutorials.[^1] 
 
 #### Installing the COVID-19 Tracker
 
@@ -114,7 +114,7 @@ When you see *Example app listening at http://localhost:8080* your app is warmed
 
 ### Success!
 
-Your first deployment of a Web app with Node.js to Azure can be a bit tricky. Please feel free to contact me with any questions or critical feedback on this tutorial. When you succeed, your COVID-19 Tracker will be live for the world to see. 
+Your first deployment of a Web app with Node.js to Azure can be a bit tricky. Please feel free to contact me with any questions or critical feedback on this tutorial. When you succeed, your [COVID-19 Tracker](https://covid19tutorial.azurewebsites.net/) will be live for the world to see. 
 
 If you want to share it with friends, you may want to upgrade from the [free App Service Plan](https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage), which only runs for an hour each day. 
 
@@ -126,12 +126,10 @@ If your deployment fails on the first try, as mine did, it is likely a timing is
 
 ![The service is unavailable](/img/service-unavailable.png "The service is unavailable")
 
-I do not know why this problem happens. In my experience, it happens on new accounts that have not yet deployed other projects. That is problematic since Azure should make a good impression on first-time users.
-
-Try completing all the steps above, including adding the WEBSITE_NODE_DEFAULT_VERSION application setting to see if this resolves your problem. If not, I have found that deleting your Web Application and starting over resolves the problem.
+Try completing all the steps above, including adding the _WEBSITE_NODE_DEFAULT_VERSION_ application setting to see if this resolves your problem. If not, I have found that deleting your Web Application and starting over resolves the problem.
 
 Featured Image Credit: [Stebbes87](https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
 
 ## Footnotes
 
-\[^1]: [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/) and [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
+[^1]: [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/) and [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
