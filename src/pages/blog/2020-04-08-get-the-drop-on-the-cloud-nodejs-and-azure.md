@@ -60,9 +60,11 @@ Since Azure's App Service uses dynamically configured Docker containers, we cann
 If you started the local server, stop it (Ctrl+C).
 
 Open the `src/index.js` file and change line 5 to 
+
 ```
 const port = process.env.PORT
 ```
+
 and save your changes.
 
 ## Deploying to Azure App Service
@@ -89,7 +91,9 @@ The Azure App Service extension will walk you through some questions and deploy 
 
 ![Show Azure deployment output window](/img/show-build-output.png "Show Azure deployment output window")
 
-When deployment has completed, we should add an Application Setting that is required for Node.js on Azure App Service. To do this, 
+When deployment has completed, browse to your new website. It is located at https://**yourappname**.azurewebsites.net. In my case, that is https://**covid19tutorial**.azurewebsites.net.
+
+Don't be surprised if it either doesn't respond or displays an application error. We must add an Application Setting that is required for Node.js on Azure App Service. 
 
 * Expand your subscription, Web app, and right-click on Application settings
 * Choose *Add New Setting*
@@ -107,6 +111,12 @@ Since it takes several minutes for your app to warm up after being deployed to A
 ![](/img/monitor-application-logs.png)
 
 When you see *Example app listening at http://localhost:8080* your app is warmed up and ready to take some requests. 
+
+### Success!
+
+Your first deployment of a Web app with Node.js to Azure can be a bit tricky. Please feel free to contact me with any questions or critical feedback on this tutorial. When you succeed, your COVID-19 Tracker will be live for the world to see. 
+
+![Your deployed Web app](/img/your-deployed-web-app.png "Your deployed Web app")
 
 ### Troubleshooting
 
