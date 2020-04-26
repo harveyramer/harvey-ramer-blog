@@ -53,6 +53,14 @@ If you already have a Node.js app using the Express framework, skip this step. O
 5. Start the server (`npm start`)
 6. Navigate to your project in a browser ([http://localhost:3000](http://localhost:3000/))
 
+## Preparing for Deployment
+
+Since Azure's App Service uses dynamically configured Docker containers, we cannot specify a port in our code. Instead, we must rely on an environment variable. 
+
+If you started the local server, stop it (Ctrl+C).
+
+Open the `src/index.js` file and change line 5 to `const port = process.env.PORT` and save your changes.
+
 ## Deploying to Azure App Service
 
 The extensions in the Azure Tools pack we installed make deploying a Web app easy. 
@@ -77,13 +85,29 @@ The Azure App Service extension will walk you through some questions and deploy 
 
 ![Show Azure deployment output window](/img/show-build-output.png "Show Azure deployment output window")
 
+When deployment has completed, we should add an Application Setting that is required for Node.js on Azure App Service. To do this, 
+
+* Expand your subscription, Web app, and right-click on Application settings
+* Choose *Add New Setting*
+* For your setting key, enter *WEBSITE_NODE_DEFAULT_VERSION*
+* For your setting value, enter *12.13.0*
+
+![Add WEBSITE_NODE_DEFAULT_VERSION application setting](/img/add-application-setting.png "Add WEBSITE_NODE_DEFAULT_VERSION application setting")
+
+Adding a new application setting causes the App Service to restart, which can take several minutes. If your Web app does not start, see Troubleshooting below.
+
+### Monitoring your App with Logs
+
+
 ### Troubleshooting
 
 If your deployment fails on the first try, as mine did, it is likely a timing issue. Some resources your Web app depends on are likely still not fully provisioned.
 
 ![The service is unavailable](/img/service-unavailable.png "The service is unavailable")
 
+I do not know why this problem happens. In my experience, it happens on new accounts that have not yet deployed other projects. That is problematic since Azure should make a good impression on first-time users.
 
+Try completing all the steps above, including adding the WEBSITE_NODE_DEFAULT_VERSION application setting to see if this resolves your problem. If not, I have found that deleting your Web Application and starting over resolves the problem.
 
 Featured Image Credit: [Stebbes87](https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
 
