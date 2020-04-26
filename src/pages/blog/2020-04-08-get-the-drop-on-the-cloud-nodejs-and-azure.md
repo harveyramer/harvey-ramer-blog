@@ -14,7 +14,7 @@ tags:
 ---
 ## Prerequisites
 
-Let's take care of some things before we begin:
+Take care of some things before you begin:
 
 1. [Create a free Azure account](https://azure.microsoft.com/en-us/free/)
 2. [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
@@ -40,7 +40,7 @@ In VS Code, open the command palette (`Ctrl+P`) and enter `> Azure: Sign In`. Yo
 
 ## Start Coding
 
-First, select a folder in VS Code (`Ctrl+K Ctrl+O`). If you need to create and select one, you can do that in the dialog that opens. I have opened the folder containing the COVID-19 Tracker used in some JavaScript tutorials.[^1] 
+First, select a folder in VS Code (`Ctrl+K Ctrl+O`). If you need to create and select one, you can do that in the dialog that opens. I used a folder containing the COVID-19 Tracker used in some JavaScript tutorials.[^1] 
 
 ### Installing the COVID-19 Tracker
 
@@ -55,7 +55,7 @@ If you already have a Node.js app using the Express framework, skip this step. O
 
 ### Preparing for Deployment
 
-Since Azure's App Service uses dynamically configured Docker containers, we cannot specify a port in our code. Instead, we must rely on an environment variable. 
+Since Azure's App Service uses dynamically configured Docker containers, you cannot specify a port in our code. Instead, rely on an environment variable. 
 
 If you started the local server, stop it (`Ctrl+C`).
 
@@ -67,7 +67,7 @@ const port = process.env.PORT
 
 ## Deploying to Azure App Service
 
-The extensions in the Azure Tools pack we installed make deploying a Web app easy. 
+The extensions in the Azure Tools pack you installed make it easy to deploy a Web app. 
 
 First, show the Azure panel in VS Code by clicking on the Azure logo on the left. Then, click the *Deploy to Azure* arrow button in the App Service menu bar.
 
@@ -75,21 +75,21 @@ First, show the Azure panel in VS Code by clicking on the Azure logo on the left
 
 The Azure App Service extension will walk you through some questions and deploy your app.
 
-1. Select the folder to zip and deploy (`covid19-tracker` folder)
+1. Select the _covid19-tracker_ folder to zip and deploy
 2. Choose *Create new Web App...*
-3. Next we will enter the name of our Web app. (*my-app-name*)
+3. Next enter a unique name for your Web app. (*my-app-name*)
 4. Select runtime *Node 12 LTS*
-5. Wait as Azure provisions the resources for our Web app
-6. You will be asked, "Would you like to update your workspace configuration to run build commands on the target server?" Answer, *"Yes."*
-7. To learn about the build process, I recommend showing the output window.
+5. Wait a few minutes while Azure provisions the resources for your Web app
+6. When asked, "Would you like to update your workspace configuration to run build commands on the target server?" Answer, *"Yes."*
+7. To monitor the build process, show the output window.
 
 ![Show Azure deployment output window](/img/show-build-output.png "Show Azure deployment output window")
 
-When deployment has completed, browse to your new website. It is located at https://**my-app-name**.azurewebsites.net. In my case, that is https://**covid19tutorial**.azurewebsites.net.
+When deployment finishes, browse to your new website. It is located at https://**my-app-name**.azurewebsites.net. In my case, that is https://**covid19tutorial**.azurewebsites.net.
 
-Don't be surprised if it either doesn't respond or displays an application error. We must add an Application Setting that is required for Node.js on Azure App Service. 
+Don't be surprised if it doesn't respond or it displays an application error. You will need to add an _Application Setting_ that is required for Node.js on Azure App Service. 
 
-* Expand your subscription, Web app, and right-click on Application settings
+* Expand your subscription, Web app, and right-click on **Application Settings**
 * Choose *Add New Setting*
 * For your setting key, enter *WEBSITE_NODE_DEFAULT_VERSION*
 * For your setting value, enter *12-lts*
