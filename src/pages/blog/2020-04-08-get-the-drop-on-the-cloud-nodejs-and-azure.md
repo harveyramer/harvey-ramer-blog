@@ -40,11 +40,7 @@ In VS Code, open the command palette (`Ctrl+P`) and enter `> Azure: Sign In`. Yo
 
 ## Start Coding
 
-First, select a folder in VS Code (`Ctrl+K Ctrl+O`). If you need to create and select one, you can do that in the dialog that opens. I used a folder containing the COVID-19 Tracker used in some JavaScript tutorials.[^1] 
-
 ### Installing the COVID-19 Tracker
-
-If you already have a Node.js app using the Express framework, skip this step. Otherwise:
 
 1. clone or download the repository (`git clone git@github.com:harveyramer/covid-19-demo-express-js-app.git`)
 2. Navigate in your terminal to the root directory (`cd covid-19-demo-express-js-app`)
