@@ -35,7 +35,7 @@ In VS Code, open the command palette (`Ctrl+P`) and enter `> Azure: Sign In`. Yo
 
 ### Installing the COVID-19 Tracker
 
-For this project, use the COVID-19 Tracker project I created for some earlier tutorials.[^1]
+For this project, use the COVID-19 Tracker project.[^1]
 
 1. clone or download the repository (`git clone git@github.com:harveyramer/covid-19-demo-express-js-app.git`)
 2. Navigate in your terminal to the root directory (`cd covid-19-demo-express-js-app`)
@@ -68,7 +68,7 @@ The Azure App Service extension's wizard will help you deploy your app.
 
 1. Select the _covid19-tracker_ folder to zip and deploy
 2. Choose *Create new Web App...*
-3. Next enter a unique name for your Web app. (`my-app-name`)
+3. Next enter a unique name for your Web app. (`covid19tutorial-myname`)
 4. Select runtime *Node 12 LTS*
 5. Wait a few minutes while Azure provisions the resources for your Web app
 6. When asked, "Would you like to update your workspace configuration to run build commands on the target server?" Answer, *"Yes."*
@@ -76,9 +76,13 @@ The Azure App Service extension's wizard will help you deploy your app.
 
 ![Show Azure deployment output window](/img/show-build-output.png "Show Azure deployment output window")
 
-When deployment finishes, browse to your new website. It is located at _**my-app-name**.azurewebsites.net_. In my case, that is _**covid19tutorial**.azurewebsites.net_.
+When deployment finishes, browse to your new website. It will use the unique name you specified, for example,  _**covid19tutorial-myname**.azurewebsites.net_.
 
-Don't be surprised if it doesn't respond or it displays an application error. You will need to add an _Application Setting_ that is required for Node.js on Azure App Service. 
+Your app will not respond and may display an application error. This is normal. We have one more configuration step.
+
+### Add an Application Setting
+
+You will need to add an _Application Setting_ to tell Azure App Service what version of Node.js to use. 
 
 * Expand your subscription, Web app, and right-click on **Application Settings**
 * Choose *Add New Setting*
@@ -87,7 +91,7 @@ Don't be surprised if it doesn't respond or it displays an application error. Yo
 
 ![Add WEBSITE_NODE_DEFAULT_VERSION application setting](/img/add-application-setting.png "Add WEBSITE_NODE_DEFAULT_VERSION application setting")
 
-Adding a new application setting causes the App Service to restart, which can take several minutes. If your Web app does not start, see Troubleshooting below.
+Adding a new application setting causes the App Service to restart, which can take several minutes. If your Web app does not start in 10 minutes, see [Troubleshooting](#troubleshooting) below.
 
 ### Monitoring your App with Logs
 
@@ -105,13 +109,15 @@ If you want to share it with friends, you may want to upgrade from the [free App
 
 ![Your deployed Web app](/img/your-deployed-web-app.png "Your deployed Web app")
 
+<div id="troubleshooting"></div>
+
 ### Troubleshooting
 
-If your deployment fails on the first try, as mine did, it is likely a timing issue. Some resources your Web app depends on are likely still not fully provisioned.
+If your deployment fails on the first try, as mine did, it is likely a timing issue. Some resources your Web app depends on were not provisioned when it tried to start.
 
 ![The service is unavailable](/img/service-unavailable.png "The service is unavailable")
 
-Try completing all the steps above, including adding the *WEBSITE_NODE_DEFAULT_VERSION* application setting to see if this resolves your problem. If not, I have found that deleting your Web Application and starting over resolves the problem.
+Make sure you have completed all the steps above. If your app still does not start after 10 minutes, either dig into Azure's [Node.js troubleshooting documentation](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-nodejs-best-practices-and-troubleshoot-guide), or use the nuclear option. I have found that deleting your Web Application and starting over resolves the problem.
 
 Featured Image Credit: [Stebbes87](https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
 
