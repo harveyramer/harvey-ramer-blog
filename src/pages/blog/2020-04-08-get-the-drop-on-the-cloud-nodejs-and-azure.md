@@ -59,7 +59,11 @@ Since Azure's App Service uses dynamically configured Docker containers, we cann
 
 If you started the local server, stop it (Ctrl+C).
 
-Open the `src/index.js` file and change line 5 to `const port = process.env.PORT` and save your changes.
+Open the `src/index.js` file and change line 5 to 
+```
+const port = process.env.PORT
+```
+and save your changes.
 
 ## Deploying to Azure App Service
 
@@ -90,7 +94,7 @@ When deployment has completed, we should add an Application Setting that is requ
 * Expand your subscription, Web app, and right-click on Application settings
 * Choose *Add New Setting*
 * For your setting key, enter *WEBSITE_NODE_DEFAULT_VERSION*
-* For your setting value, enter *12.13.0*
+* For your setting value, enter *12-lts*
 
 ![Add WEBSITE_NODE_DEFAULT_VERSION application setting](/img/add-application-setting.png "Add WEBSITE_NODE_DEFAULT_VERSION application setting")
 
@@ -98,6 +102,11 @@ Adding a new application setting causes the App Service to restart, which can ta
 
 ### Monitoring your App with Logs
 
+Since it takes several minutes for your app to warm up after being deployed to Azure, it helps to monitor the Log Stream for your application. To do that, Expand your application's *Logs (Read-only)* folder and click *Connect to Log Stream...* An output panel in the terminal will allow you to monitor your application's progress.
+
+![](/img/monitor-application-logs.png)
+
+When you see *Example app listening at http://localhost:8080* your app is warmed up and ready to take some requests. 
 
 ### Troubleshooting
 
