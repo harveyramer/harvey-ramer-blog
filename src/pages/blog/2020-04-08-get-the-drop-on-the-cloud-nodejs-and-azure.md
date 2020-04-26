@@ -22,6 +22,8 @@ Let's take care of some things before we begin:
 4. [Add the Azure Tools Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) to Visual Studio Code
 5. [Install NodeJS](https://www.harveyramer.com/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/)
 
+![Azure App Service Extension Installed](/img/installed-azure-tools.png "Azure App Service Extension Installed")
+
 ### Log In to Azure
 
 #### The CLI
@@ -34,7 +36,7 @@ Open your terminal in VS Code (``Ctrl+` ``) and enter `az login`. This will laun
 
 In VS Code, open the command palette (`Ctrl+p`) and enter `> Azure: Sign In`. You will be prompted to log in via a browser window. When complete, you will see your subscriptions listed in your Azure panel.
 
-![Azure App Service Extension Installed](/img/installed-azure-tools.png "Azure App Service Extension Installed")
+![Signing in to Azure with VS Code](/img/log-in-to-azure-vscode.png "Signing in to Azure with VS Code")
 
 ### Start Coding
 
