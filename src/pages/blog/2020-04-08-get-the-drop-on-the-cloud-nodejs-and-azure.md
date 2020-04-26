@@ -59,13 +59,11 @@ Since Azure's App Service uses dynamically configured Docker containers, we cann
 
 If you started the local server, stop it (`Ctrl+C`).
 
-Open the `src/index.js` file and change line 5 to 
+Open the `src/index.js` file and update line 5.
 
 ```
 const port = process.env.PORT
 ```
-
-and save your changes.
 
 ## Deploying to Azure App Service
 
