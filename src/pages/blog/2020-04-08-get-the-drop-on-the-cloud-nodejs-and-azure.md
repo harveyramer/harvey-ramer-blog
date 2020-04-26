@@ -116,6 +116,8 @@ When you see *Example app listening at http://localhost:8080* your app is warmed
 
 Your first deployment of a Web app with Node.js to Azure can be a bit tricky. Please feel free to contact me with any questions or critical feedback on this tutorial. When you succeed, your COVID-19 Tracker will be live for the world to see. 
 
+If you want to share it with friends, you may want to upgrade from the [free App Service Plan](https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage), which only runs for an hour each day. 
+
 ![Your deployed Web app](/img/your-deployed-web-app.png "Your deployed Web app")
 
 ### Troubleshooting
