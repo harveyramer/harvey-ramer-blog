@@ -45,6 +45,7 @@ export default class Index extends React.Component {
             <div className="content">
 
               <div class="column is-10 is-offset-1">
+                <h1>Contact</h1>
                 <address style={{ marginBottom: "2rem" }}>
                   Email: <a href="mailto:harvey@harveyramer.com">harvey@harveyramer.com</a>
                 </address>
