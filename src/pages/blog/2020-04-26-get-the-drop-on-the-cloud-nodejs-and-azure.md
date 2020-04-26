@@ -17,20 +17,13 @@ tags:
 Take care of some things before you begin:
 
 1. [Create a free Azure account](https://azure.microsoft.com/en-us/free/)
-2. [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
-3. [Install Visual Studio Code (VS Code)](https://code.visualstudio.com/docs/setup/setup-overview)
-4. [Add the Azure Tools Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) to Visual Studio Code
-5. [Install NodeJS](https://www.harveyramer.com/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/)
+2. [Install Visual Studio Code (VS Code)](https://code.visualstudio.com/docs/setup/setup-overview)
+3. [Add the Azure Tools Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) to Visual Studio Code
+4. [Install NodeJS](https://www.harveyramer.com/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/)
 
 ![Azure App Service Extension Installed](/img/installed-azure-tools.png "Azure App Service Extension Installed")
 
 ### Log In to Azure
-
-#### The CLI
-
-Open your terminal in VS Code (``Ctrl+` ``) and enter `az login`. This will launch a browser window you will use to log in with the credentials from your new Azure account.
-
-![Logging in to Azure](/img/login-az-cli.png "Logging in to Azure")
 
 #### Azure Tools
 
