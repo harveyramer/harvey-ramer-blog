@@ -57,7 +57,7 @@ If you already have a Node.js app using the Express framework, skip this step. O
 
 Since Azure's App Service uses dynamically configured Docker containers, we cannot specify a port in our code. Instead, we must rely on an environment variable. 
 
-If you started the local server, stop it (Ctrl+C).
+If you started the local server, stop it (`Ctrl+C`).
 
 Open the `src/index.js` file and change line 5 to 
 
