@@ -30,7 +30,7 @@ Let's take care of some things before we begin:
 
 Open your terminal in VS Code (``Ctrl+` ``) and enter `az login`. This will launch a browser window you will use to log in with the credentials from your new Azure account.
 
-![Logging in to Azure](/img/gkpaytxsfy.png "Logging in to Azure")
+![Logging in to Azure](/img/login-az-cli.png "Logging in to Azure")
 
 #### Azure Tools
 
@@ -40,7 +40,7 @@ In VS Code, open the command palette (`Ctrl+P`) and enter `> Azure: Sign In`. Yo
 
 ### Start Coding
 
-First, select a folder in VS Code (`Ctrl+K Ctrl+O`). If you need to create and select one, you can do that in the dialog that opens. I have opened the folder containing the COVID-19 Tracker used in some JavaScript tutorials.[^1] 
+First, select a folder in VS Code (`Ctrl+K Ctrl+O`). If you need to create and select one, you can do that in the dialog that opens. I have opened the folder containing the COVID-19 Tracker used in some JavaScript tutorials.\[^1] 
 
 #### Installing the COVID-19 Tracker
 
@@ -126,10 +126,10 @@ If your deployment fails on the first try, as mine did, it is likely a timing is
 
 ![The service is unavailable](/img/service-unavailable.png "The service is unavailable")
 
-Try completing all the steps above, including adding the _WEBSITE_NODE_DEFAULT_VERSION_ application setting to see if this resolves your problem. If not, I have found that deleting your Web Application and starting over resolves the problem.
+Try completing all the steps above, including adding the *WEBSITE_NODE_DEFAULT_VERSION* application setting to see if this resolves your problem. If not, I have found that deleting your Web Application and starting over resolves the problem.
 
 Featured Image Credit: [Stebbes87](https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
 
 ## Footnotes
 
-[^1]: [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/) and [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
+\[^1]: [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/) and [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
