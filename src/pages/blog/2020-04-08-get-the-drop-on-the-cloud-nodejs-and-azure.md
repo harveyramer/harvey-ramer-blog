@@ -53,7 +53,24 @@ If you already have a Node.js app using the Express framework, skip this step. O
 5. Start the server (`npm start`)
 6. Navigate to your project in a browser ([http://localhost:3000](http://localhost:3000/))
 
-### Deploying to Azure App Service
+## Deploying to Azure App Service
+
+The extensions in the Azure Tools pack we installed make deploying a Web app easy. 
+
+First, show the Azure panel in VS Code by clicking on the Azure logo on the left. Then, click the *Deploy to Azure* arrow button in the App Service menu bar.
+
+![Deploy to Azure App Service](/img/deploy-to-azure.png "Deploy to Azure App Service")
+
+The Azure App Service extension will walk you through some questions and deploy your app.
+
+1. Select the folder to zip and deploy
+    * In my case this is the `covid19-tracker` folder
+2. Choose _Create new Web App..._
+3. Next we will enter the name of our Web app
+    * I entered _covid19tutorial_
+4. Select runtime _Node 12 LTS_
+5. Wait as Azure provisions the resources for our Web app.
+
 
 
 Featured Image Credit: [Stebbes87](https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
