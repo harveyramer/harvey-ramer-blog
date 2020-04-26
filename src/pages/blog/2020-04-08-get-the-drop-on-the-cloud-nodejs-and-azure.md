@@ -42,6 +42,8 @@ In VS Code, open the command palette (`Ctrl+P`) and enter `> Azure: Sign In`. Yo
 
 ### Installing the COVID-19 Tracker
 
+For this project, use the COVID-19 Tracker project I created for some earlier tutorials.[^1]
+
 1. clone or download the repository (`git clone git@github.com:harveyramer/covid-19-demo-express-js-app.git`)
 2. Navigate in your terminal to the root directory (`cd covid-19-demo-express-js-app`)
 3. Check out this branch (`git checkout tutorial-2`)
