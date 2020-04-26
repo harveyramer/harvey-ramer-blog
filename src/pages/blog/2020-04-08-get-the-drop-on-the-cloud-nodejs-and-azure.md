@@ -64,12 +64,24 @@ First, show the Azure panel in VS Code by clicking on the Azure logo on the left
 The Azure App Service extension will walk you through some questions and deploy your app.
 
 1. Select the folder to zip and deploy
-    * In my case this is the `covid19-tracker` folder
-2. Choose _Create new Web App..._
+
+   * In my case this is the `covid19-tracker` folder
+2. Choose *Create new Web App...*
 3. Next we will enter the name of our Web app
-    * I entered _covid19tutorial_
-4. Select runtime _Node 12 LTS_
-5. Wait as Azure provisions the resources for our Web app.
+
+   * I entered *covid19tutorial*
+4. Select runtime *Node 12 LTS*
+5. Wait as Azure provisions the resources for our Web app
+6. You will be asked, "Would you like to update your workspace configuration to run build commands on the target server?" Answer, *"Yes."*
+7. To learn about the build process, I recommend showing the output window.
+
+![Show Azure deployment output window](/img/show-build-output.png "Show Azure deployment output window")
+
+### Troubleshooting
+
+If your deployment fails on the first try, as mine did, it is likely a timing issue. Some resources your Web app depends on are likely still not fully provisioned.
+
+![The service is unavailable](/img/service-unavailable.png "The service is unavailable")
 
 
 
