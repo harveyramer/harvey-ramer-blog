@@ -83,7 +83,7 @@ The Azure App Service extension's wizard will help you deploy your app.
 
 ![Show Azure deployment output window](/img/show-build-output.png "Show Azure deployment output window")
 
-When deployment finishes, browse to your new website. It is located at https://**my-app-name**.azurewebsites.net. In my case, that is https://**covid19tutorial**.azurewebsites.net.
+When deployment finishes, browse to your new website. It is located at _**my-app-name**.azurewebsites.net_. In my case, that is _**covid19tutorial**.azurewebsites.net_.
 
 Don't be surprised if it doesn't respond or it displays an application error. You will need to add an _Application Setting_ that is required for Node.js on Azure App Service. 
 
