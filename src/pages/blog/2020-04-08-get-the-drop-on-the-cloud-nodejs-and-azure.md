@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Get the Drop on the Cloud: NodeJS and Azure'
+title: 'Get the Drop on the Cloud: Node.js and Azure'
 date: 2020-04-08T16:27:23.655Z
 description: >-
   Deploying applications to the cloud can be intimidating. Don't worry though,
