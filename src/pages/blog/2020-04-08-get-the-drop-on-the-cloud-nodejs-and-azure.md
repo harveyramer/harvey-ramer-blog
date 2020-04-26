@@ -6,7 +6,7 @@ description: >-
   Deploying applications to the cloud can be intimidating. Don't worry though,
   this guide will stick to the bare essentials. When you've finished here, you
   will know the simplest way to get a NodeJS web application running on Azure.
-featuredpost: true
+featuredpost: false
 featuredimage: /img/sunshine_above_clouds.jpg
 tags:
   - software
@@ -22,15 +22,19 @@ Let's take care of some things before we begin:
 4. [Add the Azure Tools Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) to Visual Studio Code
 5. [Install NodeJS](https://www.harveyramer.com/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/)
 
-![Azure App Service Extension Installed](/img/o16ldo5k8g.png "Azure App Service Extension Installed")
+### Log In to Azure
 
-**Note:** Screenshots and shortcuts are all Windows specific.
-
-### Log In to Azure CLI
+#### The CLI
 
 Open your terminal in VS Code (``Ctrl+` ``) and enter `az login`. This will launch a browser window you will use to log in with the credentials from your new Azure account.
 
 ![Logging in to Azure](/img/gkpaytxsfy.png "Logging in to Azure")
+
+#### Azure Tools
+
+In VS Code, open the command palette (`Ctrl+p`) and enter `> Azure: Sign In`. You will be prompted to log in via a browser window. When complete, you will see your subscriptions listed in your Azure panel.
+
+![Azure App Service Extension Installed](/img/installed-azure-tools.png "Azure App Service Extension Installed")
 
 ### Start Coding
 
