@@ -53,9 +53,9 @@ For this project, use the COVID-19 Tracker project I created for some earlier tu
 
 ### Preparing for Deployment
 
-Since Azure's App Service uses dynamically configured Docker containers, you cannot specify a port in our code. Instead, rely on an environment variable. 
+Since Azure's App Service uses dynamically configured [Docker containers](https://docker-curriculum.com/), you cannot specify a port in our code. Instead, rely on an [environment variable](https://medium.com/chingu/an-introduction-to-environment-variables-and-how-to-use-them-f602f66d15fa). 
 
-If you started the local server, stop it (`Ctrl+C`).
+Make sure your local server is not running (`Ctrl+C`).
 
 Open the `src/index.js` file and update line 5.
 
