@@ -40,7 +40,7 @@ In VS Code, open the command palette (`Ctrl+P`) and enter `> Azure: Sign In`. Yo
 
 ## Start Coding
 
-First, select a folder in VS Code (`Ctrl+K Ctrl+O`). If you need to create and select one, you can do that in the dialog that opens. I have opened the folder containing the COVID-19 Tracker used in some JavaScript tutorials.\[^1] 
+First, select a folder in VS Code (`Ctrl+K Ctrl+O`). If you need to create and select one, you can do that in the dialog that opens. I have opened the folder containing the COVID-19 Tracker used in some JavaScript tutorials.[^1] 
 
 ### Installing the COVID-19 Tracker
 
@@ -126,4 +126,4 @@ Featured Image Credit: [Stebbes87](https://commons.wikimedia.org/wiki/File:Sunsh
 
 ## Footnotes
 
-\[^1]: [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/) and [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
+[^1]: [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/) and [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
