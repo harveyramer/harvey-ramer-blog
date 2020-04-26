@@ -38,11 +38,11 @@ In VS Code, open the command palette (`Ctrl+P`) and enter `> Azure: Sign In`. Yo
 
 ![Signing in to Azure with VS Code](/img/log-in-to-azure-vscode.png "Signing in to Azure with VS Code")
 
-### Start Coding
+## Start Coding
 
 First, select a folder in VS Code (`Ctrl+K Ctrl+O`). If you need to create and select one, you can do that in the dialog that opens. I have opened the folder containing the COVID-19 Tracker used in some JavaScript tutorials.\[^1] 
 
-#### Installing the COVID-19 Tracker
+### Installing the COVID-19 Tracker
 
 If you already have a Node.js app using the Express framework, skip this step. Otherwise:
 
@@ -53,7 +53,7 @@ If you already have a Node.js app using the Express framework, skip this step. O
 5. Start the server (`npm start`)
 6. Navigate to your project in a browser ([http://localhost:3000](http://localhost:3000/))
 
-## Preparing for Deployment
+### Preparing for Deployment
 
 Since Azure's App Service uses dynamically configured Docker containers, we cannot specify a port in our code. Instead, we must rely on an environment variable. 
 
@@ -75,13 +75,9 @@ First, show the Azure panel in VS Code by clicking on the Azure logo on the left
 
 The Azure App Service extension will walk you through some questions and deploy your app.
 
-1. Select the folder to zip and deploy
-
-   * In my case this is the `covid19-tracker` folder
+1. Select the folder to zip and deploy (`covid19-tracker` folder)
 2. Choose *Create new Web App...*
-3. Next we will enter the name of our Web app
-
-   * I entered *covid19tutorial*
+3. Next we will enter the name of our Web app. (*my-app-name*)
 4. Select runtime *Node 12 LTS*
 5. Wait as Azure provisions the resources for our Web app
 6. You will be asked, "Would you like to update your workspace configuration to run build commands on the target server?" Answer, *"Yes."*
@@ -89,7 +85,7 @@ The Azure App Service extension will walk you through some questions and deploy 
 
 ![Show Azure deployment output window](/img/show-build-output.png "Show Azure deployment output window")
 
-When deployment has completed, browse to your new website. It is located at https://**yourappname**.azurewebsites.net. In my case, that is https://**covid19tutorial**.azurewebsites.net.
+When deployment has completed, browse to your new website. It is located at https://**my-app-name**.azurewebsites.net. In my case, that is https://**covid19tutorial**.azurewebsites.net.
 
 Don't be surprised if it either doesn't respond or displays an application error. We must add an Application Setting that is required for Node.js on Azure App Service. 
 
