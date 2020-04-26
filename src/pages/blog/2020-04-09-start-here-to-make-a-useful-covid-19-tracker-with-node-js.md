@@ -620,7 +620,7 @@ What should to improve the utility of this demonstration application? Make a lis
 
 [A complete archive of code for this Web app](https://github.com/harveyramer/covid-19-demo-express-js-app) is available on Github.
 
-When you're ready, move on to the next tutorial to [add interactivity to your COVID-19 tracker](https://www.harveyramer.com/blog/entries/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js).
+When you're ready, move on to the next tutorial to [add interactivity to your COVID-19 tracker](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js).
 
 <br />
 <br />
