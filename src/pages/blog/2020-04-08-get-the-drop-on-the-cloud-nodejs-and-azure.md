@@ -69,15 +69,15 @@ const port = process.env.PORT
 
 The extensions in the Azure Tools pack you installed make it easy to deploy a Web app. 
 
-First, show the Azure panel in VS Code by clicking on the Azure logo on the left. Then, click the *Deploy to Azure* arrow button in the App Service menu bar.
+To show the Azure panel in VS Code, click on the Azure logo on the left. Then, click the *Deploy to Azure* arrow button in the App Service menu bar.
 
 ![Deploy to Azure App Service](/img/deploy-to-azure.png "Deploy to Azure App Service")
 
-The Azure App Service extension will walk you through some questions and deploy your app.
+The Azure App Service extension's wizard will help you deploy your app.
 
 1. Select the _covid19-tracker_ folder to zip and deploy
 2. Choose *Create new Web App...*
-3. Next enter a unique name for your Web app. (*my-app-name*)
+3. Next enter a unique name for your Web app. (`my-app-name`)
 4. Select runtime *Node 12 LTS*
 5. Wait a few minutes while Azure provisions the resources for your Web app
 6. When asked, "Would you like to update your workspace configuration to run build commands on the target server?" Answer, *"Yes."*
@@ -91,8 +91,8 @@ Don't be surprised if it doesn't respond or it displays an application error. Yo
 
 * Expand your subscription, Web app, and right-click on **Application Settings**
 * Choose *Add New Setting*
-* For your setting key, enter *WEBSITE_NODE_DEFAULT_VERSION*
-* For your setting value, enter *12-lts*
+* For your setting key, enter `WEBSITE_NODE_DEFAULT_VERSION`
+* For your setting value, enter `12-lts`
 
 ![Add WEBSITE_NODE_DEFAULT_VERSION application setting](/img/add-application-setting.png "Add WEBSITE_NODE_DEFAULT_VERSION application setting")
 
