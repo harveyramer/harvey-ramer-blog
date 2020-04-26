@@ -34,14 +34,15 @@ Open your terminal in VS Code (``Ctrl+` ``) and enter `az login`. This will laun
 
 #### Azure Tools
 
-In VS Code, open the command palette (`Ctrl+p`) and enter `> Azure: Sign In`. You will be prompted to log in via a browser window. When complete, you will see your subscriptions listed in your Azure panel.
+In VS Code, open the command palette (`Ctrl+P`) and enter `> Azure: Sign In`. You will be prompted to log in via a browser window. When complete, you will see your subscriptions listed in your Azure panel.
 
 ![Signing in to Azure with VS Code](/img/log-in-to-azure-vscode.png "Signing in to Azure with VS Code")
 
 ### Start Coding
 
-First, select a folder in VS Code (`Ctrl+k Ctrl+o`). If you need to create and select one, you can do that in the dialog that opens. I have created and selected the folder `nodejs-azure`. 
-
-In our open terminal panel, let's initialize a node project:
+First, select a folder in VS Code (`Ctrl+K Ctrl+O`). If you need to create and select one, you can do that in the dialog that opens. I have opened the folder containing the COVID-19 Tracker used in some JavaScript tutorials.[^1] 
 
 Featured Image Credit: [Stebbes87](https://commons.wikimedia.org/wiki/File:Sunshine_above_clouds.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0)
+
+## Footnotes
+[^1]: [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/) and [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
