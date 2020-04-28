@@ -244,7 +244,7 @@ input {
 
 Verify this change by starting your server (`npm start` in your Terminal) and navigating to <http://localhost:3000>. If it is already running, restart it (`Ctrl+C` followed by `npm start`). The global data and list of countries from our previous tutorial should display.
 
-![Global and country data](/img/chrome_msr65echxo.png "Global and country data")
+![Global and country data](https://harveyramer.com/img/chrome_msr65echxo.png "Global and country data")
 
 ### Save Your Work
 
@@ -255,7 +255,7 @@ git add .
 git commit -m "Adding global summary data."
 ```
 
-![Committing changes with Gid](/img/code_b9hpp6nmfy.png "Committing changes with Gid")
+![Committing changes with Gid](https://harveyramer.com/img/code_b9hpp6nmfy.png "Committing changes with Gid")
 
 ## Filtering The List
 
@@ -344,7 +344,7 @@ Each of these concepts merits deep study. The most effective deep study is *play
 
 Verify the client side filter you added by starting your server (`npm start` in your Terminal) and navigating to <http://localhost:3000>. If it is already running, restart it (`Ctrl+C` followed by `npm start`). We should be able to enter text and see our list of countries filter.
 
-![Filtering countries](/img/chrome_5bioa1ikxi.png "Filtering countries")
+![Filtering countries](https://harveyramer.com/img/chrome_5bioa1ikxi.png "Filtering countries")
 
 ### Save Your Work
 

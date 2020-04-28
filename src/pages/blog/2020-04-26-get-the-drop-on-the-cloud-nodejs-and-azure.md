@@ -21,7 +21,7 @@ Take care of some things before you begin:
 3. [Add the Azure Tools Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) to Visual Studio Code
 4. [Install NodeJS](https://www.harveyramer.com/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/)
 
-![Azure App Service Extension Installed](/img/installed-azure-tools.png "Azure App Service Extension Installed")
+![Azure App Service Extension Installed](https://harveyramer.com/img/installed-azure-tools.png "Azure App Service Extension Installed")
 
 ### Log In to Azure
 
@@ -29,7 +29,7 @@ Take care of some things before you begin:
 
 In VS Code, open the command palette (`Ctrl+P`) and enter `> Azure: Sign In`. You will be prompted to log in via a browser window. When complete, you will see your subscriptions listed in your Azure panel.
 
-![Signing in to Azure with VS Code](/img/log-in-to-azure-vscode.png "Signing in to Azure with VS Code")
+![Signing in to Azure with VS Code](https://harveyramer.com/img/log-in-to-azure-vscode.png "Signing in to Azure with VS Code")
 
 ## Start Coding
 
@@ -62,7 +62,7 @@ The extensions in the Azure Tools pack you installed make it easy to deploy a We
 
 To show the Azure panel in VS Code, click on the Azure logo on the left. Then, click the *Deploy to Azure* arrow button in the App Service menu bar.
 
-![Deploy to Azure App Service](/img/deploy-to-azure.png "Deploy to Azure App Service")
+![Deploy to Azure App Service](https://harveyramer.com/img/deploy-to-azure.png "Deploy to Azure App Service")
 
 The Azure App Service extension's wizard will help you deploy your app.
 
@@ -74,7 +74,7 @@ The Azure App Service extension's wizard will help you deploy your app.
 6. When asked, "Would you like to update your workspace configuration to run build commands on the target server?" Answer, *"Yes."*
 7. To monitor the build process, show the output window.
 
-![Show Azure deployment output window](/img/show-build-output.png "Show Azure deployment output window")
+![Show Azure deployment output window](https://harveyramer.com/img/show-build-output.png "Show Azure deployment output window")
 
 When deployment finishes, browse to your new website. It will use the unique name you specified, for example,  _**covid19tutorial-myname**.azurewebsites.net_.
 
@@ -89,7 +89,7 @@ You will need to add an _Application Setting_ to tell Azure App Service what ver
 * For your setting key, enter `WEBSITE_NODE_DEFAULT_VERSION`
 * For your setting value, enter `12-lts`
 
-![Add WEBSITE_NODE_DEFAULT_VERSION application setting](/img/add-application-setting.png "Add WEBSITE_NODE_DEFAULT_VERSION application setting")
+![Add WEBSITE_NODE_DEFAULT_VERSION application setting](https://harveyramer.com/img/add-application-setting.png "Add WEBSITE_NODE_DEFAULT_VERSION application setting")
 
 Adding a new application setting causes the App Service to restart, which can take several minutes. If your Web app does not start in 10 minutes, see [Troubleshooting](#troubleshooting) below.
 
@@ -97,7 +97,7 @@ Adding a new application setting causes the App Service to restart, which can ta
 
 Since it takes several minutes for your app to warm up after being deployed to Azure, it helps to monitor the Log Stream for your application. To do that, Expand your application's *Logs (Read-only)* folder and click *Connect to Log Stream...* An output panel in the terminal will allow you to monitor your application's progress.
 
-![](/img/monitor-application-logs.png)
+![](https://harveyramer.com/img/monitor-application-logs.png)
 
 When you see *Example app listening at http://localhost:8080* your app is warmed up and ready to take some requests. 
 
@@ -107,7 +107,7 @@ Your first deployment of a Web app with Node.js to Azure can be a bit tricky. Pl
 
 If you want to share it with friends, you may want to upgrade from the [free App Service Plan](https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage), which only runs for an hour each day. 
 
-![Your deployed Web app](/img/your-deployed-web-app.png "Your deployed Web app")
+![Your deployed Web app](https://harveyramer.com/img/your-deployed-web-app.png "Your deployed Web app")
 
 <div id="troubleshooting"></div>
 
@@ -115,7 +115,7 @@ If you want to share it with friends, you may want to upgrade from the [free App
 
 If your deployment fails on the first try, as mine did, it is likely a timing issue. Some resources your Web app depends on were not provisioned when it tried to start.
 
-![The service is unavailable](/img/service-unavailable.png "The service is unavailable")
+![The service is unavailable](https://harveyramer.com/img/service-unavailable.png "The service is unavailable")
 
 Make sure you have completed all the steps above. If your app still does not start after 10 minutes, either dig into Azure's [Node.js troubleshooting documentation](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-nodejs-best-practices-and-troubleshoot-guide), or use the nuclear option. I have found that deleting your Web Application and starting over resolves the problem.
 

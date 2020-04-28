@@ -41,7 +41,7 @@ code .
 
 Then, open the Terminal in Visual Studio Code (``Ctrl+` ``).
 
-![Open the Terminal in Visual Studio Code](/img/code_qck1owdhjr.png "Open the Terminal in Visual Studio Code")
+![Open the Terminal in Visual Studio Code](https://harveyramer.com/img/code_qck1owdhjr.png "Open the Terminal in Visual Studio Code")
 
 In our terminal, we will initialize our new project.
 
@@ -50,7 +50,7 @@ npm init -y
 git init
 ```
 
-![Initializing a new Node.js project](/img/code_vr7kovcecm.png "Initializing a new Node.js project")
+![Initializing a new Node.js project](https://harveyramer.com/img/code_vr7kovcecm.png "Initializing a new Node.js project")
 
 Now that we've initialized the project, we'll install some dependencies.
 
@@ -68,7 +68,7 @@ To do this, we will use our Visual Studio Code Terminal.
 npm install express axios pug --save
 ```
 
-![Installing express and axios](/img/code_cpv5ebkavw.png "Installing express and axios")
+![Installing express and axios](https://harveyramer.com/img/code_cpv5ebkavw.png "Installing express and axios")
 
 ## Hello World!
 
@@ -132,11 +132,11 @@ In the Visual Studio Terminal, start the Express server via the NPM script we cr
 npm start
 ```
 
-![Running server](/img/chrome_lgnp0rdpe8.png "Running server")
+![Running server](https://harveyramer.com/img/chrome_lgnp0rdpe8.png "Running server")
 
 Open <http://localhost:3000> in your browser.
 
-![Hello World in browser](/img/chrome_bqk5uaxq7h.png "Hello World in browser")
+![Hello World in browser](https://harveyramer.com/img/chrome_bqk5uaxq7h.png "Hello World in browser")
 
 Ok. Now that you've tested your app, let's shut down your server. In the terminal, `Ctrl+C` and your server will stop running.
 
@@ -194,7 +194,7 @@ Open http://localhost:3000 in your browser and click the **about this app** link
 
 These simple pages demonstrate a fully-functioning Web server responding to HTTP requests. This the foundation on which the Web is built!
 
-![Our grown-up Hello World app with multiple routes](/img/chrome_r6cetpk0lp.png "Our grown-up Hello World app with multiple routes")
+![Our grown-up Hello World app with multiple routes](https://harveyramer.com/img/chrome_r6cetpk0lp.png "Our grown-up Hello World app with multiple routes")
 
 ## Housekeeping: Versioning Our Code
 
@@ -207,7 +207,7 @@ git add .
 git commit -m "A hello  world Web app"
 ```
 
-![Adding files to Git](/img/code_e8crgvguuy.png "Adding files to Git")
+![Adding files to Git](https://harveyramer.com/img/code_e8crgvguuy.png "Adding files to Git")
 
 ## COVID-19 Tracker
 
@@ -452,7 +452,7 @@ There is quite a bit going on in these files, feel free to investigate to your h
 
 To validate your work, stop your server if it's running (Ctrl+C in the Visual Studio Code Terminal) and restart it (`npm start`). When you browse to [localhost:3000](http://localhost:3000), you should see something like the view below.
 
-![Static data mocking up the user interface](/img/chrome_sxmi7gwakd.png "Static data mocking up the user interface")
+![Static data mocking up the user interface](https://harveyramer.com/img/chrome_sxmi7gwakd.png "Static data mocking up the user interface")
 
 This COVID-19 data is static. We added it inside the **home.pug** file. Next we will get real data from an API.
 
@@ -601,7 +601,7 @@ router.get('/', (req, res) => {
 
 This code makes an asynchronous call to the COVID-19 API and returns the data for our view. When you restart your server and browse to [localhost:3000](http://localhost:3000), you should see something like this.
 
-![A list of COVID-19 cases by country](/img/chrome_8yyl9m8idf.png "A list of COVID-19 cases by country")
+![A list of COVID-19 cases by country](https://harveyramer.com/img/chrome_8yyl9m8idf.png "A list of COVID-19 cases by country")
 
 ## What We Have Learned
 
