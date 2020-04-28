@@ -27,7 +27,7 @@ We will use [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scr
 
 To launch PowerShell enter `PowerShell` in your Windows Start Menu and choose "Run as Administrator" from the menu.
 
-![](/img/sc5ox6zxr9.png)
+![](https://harveyramer.com/img/sc5ox6zxr9.png)
 
 In your PowerShell terminal, enter the command:
 
@@ -37,7 +37,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 
 Expect output like this:
 
-![](/img/powershell_Wb8r3lS2bU.png)
+![](https://harveyramer.com/img/powershell_Wb8r3lS2bU.png)
 
 ## Install Node Version Manager (NVM)
 
@@ -53,7 +53,7 @@ choco install -y nvm
 
 Expect output like this:
 
-![](/img/cmd_4rbXM91m6u.png)
+![](https://harveyramer.com/img/cmd_4rbXM91m6u.png)
 
 Close that terminal window and open a new one (again, as Administrator). This allows the terminal to look up environment information and see our newly installed package manager.
 
@@ -71,7 +71,7 @@ nvm install node@13.12.0
 
 Expect output like this:
 
-![](/img/cmd_pN3qtBIZHC.png)
+![](https://harveyramer.com/img/cmd_pN3qtBIZHC.png)
 
 Before celebrating too much, let's set our default Node.js version with the command, `nvm use 13.12.0`.
 
@@ -96,7 +96,7 @@ Your "Hello World" statement will be printed to the terminal
 
 Then, exit the REPL, by entering `.exit`.
 
-![Hello World!](/img/cmd_SHOGeflu9a.png "Hello World!")
+![Hello World!](https://harveyramer.com/img/cmd_SHOGeflu9a.png "Hello World!")
 
 ## Add More Versions of Node.js (optional)
 
@@ -118,7 +118,7 @@ To switch back to version 13, after this, we would once again use the command: `
 
 At any time, you can see your locally installed versions of Node.js with `nvm ls`.
 
-![See local Node.js versions](/img/cmd_RycmFqBtls.png "See local Node.js versions")
+![See local Node.js versions](https://harveyramer.com/img/cmd_RycmFqBtls.png "See local Node.js versions")
 
 ## Install Git
 
@@ -128,7 +128,7 @@ In most cases, you will write code that requires version control. For that purpo
 
 When the download completes, install using the defaults. No fuss. We can configure Git later. You'll finish in a flash.
 
-![Happy install dialog](/img/Git-2.26.0-64-bit.tmp_gcNQ427NNs.png)
+![Happy install dialog](https://harveyramer.com/img/Git-2.26.0-64-bit.tmp_gcNQ427NNs.png)
 
 
 
@@ -140,7 +140,7 @@ Visual Studio Code is my preferred development environment for Node.js. There ar
 
 In short, download the latest binary of [Visual Studio Code](https://code.visualstudio.com/) for windows.
 
-![Downloading Visual Studio Code](/img/chrome_9n74ygwamo.png "Downloading Visual Studio Code")
+![Downloading Visual Studio Code](https://harveyramer.com/img/chrome_9n74ygwamo.png "Downloading Visual Studio Code")
 
 When the download completes, install using the defaults. No fuss. 
 
@@ -149,9 +149,9 @@ One final step, visit the [Visual Studio Code Marketplace](https://marketplace.v
 * [Node.js Modules Intellisense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense)
 * [Node.js Extension Pack](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack)
 
-![Install Node.js Modules Intellisense](/img/chrome_rtjxzfmak7.png "Install Node.js Modules Intellisense")
+![Install Node.js Modules Intellisense](https://harveyramer.com/img/chrome_rtjxzfmak7.png "Install Node.js Modules Intellisense")
 
-![Install Node.js Extension Pack](/img/chrome_1klnojkfy0.png "Install Node.js Extension Pack")
+![Install Node.js Extension Pack](https://harveyramer.com/img/chrome_1klnojkfy0.png "Install Node.js Extension Pack")
 
 When those are both installed, restart Visual Studio Code and poke around on to get a sense of the tools available to you.
 

@@ -47,13 +47,13 @@ export default class EmailSignup extends React.Component {
         const status = this.state.status;
         if (status) {
             if (status.result === 'error') {
-                notice = <div class="notification is-warning">
-                    <button class="delete" onClick={this.handleClearStatus}></button>
+                notice = <div className="notification is-warning">
+                    <button className="delete" onClick={this.handleClearStatus}></button>
                 Something went wrong. <span dangerouslySetInnerHTML={{ __html: this.state.status ? this.state.status.msg : '' }}></span>
                 </div>;
             } else {
-                notice = <div class="notification is-info">
-                    <button class="delete" onClick={this.handleClearStatus}></button>
+                notice = <div className="notification is-info">
+                    <button className="delete" onClick={this.handleClearStatus}></button>
                 You have subscribed. Thank you!
             </div>;
             }
@@ -67,27 +67,27 @@ export default class EmailSignup extends React.Component {
                             <form onSubmit={this.handleSubmit}>
                                 <h2>Subscribe</h2>
                                 <p>Sign up to receive emails when I write new content.</p>
-                                <div class="field">
-                                    <label htmlFor="firstname" class="label">First Name</label>
-                                    <div class="control">
-                                        <input class="input" id="firstname" type="text" name="FNAME" value={this.state.FNAME} onChange={this.handleChange} />
+                                <div className="field">
+                                    <label htmlFor="firstname" className="label">First Name</label>
+                                    <div className="control">
+                                        <input className="input" id="firstname" type="text" name="FNAME" value={this.state.FNAME} onChange={this.handleChange} />
                                     </div>
                                 </div>
-                                <div class="field">
-                                    <label htmlFor="lastname" class="label">Last Name</label>
-                                    <div class="control">
-                                        <input id="lastname" class="input" type="text" name="LNAME" value={this.state.LNAME} onChange={this.handleChange} />
+                                <div className="field">
+                                    <label htmlFor="lastname" className="label">Last Name</label>
+                                    <div className="control">
+                                        <input id="lastname" className="input" type="text" name="LNAME" value={this.state.LNAME} onChange={this.handleChange} />
                                     </div>
                                 </div>
-                                <div class="field">
-                                    <label htmlFor="email" class="label">Email (required)</label>
-                                    <div class="control">
-                                        <input id="email" class="input" type="email" name="EMAIL" value={this.state.EMAIL} onChange={this.handleChange} />
+                                <div className="field">
+                                    <label htmlFor="email" className="label">Email (required)</label>
+                                    <div className="control">
+                                        <input id="email" className="input" type="email" name="EMAIL" value={this.state.EMAIL} onChange={this.handleChange} />
                                     </div>
                                 </div>
-                                <div class="field">
-                                    <div class="control">
-                                        <button class="button is-link">Subscribe</button>
+                                <div className="field">
+                                    <div className="control">
+                                        <button className="button is-link">Subscribe</button>
                                     </div>
                                 </div>
                             </form>

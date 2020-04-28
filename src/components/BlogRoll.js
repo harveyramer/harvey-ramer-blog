@@ -42,7 +42,7 @@ class BlogRoll extends React.Component {
                       <p><strong>{post.frontmatter.date}</strong>—{post.frontmatter.description}</p>
                       <div>
                       <Link style={{marginTop:"1em"}} className="button is-small" to={post.fields.slug}>
-                        <span class="icon is-small">
+                        <span className="icon is-small">
                           <img 
                             src={newspaper} alt="Read news" 
                             style={{ width: '1.25em', height: '1.25em'}}
