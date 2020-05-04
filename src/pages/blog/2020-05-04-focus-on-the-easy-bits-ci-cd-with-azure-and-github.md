@@ -56,38 +56,48 @@ This is often called **trunk-based development**.
 
 > At the end of each development interval, we must have integrated, tested, working, and potentially shippable code, demonstrated in a production-like environment, **created from trunk using a one-click process, and validated with automated tests**.[^2]
 
-## Basic Continous Integration with Node.js and Azure
-
-### Configure Environment Variable
-
-Feel free to configure your own Node.js project or follow along with the COVID-19 tracker we created in previous tutorials. 
-
+## Manage the Code
+### Check Out the Repository
 ```
 git clone git@github.com:harveyramer/covid-19-demo-express-js-app.git
 cd covid-19-demo-express-js-app
 ```
 
-To run locally, this project needs to use an environment variable. On line 5 of the `/src/index.js` file, you can see why. `process env` holds all environment variables exposed to this program.
+### Make This Code Your Own
+
+Since you want Github to deploy on your behalf, create your own repository for it.
+
+![Make a Github Repository](/img/make-a-repository.png "Make a Github Repository")
+
+Next, name it whatever you wish, choose to make it public or private, and click *Create Repository*.
+
+Replace the origin of this project (git@github.com:harveyramer/covid-19-demo-express-js-app.git) with your own and push this code to your repository. Assuming your name is **John Doe** and you named your repository **My Repository**, your commands will be the followiong.
+
+```
+git remote set-url origin git@github.com:johndoe/my-repository.git
+git push
+```
+
+## Run Unit Tests
+
+A critical part of continuous integration is the assurance that if code is broken, the deployment will fail. Unit tests make this a reality. 
+
+To check out the latest branch and install the project, execute the following commands.
+
+```
+git checkout tutorial-3
+npm install
+```
+
+### Configure an Environment Variable
+
+Before we can execute the tests, this project needs to use an environment variable. On line 6 of the `/src/index.js` file, you can see why. The `process.env` property holds all environment variables exposed to this program.
 
 ```
 const port = process.env.PORT;
 ```
 
-We will use an NPM package called **dotenv** to set an environment variable when running locally. In your terminal, install the package.
-
-```
-npm install dotenv --save-dev
-```
-
-![Install NPM package dotenv](/img/install-dotenv.png "Install NPM package dotenv")
-
-Above line 5 of the `/src/index.js`, add the following line to configure environment variables.
-
-```
-require('dotenv').config();
-```
-
-Now, create a `.env` file in the root of the project to hold our port configuration. Enter the following line into the file.
+To expose a port to our application, create a `.env` file in the root of the project. Enter the following line into the file.
 
 ```
 PORT=3000
@@ -99,17 +109,83 @@ This completes our local configuration. Start the local server.
 npm run start
 ```
 
-Verify the project is available at <http://localhost:3000>.
+Verify the project is available at `http://localhost:3000`.
 
-### Add a Unit Test
+### Run the Tests
 
-A critical part of continuous integration is the assurance that if code is broken, the deployment will fail. Unit tests make this a reality. We will use the [Jest](https://jestjs.io/) unit testing framework.
+This project uses the [Jest](https://jestjs.io/) unit testing framework to run two simple unit tests. One verifies that a `getData` function calls a specified API Url. The other checks to see that an HTML render function uses the data provided to it. Go ahead and run the unit tests to verify that this project is ready to deploy.
+```
+npm run test
+```
+![Unit Test Success](/img/unit-test-success.png "Unit Test Success")
+
+## Configure Continous Integration
+
+### Authorizing Azure
+
+At the outset of this tutorial, you logged in to Azure with the command `az login`. This redirected you to a browser and authorized your local command line to access resources on your behalf. In order to authorize Github to deploy your project for you, you will need to create a [Service Principal](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest). If you followed along on our [previous tutorial](/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure), you already have an application running in Azure. Replace the tokens `{My App Name}`, `{My Azure Subscription Id}`, and `{My App Service Plan Id}` then execute the following command.
+```
+// Your command will look like this:
+// az ad sp create-for-rbac --name "covid19tutorial" --role contributor --scopes /subscriptions/7d806f61-8462-123456789-101112-985277452dd7/resourceGroups/appsvc_linux_centralus --sdk-auth
+az ad sp create-for-rbac --name "{My App Name}" --role contributor --scopes /subscriptions/{My Azure Subscription Id}/resourceGroups/{My App Service Plan Id} --sdk-auth
+```
+
+The App Service blade in Azure provides all the information you need to configure and run the command above.
+
+![App Service Blade](/img/data-for-your-app.png "The App Service Blade")
+
+When your Service Principal is created, a JSON object is output in the CLI. 
+1. Copy the Service Principal object
+2. In a Web browser, go to your Github repository
+3. Navigate to your repository's *Settings* page and select *Secrets* from the menu it provides. 
+4. In the *Secrets* view, select **Add a new secret**. 
+5. Name the secrete `AZURE_CREDENTIALS` and paste your JSON service principal into the *Value* field.
+6. Add the secret.
+
+![Adding a Github Secret](/img/adding-a-github-secret.png "Adding a Github Secret")
+
+### Configure Your Github Workflow
+
+Open the workflow file at `.github/worflows/azure.yml` and edit line 7 to use the same Application Name you provided when creating the Service Principal.
+
+![Editing the Azure YAML file](/img/azure-yml.png "Editing the Azure YAML file")
+
+## Deploy with Github Actions
+
+On pushing these code changes to the **master** branch, our Github workflow will kick off. To make that happen, we will push our code to Github and merge our changes to the **master** branch. To do that, we'll be on the command line for a bit. Bear with me.
 
 ```
-npm install jest --save-dev
+git add .
+git commit -m "Configuration changes for Github workflows."
+git push
+git checkout master
+git pull origin tutorial-3
+git push
 ```
 
-![Install Jest](/img/install-jest.png "Install Jest")
+Navigate to the Actions tab of your Github repository. If all is well, in about 5 minutes, your Web app will deploy to Azure.
+
+![Successful deployment of Node.js to Azure with Github](/img/successful-deployment.png "Successful deployment of Node.js to Azure with Github")
+
+### Verify Deployment
+
+Open the `/src/views/about.pug` file and add the following line to the end of the file, then save it.
+```
+    p Deployed by Github to Azure
+```
+Next, commit the change and push it up to master. 
+```
+git add .
+git commit -m "Verify Github deployment."
+git push
+```
+Check out your Actions tab to monitor deployment. On completion, visit your Web app's About page (for example,  _**covid19tutorial-myname**.azurewebsites.net/about_) to see the paragraph you just deployed.
+
+![Successful deployment](/img/success-verification.png "Successful deployment")
+
+## Conclusion
+
+This tutorial introduced the main concepts involved in CI/CD and provided a concrete example of *Continuous Integration* by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) and the [benefits of breaking large tasks into small chunks](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps). These you are encouraged to investigate on your own. 
 
 ## Footnotes
 
