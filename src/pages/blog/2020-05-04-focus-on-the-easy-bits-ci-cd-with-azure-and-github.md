@@ -44,7 +44,7 @@ Underpinning CI/CD are some straightforward concepts that may need definition fo
 
 ### Continuous Delivery
 
-Continuous delivery is a way of moving software changes to production. When it is implemented, software changes go live with a minimum manual intervention and very little deployment pain. Continuous delivery requires business practices such as **building quality in**, **working in small batches**, **automating repetitive tasks**, **continuous improvement**, **sharing responsibility** and **collaborating across departments**.[^1]
+Continuous delivery is a way of moving software changes to production. When it is implemented, software changes go live with a minimum manual intervention and very little deployment pain. Continuous delivery requires business practices such as **building quality in**, **working in small batches**, **automating repetitive tasks**, **continuous improvement**, **sharing responsibility** and **collaborating across departments**.\[^1]
 
 ### Continous Integration
 
@@ -54,7 +54,7 @@ Testing is key to the success of continuous integration. This includes automated
 
 This is often called **trunk-based development**. 
 
-> At the end of each development interval, we must have integrated, tested, working, and potentially shippable code, demonstrated in a production-like environment, **created from trunk using a one-click process, and validated with automated tests**.[^2]
+> At the end of each development interval, we must have integrated, tested, working, and potentially shippable code, demonstrated in a production-like environment, **created from trunk using a one-click process, and validated with automated tests**.\[^2]
 
 ## Basic Continous Integration with Node.js and Azure
 
@@ -82,28 +82,35 @@ npm install dotenv --save-dev
 ![Install NPM package dotenv](/img/install-dotenv.png "Install NPM package dotenv")
 
 Above line 5 of the `/src/index.js`, add the following line to configure environment variables.
+
 ```
 require('dotenv').config();
 ```
 
 Now, create a `.env` file in the root of the project to hold our port configuration. Enter the following line into the file.
+
 ```
 PORT=3000
 ```
+
 This completes our local configuration. Start the local server.
+
 ```
 npm run start
 ```
-Verify the project is available at [http://localhost:3000](http://localhost:3000).
+
+Verify the project is available at <http://localhost:3000>.
 
 ### Add a Unit Test
+
 A critical part of continuous integration is the assurance that if code is broken, the deployment will fail. Unit tests make this a reality. We will use the [Jest](https://jestjs.io/) unit testing framework.
 
 ```
 npm install jest --save-dev
 ```
 
+![Install Jest](/img/install-jest.png "Install Jest")
+
 ## Footnotes
 
-[^1]: Ferguson, Nicole Phd., Humble, Jez and Gene Kim. *Accelerate: Building High Performing Technology Organizations*. IT Revolution, 2018, p. 43 
-[^2]: Kim, Gene., Jez Humble, Patrick Dubois, and John Willis. *The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations*. IT Revolution, 2016, p. 149
+\[^1]: Ferguson, Nicole Phd., Humble, Jez and Gene Kim. *Accelerate: Building High Performing Technology Organizations*. IT Revolution, 2018, p. 43  \[^2]: Kim, Gene., Jez Humble, Patrick Dubois, and John Willis. *The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations*. IT Revolution, 2016, p. 149
