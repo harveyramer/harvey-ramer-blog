@@ -13,6 +13,7 @@ tags:
   - azure
   - ci/cd
 ---
+
 ## Prerequisites
 
 1. [Github account configured to use SSH](https://help.github.com/en/github/getting-started-with-github/set-up-git#next-steps-authenticating-with-github-from-git)
@@ -56,7 +57,24 @@ This is often called **trunk-based development**.
 
 ## Basic Continous Integration with Node.js and Azure
 
+### Configure Environment Variable
 
+Feel free to configure your own Node.js project or follow along with the COVID-19 tracker we created in previous tutorials. 
+
+```
+git clone git@github.com:harveyramer/covid-19-demo-express-js-app.git
+cd covid-19-demo-express-js-app
+```
+
+To run locally, this project needs to use an environment variable. On line 5 of the `/src/index.js` file, you can see why.
+```
+const port = process.env.PORT;
+```
+
+To set the variable we will use an NPM package called **dotenv**. In your terminal, install the package.
+```
+npm install dotenv --save-dev
+```
 
 ## Footnotes
 [^1]: Ferguson, Nicole Phd., Humble, Jez and Gene Kim. _Accelerate: Building High Performing Technology Organizations_. IT Revolution, 2018, p. 43
