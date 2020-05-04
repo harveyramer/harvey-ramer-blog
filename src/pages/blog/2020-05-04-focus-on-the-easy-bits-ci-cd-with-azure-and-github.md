@@ -67,7 +67,7 @@ cd covid-19-demo-express-js-app
 
 Since you want Github to deploy on your behalf, create your own repository for it.
 
-![Make a Github Repository](/img/make-a-repository.png "Make a Github Repository")
+![Make a Github Repository](https://www.harveyramer.com/img/make-a-repository.png "Make a Github Repository")
 
 Next, name it whatever you wish, choose to make it public or private, and click *Create Repository*.
 
@@ -117,7 +117,7 @@ This project uses the [Jest](https://jestjs.io/) unit testing framework to run t
 ```
 npm run test
 ```
-![Unit Test Success](/img/unit-test-success.png "Unit Test Success")
+![Unit Test Success](https://www.harveyramer.com/img/unit-test-success.png "Unit Test Success")
 
 ## Configure Continous Integration
 
@@ -132,7 +132,7 @@ az ad sp create-for-rbac --name "{My App Name}" --role contributor --scopes /sub
 
 The App Service blade in Azure provides all the information you need to configure and run the command above.
 
-![App Service Blade](/img/data-for-your-app.png "The App Service Blade")
+![App Service Blade](https://www.harveyramer.com/img/data-for-your-app.png "The App Service Blade")
 
 When your Service Principal is created, a JSON object is output in the CLI. 
 1. Copy the Service Principal object
@@ -142,13 +142,13 @@ When your Service Principal is created, a JSON object is output in the CLI.
 5. Name the secrete `AZURE_CREDENTIALS` and paste your JSON service principal into the *Value* field.
 6. Add the secret.
 
-![Adding a Github Secret](/img/adding-a-github-secret.png "Adding a Github Secret")
+![Adding a Github Secret](https://www.harveyramer.com/img/adding-a-github-secret.png "Adding a Github Secret")
 
 ### Configure Your Github Workflow
 
 Open the workflow file at `.github/worflows/azure.yml` and edit line 7 to use the same Application Name you provided when creating the Service Principal.
 
-![Editing the Azure YAML file](/img/azure-yml.png "Editing the Azure YAML file")
+![Editing the Azure YAML file](https://www.harveyramer.com/img/azure-yml.png "Editing the Azure YAML file")
 
 ## Deploy with Github Actions
 
@@ -165,7 +165,7 @@ git push
 
 Navigate to the Actions tab of your Github repository. If all is well, in about 5 minutes, your Web app will deploy to Azure.
 
-![Successful deployment of Node.js to Azure with Github](/img/successful-deployment.png "Successful deployment of Node.js to Azure with Github")
+![Successful deployment of Node.js to Azure with Github](https://www.harveyramer.com/img/successful-deployment.png "Successful deployment of Node.js to Azure with Github")
 
 ### Verify Deployment
 
@@ -181,7 +181,7 @@ git push
 ```
 Check out your Actions tab to monitor deployment. On completion, visit your Web app's About page (for example,  _**covid19tutorial-myname**.azurewebsites.net/about_) to see the paragraph you just deployed.
 
-![Successful deployment](/img/success-verification.png "Successful deployment")
+![Successful deployment](https://www.harveyramer.com/img/success-verification.png "Successful deployment")
 
 ## Conclusion
 
