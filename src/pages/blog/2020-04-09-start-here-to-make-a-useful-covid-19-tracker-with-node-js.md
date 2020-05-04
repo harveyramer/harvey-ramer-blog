@@ -77,7 +77,7 @@ Create an empty **index.js** file in the terminal.
 ```
 mkdir src
 cd src
-echo NUL > index.js
+echo "" > index.js
 ```
 
 This command will display some errors as it creates your file, but it will succeed. This is a handy shortcut for creating files in code. It may come in handy later.
@@ -145,7 +145,7 @@ Ok. Now that you've tested your app, let's shut down your server. In the termina
 In your `src` directory, create a file named **routes.js**. In your terminal, if you are already in the `src` directory, do this.
 
 ```
-echo NUL > routes.js
+echo "" > routes.js
 ```
 
 Next, open your **routes.js** file, and paste this code:
@@ -223,13 +223,13 @@ Let's add our Pug views: one for each page, and a layout helper to manage the co
 cd src
 mdkir views
 cd views
-echo NUL > home.pug
-echo NUL > about.pug
-echo NUL > layout.pug
+echo "" > home.pug
+echo "" > about.pug
+echo "" > layout.pug
 cd..
 mkdir public
 cd public
-echo NUL > style.css
+echo "" > style.css
 cd..
 ```
 

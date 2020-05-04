@@ -96,6 +96,13 @@ npm run start
 ```
 Verify the project is available at [http://localhost:3000](http://localhost:3000).
 
+### Add a Unit Test
+A critical part of continuous integration is the assurance that if code is broken, the deployment will fail. Unit tests make this a reality. We will use the [Jest](https://jestjs.io/) unit testing framework.
+
+```
+npm install jest --save-dev
+```
+
 ## Footnotes
 
 [^1]: Ferguson, Nicole Phd., Humble, Jez and Gene Kim. *Accelerate: Building High Performing Technology Organizations*. IT Revolution, 2018, p. 43 
