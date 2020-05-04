@@ -13,17 +13,18 @@ tags:
   - azure
   - ci/cd
 ---
-
 ## Prerequisites
 
 1. [Github account configured to use SSH](https://help.github.com/en/github/getting-started-with-github/set-up-git#next-steps-authenticating-with-github-from-git)
 2. If you are unfamiliar with Node.js, please review the my COVID-19 Tracker tutorials:
-    * [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/)
-    * [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
+
+   * [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/)
+   * [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
 3. Install the Azure CLI
-    * [On Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest)
-    * [On Mac](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest)
-    * [Others](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+
+   * [On Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest)
+   * [On Mac](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest)
+   * [Others](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 4. Log in to your Azure account in the CLI `az login`
 
 ## What Is CI/CD?
@@ -43,7 +44,7 @@ Underpinning CI/CD are some straightforward concepts that may need definition fo
 
 ### Continuous Delivery
 
-Continuous delivery is a way of moving software changes to production. When it is implemented, software changes go live with a minimum manual intervention and very little deployment pain. Continuous delivery requires business practices such as **building quality in**, **working in small batches**, **automating repetitive tasks**, **continuous improvement**, **sharing responsibility** and **collaborating across departments**.[^1]
+Continuous delivery is a way of moving software changes to production. When it is implemented, software changes go live with a minimum manual intervention and very little deployment pain. Continuous delivery requires business practices such as **building quality in**, **working in small batches**, **automating repetitive tasks**, **continuous improvement**, **sharing responsibility** and **collaborating across departments**.\[^1]
 
 ### Continous Integration
 
@@ -53,7 +54,7 @@ Testing is key to the success of continuous integration. This includes automated
 
 This is often called **trunk-based development**. 
 
-> At the end of each development interval, we must have integrated, tested, working, and potentially shippable code, demonstrated in a production-like environment, **created from trunk using a one-click process, and validated with automated tests**.[^2]
+> At the end of each development interval, we must have integrated, tested, working, and potentially shippable code, demonstrated in a production-like environment, **created from trunk using a one-click process, and validated with automated tests**.\[^2]
 
 ## Basic Continous Integration with Node.js and Azure
 
@@ -67,15 +68,19 @@ cd covid-19-demo-express-js-app
 ```
 
 To run locally, this project needs to use an environment variable. On line 5 of the `/src/index.js` file, you can see why.
+
 ```
 const port = process.env.PORT;
 ```
 
 To set the variable we will use an NPM package called **dotenv**. In your terminal, install the package.
+
 ```
 npm install dotenv --save-dev
 ```
 
+![Install NPM package dotenv](/img/install-dotenv.png "Install NPM package dotenv")
+
 ## Footnotes
-[^1]: Ferguson, Nicole Phd., Humble, Jez and Gene Kim. _Accelerate: Building High Performing Technology Organizations_. IT Revolution, 2018, p. 43
-[^2]: Kim, Gene., Jez Humble, Patrick Dubois, and John Willis. _The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations_. IT Revolution, 2016, p. 149
+
+\[^1]: Ferguson, Nicole Phd., Humble, Jez and Gene Kim. *Accelerate: Building High Performing Technology Organizations*. IT Revolution, 2018, p. 43 \[^2]: Kim, Gene., Jez Humble, Patrick Dubois, and John Willis. *The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations*. IT Revolution, 2016, p. 149
