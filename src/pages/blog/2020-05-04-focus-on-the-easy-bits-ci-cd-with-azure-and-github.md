@@ -7,7 +7,7 @@ description: Continuous integration and continuous deployment (CI/CD) are often
   will get you started with a basic CI/CD workflow using Github Actions to
   deploy a Web application to Azure.
 featuredpost: false
-featuredimage: false
+featuredimage: /img/factory-automation.jpg
 tags:
   - software
   - azure
