@@ -67,7 +67,7 @@ git clone git@github.com:harveyramer/covid-19-demo-express-js-app.git
 cd covid-19-demo-express-js-app
 ```
 
-To run locally, this project needs to use an environment variable. On line 5 of the `/src/index.js` file, you can see why. We are rever
+To run locally, this project needs to use an environment variable. On line 5 of the `/src/index.js` file, you can see why. `process env` holds all environment variables exposed to this program.
 
 ```
 const port = process.env.PORT;
@@ -80,6 +80,21 @@ npm install dotenv --save-dev
 ```
 
 ![Install NPM package dotenv](/img/install-dotenv.png "Install NPM package dotenv")
+
+Above line 5 of the `/src/index.js`, add the following line to configure environment variables.
+```
+require('dotenv').config();
+```
+
+Now, create a `.env` file in the root of the project to hold our port configuration. Enter the following line into the file.
+```
+PORT=3000
+```
+This completes our local configuration. Start the local server.
+```
+npm run start
+```
+Verify the project is available at [http://localhost:3000](http://localhost:3000).
 
 ## Footnotes
 
