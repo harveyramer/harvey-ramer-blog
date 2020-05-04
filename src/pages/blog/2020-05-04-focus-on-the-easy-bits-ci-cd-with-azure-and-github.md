@@ -12,6 +12,7 @@ tags:
   - software
   - azure
   - ci/cd
+  - tutorial
 ---
 ## Prerequisites
 
