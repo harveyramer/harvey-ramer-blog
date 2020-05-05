@@ -20,7 +20,7 @@ CI/CD is an acronym representing *continuous integration* and *continuous delive
 
 ### Basic Concepts
 
-Underpinning CI/CD are some straightforward concepts that may need definition for the uninitiated. 
+Some concepts that underpin CI/CD may need definition for the uninitiated. 
 
 * **Distributed Version Control**: It is nearly impossible to implement CI/CD without a distributed version control system [(DVCS)](https://en.wikipedia.org/wiki/Distributed_version_control) such as [Git](https://git-scm.com/). It is easier for a team to make changes in Git than in older version control systems like [SVN](https://subversion.apache.org/).
 * **Trunk**: The version of files representing the latest deployable copy of software
