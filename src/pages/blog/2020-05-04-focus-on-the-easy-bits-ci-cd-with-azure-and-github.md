@@ -71,7 +71,7 @@ Since you want Github to deploy on your behalf, create your own repository for i
 
 Name it whatever you wish, choose to make it public or private, and create your repository.
 
-Replace the origin of this project (git@github.com:harveyramer/covid-19-demo-express-js-app.git) with your own and push this code to your repository. Assuming your name is **John Doe** and you named your repository **My Repository**, your commands will be the followiong.
+Replace the origin of this project (git@github.com:harveyramer/covid-19-demo-express-js-app.git) with your own and push this code to your repository. Assuming your name is **John Doe** and you named your repository **My Repository**, your commands will be the following.
 
 ```
 git remote set-url origin git@github.com:johndoe/my-repository.git
@@ -125,7 +125,7 @@ npm run test
 
 ### Authorizing Azure
 
-At the outset of this tutorial, you logged in to Azure with the command `az login`. This redirected you to a browser and authorized your local command line to access resources on your behalf. In order to authorize Github to deploy your project for you, you will need to create a [Service Principal](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest). If you followed along on our [previous tutorial](/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure), you already have an application running in Azure. Replace the tokens `{My App Name}`, `{My Azure Subscription Id}`, and `{My App Service Plan Id}` then execute the following command.
+At the outset of this tutorial, you logged in to Azure with the command `az login`. This redirected you to a browser and authorized your local command line to access resources on your behalf. Now you will create a [Service Principal](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest) which will be used to authorize Github to deploy on your behalf. If you followed along on our [previous tutorial](/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure), you already have an application running in Azure. Replace the tokens `{My App Name}`, `{My Azure Subscription Id}`, and `{My App Service Plan Id}` then execute the following command.
 
 ```
 // Your command will look like this:
@@ -150,7 +150,7 @@ When your Service Principal is created, a JSON object is output in the CLI.
 
 ### Set Up a Github Workflow
 
-Open the workflow file at `.github/worflows/azure.yml` and edit line 7 to use the same Application Name you provided when creating the Service Principal.
+Open the workflow file at `.github/worflows/azure.yml` and change line 7. It should use the same Application Name you provided when creating the Service Principal.
 
 ![Editing the Azure YAML file](https://www.harveyramer.com/img/azure-yml.png "Editing the Azure YAML file")
 
@@ -193,7 +193,7 @@ Check out your Actions tab to monitor deployment. On completion, visit your Web 
 
 ## Conclusion
 
-This tutorial introduced the main concepts involved in CI/CD and provided a concrete example of *Continuous Integration* by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) and the [benefits of breaking large tasks into small chunks](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps). These you are encouraged to investigate on your own. 
+This tutorial introduced CI/CD concepts and showed an example of *Continuous Integration* by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) and the [benefits of breaking large tasks into small chunks](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps). These, you are encouraged to investigate on your own. 
 
 Featured Image Credit: By <a href="https://en.wikipedia.org/wiki/User:Tjmhay" class="extiw" title="wikipedia:User:Tjmhay">Tjmhay</a> at <a href="https://en.wikipedia.org/wiki/" class="extiw" title="wikipedia:">English Wikipedia</a>
 
