@@ -14,6 +14,35 @@ tags:
   - ci/cd
   - tutorial
 ---
+## What Is CI/CD?
+
+CI/CD is an acronym representing *continuous integration* and *continuous delivery*. According to CI/CD, the quality of software is directly related to how often it is deployed. If the deployment process is difficult, the quality of software will inevitably be low. 
+
+### Basic Concepts
+
+Some concepts that underpin CI/CD may need definition for the uninitiated. 
+
+* **Distributed Version Control**: It is nearly impossible to implement CI/CD without a distributed version control system [(DVCS)](https://en.wikipedia.org/wiki/Distributed_version_control) such as [Git](https://git-scm.com/). It is easier for a team to make changes in Git than in older version control systems like [SVN](https://subversion.apache.org/).
+* **Trunk**: The version of files representing the latest deployable copy of software
+* **Cut a Branch**: Make a copy of the software that can be changed independently
+* **Feature Branch**: A copy of the software created for the purpose of making and testing changes before integrating with trunk
+* **Pull Request**: Tools such as [Github](https://github.com/) and [Bitbucket](https://bitbucket.org/) allow a developer to signal to their team that their work is completed and ready for review. On approval, a pull request is merged to trunk. 
+* **Unit Test**: A simple program that proves program inputs reliably return expected outputs.
+
+### Continuous Delivery
+
+Continuous delivery is a way of moving software changes to production. When it is implemented, software changes go live with a minimum manual intervention and very little deployment pain. Continuous delivery requires business practices such as **building quality in**, **working in small batches**, **automating repetitive tasks**, **continuous improvement**, **sharing responsibility** and **collaborating across departments**.[^1]
+
+### Continuous Integration
+
+Continuous integration helps us achieve continuous delivery. It is a method of writing software that prevents rework and long-lived, divergent projects. To achieve continuous integration, break work into small batches. These batches should be completed in a day or less. The developer starts their work by cutting a feature branch. When she completes the work, she opens a pull request and invites team review, then merges the feature into trunk. This reduces errors, increases developer learning, and facilitates collaboration.
+
+Testing is key to the success of continuous integration. This includes automated unit tests and automated deployment to a testing environment on merging a pull request to trunk. Not everything relies on automation, however. Developers must manually verify their changes in the testing environment when they are deployed. 
+
+This is often called **trunk-based development**. 
+
+> At the end of each development interval, we must have integrated, tested, working, and potentially shippable code, demonstrated in a production-like environment, **created from trunk using a one-click process, and validated with automated tests**.[^2]
+
 ## Prerequisites
 
 1. [Github account configured to use SSH](https://help.github.com/en/github/getting-started-with-github/set-up-git#next-steps-authenticating-with-github-from-git)
@@ -29,53 +58,20 @@ tags:
    * [Others](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 4. Log in to your Azure account in the CLI `az login`
 
-## What Is CI/CD?
-
-CI/CD is an acronym representing *continuous integration* and *continuous delivery*. According to CI/CD, the quality of software is directly related to how often it is deployed. If the deployment process is difficult, the quality of software will inevitably be low. 
-
-### Basic Concepts
-
-Underpinning CI/CD are some straightforward concepts that may need definition for the uninitiated. 
-
-* **Distributed Version Control**: It is nearly impossible to implement CI/CD without a distributed version control system [(DVCS)](https://en.wikipedia.org/wiki/Distributed_version_control) such as [Git](https://git-scm.com/). It is easier for a team to make changes in Git than in older version control systems like [SVN](https://subversion.apache.org/).
-* **Trunk**: The version of files representing the latest deployable copy of software
-* **Cut a Branch**: Make a copy of the software that can be changed independently
-* **Feature Branch**: A copy of the software created for the purpose of making and testing changes before integrating with trunk
-* **Pull Request**: Tools such as [Github](https://github.com/) and [Bitbucket](https://bitbucket.org/) allow a developer to signal to their team that their work is completed and ready for review. On approval, a pull request is merged to trunk. 
-* **Unit Test**: A simple program that proves program inputs reliably return expected outputs.
-
-### Continuous Delivery
-
-Continuous delivery is a way of moving software changes to production. When it is implemented, software changes go live with a minimum manual intervention and very little deployment pain. Continuous delivery requires business practices such as **building quality in**, **working in small batches**, **automating repetitive tasks**, **continuous improvement**, **sharing responsibility** and **collaborating across departments**.[^1]
-
-### Continous Integration
-
-Continuous integration helps us achieve continuous delivery. It is a method of writing software that prevents rework and long-lived, divergent projects. To achieve continuous integration, break work into small batches. These batches should be completed in a day or less. The developer starts their work by cutting a feature branch. When she completes the work, she opens a pull request and invites team review, then merges the feature into trunk. This reduces errors, increases developer learning, and facilitates collaboration.
-
-Testing is key to the success of continuous integration. This includes automated unit tests and automated deployment to a testing environment on merging a pull request to trunk. Not everything relies on automation, however. Developers must manually verify their changes in the testing environment when they are deployed. 
-
-This is often called **trunk-based development**. 
-
-> At the end of each development interval, we must have integrated, tested, working, and potentially shippable code, demonstrated in a production-like environment, **created from trunk using a one-click process, and validated with automated tests**.[^2]
-
 ## Manage the Code
-
-### Check Out the Repository
 
 ```
 git clone git@github.com:harveyramer/covid-19-demo-express-js-app.git
 cd covid-19-demo-express-js-app
 ```
 
-### Make This Code Your Own
-
-Since you want Github to deploy on your behalf, create your own repository for it.
+Since you want Github to deploy on your behalf, create your own repository for it. 
 
 ![Make a Github Repository](https://www.harveyramer.com/img/make-a-repository.png "Make a Github Repository")
 
-Next, name it whatever you wish, choose to make it public or private, and click *Create Repository*.
+Name it whatever you wish, choose to make it public or private, and create your repository.
 
-Replace the origin of this project (git@github.com:harveyramer/covid-19-demo-express-js-app.git) with your own and push this code to your repository. Assuming your name is **John Doe** and you named your repository **My Repository**, your commands will be the followiong.
+Replace the origin of this project (git@github.com:harveyramer/covid-19-demo-express-js-app.git) with your own and push this code to your repository. Assuming your name is **John Doe** and you named your repository **My Repository**, your commands will be the following.
 
 ```
 git remote set-url origin git@github.com:johndoe/my-repository.git
@@ -93,7 +89,7 @@ git checkout tutorial-3
 npm install
 ```
 
-### Configure an Environment Variable
+### Add an Environment Variable
 
 Before we can execute the tests, this project needs to use an environment variable. On line 6 of the `/src/index.js` file, you can see why. The `process.env` property holds all environment variables exposed to this program.
 
@@ -125,11 +121,11 @@ npm run test
 
 ![Unit Test Success](https://www.harveyramer.com/img/unit-test-success.png "Unit Test Success")
 
-## Configure Continous Integration
+## Configure Continuous Integration
 
 ### Authorizing Azure
 
-At the outset of this tutorial, you logged in to Azure with the command `az login`. This redirected you to a browser and authorized your local command line to access resources on your behalf. In order to authorize Github to deploy your project for you, you will need to create a [Service Principal](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest). If you followed along on our [previous tutorial](/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure), you already have an application running in Azure. Replace the tokens `{My App Name}`, `{My Azure Subscription Id}`, and `{My App Service Plan Id}` then execute the following command.
+At the outset of this tutorial, you logged in to Azure with the command `az login`. This redirected you to a browser and authorized your local command line to access resources on your behalf. Now you will create a [Service Principal](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest) which will be used to authorize Github to deploy on your behalf. If you followed along on our [previous tutorial](/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure), you already have an application running in Azure. Replace the tokens `{My App Name}`, `{My Azure Subscription Id}`, and `{My App Service Plan Id}` then execute the following command.
 
 ```
 // Your command will look like this:
@@ -152,9 +148,9 @@ When your Service Principal is created, a JSON object is output in the CLI.
 
 ![Adding a Github Secret](https://www.harveyramer.com/img/adding-a-github-secret.png "Adding a Github Secret")
 
-### Configure Your Github Workflow
+### Set Up a Github Workflow
 
-Open the workflow file at `.github/worflows/azure.yml` and edit line 7 to use the same Application Name you provided when creating the Service Principal.
+Open the workflow file at `.github/worflows/azure.yml` and change line 7. It should use the same Application Name you provided when creating the Service Principal.
 
 ![Editing the Azure YAML file](https://www.harveyramer.com/img/azure-yml.png "Editing the Azure YAML file")
 
@@ -197,7 +193,7 @@ Check out your Actions tab to monitor deployment. On completion, visit your Web 
 
 ## Conclusion
 
-This tutorial introduced the main concepts involved in CI/CD and provided a concrete example of *Continuous Integration* by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) and the [benefits of breaking large tasks into small chunks](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps). These you are encouraged to investigate on your own. 
+This tutorial introduced CI/CD concepts and showed an example of *Continuous Integration* by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) and the [benefits of breaking large tasks into small chunks](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps). These, you are encouraged to investigate on your own. 
 
 Featured Image Credit: By <a href="https://en.wikipedia.org/wiki/User:Tjmhay" class="extiw" title="wikipedia:User:Tjmhay">Tjmhay</a> at <a href="https://en.wikipedia.org/wiki/" class="extiw" title="wikipedia:">English Wikipedia</a>
 
