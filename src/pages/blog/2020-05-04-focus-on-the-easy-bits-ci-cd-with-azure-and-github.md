@@ -3,9 +3,9 @@ templateKey: blog-post
 title: "Focus on the Easy Bits: CI/CD with Azure and Github"
 date: 2020-05-04T03:13:26.247Z
 description: Continuous integration and continuous delivery (CI/CD) are often
-  talked about but may not be well understood. This tutorial
-  will get you started with a basic CI/CD workflow using Github Actions to
-  deploy a Web application to Azure.
+  talked about but may not be well understood. This tutorial will get you
+  started with a basic CI/CD workflow using Github Actions to deploy a Web
+  application to Azure.
 featuredpost: false
 featuredimage: /img/pipes_various.jpg
 tags:
@@ -194,7 +194,7 @@ Check out your Actions tab to monitor deployment. On completion, visit your Web 
 
 ## Conclusion
 
-This tutorial introduced CI/CD concepts and showed an example of *Continuous Integration* by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) and the [benefits of breaking large tasks into small chunks](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps). These, you are encouraged to investigate on your own. 
+This tutorial introduced CI/CD concepts and showed an example of *Continuous Integration* by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), [forking Github repos](https://help.github.com/en/github/getting-started-with-github/fork-a-repo), and the [benefits of breaking large tasks into small chunks](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps). These, you are encouraged to investigate on your own. 
 
 Featured Image Credit: By <a href="https://en.wikipedia.org/wiki/User:Tjmhay" class="extiw" title="wikipedia:User:Tjmhay">Tjmhay</a> at <a href="https://en.wikipedia.org/wiki/" class="extiw" title="wikipedia:">English Wikipedia</a>
 
