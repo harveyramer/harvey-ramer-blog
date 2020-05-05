@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: "Focus on the Easy Bits: CI/CD with Azure and Github"
 date: 2020-05-04T03:13:26.247Z
-description: Continuous integration and continuous deployment (CI/CD) are often
+description: Continuous integration and continuous delivery (CI/CD) are often
   talked about, but perhaps you wonder what all the fuss is about. This tutorial
   will get you started with a basic CI/CD workflow using Github Actions to
   deploy a Web application to Azure.
@@ -65,7 +65,8 @@ git clone git@github.com:harveyramer/covid-19-demo-express-js-app.git
 cd covid-19-demo-express-js-app
 ```
 
-Since you want Github to deploy on your behalf, create your own repository for it. 
+Since you want Github to deploy on your behalf, create your own repository for it.
+ 
 
 ![Make a Github Repository](https://www.harveyramer.com/img/make-a-repository.png "Make a Github Repository")
 
