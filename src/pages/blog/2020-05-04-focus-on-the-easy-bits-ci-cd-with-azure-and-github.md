@@ -33,7 +33,7 @@ Underpinning CI/CD are some straightforward concepts that may need definition fo
 
 Continuous delivery is a way of moving software changes to production. When it is implemented, software changes go live with a minimum manual intervention and very little deployment pain. Continuous delivery requires business practices such as **building quality in**, **working in small batches**, **automating repetitive tasks**, **continuous improvement**, **sharing responsibility** and **collaborating across departments**.[^1]
 
-### Continous Integration
+### Continuous Integration
 
 Continuous integration helps us achieve continuous delivery. It is a method of writing software that prevents rework and long-lived, divergent projects. To achieve continuous integration, break work into small batches. These batches should be completed in a day or less. The developer starts their work by cutting a feature branch. When she completes the work, she opens a pull request and invites team review, then merges the feature into trunk. This reduces errors, increases developer learning, and facilitates collaboration.
 
@@ -121,7 +121,7 @@ npm run test
 
 ![Unit Test Success](https://www.harveyramer.com/img/unit-test-success.png "Unit Test Success")
 
-## Configure Continous Integration
+## Configure Continuous Integration
 
 ### Authorizing Azure
 
