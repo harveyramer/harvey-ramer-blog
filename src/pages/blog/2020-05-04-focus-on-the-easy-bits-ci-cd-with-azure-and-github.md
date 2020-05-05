@@ -14,21 +14,6 @@ tags:
   - ci/cd
   - tutorial
 ---
-## Prerequisites
-
-1. [Github account configured to use SSH](https://help.github.com/en/github/getting-started-with-github/set-up-git#next-steps-authenticating-with-github-from-git)
-2. If you are unfamiliar with Node.js, please review the my COVID-19 Tracker tutorials:
-
-   * [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/)
-   * [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
-   * [Get the Drop on the Cloud: Node.js and Azure](https://www.harveyramer.com/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/)
-3. Install the Azure CLI
-
-   * [On Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest)
-   * [On Mac](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest)
-   * [Others](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
-4. Log in to your Azure account in the CLI `az login`
-
 ## What Is CI/CD?
 
 CI/CD is an acronym representing *continuous integration* and *continuous delivery*. According to CI/CD, the quality of software is directly related to how often it is deployed. If the deployment process is difficult, the quality of software will inevitably be low. 
@@ -58,22 +43,33 @@ This is often called **trunk-based development**.
 
 > At the end of each development interval, we must have integrated, tested, working, and potentially shippable code, demonstrated in a production-like environment, **created from trunk using a one-click process, and validated with automated tests**.[^2]
 
-## Manage the Code
+## Prerequisites
 
-### Check Out the Repository
+1. [Github account configured to use SSH](https://help.github.com/en/github/getting-started-with-github/set-up-git#next-steps-authenticating-with-github-from-git)
+2. If you are unfamiliar with Node.js, please review the my COVID-19 Tracker tutorials:
+
+   * [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/)
+   * [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
+   * [Get the Drop on the Cloud: Node.js and Azure](https://www.harveyramer.com/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/)
+3. Install the Azure CLI
+
+   * [On Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest)
+   * [On Mac](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest)
+   * [Others](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+4. Log in to your Azure account in the CLI `az login`
+
+## Manage the Code
 
 ```
 git clone git@github.com:harveyramer/covid-19-demo-express-js-app.git
 cd covid-19-demo-express-js-app
 ```
 
-### Make This Code Your Own
-
-Since you want Github to deploy on your behalf, create your own repository for it.
+Since you want Github to deploy on your behalf, create your own repository for it. 
 
 ![Make a Github Repository](https://www.harveyramer.com/img/make-a-repository.png "Make a Github Repository")
 
-Next, name it whatever you wish, choose to make it public or private, and click *Create Repository*.
+Name it whatever you wish, choose to make it public or private, and create your repository.
 
 Replace the origin of this project (git@github.com:harveyramer/covid-19-demo-express-js-app.git) with your own and push this code to your repository. Assuming your name is **John Doe** and you named your repository **My Repository**, your commands will be the followiong.
 
@@ -93,7 +89,7 @@ git checkout tutorial-3
 npm install
 ```
 
-### Configure an Environment Variable
+### Add an Environment Variable
 
 Before we can execute the tests, this project needs to use an environment variable. On line 6 of the `/src/index.js` file, you can see why. The `process.env` property holds all environment variables exposed to this program.
 
@@ -152,7 +148,7 @@ When your Service Principal is created, a JSON object is output in the CLI.
 
 ![Adding a Github Secret](https://www.harveyramer.com/img/adding-a-github-secret.png "Adding a Github Secret")
 
-### Configure Your Github Workflow
+### Set Up a Github Workflow
 
 Open the workflow file at `.github/worflows/azure.yml` and edit line 7 to use the same Application Name you provided when creating the Service Principal.
 
