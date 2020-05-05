@@ -7,7 +7,7 @@ description: Continuous integration and continuous deployment (CI/CD) are often
   will get you started with a basic CI/CD workflow using Github Actions to
   deploy a Web application to Azure.
 featuredpost: false
-featuredimage: /img/factory-automation.jpg
+featuredimage: /img/pipes_various.jpg
 tags:
   - software
   - azure
@@ -18,10 +18,12 @@ tags:
 
 1. [Github account configured to use SSH](https://help.github.com/en/github/getting-started-with-github/set-up-git#next-steps-authenticating-with-github-from-git)
 2. If you are unfamiliar with Node.js, please review the my COVID-19 Tracker tutorials:
+
    * [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/)
    * [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
    * [Get the Drop on the Cloud: Node.js and Azure](https://www.harveyramer.com/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/)
 3. Install the Azure CLI
+
    * [On Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest)
    * [On Mac](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest)
    * [Others](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
@@ -57,7 +59,9 @@ This is often called **trunk-based development**.
 > At the end of each development interval, we must have integrated, tested, working, and potentially shippable code, demonstrated in a production-like environment, **created from trunk using a one-click process, and validated with automated tests**.[^2]
 
 ## Manage the Code
+
 ### Check Out the Repository
+
 ```
 git clone git@github.com:harveyramer/covid-19-demo-express-js-app.git
 cd covid-19-demo-express-js-app
@@ -114,9 +118,11 @@ Verify the project is available at `http://localhost:3000`.
 ### Run the Tests
 
 This project uses the [Jest](https://jestjs.io/) unit testing framework to run two simple unit tests. One verifies that a `getData` function calls a specified API Url. The other checks to see that an HTML render function uses the data provided to it. Go ahead and run the unit tests to verify that this project is ready to deploy.
+
 ```
 npm run test
 ```
+
 ![Unit Test Success](https://www.harveyramer.com/img/unit-test-success.png "Unit Test Success")
 
 ## Configure Continous Integration
@@ -124,6 +130,7 @@ npm run test
 ### Authorizing Azure
 
 At the outset of this tutorial, you logged in to Azure with the command `az login`. This redirected you to a browser and authorized your local command line to access resources on your behalf. In order to authorize Github to deploy your project for you, you will need to create a [Service Principal](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest). If you followed along on our [previous tutorial](/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure), you already have an application running in Azure. Replace the tokens `{My App Name}`, `{My Azure Subscription Id}`, and `{My App Service Plan Id}` then execute the following command.
+
 ```
 // Your command will look like this:
 // az ad sp create-for-rbac --name "covid19tutorial" --role contributor --scopes /subscriptions/7d806f61-8462-123456789-101112-985277452dd7/resourceGroups/appsvc_linux_centralus --sdk-auth
@@ -135,6 +142,7 @@ The App Service blade in Azure provides all the information you need to configur
 ![App Service Blade](https://www.harveyramer.com/img/data-for-your-app.png "The App Service Blade")
 
 When your Service Principal is created, a JSON object is output in the CLI. 
+
 1. Copy the Service Principal object
 2. In a Web browser, go to your Github repository
 3. Navigate to your repository's *Settings* page and select *Secrets* from the menu it provides. 
@@ -170,16 +178,20 @@ Navigate to the Actions tab of your Github repository. If all is well, in about 
 ### Verify Deployment
 
 Open the `/src/views/about.pug` file and add the following line to the end of the file, then save it.
+
 ```
     p Deployed by Github to Azure
 ```
+
 Next, commit the change and push it up to master. 
+
 ```
 git add .
 git commit -m "Verify Github deployment."
 git push
 ```
-Check out your Actions tab to monitor deployment. On completion, visit your Web app's About page (for example,  _**covid19tutorial-myname**.azurewebsites.net/about_) to see the paragraph you just deployed.
+
+Check out your Actions tab to monitor deployment. On completion, visit your Web app's About page (for example,  ***covid19tutorial-myname**.azurewebsites.net/about*) to see the paragraph you just deployed.
 
 ![Successful deployment](https://www.harveyramer.com/img/success-verification.png "Successful deployment")
 
@@ -187,7 +199,9 @@ Check out your Actions tab to monitor deployment. On completion, visit your Web 
 
 This tutorial introduced the main concepts involved in CI/CD and provided a concrete example of *Continuous Integration* by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) and the [benefits of breaking large tasks into small chunks](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps). These you are encouraged to investigate on your own. 
 
+Featured Image Credit: By <a href="https://en.wikipedia.org/wiki/User:Tjmhay" class="extiw" title="wikipedia:User:Tjmhay">Tjmhay</a> at <a href="https://en.wikipedia.org/wiki/" class="extiw" title="wikipedia:">English Wikipedia</a>
+
 ## Footnotes
 
-[^1]: Ferguson, Nicole Phd., Humble, Jez and Gene Kim. *Accelerate: Building High Performing Technology Organizations*. IT Revolution, 2018, p. 43  
+[^1]: Ferguson, Nicole Phd., Humble, Jez and Gene Kim. *Accelerate: Building High Performing Technology Organizations*. IT Revolution, 2018, p. 43
 [^2]: Kim, Gene., Jez Humble, Patrick Dubois, and John Willis. *The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations*. IT Revolution, 2016, p. 149
