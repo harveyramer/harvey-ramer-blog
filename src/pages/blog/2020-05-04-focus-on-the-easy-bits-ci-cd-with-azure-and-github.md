@@ -47,7 +47,7 @@ Unit tests are simple programs that prove the program behaves predictably. A cri
 
 ## Prerequisites
 
-1. [Github account configured to use SSH](https://help.github.com/en/github/getting-started-with-github/set-up-git#next-steps-authenticating-with-github-from-git)
+1. [Github account configured to use SSH](https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk)
 2. If you are unfamiliar with Node.js, please review the my COVID-19 Tracker tutorials:
 
    * [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/)
