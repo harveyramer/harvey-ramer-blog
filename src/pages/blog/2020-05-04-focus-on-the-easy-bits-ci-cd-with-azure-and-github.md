@@ -16,18 +16,16 @@ tags:
 ---
 ## What Is CI/CD?
 
-CI/CD is an acronym representing *continuous integration* and *continuous delivery*. According to CI/CD, the quality of software is directly related to how often it is deployed. If the deployment process is difficult, the quality of software will inevitably be low. 
+CI/CD is an acronym representing *continuous integration* and *continuous delivery*. According to CI/CD, the quality of software is correlated to how often it is deployed. If the deployment process is difficult, the quality of software will inevitably be low. If it is easy to make small changes and deploy them without much risk, software quality increases over time. It all starts with the practices and tools we use to create and manage software code.
 
-### Basic Concepts
+### Basic Version Control Concepts
 
-Some concepts that underpin CI/CD may need definition for the uninitiated. 
-
-* **Distributed Version Control**: It is nearly impossible to implement CI/CD without a distributed version control system [(DVCS)](https://en.wikipedia.org/wiki/Distributed_version_control) such as [Git](https://git-scm.com/). It is easier for a team to make changes in Git than in older version control systems like [SVN](https://subversion.apache.org/).
-* **Trunk**: The version of files representing the latest deployable copy of software
+* **Distributed Version Control**: It is difficult to implement CI/CD without a distributed version control system [(DVCS)](https://en.wikipedia.org/wiki/Distributed_version_control) such as [Git](https://git-scm.com/). Git fosters collaboration by allowing developers to make changes independently and reconcile those changes effectively. Older version control systems like [SVN](https://subversion.apache.org/) are less flexible. Complicated merges often make deployment difficult.
+* **Trunk**: the copy of files representing the latest deployable version of software
 * **Cut a Branch**: Make a copy of the software that can be changed independently
 * **Feature Branch**: A copy of the software created for the purpose of making and testing changes before integrating with trunk
 * **Pull Request**: Tools such as [Github](https://github.com/) and [Bitbucket](https://bitbucket.org/) allow a developer to signal to their team that their work is completed and ready for review. On approval, a pull request is merged to trunk. 
-* **Unit Test**: A simple program that proves program inputs reliably return expected outputs.
+* **Merge Conflict**: Developers sometimes make changes to the same lines of code independently. This causes a conflict when a pull request requires a code merge.
 
 ### Continuous Delivery
 
@@ -42,6 +40,10 @@ Testing is key to the success of continuous integration. This includes automated
 This is often called **trunk-based development**. 
 
 > At the end of each development interval, we must have integrated, tested, working, and potentially shippable code, demonstrated in a production-like environment, **created from trunk using a one-click process, and validated with automated tests**.[^2]
+
+### Unit Tests
+
+Unit tests are simple programs that prove the program behaves predictably. A critical part of continuous integration is the assurance that if code is broken, unit tests will fail. This, in turn, means the deployment will fail. Broken code will not make it to production.
 
 ## Prerequisites
 
@@ -66,7 +68,6 @@ cd covid-19-demo-express-js-app
 ```
 
 Since you want Github to deploy on your behalf, create your own repository for it.
- 
 
 ![Make a Github Repository](https://www.harveyramer.com/img/make-a-repository.png "Make a Github Repository")
 
@@ -79,38 +80,12 @@ git remote set-url origin git@github.com:johndoe/my-repository.git
 git push
 ```
 
-## Run Unit Tests
-
-A critical part of continuous integration is the assurance that if code is broken, the deployment will fail. Unit tests make this a reality. 
-
 To check out the latest branch and install the project, execute the following commands.
 
 ```
 git checkout tutorial-3
 npm install
 ```
-
-### Add an Environment Variable
-
-Before we can execute the tests, this project needs to use an environment variable. On line 6 of the `/src/index.js` file, you can see why. The `process.env` property holds all environment variables exposed to this program.
-
-```
-const port = process.env.PORT;
-```
-
-To expose a port to our application, create a `.env` file in the root of the project. Enter the following line into the file.
-
-```
-PORT=3000
-```
-
-This completes our local configuration. Start the local server.
-
-```
-npm run start
-```
-
-Verify the project is available at `http://localhost:3000`.
 
 ### Run the Tests
 
@@ -188,7 +163,7 @@ git commit -m "Verify Github deployment."
 git push
 ```
 
-Check out your Actions tab to monitor deployment. On completion, visit your Web app's About page (for example,  ***covid19tutorial-myname**.azurewebsites.net/about*) to see the paragraph you just deployed.
+Check out your Actions tab to monitor deployment. On completion, visit your Web app's About page (for example,  **\*covid19tutorial-myname**.azurewebsites.net/about*) to see the paragraph you just deployed.
 
 ![Successful deployment](https://www.harveyramer.com/img/success-verification.png "Successful deployment")
 
@@ -196,9 +171,34 @@ Check out your Actions tab to monitor deployment. On completion, visit your Web 
 
 This tutorial introduced CI/CD concepts and showed an example of *Continuous Integration* by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), [forking Github repos](https://help.github.com/en/github/getting-started-with-github/fork-a-repo), and the [benefits of breaking large tasks into small chunks](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps). These, you are encouraged to investigate on your own. 
 
+## Extra Credit
+
+### Add an Environment Variable
+
+Before we can execute the tests, this project needs to use an environment variable. On line 6 of the `/src/index.js` file, you can see why. The `process.env` property holds all environment variables exposed to this program.
+
+```
+const port = process.env.PORT;
+```
+
+To expose a port to our application, create a `.env` file in the root of the project. Enter the following line into the file.
+
+```
+PORT=3000
+```
+
+This completes our local configuration. Start the local server.
+
+```
+npm run start
+```
+
+Verify the project is available at `http://localhost:3000`.
+
+
 Featured Image Credit: By <a href="https://en.wikipedia.org/wiki/User:Tjmhay" class="extiw" title="wikipedia:User:Tjmhay">Tjmhay</a> at <a href="https://en.wikipedia.org/wiki/" class="extiw" title="wikipedia:">English Wikipedia</a>
 
 ## Footnotes
 
-[^1]: Ferguson, Nicole Phd., Humble, Jez and Gene Kim. *Accelerate: Building High Performing Technology Organizations*. IT Revolution, 2018, p. 43
+[^1]: Ferguson, Nicole Phd., Humble, Jez and Gene Kim. *Accelerate: Building High Performing Technology Organizations*. IT Revolution, 2018, p. 43 
 [^2]: Kim, Gene., Jez Humble, Patrick Dubois, and John Willis. *The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations*. IT Revolution, 2016, p. 149
