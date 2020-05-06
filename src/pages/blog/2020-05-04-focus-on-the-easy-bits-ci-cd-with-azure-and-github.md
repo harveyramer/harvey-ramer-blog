@@ -175,7 +175,7 @@ This tutorial introduced CI/CD concepts and showed an example of *Continuous Int
 
 ### Add an Environment Variable
 
-Before we can execute the tests, this project needs to use an environment variable. On line 6 of the `/src/index.js` file, you can see why. The `process.env` property holds all environment variables exposed to this program.
+If you would like to run this project locally, you will need to add an environment variable. On line 6 of the `/src/index.js` file, you can see why. The `process.env` property holds all environment variables exposed to this program.
 
 ```
 const port = process.env.PORT;
@@ -195,6 +195,8 @@ npm run start
 
 Verify the project is available at `http://localhost:3000`.
 
+<br />
+<br />
 
 Featured Image Credit: By <a href="https://en.wikipedia.org/wiki/User:Tjmhay" class="extiw" title="wikipedia:User:Tjmhay">Tjmhay</a> at <a href="https://en.wikipedia.org/wiki/" class="extiw" title="wikipedia:">English Wikipedia</a>
 
