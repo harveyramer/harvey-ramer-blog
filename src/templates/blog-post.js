@@ -24,8 +24,7 @@ export const BlogPostTemplate = ({
       <div
         className="full-width-image margin-top-0"
         style={{
-          backgroundImage: `url(${
-            !!featuredimage.childImageSharp ? featuredimage.childImageSharp.fluid.src : featuredimage
+          backgroundImage: `url(${!!featuredimage.childImageSharp ? featuredimage.childImageSharp.fluid.src : featuredimage
             })`,
           backgroundPosition: `bottom center`,
           backgroundSize: `cover`,
@@ -74,6 +73,13 @@ export const BlogPostTemplate = ({
                 </div>
               ) : null}
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="section" style={{ backgroundColor: "rgb(0, 159, 254)", color: "white", lineHeight: 1.3, padding: "0.75em 1.25em" }}>
+        <div className="container">
+          <div className="column is-10 is-offset-1">
+            <p>I wrote this article to help you succeed. Was the article useful, or did errors or omissions frustrate you? Do you have suggestions for further articles? Talk to me. <a href="https://www.harveyramer.com/contact" style={{ textDecoration: "underline", color: "white" }}>I want to hear from you.</a></p>
           </div>
         </div>
       </section>
