@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Get the Drop on the Cloud: Node.js and Azure'
+title: "Get the Drop on the Cloud: Node.js and Azure"
 date: 2020-04-26T04:45:00.000Z
 description: >-
   Deploying applications to the cloud can be intimidating. Don't worry though,
@@ -12,6 +12,7 @@ tags:
   - software
   - azure
 ---
+
 ## Prerequisites
 
 Take care of some things before you begin:
@@ -27,7 +28,7 @@ Take care of some things before you begin:
 
 #### Azure Tools
 
-In VS Code, open the command palette (`Ctrl+P`) and enter `> Azure: Sign In`. You will be prompted to log in via a browser window. When complete, you will see your subscriptions listed in your Azure panel.
+In VS Code, open the command palette (`Ctrl+Shift+P`) and enter `> Azure: Sign In`. You will be prompted to log in via a browser window. When complete, you will see your subscriptions listed in your Azure panel.
 
 ![Signing in to Azure with VS Code](https://harveyramer.com/img/log-in-to-azure-vscode.png "Signing in to Azure with VS Code")
 
@@ -46,7 +47,7 @@ For this project, use the COVID-19 Tracker project.[^1]
 
 ### Preparing for Deployment
 
-Since Azure's App Service uses dynamically configured [Docker containers](https://docker-curriculum.com/), you cannot specify a port in our code. Instead, rely on an [environment variable](https://medium.com/chingu/an-introduction-to-environment-variables-and-how-to-use-them-f602f66d15fa). 
+Since Azure's App Service uses dynamically configured [Docker containers](https://docker-curriculum.com/), you cannot specify a port in our code. Instead, rely on an [environment variable](https://medium.com/chingu/an-introduction-to-environment-variables-and-how-to-use-them-f602f66d15fa).
 
 Make sure your local server is not running (`Ctrl+C`).
 
@@ -58,36 +59,36 @@ const port = process.env.PORT
 
 ## Deploying to Azure App Service
 
-The extensions in the Azure Tools pack you installed make it easy to deploy a Web app. 
+The extensions in the Azure Tools pack you installed make it easy to deploy a Web app.
 
-To show the Azure panel in VS Code, click on the Azure logo on the left. Then, click the *Deploy to Azure* arrow button in the App Service menu bar.
+To show the Azure panel in VS Code, click on the Azure logo on the left. Then, click the _Deploy to Azure_ arrow button in the App Service menu bar.
 
 ![Deploy to Azure App Service](https://harveyramer.com/img/deploy-to-azure.png "Deploy to Azure App Service")
 
 The Azure App Service extension's wizard will help you deploy your app.
 
 1. Select the _covid19-tracker_ folder to zip and deploy
-2. Choose *Create new Web App...*
+2. Choose _Create new Web App..._
 3. Next enter a unique name for your Web app. (`covid19tutorial-myname`)
-4. Select runtime *Node 12 LTS*
+4. Select runtime _Node 12 LTS_
 5. Wait a few minutes while Azure provisions the resources for your Web app
-6. When asked, "Would you like to update your workspace configuration to run build commands on the target server?" Answer, *"Yes."*
+6. When asked, "Would you like to update your workspace configuration to run build commands on the target server?" Answer, _"Yes."_
 7. To monitor the build process, show the output window.
 
 ![Show Azure deployment output window](https://harveyramer.com/img/show-build-output.png "Show Azure deployment output window")
 
-When deployment finishes, browse to your new website. It will use the unique name you specified, for example,  _**covid19tutorial-myname**.azurewebsites.net_.
+When deployment finishes, browse to your new website. It will use the unique name you specified, for example, _**covid19tutorial-myname**.azurewebsites.net_.
 
 Your app will not respond and may display an application error. This is normal. We have one more configuration step.
 
 ### Add an Application Setting
 
-You will need to add an _Application Setting_ to tell Azure App Service what version of Node.js to use. 
+You will need to add an _Application Setting_ to tell Azure App Service what version of Node.js to use.
 
-* Expand your subscription, Web app, and right-click on **Application Settings**
-* Choose *Add New Setting*
-* For your setting key, enter `WEBSITE_NODE_DEFAULT_VERSION`
-* For your setting value, enter `12-lts`
+- Expand your subscription, Web app, and right-click on **Application Settings**
+- Choose _Add New Setting_
+- For your setting key, enter `WEBSITE_NODE_DEFAULT_VERSION`
+- For your setting value, enter `12-lts`
 
 ![Add WEBSITE_NODE_DEFAULT_VERSION application setting](https://harveyramer.com/img/add-application-setting.png "Add WEBSITE_NODE_DEFAULT_VERSION application setting")
 
@@ -95,17 +96,17 @@ Adding a new application setting causes the App Service to restart, which can ta
 
 ### Monitoring your App with Logs
 
-Since it takes several minutes for your app to warm up after being deployed to Azure, it helps to monitor the Log Stream for your application. To do that, Expand your application's *Logs (Read-only)* folder and click *Connect to Log Stream...* An output panel in the terminal will allow you to monitor your application's progress.
+Since it takes several minutes for your app to warm up after being deployed to Azure, it helps to monitor the Log Stream for your application. To do that, Expand your application's _Logs (Read-only)_ folder and click _Connect to Log Stream..._ An output panel in the terminal will allow you to monitor your application's progress.
 
 ![](https://harveyramer.com/img/monitor-application-logs.png)
 
-When you see *Example app listening at http://localhost:8080* your app is warmed up and ready to take some requests. 
+When you see _Example app listening at http://localhost:8080_ your app is warmed up and ready to take some requests.
 
 ### Success!
 
-Your first deployment of a Web app with Node.js to Azure can be a bit tricky. Please feel free to [contact me](/contact) with any questions or critical feedback on this tutorial. When you succeed, your [COVID-19 Tracker](https://covid19tutorial.azurewebsites.net/) will be live for the world to see. 
+Your first deployment of a Web app with Node.js to Azure can be a bit tricky. Please feel free to [contact me](/contact) with any questions or critical feedback on this tutorial. When you succeed, your [COVID-19 Tracker](https://covid19tutorial.azurewebsites.net/) will be live for the world to see.
 
-If you want to share it with friends, you may want to upgrade from the [free App Service Plan](https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage), which only runs for an hour each day. 
+If you want to share it with friends, you may want to upgrade from the [free App Service Plan](https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage), which only runs for an hour each day.
 
 ![Your deployed Web app](https://harveyramer.com/img/your-deployed-web-app.png "Your deployed Web app")
 
