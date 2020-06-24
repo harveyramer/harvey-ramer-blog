@@ -24,7 +24,7 @@ export default class EmailSignup extends React.Component {
 
         console.log('Sending ...', this.state.EMAIL, listFields);
         if (ga){
-            ga('send', 'event', 'Lead', 'Newsletter', 'Blog Footer', 0, null);
+            ga('send', 'event', 'Lead', 'Newsletter', 'Blog Footer');
         }
         const result = await addToMailchimp(this.state.EMAIL, listFields);
         console.log('handleSubmit', result);
