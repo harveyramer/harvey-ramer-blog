@@ -21,8 +21,7 @@ export default class EmailSignup extends React.Component {
         const listFields = {
             ...this.state,
         };
-
-        console.log('Sending ...', this.state.EMAIL, listFields);
+        
         if (ga){
             ga('send', {
               hitType: 'event',
@@ -32,7 +31,6 @@ export default class EmailSignup extends React.Component {
             });
         }
         const result = await addToMailchimp(this.state.EMAIL, listFields);
-        console.log('handleSubmit', result);
         this.setState({ status: result })
     }
 
@@ -42,7 +40,6 @@ export default class EmailSignup extends React.Component {
         const value = t.value;
         const stateChange = {};
         stateChange[name] = value;
-        console.log(stateChange);
         this.setState(stateChange);
     }
 
