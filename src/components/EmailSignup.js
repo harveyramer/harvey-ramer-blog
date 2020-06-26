@@ -23,11 +23,11 @@ export default class EmailSignup extends React.Component {
         };
         
         if (ga){
-            ga('send', {
-              hitType: 'event',
-              eventCategory: 'Newsletter',
-              eventAction: 'Signup',
-              eventLabel: 'Blog Footer'
+            ga('send', 'event', {
+              'eventCategory': 'Newsletter',
+              'eventAction': 'Signup',
+              'eventLabel': 'Blog Footer',
+              'eventValue': 0,
             });
         }
         const result = await addToMailchimp(this.state.EMAIL, listFields);
