@@ -73,9 +73,9 @@ export default class EmailSignup extends React.Component {
                                 <h2>Get my new articles and tutorials.</h2>
                                 <p>Join a small but growing tribe of coders and learners. Stay as long as you'd like. Unsubscribe anytime.</p>
                                 <div className="field">
-                                    <label htmlFor="firstname" className="label">Your Name</label>
+                                    <label htmlFor="firstname" className="label">First Name</label>
                                     <div className="control">
-                                        <input className="input" id="firstname" type="text" name="FNAME" value={this.state.FNAME} onChange={this.handleChange} />
+                                        <input className="input" id="firstname" type="text" name="FNAME" placeholder="Your first name" value={this.state.FNAME} onChange={this.handleChange} />
                                     </div>
                                 </div>
                                 {/* <div className="field">
