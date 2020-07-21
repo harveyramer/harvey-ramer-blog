@@ -73,26 +73,26 @@ export default class EmailSignup extends React.Component {
                                 <h2>Get my new articles and tutorials.</h2>
                                 <p>Join a small but growing tribe of coders and learners. Stay as long as you'd like. Unsubscribe anytime.</p>
                                 <div className="field">
-                                    <label htmlFor="firstname" className="label">First Name</label>
+                                    <label htmlFor="firstname" className="label">Your Name</label>
                                     <div className="control">
                                         <input className="input" id="firstname" type="text" name="FNAME" value={this.state.FNAME} onChange={this.handleChange} />
                                     </div>
                                 </div>
-                                <div className="field">
+                                {/* <div className="field">
                                     <label htmlFor="lastname" className="label">Last Name</label>
                                     <div className="control">
                                         <input id="lastname" className="input" type="text" name="LNAME" value={this.state.LNAME} onChange={this.handleChange} />
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="field">
-                                    <label htmlFor="email" className="label">Email (required)</label>
+                                    <label htmlFor="email" className="label">Email</label>
                                     <div className="control">
-                                        <input id="email" className="input" type="email" name="EMAIL" value={this.state.EMAIL} onChange={this.handleChange} />
+                                        <input id="email" className="input" type="email" name="EMAIL" placeholder="Your best email" value={this.state.EMAIL} onChange={this.handleChange} />
                                     </div>
                                 </div>
                                 <div className="field">
                                     <div className="control">
-                                        <button className="button is-link">Subscribe</button>
+                                        <button className="button is-link">Yes, Notify Me!</button>
                                     </div>
                                 </div>
                             </form>
