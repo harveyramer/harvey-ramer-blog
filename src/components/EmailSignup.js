@@ -70,8 +70,8 @@ export default class EmailSignup extends React.Component {
                         <div className="content">
                             {notice}
                             <form onSubmit={this.handleSubmit}>
-                                <h2>Subscribe</h2>
-                                <p>Sign up to receive emails when I write new content.</p>
+                                <h2>Get my new articles and tutorials.</h2>
+                                <p>Join a small but growing tribe of coders and learners. Stay as long as you'd like. Unsubscribe anytime.</p>
                                 <div className="field">
                                     <label htmlFor="firstname" className="label">First Name</label>
                                     <div className="control">
