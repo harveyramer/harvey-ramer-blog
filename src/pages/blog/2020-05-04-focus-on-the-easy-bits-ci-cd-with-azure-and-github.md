@@ -2,8 +2,7 @@
 templateKey: blog-post
 title: "Focus on the Easy Bits: CI/CD with Azure and Github"
 date: 2020-05-04T03:13:26.247Z
-description: Continuous integration and continuous delivery (CI/CD) are often
-  talked about but may not be well understood. This tutorial will get you
+description: This tutorial will get you
   started with a basic CI/CD workflow using Github Actions to deploy a Web
   application to Azure.
 featuredpost: false
@@ -14,18 +13,19 @@ tags:
   - ci/cd
   - tutorial
 ---
-## What Is CI/CD?
 
-CI/CD is an acronym representing *continuous integration* and *continuous delivery*. According to CI/CD, the quality of software is correlated to how often it is deployed. If the deployment process is difficult, the quality of software will inevitably be low. If it is easy to make small changes and deploy them without much risk, software quality increases over time. It all starts with the practices and tools we use to create and manage software code.
+## CI/CD Overview
+
+CI/CD is an acronym representing _continuous integration_ and _continuous delivery_. According to CI/CD, the quality of software is correlated to how often it is deployed. If the deployment process is difficult, the quality of software will inevitably be low. If it is easy to make small changes and deploy them without much risk, software quality increases over time. It all starts with the practices and tools we use to create and manage software code.
 
 ### Basic Version Control Concepts
 
-* **Distributed Version Control**: It is difficult to implement CI/CD without a distributed version control system [(DVCS)](https://en.wikipedia.org/wiki/Distributed_version_control) such as [Git](https://git-scm.com/). Git fosters collaboration by allowing developers to make changes independently and reconcile those changes effectively. Older version control systems like [SVN](https://subversion.apache.org/) are less flexible. Complicated merges often make deployment difficult.
-* **Trunk**: the copy of files representing the latest deployable version of software
-* **Cut a Branch**: Make a copy of the software that can be changed independently
-* **Feature Branch**: A copy of the software created for the purpose of making and testing changes before integrating with trunk
-* **Pull Request**: Tools such as [Github](https://github.com/) and [Bitbucket](https://bitbucket.org/) allow a developer to signal to their team that their work is completed and ready for review. On approval, a pull request is merged to trunk. 
-* **Merge Conflict**: Developers sometimes make changes to the same lines of code independently. This causes a conflict when a pull request requires a code merge.
+- **Distributed Version Control**: It is difficult to implement CI/CD without a distributed version control system [(DVCS)](https://en.wikipedia.org/wiki/Distributed_version_control) such as [Git](https://git-scm.com/). Git fosters collaboration by allowing developers to make changes independently and reconcile those changes effectively. Older version control systems like [SVN](https://subversion.apache.org/) are less flexible. Complicated merges often make deployment difficult.
+- **Trunk**: the copy of files representing the latest deployable version of software
+- **Cut a Branch**: Make a copy of the software that can be changed independently
+- **Feature Branch**: A copy of the software created for the purpose of making and testing changes before integrating with trunk
+- **Pull Request**: Tools such as [Github](https://github.com/) and [Bitbucket](https://bitbucket.org/) allow a developer to signal to their team that their work is completed and ready for review. On approval, a pull request is merged to trunk.
+- **Merge Conflict**: Developers sometimes make changes to the same lines of code independently. This causes a conflict when a pull request requires a code merge.
 
 ### Continuous Delivery
 
@@ -35,9 +35,9 @@ Continuous delivery is a way of moving software changes to production. When it i
 
 Continuous integration helps us achieve continuous delivery. It is a method of writing software that prevents rework and long-lived, divergent projects. To achieve continuous integration, break work into small batches. These batches should be completed in a day or less. The developer starts their work by cutting a feature branch. When she completes the work, she opens a pull request and invites team review, then merges the feature into trunk. This reduces errors, increases developer learning, and facilitates collaboration.
 
-Testing is key to the success of continuous integration. This includes automated unit tests and automated deployment to a testing environment on merging a pull request to trunk. Not everything relies on automation, however. Developers must manually verify their changes in the testing environment when they are deployed. 
+Testing is key to the success of continuous integration. This includes automated unit tests and automated deployment to a testing environment on merging a pull request to trunk. Not everything relies on automation, however. Developers must manually verify their changes in the testing environment when they are deployed.
 
-This is often called **trunk-based development**. 
+This is often called **trunk-based development**.
 
 > At the end of each development interval, we must have integrated, tested, working, and potentially shippable code, demonstrated in a production-like environment, **created from trunk using a one-click process, and validated with automated tests**.[^2]
 
@@ -50,14 +50,16 @@ Unit tests are simple programs that prove the program behaves predictably. A cri
 1. [Github account configured to use SSH](https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk)
 2. If you are unfamiliar with Node.js, please review the my COVID-19 Tracker tutorials:
 
-   * [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/)
-   * [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
-   * [Get the Drop on the Cloud: Node.js and Azure](https://www.harveyramer.com/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/)
+   - [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/)
+   - [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
+   - [Get the Drop on the Cloud: Node.js and Azure](https://www.harveyramer.com/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/)
+
 3. Install the Azure CLI
 
-   * [On Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest)
-   * [On Mac](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest)
-   * [Others](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+   - [On Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest)
+   - [On Mac](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest)
+   - [Others](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+
 4. Log in to your Azure account in the CLI `az login`
 
 ## Manage the Code
@@ -113,13 +115,13 @@ The App Service blade in Azure provides all the information you need to configur
 
 ![App Service Blade](https://www.harveyramer.com/img/data-for-your-app.png "The App Service Blade")
 
-When your Service Principal is created, a JSON object is output in the CLI. 
+When your Service Principal is created, a JSON object is output in the CLI.
 
 1. Copy the Service Principal object
 2. In a Web browser, go to your Github repository
-3. Navigate to your repository's *Settings* page and select *Secrets* from the menu it provides. 
-4. In the *Secrets* view, select **Add a new secret**. 
-5. Name the secrete `AZURE_CREDENTIALS` and paste your JSON service principal into the *Value* field.
+3. Navigate to your repository's _Settings_ page and select _Secrets_ from the menu it provides.
+4. In the _Secrets_ view, select **Add a new secret**.
+5. Name the secrete `AZURE_CREDENTIALS` and paste your JSON service principal into the _Value_ field.
 6. Add the secret.
 
 ![Adding a Github Secret](https://www.harveyramer.com/img/adding-a-github-secret.png "Adding a Github Secret")
@@ -155,7 +157,7 @@ Open the `/src/views/about.pug` file and add the following line to the end of th
     p Deployed by Github to Azure
 ```
 
-Next, commit the change and push it up to master. 
+Next, commit the change and push it up to master.
 
 ```
 git add .
@@ -163,13 +165,13 @@ git commit -m "Verify Github deployment."
 git push
 ```
 
-Check out your Actions tab to monitor deployment. On completion, visit your Web app's About page (for example,  **\*covid19tutorial-myname**.azurewebsites.net/about*) to see the paragraph you just deployed.
+Check out your Actions tab to monitor deployment. On completion, visit your Web app's About page (for example, **\*covid19tutorial-myname**.azurewebsites.net/about\*) to see the paragraph you just deployed.
 
 ![Successful deployment](https://www.harveyramer.com/img/success-verification.png "Successful deployment")
 
 ## Conclusion
 
-This tutorial introduced CI/CD concepts and showed an example of *Continuous Integration* by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), [forking Github repos](https://help.github.com/en/github/getting-started-with-github/fork-a-repo), and the [benefits of breaking large tasks into small chunks](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps). These, you are encouraged to investigate on your own. 
+This tutorial introduced CI/CD concepts and showed an example of _Continuous Integration_ by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), [forking Github repos](https://help.github.com/en/github/getting-started-with-github/fork-a-repo), and the [benefits of breaking large tasks into small chunks](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps). These, you are encouraged to investigate on your own.
 
 ## Extra Credit
 
@@ -202,5 +204,5 @@ Featured Image Credit: By <a href="https://en.wikipedia.org/wiki/User:Tjmhay" cl
 
 ## Footnotes
 
-[^1]: Ferguson, Nicole Phd., Humble, Jez and Gene Kim. *Accelerate: Building High Performing Technology Organizations*. IT Revolution, 2018, p. 43 
-[^2]: Kim, Gene., Jez Humble, Patrick Dubois, and John Willis. *The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations*. IT Revolution, 2016, p. 149
+[^1]: Ferguson, Nicole Phd., Humble, Jez and Gene Kim. _Accelerate: Building High Performing Technology Organizations_. IT Revolution, 2018, p. 43
+[^2]: Kim, Gene., Jez Humble, Patrick Dubois, and John Willis. _The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations_. IT Revolution, 2016, p. 149
