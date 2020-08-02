@@ -4,7 +4,7 @@ title: Configure a Node.js Development Environment on Windows 10
 date: 2020-04-08T22:36:23.975Z
 description: >-
   Don't get lost in the woods on your way to learning Node.js. Everything you
-  need to get started writing server side JavaScript on Windows 10 is right
+  need to install Node and get started writing server side JavaScript on Windows 10 is right
   here.
 featuredpost: false
 featuredimage: /img/brussels_zonienwoud.jpg
@@ -13,17 +13,18 @@ tags:
   - node.js
   - tutorial
 ---
+
 ## Overview
 
-If you want to learn programming, get set up can be a confusing barrier to entry. In this tutorial, I offer a straightforward way to install all the tools you will need to start working with Node.js on Windows 10.
+If you want to learn programming, get set up can be a confusing barrier to entry. In this tutorial, I offer a straightforward way to install Node.js and all the tools you will need to start working with Node.js on Windows 10.
 
-**Note**: When a simple command should produce an output of a certain type, you will see `command` → `output`. 
+**Note**: When a simple command should produce an output of a certain type, you will see `command` → `output`.
 
 ## Install Chocolatey: the Windows Package Manager
 
 [Chocolatey](https://chocolatey.org/) allows us to download and install open source packages from the Web. Chocolatey is as secure as the practices of the user. Mitigate risk by downloading known safe packages for your development machine.
 
-We will use [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7) to install Chocolatey. 
+We will use [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7) to install Chocolatey.
 
 To launch PowerShell enter `PowerShell` in your Windows Start Menu and choose "Run as Administrator" from the menu.
 
@@ -77,14 +78,14 @@ Before celebrating too much, let's set our default Node.js version with the comm
 
 Validate your install:
 
- `node -v` → `v13.12.0`\
+`node -v` → `v13.12.0`\
  `npm -v` → `6.14.4`
 
 You are ready to write code to test Node.js!
 
 ## Hello World!
 
-In your Windows Terminal, enter `node`. This will launch the Node REPL terminal. 
+In your Windows Terminal, enter `node`. This will launch the Node REPL terminal.
 
 In the terminal enter the command:
 
@@ -92,7 +93,7 @@ In the terminal enter the command:
 console.log("Hello World!")
 ```
 
-Your "Hello World" statement will be printed to the terminal 
+Your "Hello World" statement will be printed to the terminal
 
 Then, exit the REPL, by entering `.exit`.
 
@@ -111,7 +112,7 @@ nvm use 12.16.2
 
 Validate your newest install:
 
- `node -v` → `v12.16.2`\
+`node -v` → `v12.16.2`\
  `npm -v` → `6.14.4`
 
 To switch back to version 13, after this, we would once again use the command: `nvm use 13.12.0`.
@@ -122,15 +123,13 @@ At any time, you can see your locally installed versions of Node.js with `nvm ls
 
 ## Install Git
 
-In most cases, you will write code that requires version control. For that purpose, nothing works better than Git. Let's do that before we wrap up. It will be easy. I promise. 
+In most cases, you will write code that requires version control. For that purpose, nothing works better than Git. Let's do that before we wrap up. It will be easy. I promise.
 
 [Download the latest installer](https://git-scm.com/download/win) from the Git website (download should start automatically).
 
 When the download completes, install using the defaults. No fuss. We can configure Git later. You'll finish in a flash.
 
 ![Happy install dialog](https://harveyramer.com/img/Git-2.26.0-64-bit.tmp_gcNQ427NNs.png)
-
-
 
 When the installation completes. Open a new Windows Terminal and enter the command `git --version` → `git version 2.26.0.windows.1`. If you see a version as described, Git is configured correctly.
 
@@ -142,12 +141,12 @@ In short, download the latest binary of [Visual Studio Code](https://code.visual
 
 ![Downloading Visual Studio Code](https://harveyramer.com/img/chrome_9n74ygwamo.png "Downloading Visual Studio Code")
 
-When the download completes, install using the defaults. No fuss. 
+When the download completes, install using the defaults. No fuss.
 
 One final step, visit the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/VSCode), and install:
 
-* [Node.js Modules Intellisense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense)
-* [Node.js Extension Pack](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack)
+- [Node.js Modules Intellisense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense)
+- [Node.js Extension Pack](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack)
 
 ![Install Node.js Modules Intellisense](https://harveyramer.com/img/chrome_rtjxzfmak7.png "Install Node.js Modules Intellisense")
 
@@ -161,9 +160,9 @@ You have configured NVM to manage two versions of Node.js. You installed Git to 
 
 Ready for a new challenge? [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/).
 
-And please [contact me](https://www.harveyramer.com/contact) if you have any questions or feedback. 
+And please [contact me](https://www.harveyramer.com/contact) if you have any questions or feedback.
 
 <br />
 <br />
 
-Featured Image Credit: [Donar Reiskoffer](https://commons.wikimedia.org/wiki/File:Brussels_Zonienwoud.jpg)  / [CC BY-SA](http://creativecommons.org/licenses/by-sa/3.0/)
+Featured Image Credit: [Donar Reiskoffer](https://commons.wikimedia.org/wiki/File:Brussels_Zonienwoud.jpg) / [CC BY-SA](http://creativecommons.org/licenses/by-sa/3.0/)
