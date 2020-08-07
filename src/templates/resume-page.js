@@ -35,9 +35,9 @@ export const ResumePageTemplate = ({ helmet, page, title, image, contentComponen
             />
           </div>
           <div className="column is-9">
-            <h2 className="title is-size-3 has-text-weight-bold is-bold-light is-marginless">
+            <h1 className="title is-size-3 has-text-weight-bold is-bold-light is-marginless">
               {title}
-            </h2>
+            </h1>
             <ul className="is-size-5" style={
               {
                 marginTop: "1rem",
