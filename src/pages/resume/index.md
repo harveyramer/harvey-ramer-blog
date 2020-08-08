@@ -40,6 +40,12 @@ As a leader, he helps others succeed through mentoring and collaborative problem
 
 ## Professional Experience
 
+### Principal Consultant
+
+#### [FlareMark](https://www.flaremark.com); Memphis, TN (2020 – Present)
+
+Harvey consults with business owners to sharpen and share their value proposition. He creates attractive, buzzword-free websites and effective content strategies.
+
 ### Senior System Architect
 
 #### [Ducks Unlimited](https://www.ducks.org); Memphis, TN (2020 – Present)
