@@ -40,17 +40,17 @@ As a leader, he helps others succeed through mentoring and collaborative problem
 
 ## Professional Experience
 
-### Principal Consultant
-
-#### [FlareMark](https://www.flaremark.com); Memphis, TN (2020 – Present)
-
-Harvey consults with business owners to sharpen and share their value proposition. He creates attractive, buzzword-free websites and effective content strategies.
-
 ### Senior System Architect
 
 #### [Ducks Unlimited](https://www.ducks.org); Memphis, TN (2020 – Present)
 
 Harvey provides technical guidance, application development, and implementation support on all aspects of the Ducks Unlimited technology footprint. Additionally, he is responsible for working closely with business users to solicit business requirements, outline and present technical solutions, and roadmap future development.
+
+### Principal Consultant
+
+#### [FlareMark](https://www.flaremark.com); Memphis, TN (2020 – Present)
+
+Harvey consults with business owners to sharpen and share their value proposition. He creates attractive, buzzword-free websites and effective content strategies.
 
 ### Senior Software Engineer
 
