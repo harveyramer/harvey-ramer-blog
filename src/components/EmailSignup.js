@@ -1,6 +1,6 @@
 import React from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
-
+/*global ga */
 export default class EmailSignup extends React.Component {
     constructor(props) {
         super(props);
@@ -21,13 +21,13 @@ export default class EmailSignup extends React.Component {
         const listFields = {
             ...this.state,
         };
-        
-        if (ga){
-            ga('send', 'event', {
-              'eventCategory': 'Newsletter',
-              'eventAction': 'Signup',
-              'eventLabel': 'Blog Footer',
-              'eventValue': 0,
+        const analytics = typeof ga !== 'undefined' ? ga : null;
+        if (analytics) {
+            analytics('send', 'event', {
+                'eventCategory': 'Newsletter',
+                'eventAction': 'Signup',
+                'eventLabel': 'Blog Footer',
+                'eventValue': 0,
             });
         }
         const result = await addToMailchimp(this.state.EMAIL, listFields);
@@ -64,7 +64,7 @@ export default class EmailSignup extends React.Component {
             }
         }
         return (
-            <section className="section" style={{backgroundColor:'#FCEFDD'}}>
+            <section className="section" style={{ backgroundColor: '#FCEFDD' }}>
                 <div className="container">
                     <div className="column is-6 is-offset-3">
                         <div className="content">
