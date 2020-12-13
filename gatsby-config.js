@@ -8,7 +8,12 @@ module.exports = {
   plugins: [
     'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        implementation: require('sass')
+      },
+    },
     {
       resolve: 'gatsby-plugin-feed',
       options: {
