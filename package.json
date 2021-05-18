@@ -5,7 +5,7 @@
   "author": "Austin Green",
   "dependencies": {
     "bulma": "^0.8.2",
-    "gatsby": "^2.20.36",
+    "gatsby": "^3.0.0",
     "gatsby-image": "^2.3.5",
     "gatsby-plugin-feed": "^2.4.4",
     "gatsby-plugin-google-analytics": "^2.2.5",
