@@ -1,0 +1,11 @@
+html,
+body {
+  font-family: Alegreya, sans-serif;
+  font-size: 20px;
+  line-height: 1.3;
+}
+h1 {
+  font-size: 2.7rem;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+}
