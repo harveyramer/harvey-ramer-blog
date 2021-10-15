@@ -1,0 +1,39 @@
+---
+title: Harvey Ramer's Blog
+---
+{% set reset %}
+  {% include "../theme/reset.css" %}
+{% endset %}
+{% set base %}
+  {% include "../theme/base.css" %}
+{% endset %}
+{% set fonts %}
+  {% include "../theme/fonts.css" %}
+{% endset %}
+{% set typography %}
+  {% include "../theme/typography.css" %}
+{% endset %}
+{% set layout %}
+  {% include "../theme/layout.css" %}
+{% endset %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    
+    <style>
+      {{ fonts | cssmin | safe }}
+      {{ reset | cssmin | safe }}
+      {{ base  | cssmin | safe }}
+      {{ typography  | cssmin | safe }}
+      {{ layout | cssmin | safe }}
+    </style>
+
+  </head>
+  <body>
+    {{ content | safe }}
+  </body>
+</html>
