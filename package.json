@@ -20,6 +20,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@sup39/markdown-it-attr": "^1.2.0",
+    "@vidhill/fortawesome-free-regular-11ty-shortcode": "^1.0.3",
+    "@vidhill/fortawesome-solid-11ty-shortcode": "^1.0.1",
     "eleventy-google-fonts": "^0.0.5",
     "markdown-it": "^12.2.0",
     "markdown-it-bracketed-spans": "^1.0.1",
@@ -27,6 +29,7 @@
     "markdown-it-mathjax3": "^3.0.0-0"
   },
   "dependencies": {
+    "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
     "clean-css": "^5.2.1"
   }
 }
