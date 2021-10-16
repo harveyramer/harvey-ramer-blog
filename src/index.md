@@ -1,7 +1,4 @@
 ---
-layout: post
+layout: page
+title: Home Page
 ---
-
-# {{title}}
-
-## {{myOtherData}}

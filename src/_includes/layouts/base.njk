@@ -4,9 +4,6 @@ title: Harvey Ramer's Blog
 {% set reset %}
   {% include "../theme/reset.css" %}
 {% endset %}
-{% set base %}
-  {% include "../theme/base.css" %}
-{% endset %}
 {% set fonts %}
   {% include "../theme/fonts.css" %}
 {% endset %}
@@ -16,6 +13,9 @@ title: Harvey Ramer's Blog
 {% set layout %}
   {% include "../theme/layout.css" %}
 {% endset %}
+{% set components %}
+  {% include "../theme/components.css" %}
+{% endset %}
 
 <!doctype html>
 <html lang="en">
@@ -23,13 +23,13 @@ title: Harvey Ramer's Blog
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    
+    <base href="/" />
     <style>
       {{ fonts | cssmin | safe }}
       {{ reset | cssmin | safe }}
-      {{ base  | cssmin | safe }}
       {{ typography  | cssmin | safe }}
       {{ layout | cssmin | safe }}
+      {{ components | cssmin | safe }}
     </style>
 
   </head>

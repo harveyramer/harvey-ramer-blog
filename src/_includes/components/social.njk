@@ -1,0 +1,14 @@
+<div class="social">
+  {% if params.github %}
+    <a href="{{params.github}}">{% fortawesomeBrand 'github' %}</a>
+  {% endif %}
+  {% if params.linkedIn %}
+    <a href="{{params.linkedIn}}">{% fortawesomeBrand 'linkedin' %}</a>
+  {% endif %}
+  {% if params.twitter %}
+    <a href="{{params.twitter}}">{% fortawesomeBrand 'twitter' %}</a>
+  {% endif %}
+  {% if params.email %}
+    <a href="{{params.email}}">{% fortawesomeSolid 'envelope-open' %}</a>
+  {% endif %}
+</div>

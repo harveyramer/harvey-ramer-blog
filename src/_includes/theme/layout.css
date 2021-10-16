@@ -1,4 +1,5 @@
 main {
-  max-width: 60em;
+  max-width: 35em;
   margin: 3em auto;
+  padding: 0 1rem;
 }
