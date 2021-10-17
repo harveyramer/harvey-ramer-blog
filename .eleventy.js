@@ -26,6 +26,8 @@ module.exports = config => {
   // Copy images and files to dist directory.
   config.addPassthroughCopy('./src/img/');
   config.addPassthroughCopy('./src/files/');
+  config.addPassthroughCopy('./src/_redirects');
+  config.addPassthroughCopy('./src/_headers');
 
   // Plugins
   config.addPlugin(eleventyGoogleFonts);
