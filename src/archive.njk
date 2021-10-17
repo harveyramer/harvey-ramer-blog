@@ -1,34 +1,28 @@
 ---
 layout: base
 meta_title: "Past Articles"
-title: Archive
+title: All Articles
 ---
 
 <main>
   <h1>{{ title }}</h1>
-  {%- for post in collections.articles -%}
-    <article>
-
-      <div>
-
+  <ol class="archive_list">
+    {%- for post in collections.articles -%}
+      <li>
         <h2>
           <a href="{{ post.url }}">{{ post.data.title }}</a>
         </h2>
-
-        <div class="text-sm text-gray-600 absolute bottom-0">
-          <p class="meta">By {{ post.data.author or site.author.name }}
-
-            {# <time class="block" datetime="{{ post.data.published_date | w3DateFilter  }}">
-              {{ post.data.published_date | dateDisplay }}
-            </time> #}
-
-          </p>
-        </div>
-
-      </div>
-
-    </article>
-
-  {% endfor %}
+        <span class="meta">{{ post.data.author }},
+          <time class="block" datetime="{{ post.data.date | w3DateFilter  }}">
+            {{ post.data.date | dateDisplay }}
+          </time> — <span class="tags">
+            {%- for tag in post.data.tags -%}
+              <a href="/tags/{{tag}}">{{tag | upper}}</a>
+            {%- endfor -%}
+          </span>
+        </span>
+      </li>
+    {% endfor %}
+  </ol>
 
 </main>
