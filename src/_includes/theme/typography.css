@@ -13,14 +13,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.5em;
   margin-top: 1em;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 0.5em;
   margin-top: 1em;
@@ -33,17 +33,38 @@ h3 a {
 em {
   font-style: italic;
 }
-b {
+b,
+strong {
   font-weight: 700;
 }
 main p {
   text-align: justify;
-  text-indent: 1em;
+  text-indent: 1.5em;
+}
+main h2 + p,
+main h3 + p,
+main h4 + p,
+main h5 + p,
+main p:first-of-type {
+  text-indent: 0;
+}
+
+/* Drop Cap */
+main > p:first-of-type:first-letter {
+  color: rgb(53, 53, 53);
+  float: left;
+  font-size: 3.04em;
+  font-size: 70px;
+  line-height: 40px;
+  padding-top: 10px;
+  padding-right: 3px;
+  padding-left: 3px;
 }
 
 main ul,
 main ol {
-  margin-left: 1.6em;
+  list-style-position: inside;
+  margin: 0.6em 0 0.6em 1.5em;
 }
 main ul {
   list-style-type: disc;
@@ -61,20 +82,11 @@ main ol {
   font-family: "Roboto Light", sans-serif;
   padding: 1.75em 0;
 }
-.lede {
-  text-indent: 0;
-}
 
-/* Drop Cap */
-.lede:first-letter {
-  color: rgb(53, 53, 53);
-  float: left;
-  font-size: 3.04em;
-  font-size: 70px;
-  line-height: 40px;
-  padding-top: 10px;
-  padding-right: 3px;
-  padding-left: 3px;
+main img {
+  max-width: 100%;
+  border-radius: 0.15rem;
+  margin: 1rem 0 1rem -1rem;
 }
 
 main .archive_list {
@@ -84,9 +96,6 @@ main .archive_list {
 .archive_list h2 {
   margin-bottom: 0;
 }
-/* .home_page .archive_list h2 {
-  font-size: 1.4em;
-} */
 .home_page .archive_list {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -98,7 +107,8 @@ footer .legal {
   text-align: center;
 }
 .meta,
-footer {
+footer,
+.footnotes {
   font-family: "Roboto Light", sans-serif;
   font-size: 0.8rem;
 }

@@ -17,12 +17,13 @@ title: All Articles
             {{ post.data.date | dateDisplay }}
           </time> — <span class="tags">
             {%- for tag in post.data.tags -%}
-              <a href="/tags/{{tag}}">{{tag | upper}}</a>
-            {%- endfor -%}
+              {%if loop.index0 > 0%}, {%endif%}
+                <a href="/tags/{{tag}}">{{tag | upper}}</a>
+              {%- endfor -%}
+            </span>
           </span>
-        </span>
-      </li>
-    {% endfor %}
-  </ol>
+        </li>
+      {% endfor %}
+    </ol>
 
-</main>
+  </main>

@@ -1,0 +1,565 @@
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Here to Make a Useful COVID-19 Tracker with Node.js</title>
+    <base href="/" />
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap);@import url(https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap);
+      a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}
+      body,html{font-family:Alegreya,serif;font-size:20px;line-height:1.5;color:#2a2a2a}h1{font-size:2.7rem;font-weight:700;margin-bottom:.7em;line-height:1.24}h2{font-size:1.5rem;font-weight:600;margin-bottom:.5em;margin-top:1em}h3{font-size:1.25rem;font-weight:500;margin-bottom:.5em;margin-top:1em}h1 a,h2 a,h3 a{text-decoration:none}em{font-style:italic}b,strong{font-weight:700}main p{text-align:justify;text-indent:1.5em}main h2+p,main h3+p,main h4+p,main h5+p,main p:first-of-type{text-indent:0}main>p:first-of-type:first-letter{color:#353535;float:left;font-size:3.04em;font-size:70px;line-height:40px;padding-top:10px;padding-right:3px;padding-left:3px}main ol,main ul{list-style-position:inside;margin:.6em 0 .6em 1.5em}main ul{list-style-type:disc}main ol{list-style-type:decimal}.callout{text-indent:0;text-align:center;margin:2em 0;border:3px dotted #d5d5d5;border-right:0;border-left:0;font-family:"Roboto Light",sans-serif;padding:1.75em 0}main img{max-width:100%;border-radius:.15rem;margin:1rem 0 1rem -1rem}main .archive_list{list-style:none;margin-left:0}.archive_list h2{margin-bottom:0}.home_page .archive_list{margin-top:3rem;margin-bottom:3rem}footer .legal{margin-top:3rem;padding:1rem 0;text-align:center}.footnotes,.meta,footer{font-family:"Roboto Light",sans-serif;font-size:.8rem}footer nav{display:inline-block;margin-right:3em}.meta .tags a,nav a{text-decoration:none}nav [aria-current=page],nav [aria-current=page]:active,nav [aria-current=page]:hover{font-family:Roboto,sans-serif;font-weight:700;background:#2a2a2a;color:#fff}nav h5{font-family:Roboto,sans-serif;font-weight:700;margin-top:1.75em;margin-bottom:.75em}nav li{display:inline-block;margin-right:.5em;line-height:2.2em}nav a{color:#2a2a2a;padding:.4em .6em;border:1px solid #2a2a2a;border-radius:.5em}nav a:active,nav a:hover{color:#1a0dab;border-color:#1a0dab}
+      body,html{height:100%}.container{display:flex;flex-direction:column;height:100%;max-width:35em;margin:0 auto}main{margin-top:3em;flex:1 0 auto;padding:0 1rem}footer{padding:0 1rem;flex-shrink:0}
+      .author{margin:4em 0 0}.author .grid{display:grid;grid-template-columns:4fr 20fr}.author .authorName{font-weight:700;font-size:2em;line-height:1em}.author .details{padding-left:1rem;grid-column:2;grid-column-end:9}.author .bio{font-family:"Roboto Light",sans-serif;text-align:justify;font-size:.8rem;margin-top:.5rem}.author .avatar{max-width:100%;border-radius:50%}@media screen and (max-width:400px){.author{margin:4em 0;display:grid;grid-template-columns:8fr 8fr 8fr;grid-row:auto}.author .avatar{grid-column:2;grid-row:1}.author .details{grid-column:1/4;grid-row:2;padding-left:0}.author .authorName{text-align:center}}.author .social{margin-top:.5rem;text-align:right}.author .social a{display:inline-block;width:1.4rem;margin:.3rem;color:inherit}code{font-size:.8rem;background-color:#f5f5f5;font-family:"Roboto Mono",sans-serif;white-space:pre-line;word-break:break-all}pre code{border:1px solid #e1e1e1;margin:1rem 0;display:block;padding:.5rem}.footnotes li{margin-bottom:.6em}.footnotes a,.footnotes li::marker,.footnotes p{display:inline}
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <main>
+  <span class="meta">
+    <span class="tags">
+          <a href="/tags/technology">TECHNOLOGY</a></span> —
+    <time class="block" datetime="2020-04-09T16:57:36.723Z">
+        April 9th, 2020
+      </time>
+    </span>
+    <h1>Start Here to Make a Useful COVID-19 Tracker with Node.js</h1>
+    <p>Before beginning this tutorial, you will need <a href="https://nodejs.org/">Node.js</a>, <a href="https://npmjs.org">NPM</a>, <a href="https://git-scm.org">Git</a>, and<a href="https://code.visualstudio.com/">Visual Studio Code</a> installed on your computer. If you need help, use my tutorial on <a href="https://www.harveyramer.com/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/">configuring a development environment</a>.</p>
+<h2>Getting Started</h2>
+<p>Open your Terminal (Windows users type <code>cmd</code> in your Start Menu to find it). Make a directory for your new app, and open it in Visual Studio Code.</p>
+<pre><code class="language-shell-script">mkdir covid19-tracker
+cd covid19-tracker
+code .
+</code></pre>
+<p>In Visual Studio Code, open the terminal (<code>Ctrl+` </code>) to initialize your new project.</p>
+<p><img src="https://harveyramer.com/img/code_qck1owdhjr.png" alt="Open the Terminal in Visual Studio Code" title="Open the Terminal in Visual Studio Code"></p>
+<pre><code class="language-javascript">npm init -y
+git init
+</code></pre>
+<p><img src="https://harveyramer.com/img/code_vr7kovcecm.png" alt="Initializing a new Node.js project" title="Initializing a new Node.js project"></p>
+<h2>Install Express.js, Axios, and Pug</h2>
+<p>Now that we’ve initialized the project, we’ll install some dependencies with the Visual Studio Code terminal.</p>
+<ul>
+<li><a href="https://expressjs.com/">Express</a>is a simple-to-use JavaScript framework used for API and Web application development. We will use it to handle our HTTP requests and direct URL routes to our Node.js functions.</li>
+<li><a href="https://github.com/axios/axios">Axios</a> is a powerful tool for making requests to other servers. We will use Axios to retrieve our COVID-19 data from a public API.</li>
+<li><a href="https://pugjs.org/api/getting-started.html">Pug</a> compiles data to HTML. It will be useful.</li>
+</ul>
+<pre><code class="language-javascript">npm install express axios pug --save
+</code></pre>
+<p><img src="https://harveyramer.com/img/code_cpv5ebkavw.png" alt="Installing express and axios" title="Installing express and axios"></p>
+<h2>Hello World</h2>
+<p>Create an empty <strong>index.js</strong> file in the terminal.</p>
+<pre><code class="language-shell-script">mkdir src
+cd src
+echo &quot;&quot; &gt; index.js
+</code></pre>
+<p>This command will display some errors as it creates your file, but it will succeed. This is a handy shortcut for creating files in code. It may come in handy later. You will see your new <code>src</code> directory and file in the File Explorer.</p>
+<p>Open your empty <strong>index.js</strong> file and let’s start writing some code!</p>
+<h3>Our First Code</h3>
+<p>Copy and paste (Ctrl+C Ctrl+V) the following code, and save your <strong>index.js</strong> file.</p>
+<pre><code class="language-javascript">const express = require(&quot;express&quot;);
+const app = express();
+const port = 3000;
+
+app.get(&quot;/&quot;, (req, res) =&gt; res.send(&quot;Hello World!&quot;));
+
+app.listen(port, () =&gt; console.log(`Example app listening at http://localhost:${port}`));
+</code></pre>
+<p>Next, open the <strong>package.json</strong> file and add <code>&quot;start&quot;: &quot;node src/index&quot;,</code> to the <code>scripts</code> block. The result should look like this:</p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;covid19-tracker&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;node src/index&quot;,
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  &quot;keywords&quot;: [],
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;dependencies&quot;: {
+    &quot;axios&quot;: &quot;^0.19.2&quot;,
+    &quot;express&quot;: &quot;^4.17.1&quot;
+  }
+}
+</code></pre>
+<p>Remember to save both your <strong>index.js</strong> and <strong>package.json</strong> files.</p>
+<h3>Test the Hello World App</h3>
+<p>In the Visual Studio Terminal, start the Express server via the NPM script we created.</p>
+<pre><code class="language-javascript">npm start
+</code></pre>
+<p><img src="https://harveyramer.com/img/chrome_lgnp0rdpe8.png" alt="Running server" title="Running server"></p>
+<p>Open <a href="http://localhost:3000">http://localhost:3000</a> in your browser.</p>
+<p><img src="https://harveyramer.com/img/chrome_bqk5uaxq7h.png" alt="Hello World in browser" title="Hello World in browser"></p>
+<p>Ok. Now that you’ve tested your app, let’s shut down your server. In the terminal, <code>Ctrl+C</code> and your server will stop running.</p>
+<h3>Handle Two Different Routes</h3>
+<p>In your <code>src</code> directory, create a file named <strong>routes.js</strong>. In your terminal, if you are already in the <code>src</code> directory, do this.</p>
+<pre><code class="language-shell-script">echo &quot;&quot; &gt; routes.js
+</code></pre>
+<p>Next, open your <strong>routes.js</strong> file, and paste this code:</p>
+<pre><code class="language-javascript">var express = require(&quot;express&quot;);
+var router = express.Router();
+
+// Home page route.
+router.get(&quot;/&quot;, function (req, res) {
+  res.send('Hello World. Learn &lt;a href=&quot;/about&quot;&gt;about this app&lt;/a&gt;');
+});
+
+// About page route.
+router.get(&quot;/about&quot;, function (req, res) {
+  res.send('About this COVID-19 Tracker. Go &lt;a href=&quot;/&quot;&gt;home&lt;/a&gt;');
+});
+
+module.exports = router;
+</code></pre>
+<p>As you can see, this defines two routes. One at <code>/</code> and the other at <code>/about</code>. Open <strong>index.js</strong> and make the following changes.</p>
+<pre><code class="language-javascript">const express = require(&quot;express&quot;);
+const routes = require(&quot;./routes&quot;);
+const app = express();
+const port = 3000;
+
+app.use(&quot;/&quot;, routes);
+
+app.listen(port, () =&gt; console.log(`Example app listening at http://localhost:${port}`));
+</code></pre>
+<p>Above, we are importing our new <strong>routes.js</strong> file as a module. We have also configured the application to use our <strong>routes.js</strong> module with an <code>app.use</code> function call. To test these changes we will start our server again.</p>
+<pre><code class="language-javascript">npm start
+</code></pre>
+<p>Open <a href="http://localhost:3000">http://localhost:3000</a> in your browser and click the <strong>about this app</strong> link to load the <strong>About</strong> page. These simple pages demonstrate a fully-functioning Web server responding to HTTP requests. This the foundation on which the Web is built!</p>
+<p><img src="https://harveyramer.com/img/chrome_r6cetpk0lp.png" alt="Our grown-up Hello World app with multiple routes" title="Our grown-up Hello World app with multiple routes"></p>
+<h2>Housekeeping: Versioning Our Code</h2>
+<p>Before we move on to write some exciting code, let’s commit our files to Git so we can make changes without losing any of our past work. In Visual Studio Code Terminal make sure you are in the root of your project. The path in your terminal should look something like <code>C:\Users\hramer\covid19-tracker</code> and not like <code>C:\Users\hramer\covid19-tracker\src</code>. If it looks like the latter, <code>cd..</code> will fix your problem.</p>
+<p>Let’s commit our code changes.</p>
+<pre><code class="language-shell-script">git add .
+git commit -m &quot;A hello  world Web app&quot;
+</code></pre>
+<p><img src="https://harveyramer.com/img/code_e8crgvguuy.png" alt="Adding files to Git" title="Adding files to Git"></p>
+<h2>COVID-19 Tracker</h2>
+<p>We have created the framework we need to build our COVID-19 Tracker. Let’s build the real thing! First, we should make this look more like a real Web app. In Visual Studio Code Terminal, let’s use a library called Pug to help us manage our HTML. We used NPM to install Pug when we started this tutorial.</p>
+<p>You can learn more about <a href="https://pugjs.org/api/getting-started.html">getting started with Pug</a>. Let’s add our Pug views: one for each page, and a layout helper to manage the code shared by both views.</p>
+<pre><code class="language-shell-script">cd src
+mdkir views
+cd views
+echo &quot;&quot; &gt; home.pug
+echo &quot;&quot; &gt; about.pug
+echo &quot;&quot; &gt; layout.pug
+cd..
+mkdir public
+cd public
+echo &quot;&quot; &gt; style.css
+cd..
+</code></pre>
+<p>You should see your new Pug files in the <code>src/views</code> directory, and an empty <strong>style.css</strong> file in the <code>src/public</code> directory. Copy the code below into your <strong>style.css</strong> file and save it.</p>
+<pre><code class="language-html,">body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+section {
+    padding: 1rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1rem 0.25em;
+    padding: 0.5rem 1rem 1rem;
+    background-color: #e5e5e5;
+    border-radius: 0.5rem;
+}
+.row {
+    overflow: hidden;
+}
+.row &gt; * {
+    width: 33.33%;
+    float: left;
+}
+.card h4 {
+    margin: 0;
+}
+.card .count {
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.25rem;
+}
+.card .new,
+.card .total {
+    width: 48%;
+    margin-right: 2%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.card .new {
+    background-color: #fff;
+}
+.card .total {
+    color: #fff;
+    background-color: #000;
+}
+.card .recovered .total {
+    color: #fff;
+    background-color: green;
+}
+
+@media screen and (min-width: 70em) {
+    .card {
+        max-width: calc(50% - 1em);
+    }
+}
+
+@media screen and (min-width: 110em) {
+    .card {
+        max-width: calc(25% - 1em);
+    }
+}
+</code></pre>
+<p>Copy the code below into your <strong>layout.pug</strong> file and save it.</p>
+<pre><code class="language-pug">html
+    head
+        title #{appName}
+        style
+            include ../public/style.css
+    body
+        .container
+            h1 #{pageName}
+
+            block content
+                p This page doesn't have any content yet.
+</code></pre>
+<p>Copy the code below into your <strong>about.pug</strong> file and save it.</p>
+<pre><code class="language-pug">extends layout
+
+block content
+    p This COVID-19 Tracker uses the publicly available REST API provided by
+        a(href='https://www.covid19api.com') covid19api.com
+    p Visit the
+        a(href='/') home page
+</code></pre>
+<p>Copy the code below into you <strong>home.pug</strong> file and save it.</p>
+<pre><code class="language-pug">extends layout
+
+block content
+    .centered
+        .cards
+            .card
+                h2 Afghanistan
+                .row
+                    .cases
+                        h3 Confirmed Cases
+                        .row
+                            .new
+                                h4 New
+                                .count 6
+                            .total
+                                h4 Total
+                                .count 24
+                    .deaths
+                        h3 Deaths
+                        .row
+                            .new
+                                h4 New
+                                .count 1
+                            .total
+                                h4 Total
+                                .count 3
+                    .recovered
+                        h3 Recovered
+                        .row
+                            .new
+                                h4 New
+                                .count 1
+                            .total
+                                h4 Total
+                                .count 3
+            .card
+                h3 United States
+                .row
+                    .cases
+                        h3 Confirmed Cases
+                        .row
+                            .new
+                                h4 New
+                                .count 6
+                            .total
+                                h4 Total
+                                .count 24
+                    .deaths
+                        h3 Deaths
+                        .row
+                            .new
+                                h4 New
+                                .count 1
+                            .total
+                                h4 Total
+                                .count 3
+                    .recovered
+                        h3 Recovered
+                        .row
+                            .new
+                                h4 New
+                                .count 1
+                            .total
+                                h4 Total
+                                .count 3
+            .card
+                h3 Germany
+                .row
+                    .cases
+                        h3 Confirmed
+                        .row
+                            .new
+                                h4 New
+                                .count 6
+                            .total
+                                h4 Total
+                                .count 24
+                    .deaths
+                        h3 Deaths
+                        .row
+                            .new
+                                h4 New
+                                .count 1
+                            .total
+                                h4 Total
+                                .count 3
+                    .recovered
+                        h3 Recovered
+                        .row
+                            .new
+                                h4 New
+                                .count 1
+                            .total
+                                h4 Total
+                                .count 3
+    p Visit the
+        a(href='/about') about page
+</code></pre>
+<p>There is quite a bit going on in these files, feel free to investigate to your heart’s content. We are going on to bigger things. To validate your work, stop your server if it’s running (Ctrl+C in the Visual Studio Code Terminal) and restart it (<code>npm start</code>). When you browse to <a href="http://localhost:3000">localhost:3000</a>, you should see something like the view below.</p>
+<p><img src="https://harveyramer.com/img/chrome_sxmi7gwakd.png" alt="Static data mocking up the user interface" title="Static data mocking up the user interface"></p>
+<p>This COVID-19 data is static. We added it inside the <strong>home.pug</strong> file. Next we will get real data from an API. It is time to preserve all of this hard work. Navigate to the root directory of your project (see above, Housekeeping: Versioning Our Code).</p>
+<pre><code class="language-shell-script">git add .
+git commit -m &quot;Static files mocking up our COVID-19 data&quot;
+</code></pre>
+<h2>Getting Ready for Real Data</h2>
+<p>Open the <strong>routes.js</strong> file and replace the Home Page Route with this code.</p>
+<pre><code class="language-javascript">// Home page route.
+router.get(&quot;/&quot;, (req, res) =&gt; {
+  const countries = [
+    {
+      Country: &quot;ALA Aland Islands&quot;,
+      CountryCode: &quot;AX&quot;,
+      Slug: &quot;ala-aland-islands&quot;,
+      NewConfirmed: 0,
+      TotalConfirmed: 0,
+      NewDeaths: 0,
+      TotalDeaths: 0,
+      NewRecovered: 0,
+      TotalRecovered: 0,
+      Date: &quot;2020-04-09T23:21:34Z&quot;,
+    },
+    {
+      Country: &quot;Afghanistan&quot;,
+      CountryCode: &quot;AF&quot;,
+      Slug: &quot;afghanistan&quot;,
+      NewConfirmed: 21,
+      TotalConfirmed: 444,
+      NewDeaths: 0,
+      TotalDeaths: 14,
+      NewRecovered: 11,
+      TotalRecovered: 29,
+      Date: &quot;2020-04-09T23:21:34Z&quot;,
+    },
+    {
+      Country: &quot;Albania&quot;,
+      CountryCode: &quot;AL&quot;,
+      Slug: &quot;albania&quot;,
+      NewConfirmed: 17,
+      TotalConfirmed: 400,
+      NewDeaths: 0,
+      TotalDeaths: 22,
+      NewRecovered: 23,
+      TotalRecovered: 154,
+      Date: &quot;2020-04-09T23:21:34Z&quot;,
+    },
+    {
+      Country: &quot;Algeria&quot;,
+      CountryCode: &quot;DZ&quot;,
+      Slug: &quot;algeria&quot;,
+      NewConfirmed: 104,
+      TotalConfirmed: 1572,
+      NewDeaths: 12,
+      TotalDeaths: 205,
+      NewRecovered: 124,
+      TotalRecovered: 237,
+      Date: &quot;2020-04-09T23:21:34Z&quot;,
+    },
+  ];
+  res.render(&quot;home&quot;, {
+    appName: &quot;My COVID-19 Tracker&quot;,
+    pageName: &quot;COVID-19 Cases&quot;,
+    data: countries,
+  });
+});
+</code></pre>
+<p>In the <strong>routes.js</strong> file we are creating an <em>array</em> of country objects. You can learn more <a href="https://www.javascripttutorial.net/javascript-array/">about JavaScript arrays</a>. Each object has the properties, <em>Country</em>, <em>CountryCode</em>, <em>Slug</em>, <em>NewConfirmed</em>, <em>TotalConfirmed</em>, <em>NewDeaths</em>, <em>TotalDeaths</em>, <em>NewRecovered</em>, <em>TotalRecovered</em>, and <em>Date</em>. We will use most of these properties in our view.</p>
+<p>Now we need to update the <strong>home.pug</strong> file to take this list of data instead of our hard-coded one. Replace the contents of that file with the code below.</p>
+<pre><code class="language-pug">extends layout
+
+block content
+    .centered
+        .cards
+            each val, index in data
+                .card
+                    h2 #{val.Country}
+                    i As of #{val.Date.split('T')[0]}
+                    .row
+                        .cases
+                            h3 Confirmed
+                            .row
+                                .new
+                                    h4 New
+                                    .count #{val.NewConfirmed}
+                                .total
+                                    h4 Total
+                                    .count  #{val.TotalConfirmed}
+                        .deaths
+                            h3 Deaths
+                            .row
+                                .new
+                                    h4 New
+                                    .count  #{val.NewDeaths}
+                                .total
+                                    h4 Total
+                                    .count  #{val.TotalDeaths}
+                        .recovered
+                            h3 Recovered
+                            .row
+                                .new
+                                    h4 New
+                                    .count  #{val.NewRecovered}
+                                .total
+                                    h4 Total
+                                    .count  #{val.TotalRecovered}
+    p Visit the
+        a(href='/about') about page
+</code></pre>
+<p>The view created in <strong>home.pug</strong> now uses <strong><em>iteration</em></strong> to loop over each of the records in the country list we passed to it in <strong>routes.js</strong>.</p>
+<h2>Loading Data from the COVID-19 API</h2>
+<p>We are almost done with our COVID-19 Dashboard.</p>
+<p>Open the <strong>routes.js</strong> file, and replace the entire Home Page Route (including that big <em>countries</em> array) with the following code.</p>
+<pre><code class="language-javascript">// Home page route.
+router.get(&quot;/&quot;, (req, res) =&gt; {
+  const apiUrl = &quot;https://api.covid19api.com/summary&quot;;
+  const countries = axios
+    .get(apiUrl)
+    .then((response) =&gt; {
+      res.render(&quot;home&quot;, {
+        appName: &quot;My COVID-19 Tracker&quot;,
+        pageName: &quot;COVID-19 Cases&quot;,
+        data: response.data.Countries,
+      });
+    })
+    .catch(function (err) {
+      return console.error(err);
+    });
+});
+</code></pre>
+<p>This code makes an asynchronous call to the COVID-19 API and returns the data for our view. When you restart your server and browse to <a href="http://localhost:3000">localhost:3000</a>, you should see something like this.</p>
+<p><img src="https://harveyramer.com/img/chrome_8yyl9m8idf.png" alt="A list of COVID-19 cases by country" title="A list of COVID-19 cases by country"></p>
+<h2>What We Have Learned</h2>
+<p>In this tutorial, you learned a bit about</p>
+<ul>
+<li>installing Node.js packages via NPM</li>
+<li>using Git to version code</li>
+<li>using Express.js as a Web server</li>
+<li>styling HTML with CSS</li>
+<li>compiling HTML with dynamic data via Pug</li>
+<li>requesting data from an API with Axios</li>
+</ul>
+<p>You may have found interesting jumping-off-places to learn more, and I hope you did. You should have your first Web application running. To improve the utility of this demonstration application, make a list of things, and give it a try. Keep coding. It’s always a challenge, but it gets easier. <a href="https://github.com/harveyramer/covid-19-demo-express-js-app">A complete archive of code for this Web app</a> is available on Github. When you’re ready, move on to the next tutorial to <a href="https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js">add interactivity to your COVID-19 tracker</a>.</p>
+
+        
+  <div class="author">
+    <div class="grid">
+      <img class="avatar" src="/img/harvey-web.jpg"/>
+      <div class="details">
+        <div class="authorName">Harvey Ramer</div>
+        <div class="bio">Harvey enjoys creating web applications with React, Node.js, and MongoDB. He writes about how worldviews, technology, business and relationship differences can become a collaborative asset.</div>
+      </div>
+    </div>
+
+    <div class="social">
+  
+    <a href="/files/harvey-ramer-resume.docx" title="Harvey Ramer's Downloadable Resume"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-word" class="svg-inline--fa fa-file-word fa-w-12 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm57.1 120H305c7.7 0 13.4 7.1 11.7 14.7l-38 168c-1.2 5.5-6.1 9.3-11.7 9.3h-38c-5.5 0-10.3-3.8-11.6-9.1-25.8-103.5-20.8-81.2-25.6-110.5h-.5c-1.1 14.3-2.4 17.4-25.6 110.5-1.3 5.3-6.1 9.1-11.6 9.1H117c-5.6 0-10.5-3.9-11.7-9.4l-37.8-168c-1.7-7.5 4-14.6 11.7-14.6h24.5c5.7 0 10.7 4 11.8 9.7 15.6 78 20.1 109.5 21 122.2 1.6-10.2 7.3-32.7 29.4-122.7 1.3-5.4 6.1-9.1 11.7-9.1h29.1c5.6 0 10.4 3.8 11.7 9.2 24 100.4 28.8 124 29.6 129.4-.2-11.2-2.6-17.8 21.6-129.2 1-5.6 5.9-9.5 11.5-9.5zM384 121.9v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg></a>
+  
+  
+    <a href="https://github.com/harveyramer" title="Harvey Ramer's Github Profile"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a>
+  
+  
+    <a href="https://www.linkedin.com/in/harveyramer/" title="Harvey Ramer's LinkedIn Profile"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a>
+  
+  
+    <a href="https://twitter.com/HarveyRamer" title="Harvey Ramer's Twitter Feed"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+  
+  
+    <a href="mailto:harvey@harveyramer.com" title="Email Harvey Ramer"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open" class="svg-inline--fa fa-envelope-open fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 464c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V200.724a48 48 0 0 1 18.387-37.776c24.913-19.529 45.501-35.365 164.2-121.511C199.412 29.17 232.797-.347 256 .003c23.198-.354 56.596 29.172 73.413 41.433 118.687 86.137 139.303 101.995 164.2 121.512A48 48 0 0 1 512 200.724V464zm-65.666-196.605c-2.563-3.728-7.7-4.595-11.339-1.907-22.845 16.873-55.462 40.705-105.582 77.079-16.825 12.266-50.21 41.781-73.413 41.43-23.211.344-56.559-29.143-73.413-41.43-50.114-36.37-82.734-60.204-105.582-77.079-3.639-2.688-8.776-1.821-11.339 1.907l-9.072 13.196a7.998 7.998 0 0 0 1.839 10.967c22.887 16.899 55.454 40.69 105.303 76.868 20.274 14.781 56.524 47.813 92.264 47.573 35.724.242 71.961-32.771 92.263-47.573 49.85-36.179 82.418-59.97 105.303-76.868a7.998 7.998 0 0 0 1.839-10.967l-9.071-13.196z"></path></svg></a>
+  
+</div>
+  </div>
+
+      </main>
+      <footer>
+  <nav class="tags" aria-labelledby="footer-page-nav">
+    <h5>Archives</h5>
+    <ol>
+          <li>
+            <a href="/tags/technology">TECHNOLOGY</a>
+          </li>
+        
+          <li>
+            <a href="/tags/business">BUSINESS</a>
+          </li>
+        </ol>
+  </nav>
+  <nav class="pages" aria-labelledby="footer-page-nav">
+    <h5>Pages</h5>
+    <ol>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/archive/">Archive</a>
+        </li>
+    </ol>
+  </nav>
+  <div class="legal meta">
+      &copy; Copyright 2019-2021, Harvey A. Ramer. All rights reserved.
+  </div>
+</footer>
+    </div>
+  </body>
+</html>
