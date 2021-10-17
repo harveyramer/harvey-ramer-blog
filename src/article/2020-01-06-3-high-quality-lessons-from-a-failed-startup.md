@@ -6,10 +6,8 @@ author: Harvey Ramer
 description: >-
   In May of 2018, I joined a small team focused on a goal: removing the pain
   from a complex process involving multiple stakeholders. Despite the startup's failure, I learned three important lessons.
-  closing, I've gained a few insights that might be of use to others.
 tags:
-  - article
-  - test
+  - business
 ---
 
 May of 2018 was an exciting month. I joined a small team focused on removing the pain from a complex business process involving multiple stakeholders. Despite the startup's failure, I learned three important lessons. {.lede}
@@ -20,7 +18,7 @@ Our initial conversations with customers were promising. Everyone agreed the pro
 
 We had exciting potential customer conversations and even ran a pilot project. Then we launched. The phone did not ring. The website did not generate the leads we expected. _Sales did not materialize._
 
-**A customer is someone who gives you money.** {.callout}
+A customer is someone who gives you money. {.callout}
 
 Everyone in the company knew we needed paying customers, but we had difficulty recruiting our first customers. Instead of collecting money, we had encouraging conversations with warm leads and ran too long on the slightest hint of interest they showed. The [Lean Startup](http://theleanstartup.com/principles) method _might_ have helped us get customers fully on board, but this lesson is harder to learn than it might seem.
 
@@ -37,7 +35,7 @@ It is easy to pin the blame of missing the market on visionary leadership, but t
 2. We optimized for adaptability to respond to what we learned as our vision clarified
 3. We worked as a unit in alignment to our purpose
 
-Vision needs give way to the voice of the customer, but vision is indispensable. {.callout}
+Vision is indispensable, but it needs give way to the voice of the customer. {.callout}
 
 Without vision, paralysis-by-analysis rules the day. Fear of failure haunts every decision. I would rather follow a visionary leader than a timid, fearful one.
 

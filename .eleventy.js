@@ -7,7 +7,7 @@ const {
   fortawesomeFreeRegularPlugin,
 } = require('@vidhill/fortawesome-free-regular-11ty-shortcode');
 const {
-    fortawesomeSolidShortcode,
+  fortawesomeSolidShortcode,
 } = require('@vidhill/fortawesome-solid-11ty-shortcode');
 const markdownIt = require("markdown-it");
 let mdOptions = {
@@ -21,6 +21,7 @@ module.exports = config => {
   config.addLayoutAlias('base', 'layouts/base.njk');
   config.addLayoutAlias('post', 'layouts/post.njk');
   config.addLayoutAlias('page', 'layouts/page.njk');
+  config.addLayoutAlias('home', 'layouts/home.njk');
 
   // Copy images and files to dist directory.
   config.addPassthroughCopy('./src/img/');
@@ -35,10 +36,10 @@ module.exports = config => {
     .use(require('markdown-it-bracketed-spans'));
   config.setLibrary("md", md);
   config.addPlugin(fortawesomeBrandsPlugin);
-  
+
   // Shortcodes
 
-    config.addShortcode('fortawesomeSolid', fortawesomeSolidShortcode);
+  config.addShortcode('fortawesomeSolid', fortawesomeSolidShortcode);
 
   // Filters
   config.addFilter("dateDisplay", require("./filters/dates.js"))
@@ -53,6 +54,8 @@ module.exports = config => {
       }
     }).minify(code).styles;
   });
+  config.addFilter("json", require("./filters/json.js"));
+  config.addFilter("keys", obj => Object.keys(obj));
 
   // Collections
   config.addCollection("articles", function (collectionApi) {
