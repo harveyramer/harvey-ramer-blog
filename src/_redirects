@@ -5,4 +5,4 @@
 /resume/                                                        /
 /tags/nodejs                                                    /tags/node-js/
 /blog/2020-04-08-get-the-drop-on-the-cloud-nodejs-and-azure/    /archives/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure
-/blog/*                                                         /article:splat
+/blog/*                                                         /article/:splat
