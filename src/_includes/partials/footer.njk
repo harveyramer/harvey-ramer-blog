@@ -1,0 +1,27 @@
+<footer>
+  <nav class="pages" aria-labelledby="footer-page-nav">
+    <h5>Pages</h5>
+    <ol>
+      {%- for nav in navigation %}
+        <li>
+          <a href="{{ nav.href }}"{% if page.url == nav.href %} aria-current="page"{% endif %}>{{ nav.name }}</a>
+        </li>
+      {%- endfor %}
+    </ol>
+  </nav>
+  <nav class="tags" aria-labelledby="footer-page-nav">
+    <h5>Archives</h5>
+    <ol>
+      {%- for tag in collections | keys -%}
+        {% if tag !== 'all' and tag !== 'articles' %}
+          <li>
+            <a href="/tags/{{tag}}"{% if tag in page.url %} aria-current="page"{% endif %}>{{ tag | upper }}</a>
+          </li>
+        {% endif %}
+      {%- endfor -%}
+    </ol>
+  </nav>
+  <div class="legal meta">
+      &copy; Copyright 2019-2021, Harvey A. Ramer. All rights reserved.
+  </div>
+</footer>

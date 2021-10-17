@@ -1,0 +1,13 @@
+{% macro authorCard(params, el = "div") %}
+  <div class="author">
+    <div class="grid">
+      {% include "./avatar.njk" %}
+      <div class="details">
+        <{{el}} class="authorName">{{params.name}}</{{el}}>
+        <div class="bio">{{params.bio}}</div>
+      </div>
+    </div>
+
+    {% include "./social.njk" %}
+  </div>
+{% endmacro %}

@@ -1,0 +1,17 @@
+<div class="social">
+  {% if params.resume %}
+    <a href="{{params.resume}}" title="{{params.name}}'s Downloadable Resume">{% fortawesomeSolid 'file-word' %}</a>
+  {% endif %}
+  {% if params.github %}
+    <a href="{{params.github}}" title="{{params.name}}'s Github Profile">{% fortawesomeBrand 'github' %}</a>
+  {% endif %}
+  {% if params.linkedIn %}
+    <a href="{{params.linkedIn}}" title="{{params.name}}'s LinkedIn Profile">{% fortawesomeBrand 'linkedin' %}</a>
+  {% endif %}
+  {% if params.twitter %}
+    <a href="{{params.twitter}}" title="{{params.name}}'s Twitter Feed">{% fortawesomeBrand 'twitter' %}</a>
+  {% endif %}
+  {% if params.email %}
+    <a href="{{params.email}}" title="Email {{params.name}}">{% fortawesomeSolid 'envelope-open' %}</a>
+  {% endif %}
+</div>
