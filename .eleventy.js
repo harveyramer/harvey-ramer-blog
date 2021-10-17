@@ -1,4 +1,5 @@
 const eleventyGoogleFonts = require("eleventy-google-fonts");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const CleanCSS = require("clean-css");
 const {
   fortawesomeBrandsPlugin,
@@ -31,6 +32,7 @@ module.exports = config => {
 
   // Plugins
   config.addPlugin(eleventyGoogleFonts);
+  config.addPlugin(pluginRss);
   const md = markdownIt(mdOptions)
     .use(require('markdown-it-footnote'))
     .use(require('markdown-it-mathjax3'))

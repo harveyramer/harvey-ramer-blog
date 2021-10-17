@@ -20,6 +20,7 @@
   "homepage": "https://github.com/harveyramer/harvey-ramer-blog#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@sup39/markdown-it-attr": "^1.2.0",
     "@vidhill/fortawesome-free-regular-11ty-shortcode": "^1.0.3",
     "@vidhill/fortawesome-solid-11ty-shortcode": "^1.0.1",
