@@ -51,6 +51,7 @@
 }
 
 .author .social {
+  margin-top: 0.5rem;
   text-align: right;
 }
 .author .social a {

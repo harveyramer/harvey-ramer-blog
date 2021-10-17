@@ -6,7 +6,7 @@ layout: base
   {{ content | safe }}
   {%- for a in authors -%}
     {% if a.name === "Harvey Ramer"%}
-      {{authorCard(a)}}
+      {{authorCard(a, "h1")}}
     {% endif %}
   {%- endfor -%}
   <ol class="archive_list">
