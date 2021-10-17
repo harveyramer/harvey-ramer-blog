@@ -14,4 +14,7 @@
   {% if params.email %}
     <a href="{{params.email}}" title="Email {{params.name}}">{% fortawesomeSolid 'envelope-open' %}</a>
   {% endif %}
+  {% if params.rss %}
+    <a href="{{params.rss}}" title="Subscribe via RSS">{% fortawesomeSolid 'rss' %}</a>
+  {% endif %}
 </div>
