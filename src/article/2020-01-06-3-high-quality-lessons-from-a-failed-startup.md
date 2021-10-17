@@ -12,7 +12,7 @@ tags:
 
 May of 2018 was an exciting month. I joined a small team focused on removing the pain from a complex business process involving multiple stakeholders. Despite the startup's failure, I learned three important lessons. {.lede}
 
-## Customers Are Everything
+## Your First Customer Is Everything
 
 Our initial conversations with customers were promising. Everyone agreed the problem we were addressing was painful indeed. Energized by this discovery, we built a tool that would enable our customers to remove most of the pain we had identified.
 

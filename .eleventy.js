@@ -59,7 +59,7 @@ module.exports = config => {
 
   // Collections
   config.addCollection("articles", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("./src/article/*.md");
+    return collectionApi.getFilteredByGlob("./src/article/*.md").reverse();
   });
 
   return {

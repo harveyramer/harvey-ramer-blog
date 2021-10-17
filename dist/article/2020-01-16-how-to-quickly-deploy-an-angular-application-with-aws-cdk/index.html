@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harvey Ramer - Web Developer</title>
+    <title>How To Quickly Deploy an Angular Application with AWS CDK</title>
     <base href="/" />
     <style>
       @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap);@import url(https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap);
@@ -22,14 +22,40 @@
   </head>
   <body>
     <div class="container">
-      <main class="home_page">
-  
-      
+      <main>
+  <span class="meta">
+    <span class="tags">
+          <a href="/tags/technology">TECHNOLOGY</a></span> —
+    <time class="block" datetime="2020-01-16T03:27:29.527Z">
+        January 15th, 2020
+      </time>
+    </span>
+    <h1>How To Quickly Deploy an Angular Application with AWS CDK</h1>
+    <p>My goal was simple: to deploy a static site on AWS. But I wanted to make it a bit more interesting by including an Angular application. I bootstrapped a vanilla Angular install any developer could use and deploy.</p>
+<h2>Why Not Use Native CloudFormation?</h2>
+<p><img src="https://harveyramer.com/img/cloudformation-sticker-sm.png" alt="CloudFormation Sticker"></p>
+<p>CloudFormation is a powerful way to manage infrastructure as code. But it is not designed for human writers. Large teams use powerful enterprise tools to manage AWS infrastructure. But smaller teams sometimes do not have the expertise or resources to use those tools. For such teams, Amazon CDK brings a familiar feel to infrastructure as code.</p>
+<p>In short, there is nothing wrong with CloudFormation. But maintaining CloudFormation templates is unwieldy for small development teams. CDK for the win!</p>
+<h2>A CDK Overview</h2>
+<p>At the heart of CDK is a <a href="https://docs.aws.amazon.com/cdk/latest/guide/constructs.html">library of Constructs</a>. These structural building blocks represent cloud components. Constructs contain all the information needed to generate a valid CloudFormation template. Developers compose constructs to define higher level components, much like application code.</p>
+<h2>Trying It Out for Yourself</h2>
+<p>If you want test CDK for your own Angular projects, I have simplified the process with a <a href="https://github.com/harveyramer/deploy-angular-with-cdk">Github repo.</a></p>
+<ol>
+<li>Clone the repo</li>
+<li>Follow the instructions in the Readme file</li>
+<li>Enjoy your static site hosted on S3 with CloudFront and Route53 DNS.</li>
+</ol>
+<p>Using this project, you will have an Angular application hosted on S3 in an hour or two. The initial deployment takes about 30 minutes to provision AWS infrastructure.</p>
+<p>If you find bugs or have questions, please <a href="http://localhost:8000/contact">contact me</a>.</p>
+<h2>Other Resources</h2>
+<p><a href="https://twitter.com/intent/user?screen_name=emeshbi">Elad Ben-Israel</a> from AWS offers a CDK Intro Workshop in <a href="https://cdkworkshop.com/20-typescript.html">TypeScript</a>, <a href="https://cdkworkshop.com/30-python.html">Python</a>, <a href="https://cdkworkshop.com/40-dotnet.html">.NET</a>, and <a href="https://cdkworkshop.com/50-java.html">Java</a>. Use this workshop to learn more about how to use CDK to manage your AWS infrastructure as code.</p>
+
+        
   <div class="author">
     <div class="grid">
       <img class="avatar" src="/img/harvey-web.jpg"/>
       <div class="details">
-        <h1 class="authorName">Harvey Ramer</h1>
+        <div class="authorName">Harvey Ramer</div>
         <div class="bio">Harvey enjoys creating web applications with React, Node.js, and MongoDB. He writes about how worldviews, technology, business and relationship differences can become a collaborative asset.</div>
       </div>
     </div>
@@ -53,43 +79,7 @@
 </div>
   </div>
 
-    <ol class="archive_list"><li>
-        <h2>
-          <a href="/article/2020-04-20-stop-coding-under-stress-how-to-avoid-bugs-and-the-end-of-the-world/">Stop Coding Under Stress: How to Avoid Bugs and the End of the World</a>
-        </h2>
-        <span class="meta">Harvey Ramer,
-          <time class="block" datetime="2020-04-20T04:05:51.862Z">
-            April 19th, 2020
-          </time> — <span class="tags">
-                <a href="/tags/technology">TECHNOLOGY</a>, 
-                <a href="/tags/business">BUSINESS</a></span>
-          </span>
-        </li>
-      <li>
-        <h2>
-          <a href="/article/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/">Making an Even-More-Useful COVID-19 Tracker with Node.js</a>
-        </h2>
-        <span class="meta">Harvey Ramer,
-          <time class="block" datetime="2020-04-10T20:45:37.468Z">
-            April 10th, 2020
-          </time> — <span class="tags">
-                <a href="/tags/technology">TECHNOLOGY</a></span>
-          </span>
-        </li>
-      <li>
-        <h2>
-          <a href="/article/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/">Start Here to Make a Useful COVID-19 Tracker with Node.js</a>
-        </h2>
-        <span class="meta">Harvey Ramer,
-          <time class="block" datetime="2020-04-09T16:57:36.723Z">
-            April 9th, 2020
-          </time> — <span class="tags">
-                <a href="/tags/technology">TECHNOLOGY</a></span>
-          </span>
-        </li>
-      
-    </ol>
-  </main>
+      </main>
       <footer>
   <nav class="tags" aria-labelledby="footer-page-nav">
     <h5>Archives</h5>
@@ -107,7 +97,7 @@
     <h5>Pages</h5>
     <ol>
         <li>
-          <a href="/" aria-current="page">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
           <a href="/archive/">Archive</a>

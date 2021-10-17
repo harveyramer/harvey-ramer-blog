@@ -60,3 +60,26 @@
   margin: 0.3rem;
   color: inherit;
 }
+
+code {
+  font-size: 0.8rem;
+  background-color: rgb(245, 245, 245);
+  font-family: "Roboto Mono", sans-serif;
+  white-space: pre-line;
+  word-break: break-all;
+}
+pre code {
+  border: 1px solid rgb(225, 225, 225);
+  margin: 1rem 0;
+  display: block;
+  padding: 0.5rem;
+}
+
+.footnotes li {
+  margin-bottom: 0.6em;
+}
+.footnotes li::marker,
+.footnotes p,
+.footnotes a {
+  display: inline;
+}
