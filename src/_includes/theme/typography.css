@@ -1,0 +1,153 @@
+html,
+body {
+  font-family: Alegreya, serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(42, 42, 42);
+}
+h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 0.7em;
+  line-height: 1.24;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+h1 a,
+h2 a,
+h3 a {
+  text-decoration: none;
+}
+em {
+  font-style: italic;
+}
+b,
+strong {
+  font-weight: 700;
+}
+main p {
+  text-align: justify;
+  text-indent: 1.5em;
+}
+main h2 + p,
+main h3 + p,
+main h4 + p,
+main h5 + p,
+main p:first-of-type {
+  text-indent: 0;
+}
+
+/* Drop Cap */
+main > p:first-of-type:first-letter {
+  color: rgb(53, 53, 53);
+  float: left;
+  font-size: 3.04em;
+  font-size: 70px;
+  line-height: 40px;
+  padding-top: 10px;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+main ul,
+main ol {
+  list-style-position: inside;
+  margin: 0.6em 0 0.6em 1.5em;
+}
+main ul {
+  list-style-type: disc;
+}
+main ol {
+  list-style-type: decimal;
+}
+.callout {
+  text-indent: 0;
+  text-align: center;
+  margin: 2em 0;
+  border: 3px dotted rgb(213, 213, 213);
+  border-right: 0;
+  border-left: 0;
+  font-family: "Roboto Light", sans-serif;
+  padding: 1.75em 0;
+}
+
+main img {
+  max-width: 100%;
+  border-radius: 0.15rem;
+  margin: 1rem 0 1rem -1rem;
+}
+
+main .archive_list {
+  list-style: none;
+  margin-left: 0;
+}
+.archive_list h2 {
+  margin-bottom: 0;
+}
+.home_page .archive_list {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+footer .legal {
+  margin-top: 1.4rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+.meta,
+footer,
+.footnotes {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 0.8rem;
+}
+footer nav {
+  display: inline-block;
+  margin-right: 3em;
+}
+nav a,
+.meta .tags a {
+  text-decoration: none;
+}
+
+nav [aria-current="page"],
+nav [aria-current="page"]:hover,
+nav [aria-current="page"]:active {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  background: rgb(42, 42, 42);
+  color: #fff;
+}
+nav h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-top: 1.75em;
+  margin-bottom: 0.75em;
+}
+nav li {
+  display: inline-block;
+  margin-right: 0.5em;
+  line-height: 2.2em;
+}
+nav a {
+  color: rgb(42, 42, 42);
+  padding: 0.4em 0.6em;
+  border: 1px solid rgb(42, 42, 42);
+  border-radius: 0.5em;
+}
+nav a:hover,
+nav a:active {
+  color: #1a0dab;
+  border-color: #1a0dab;
+}

@@ -1,0 +1,90 @@
+/* Components */
+
+/* Author Card */
+.author {
+  margin: 4em 0 0;
+}
+.author .grid {
+  display: grid;
+  grid-template-columns: 4fr 20fr;
+}
+.author .authorName {
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: 0;
+}
+.author .details {
+  padding-left: 1rem;
+  grid-column: 2;
+  grid-column-end: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.author .bio {
+  font-family: "Roboto Light", sans-serif;
+  text-align: justify;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+.author .avatar {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .author {
+    margin: 4em 0;
+    display: grid;
+    grid-template-columns: 8fr 8fr 8fr;
+    grid-row: auto;
+  }
+  .author .avatar {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .author .details {
+    grid-column: 1/4;
+    grid-row: 2;
+    padding-left: 0;
+  }
+  .author .authorName {
+    text-align: center;
+  }
+}
+
+.author .social {
+  margin-top: 0.5rem;
+  text-align: right;
+}
+.author .social a {
+  display: inline-block;
+  width: 1.4rem;
+  margin: 0.3rem;
+  color: inherit;
+}
+
+code {
+  font-size: 0.8rem;
+  background-color: rgb(245, 245, 245);
+  font-family: "Roboto Mono", sans-serif;
+  white-space: pre-line;
+  word-break: break-all;
+}
+pre code {
+  border: 1px solid rgb(225, 225, 225);
+  margin: 1rem 0;
+  display: block;
+  padding: 0.5rem;
+}
+
+.footnotes li {
+  margin-bottom: 0.6em;
+}
+.footnotes li::marker,
+.footnotes p,
+.footnotes a {
+  display: inline;
+}

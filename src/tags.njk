@@ -1,0 +1,28 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+layout: base
+---
+<main>
+  <span class="meta">{{ tag | upper }}</span>
+  <h1>Article Archive</h1>
+
+  <ol class="archive_list">
+    {% set taglist = collections[tag] %}
+    {% for post in taglist | reverse %}
+      <li>
+        <h2>
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </h2>
+        <span class="meta">{{ post.data.author }},
+          <time class="block" datetime="{{ post.data.date  }}">
+            {{ post.data.date | dateDisplay }}
+          </time>
+        </span>
+      </li>
+    {% endfor %}
+  </ol>
+</main>
