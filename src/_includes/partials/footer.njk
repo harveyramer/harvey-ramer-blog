@@ -15,7 +15,7 @@
       {%- for tag in collections | keys -%}
         {% if tag !== 'all' and tag !== 'articles' %}
           <li>
-            <a href="/tags/{{tag}}"{% if tag in page.url %} aria-current="page"{% endif %}>{{ tag | upper }}</a>
+            <a href="/tags/{{tag}}"{% if tag in page.url %} aria-current="page"{% endif %}>{{ tag }}</a>
           </li>
         {% endif %}
       {%- endfor -%}
