@@ -84,9 +84,9 @@ main .archive_list {
 .archive_list h2 {
   margin-bottom: 0;
 }
-.home_page .archive_list h2 {
+/* .home_page .archive_list h2 {
   font-size: 1.4em;
-}
+} */
 .home_page .archive_list {
   margin-top: 3rem;
   margin-bottom: 3rem;
