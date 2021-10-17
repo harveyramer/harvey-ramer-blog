@@ -96,9 +96,7 @@ Letting go can make our work fun and our products fun to use. "Good design is of
 
 Stress management may not save the world, but it may save us from early aging and health problems. We can take a load off our coworkers, customers, friends, and loved ones. And, managing or eliminating stress _can_ save our lives.
 
-Stress is a killer. One of my friends has experienced this in a profound way. During his career, he had several heart attacks due to stress. He says, "I now know stress almost killed me. Not sure how you can control yours, but you need to."
-
-Take his words to heart. You might save the world—or at least your world.
+Stress is a killer. One of my friends has experienced this in a profound way. During his career, he had several heart attacks due to stress. He says, "I now know stress almost killed me. Not sure how you can control yours, but you need to." Take his words to heart. You might save the world—or at least your world.
 
 ## Footnotes
 
