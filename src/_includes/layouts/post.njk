@@ -3,11 +3,21 @@ layout: base
 ---
 {%- from "components/authorCard.njk" import authorCard -%}
 <main>
+  <span class="meta">
+    <span class="tags">
+      {%- for tag in tags -%}
+        <a href="/tags/{{tag}}">{{tag | upper}}</a>
+      {%- endfor -%}
+    </span> —
+    <time class="block" datetime="{{ date | w3DateFilter  }}">
+      {{ date | dateDisplay }}
+    </time>
+  </span>
   <h1>{{ title }}</h1>
   {{ content | safe }}
   {%- for a in authors -%}
     {% if author === a.name%}
-    {{authorCard(a)}}
+      {{authorCard(a)}}
     {% endif %}
   {%- endfor -%}
 </main>

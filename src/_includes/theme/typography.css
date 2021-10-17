@@ -25,6 +25,11 @@ h3 {
   margin-bottom: 0.5em;
   margin-top: 1em;
 }
+h1 a,
+h2 a,
+h3 a {
+  text-decoration: none;
+}
 em {
   font-style: italic;
 }
@@ -49,13 +54,12 @@ main ol {
 .callout {
   text-indent: 0;
   text-align: center;
-  margin: 1.25em 0;
-  border: 1px solid rgb(170, 170, 170);
+  margin: 2em 0;
+  border: 3px dotted rgb(213, 213, 213);
   border-right: 0;
   border-left: 0;
-  font-style: italic;
-  font-size: 1.2em;
-  padding: 0.5em 0;
+  font-family: "Roboto Light", sans-serif;
+  padding: 1.75em 0;
 }
 .lede {
   text-indent: 0;
@@ -63,16 +67,77 @@ main ol {
 
 /* Drop Cap */
 .lede:first-letter {
-  color: rgb(70, 70, 70);
+  color: rgb(53, 53, 53);
   float: left;
   font-size: 3.04em;
-  /* line-height: 1em;
-  padding-top: 0.01;
-  padding-right: 0.05em;
-  padding-left: 0.05em; */
   font-size: 70px;
   line-height: 40px;
   padding-top: 10px;
-  padding-right: 5px;
+  padding-right: 3px;
   padding-left: 3px;
+}
+
+main .archive_list {
+  list-style: none;
+  margin-left: 0;
+}
+.archive_list h2 {
+  margin-bottom: 0;
+}
+.home_page .archive_list h2 {
+  font-size: 1.4em;
+}
+.home_page .archive_list {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+footer .legal {
+  margin-top: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+.meta,
+footer {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 0.8rem;
+}
+footer nav {
+  display: inline-block;
+  margin-right: 3em;
+}
+nav a,
+.meta .tags a {
+  text-decoration: none;
+}
+
+nav [aria-current="page"],
+nav [aria-current="page"]:hover,
+nav [aria-current="page"]:active {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  background: rgb(42, 42, 42);
+  color: #fff;
+}
+nav h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-top: 1.75em;
+  margin-bottom: 0.75em;
+}
+nav li {
+  display: inline-block;
+  margin-right: 0.5em;
+  line-height: 2.2em;
+}
+nav a {
+  color: rgb(42, 42, 42);
+  padding: 0.4em 0.6em;
+  border: 1px solid rgb(42, 42, 42);
+  border-radius: 0.5em;
+}
+nav a:hover,
+nav a:active {
+  color: #1a0dab;
+  border-color: #1a0dab;
 }

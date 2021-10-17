@@ -2,7 +2,7 @@
 
 /* Author Card */
 .author {
-  margin: 4em 0;
+  margin: 4em 0 0;
 }
 .author .grid {
   display: grid;
@@ -19,7 +19,7 @@
   grid-column-end: 9;
 }
 .author .bio {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Light", sans-serif;
   text-align: justify;
   font-size: 0.8rem;
   margin-top: 0.5rem;
