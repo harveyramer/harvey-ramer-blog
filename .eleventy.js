@@ -58,7 +58,6 @@ module.exports = config => {
       }
     }).minify(code).styles;
   });
-  config.addFilter("json", require("./filters/json.js"));
   config.addFilter("keys", obj => Object.keys(obj));
 
   // Collections
