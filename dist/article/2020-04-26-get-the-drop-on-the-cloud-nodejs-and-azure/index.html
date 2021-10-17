@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3 High-Quality Lessons from a Failed Startup</title>
+    <title>Get the Drop on the Cloud: Node.js and Azure</title>
     <style>
       @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap);@import url(https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap);
       a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}
@@ -32,39 +32,86 @@
       <main>
   <span class="meta">
     <span class="tags">
-          <a href="/tags/business">BUSINESS</a></span> —
-    <time class="block" datetime="2020-01-06T21:26:17.194Z">
-        January 6th, 2020
+          <a href="/tags/technology">TECHNOLOGY</a></span> —
+    <time class="block" datetime="2020-04-26T04:45:00.000Z">
+        April 25th, 2020
       </time>
     </span>
-    <h1>3 High-Quality Lessons from a Failed Startup</h1>
-    <p class="lede">May of 2018 was an exciting month. I joined a small team focused on removing the pain from a complex business process involving multiple stakeholders. Despite the startup’s failure, I learned three important lessons.</p>
-<h2>Your First Customer Is Everything</h2>
-<p>Our initial conversations with customers were promising. Everyone agreed the problem we were addressing was painful indeed. Energized by this discovery, we built a tool that would enable our customers to remove most of the pain we had identified.</p>
-<p>We had exciting potential customer conversations and even ran a pilot project. Then we launched. The phone did not ring. The website did not generate the leads we expected. <em>Sales did not materialize.</em></p>
-<p class="callout">A customer is someone who gives you money.</p>
-<p>Everyone in the company knew we needed paying customers, but we had difficulty recruiting our first customers. Instead of collecting money, we had encouraging conversations with warm leads and ran too long on the slightest hint of interest they showed. The <a href="http://theleanstartup.com/principles">Lean Startup</a> method <em>might</em> have helped us get customers fully on board, but this lesson is harder to learn than it might seem.</p>
+    <h1>Get the Drop on the Cloud: Node.js and Azure</h1>
+    <p>Take care of some things before you begin. The tools below will allow you to complete the tutorial work. There may be other VS Code extensions that will do the same job, so feel free to try any tools that make sense to you.</p>
 <ol>
-<li>Everything starts with vision and ends with a customer</li>
-<li>How long a project needs to be vision-led depends in part on its complexity</li>
-<li>Selling to a customer means putting our best foot forward</li>
-<li>It is difficult to determine when you’re ready to sell, because software is never finished</li>
+<li><a href="https://azure.microsoft.com/en-us/free/">Create a free Azure account</a></li>
+<li><a href="https://code.visualstudio.com/docs/setup/setup-overview">Install Visual Studio Code (VS Code)</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack">Add the Azure Tools Extension Pack</a> to Visual Studio Code</li>
+<li><a href="https://www.harveyramer.com/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/">Install NodeJS</a></li>
 </ol>
-<h2>Vision Is Vital</h2>
-<p>It is easy to pin the blame of missing the market on visionary leadership, but the reality is that most startups fail. The cost of shaky or unclear vision is high. Our startup had a remedy for a real pain point. Our tactics aligned with our vision. Our team was a success because of clear vision.</p>
+<p><img src="https://harveyramer.com/img/installed-azure-tools.png" alt="Azure App Service Extension Installed" title="Azure App Service Extension Installed"></p>
+<h3>Log In to Azure</h3>
+<p>In VS Code, open the command palette (<code>Ctrl+Shift+P</code>) and enter <code>&gt; Azure: Sign In</code>. You will be prompted to log in via a browser window. When complete, you will see your subscriptions listed in your Azure panel.</p>
+<p><img src="https://harveyramer.com/img/log-in-to-azure-vscode.png" alt="Signing in to Azure with VS Code" title="Signing in to Azure with VS Code"></p>
+<h2>Start Coding</h2>
+<h3>Installing the COVID-19 Tracker</h3>
+<p>For this project, use the COVID-19 Tracker project.<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
 <ol>
-<li>We incrementally improved our product to match the vision</li>
-<li>We optimized for adaptability to respond to what we learned as our vision clarified</li>
-<li>We worked as a unit in alignment to our purpose</li>
+<li>clone or download the repository (<code>git clone git@github.com:harveyramer/covid-19-demo-express-js-app.git</code>)</li>
+<li>Navigate in your terminal to the root directory (<code>cd covid-19-demo-express-js-app</code>)</li>
+<li>Check out this branch (<code>git checkout tutorial-2</code>)</li>
+<li>Install the project (<code>npm install</code>)</li>
+<li>Start the server (<code>npm start</code>)</li>
+<li>Navigate to your project in a browser (<a href="http://localhost:3000/">http://localhost:3000</a>)</li>
 </ol>
-<p class="callout">Vision is indispensable, but it needs give way to the voice of the customer.</p>
-<p>Without vision, paralysis-by-analysis rules the day. Fear of failure haunts every decision. I would rather follow a visionary leader than a timid, fearful one.</p>
-<p><strong>Visionary leaders need competent voices to interrupt their vision with reality.</strong> This is not the fault of those with vision. Followers need to know when to run with a vision, and when to ask questions and challenge assumptions. This is a difficult balance—wisdom is required.</p>
-<h2>The Team Is (Also) Everything</h2>
-<p>Let’s get to the heart it all. A business is a team of people working toward producing revenue through value creation. Teams bond with clear vision, and our sense of purpose brought us together. Teams collaborate to reach goals. Teams connect us with life-long relationships and knowledge that enriches us.</p>
-<p>We found and hired people who shared the vision and gave every ounce of their talent to realize it. That was a success!</p>
-<p class="callout">There is nothing better than knowing your team has your back.</p>
-<p>I am humbled to have been part of a company whose leadership believed in and supported their team. Each team member played an important part, and they are some of the finest human beings I have ever known. <strong>After it all ends, all we have is friendship.</strong></p>
+<h3>Preparing for Deployment</h3>
+<p>Since Azure’s App Service uses dynamically configured <a href="https://docker-curriculum.com/">Docker containers</a>, you cannot specify a port in our code. Instead, rely on an <a href="https://medium.com/chingu/an-introduction-to-environment-variables-and-how-to-use-them-f602f66d15fa">environment variable</a>.</p>
+<ol>
+<li>Make sure your local server is not running (<code>Ctrl+C</code>).</li>
+<li>Open the <code>src/index.js</code> file and update line 5.</li>
+</ol>
+<pre><code>const port = process.env.PORT
+</code></pre>
+<h2>Deploying to Azure App Service</h2>
+<p>The extensions in the Azure Tools pack you installed make it easy to deploy a Web app. To show the Azure panel in VS Code, click on the Azure logo on the left. Then, click the <em>Deploy to Azure</em> arrow button in the App Service menu bar.</p>
+<p><img src="https://harveyramer.com/img/deploy-to-azure.png" alt="Deploy to Azure App Service" title="Deploy to Azure App Service"></p>
+<p>The Azure App Service extension’s wizard will help you deploy your app.</p>
+<ol>
+<li>Select the <em>covid19-tracker</em> folder to zip and deploy</li>
+<li>Choose <em>Create new Web App…</em></li>
+<li>Next enter a unique name for your Web app. (<code>covid19tutorial-myname</code>)</li>
+<li>Select runtime <em>Node 12 LTS</em></li>
+<li>Wait a few minutes while Azure provisions the resources for your Web app</li>
+<li>When asked, “Would you like to update your workspace configuration to run build commands on the target server?” Answer, <em>“Yes.”</em></li>
+<li>To monitor the build process, show the output window.</li>
+</ol>
+<p><img src="https://harveyramer.com/img/show-build-output.png" alt="Show Azure deployment output window" title="Show Azure deployment output window"></p>
+<p>When deployment finishes, browse to your new website. It will use the unique name you specified, for example, <em><strong>covid19tutorial-myname</strong>.azurewebsites.net</em>. Your app will not respond and may display an application error. This is normal. We have one more configuration step.</p>
+<h3>Add an Application Setting</h3>
+<p>You will need to add an <em>Application Setting</em> to tell Azure App Service what version of Node.js to use.</p>
+<ul>
+<li>Expand your subscription, Web app, and right-click on <strong>Application Settings</strong></li>
+<li>Choose <em>Add New Setting</em></li>
+<li>For your setting key, enter <code>WEBSITE_NODE_DEFAULT_VERSION</code></li>
+<li>For your setting value, enter <code>12-lts</code></li>
+</ul>
+<p><img src="https://harveyramer.com/img/add-application-setting.png" alt="Add WEBSITE_NODE_DEFAULT_VERSION application setting" title="Add WEBSITE_NODE_DEFAULT_VERSION application setting"></p>
+<p>Adding a new application setting causes the App Service to restart, which can take several minutes. If your Web app does not start in 10 minutes, see <a href="#troubleshooting">Troubleshooting</a> below.</p>
+<h3>Monitoring your App with Logs</h3>
+<p>Since it takes several minutes for your app to warm up after being deployed to Azure, it helps to monitor the Log Stream for your application. To do that, Expand your application’s <em>Logs (Read-only)</em> folder and click <em>Connect to Log Stream…</em> An output panel in the terminal will allow you to monitor your application’s progress.</p>
+<p><img src="https://harveyramer.com/img/monitor-application-logs.png" alt=""></p>
+<p>When you see <em>Example app listening at <a href="http://localhost:8080">http://localhost:8080</a></em> your app is warmed up and ready to take some requests.</p>
+<h3>Success</h3>
+<p>Your first deployment of a Web app with Node.js to Azure can be a bit tricky. When you succeed, your <a href="https://covid19tutorial.azurewebsites.net/">COVID-19 Tracker</a> will be live for the world to see. If you want to share it with friends, you may want to upgrade from the <a href="https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage">free App Service Plan</a>, which only runs for an hour each day.</p>
+<p><img src="https://harveyramer.com/img/your-deployed-web-app.png" alt="Your deployed Web app" title="Your deployed Web app"></p>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<p>If your deployment fails on the first try, as mine did, it is likely a timing issue. Some resources your Web app depends on were not provisioned when it tried to start.</p>
+<p><img src="https://harveyramer.com/img/service-unavailable.png" alt="The service is unavailable" title="The service is unavailable"></p>
+<p>Make sure you have completed all the steps above. If your app still does not start after 10 minutes, either dig into Azure’s <a href="https://docs.microsoft.com/en-us/azure/app-service/app-service-web-nodejs-best-practices-and-troubleshoot-guide">Node.js troubleshooting documentation</a>, or use the nuclear option. I have found that deleting your Web Application and starting over resolves the problem.</p>
+<h2>Footnotes</h2>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><a href="https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/">Start Here to Make a Useful COVID-19 Tracker with Node.js</a> and <a href="https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/">Making an Even-More-Useful COVID-19 Tracker with Node.js</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
         
   <div class="author">

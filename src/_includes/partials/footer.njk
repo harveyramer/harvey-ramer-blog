@@ -1,4 +1,14 @@
 <footer>
+  <nav class="pages" aria-labelledby="footer-page-nav">
+    <h5>Pages</h5>
+    <ol>
+      {%- for nav in navigation %}
+        <li>
+          <a href="{{ nav.href }}"{% if page.url == nav.href %} aria-current="page"{% endif %}>{{ nav.name }}</a>
+        </li>
+      {%- endfor %}
+    </ol>
+  </nav>
   <nav class="tags" aria-labelledby="footer-page-nav">
     <h5>Archives</h5>
     <ol>
@@ -9,16 +19,6 @@
           </li>
         {% endif %}
       {%- endfor -%}
-    </ol>
-  </nav>
-  <nav class="pages" aria-labelledby="footer-page-nav">
-    <h5>Pages</h5>
-    <ol>
-      {%- for nav in navigation %}
-        <li>
-          <a href="{{ nav.href }}"{% if page.url == nav.href %} aria-current="page"{% endif %}>{{ nav.name }}</a>
-        </li>
-      {%- endfor %}
     </ol>
   </nav>
   <div class="legal meta">
