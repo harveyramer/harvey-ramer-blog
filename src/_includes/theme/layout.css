@@ -6,7 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-width: 35em;
+  max-width: 40em;
   margin: 0 auto;
 }
 main {

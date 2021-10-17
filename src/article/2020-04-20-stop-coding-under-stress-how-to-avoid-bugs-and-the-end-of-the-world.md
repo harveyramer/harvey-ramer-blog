@@ -26,9 +26,7 @@ Under prolonged stress, we can become pessimistic. This makes creative thinking 
 
 "We have long known," continues Norman, "that when people are anxious they tend to narrow their thought processes, concentrating upon aspects directly relevant to a problem." This narrow thinking limits our approach to problem solving. As television detective Burl Loomis says on the show _The Good Cop_, "It's been my experience, when a man has been stabbed in the chest that's pretty much all he wants to talk about."[^3] There are moments of absolute clarity, when only one thing matters. But when we see only the immediate concerns of life, we stumble as we pursue elegant architecture, maintainable programs and bug fixes.
 
-Context matters, and it can dramatically affect how we work as a team. I recall a day when a junior member on my team interrupted me with a question that intrigued me. I helped him work through the problem with as much speed as possible and got back to work. When we deployed his code to production, it became clear that he had introduced a bug. He had consulted with me before writing the code, and I had failed to direct him to a better solution. My tunnel vision caused me to ignore the context of another developer's problem.
-
-When bugs make it past the development team and into production, customers feel the pain, and the cost of production bugs is high.
+Context matters, and it can dramatically affect how we work as a team. I recall a day when a junior member on my team interrupted me with a question that intrigued me. I helped him work through the problem with as much speed as possible and got back to work. When we deployed his code to production, it became clear that he had introduced a bug. He had consulted with me before writing the code, and I had failed to direct him to a better solution. My tunnel vision caused me to ignore the context of another developer's problem. When bugs make it past the development team and into production, customers feel the pain, and the cost of production bugs is high.
 
 Stress can also cause a bad user experience in less obvious ways. A pressure-filled design process misses many of the nuances important to users. We forget to hold critical collaborative discussions that clarify issues. We overlook empathy for the user in favor of bottom-line thinking. The end result is far less than what should have been.
 
@@ -58,9 +56,7 @@ We will never read all the technical articles, take all the courses, or try all 
 
 When given a task, my first job is to clarify the requirements for the work. Programmers, the people closest to the problem, are well-suited to plan effective solutions. I rarely receive tasks with enough clarity to warrant writing code immediately. We need time for research and planning. It may be nice to skip all that planning, but it would deprive us of using our strategic abilities.
 
-**Manage "found work."** Planning the implementation details of a new feature often uncovers additional unplanned work.
-
-Agile software development acknowledges this problem and recommends breaking work into chunks that a team can complete in a short period of time (often two weeks). This "sprint" includes time for collaborative planning and estimation before work begins. During this process we discuss any found work, plan, and communicate changes to our stakeholders.
+**Manage "found work."** Planning the implementation details of a new feature often uncovers additional unplanned work. Agile software development acknowledges this problem and recommends breaking work into chunks that a team can complete in a short period of time (often two weeks). This "sprint" includes time for collaborative planning and estimation before work begins. During this process we discuss any found work, plan, and communicate changes to our stakeholders.
 
 Traditional software development does not recognize the problem of found work. As one department throws specifications over the wall to another, consternation and change requests multiply. Effective communication mitigates the stress of traditional software development, but an agile approach to planning can simply bypass it.
 
@@ -84,9 +80,7 @@ With some knowledge of your company's needs you can plan to learn on your own ti
 
 Business stakeholders often give deadlines to their superiors to justify your next project without any knowledge of the details. As you plan your work, communicate about potential missed deadlines as soon as you become aware of them. Explain the likely delay so your stakeholders can justify the change with the company leadership. Otherwise, your concerns will backfire—making you seem hesitant and fearful rather than assertive and responsible.
 
-\*\*Forgive yourself." As professionals, we hold a high opinion of our abilities and expect a great deal of ourselves. We add to our stress when, if we fall short of our own internal standard, we berate ourselves. In most cases, no one else cares about your missed expectations of yourself.
-
-Set goals. Work hard. Forgive yourself.
+**Forgive yourself.** As professionals, we hold a high opinion of our abilities and expect a great deal of ourselves. We add to our stress when, if we fall short of our own internal standard, we berate ourselves. In most cases, no one else cares about your missed expectations of yourself. _Set goals. Work hard. Forgive yourself._
 
 **Cultivate a Sense of Humor** It's easy to forgive yourself if you learn not to take yourself too seriously. For most of my life, I have been intense, driven, and self-critical. It's hard to forgive myself if the weight of the world rests on my shoulders. But here's something to remember: none of us bears our burdens alone. Team members, customers, friends, and loved ones who see our flaws continue to work with us, buy from us, spend time with us, and love us. Sometimes, we can join them in laughing at our mistakes. This helps us let go and move forward.
 
@@ -96,7 +90,7 @@ Letting go can make our work fun and our products fun to use. "Good design is of
 
 Stress management may not save the world, but it may save us from early aging and health problems. We can take a load off our coworkers, customers, friends, and loved ones. And, managing or eliminating stress _can_ save our lives.
 
-Stress is a killer. One of my friends has experienced this in a profound way. During his career, he had several heart attacks due to stress. He says, "I now know stress almost killed me. Not sure how you can control yours, but you need to." Take his words to heart. You might save the world—or at least your world.
+Stress is a killer. One of my friends has experienced this in a profound way. During his career, he had several heart attacks due to stress. He says, "I now know stress almost killed me. Not sure how you can control yours, but you need to." Take his words to heart. You might save the world—or at least _your world._
 
 ## Footnotes
 
