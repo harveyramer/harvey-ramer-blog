@@ -15,9 +15,12 @@ tags:
 
 If you want to learn programming, get set up can be a confusing barrier to entry. In this tutorial, I offer a straightforward way to install Node.js and all the tools you will need to start working with Node.js on Windows 10.
 
-**Note**: When a simple command should produce an output of a certain type, you will see `command` → `output`.
+When a simple command should produce an output of a certain type, you will see:  
+`command` → `output`. {.alert}
 
 ## Install Chocolatey: the Windows Package Manager
+
+I no longer recommend Chocolatey due to security and maintenance concerns. Please consider alternatives. One I have used with success is [NVM-Windows](https://github.com/coreybutler/nvm-windows). {.alert.danger}
 
 [Chocolatey](https://chocolatey.org/) allows us to download and install open source packages from the Web. Chocolatey is as secure as the practices of the user. Mitigate risk by downloading known safe packages for your development machine. We will use [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7) to install Chocolatey. Enter `PowerShell` in your Windows Start Menu and choose "Run as Administrator" from the menu.
 
