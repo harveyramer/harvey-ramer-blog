@@ -93,3 +93,17 @@ pre code {
 .footnotes a {
   display: inline;
 }
+
+.alert {
+  padding: 1em 2em;
+  font-size: 0.8em;
+  font-family: "Roboto Light", sans-serif;
+  border: 1px solid;
+  border-radius: 0.5em;
+  margin: 1em 0;
+  text-indent: 0;
+}
+
+.alert.danger {
+  border-color: rgb(199, 0, 0);
+}

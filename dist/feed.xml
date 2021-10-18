@@ -4,7 +4,7 @@
   <subtitle>Harvey enjoys creating web applications with React, Node.js, and MongoDB. He writes about how worldviews, technology, business and relationship differences can become a collaborative asset.</subtitle>
   <link href="https://www.harveyramer.com/feed.xml" rel="self"/>
   <link href="https://www.harveyramer.com/"/>
-  <updated>2021-10-18T17:59:28Z</updated>
+  <updated>2021-10-18T18:23:02Z</updated>
   <id>https://www.harveyramer.com/</id>
   <author>
     <name>Harvey Ramer</name>
@@ -1072,8 +1072,10 @@ router.get(&amp;quot;/&amp;quot;, (req, res) =&amp;gt; {
       <id>https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/</id>
       <content type="html">&lt;h2&gt;Overview&lt;/h2&gt;
 &lt;p&gt;If you want to learn programming, get set up can be a confusing barrier to entry. In this tutorial, I offer a straightforward way to install Node.js and all the tools you will need to start working with Node.js on Windows 10.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: When a simple command should produce an output of a certain type, you will see &lt;code&gt;command&lt;/code&gt; → &lt;code&gt;output&lt;/code&gt;.&lt;/p&gt;
+&lt;p class=&quot;alert&quot;&gt;When a simple command should produce an output of a certain type, you will see:&lt;br /&gt;
+&lt;code&gt;command&lt;/code&gt; → &lt;code&gt;output&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;Install Chocolatey: the Windows Package Manager&lt;/h2&gt;
+&lt;p class=&quot;alert danger&quot;&gt;I no longer recommend Chocolatey due to security and maintenance concerns. Please consider alternatives. One I have used with success is &lt;a href=&quot;https://github.com/coreybutler/nvm-windows&quot;&gt;NVM-Windows&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://chocolatey.org/&quot;&gt;Chocolatey&lt;/a&gt; allows us to download and install open source packages from the Web. Chocolatey is as secure as the practices of the user. Mitigate risk by downloading known safe packages for your development machine. We will use &lt;a href=&quot;https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7&quot;&gt;Windows PowerShell&lt;/a&gt; to install Chocolatey. Enter &lt;code&gt;PowerShell&lt;/code&gt; in your Windows Start Menu and choose “Run as Administrator” from the menu.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/sc5ox6zxr9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;In your PowerShell terminal, enter the command:&lt;/p&gt;

@@ -1,8 +1,9 @@
 /about-harvey                                                   /
 /1810/two-kinds-of-agnosticism/                                 /
 /2294/waking-up-early/                                          /
-/contact/*                                                      /
+/contact/                                                       /
 /resume/                                                        /
+/tags/nodejs                                                    /tags/node-js/
+/blog/2020-04-08-get-the-drop-on-the-cloud-nodejs-and-azure/    /archives/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure
 /blog/*                                                         /article/:splat
-/article                                                       /
 /rss.xml                                                        /feed.xml
