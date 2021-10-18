@@ -20,7 +20,7 @@ When a simple command should produce an output of a certain type, you will see:
 
 ## Install Chocolatey: the Windows Package Manager
 
-I no longer recommend Chocolatey due to security and maintenance concerns. Please consider alternatives. One I have used with success is [NVM-Windows](https://github.com/coreybutler/nvm-windows). {.alert.danger}
+I no longer recommend Chocolatey due to security and maintenance concerns. Please consider alternatives. One I have used with success is [NVM-Windows](https://github.com/coreybutler/nvm-windows). If you choose that option, you can skip to [Install Node](#install-node). {.alert.danger}
 
 [Chocolatey](https://chocolatey.org/) allows us to download and install open source packages from the Web. Chocolatey is as secure as the practices of the user. Mitigate risk by downloading known safe packages for your development machine. We will use [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7) to install Chocolatey. Enter `PowerShell` in your Windows Start Menu and choose "Run as Administrator" from the menu.
 
@@ -52,7 +52,7 @@ Close that terminal window and open a new one (again, as Administrator). This al
 
 Try the command `nvm version` → `1.1.7`. If you get a numeric version result, we're good! Let's install Node.js next.
 
-## Install Node.js
+## Install Node.js {#install-node}
 
 Now we can use NVM to download and install [Node.js](https://nodejs.org/en/about/)! Open the Windows Terminal again (you should not need Administrator privileges). Enter the following command and verify your results.
 

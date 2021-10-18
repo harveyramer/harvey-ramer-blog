@@ -46,7 +46,7 @@
 <p class="alert">When a simple command should produce an output of a certain type, you will see:<br>
 <code>command</code> → <code>output</code>.</p>
 <h2>Install Chocolatey: the Windows Package Manager</h2>
-<p class="alert danger">I no longer recommend Chocolatey due to security and maintenance concerns. Please consider alternatives. One I have used with success is <a href="https://github.com/coreybutler/nvm-windows">NVM-Windows</a>.</p>
+<p class="alert danger">I no longer recommend Chocolatey due to security and maintenance concerns. Please consider alternatives. One I have used with success is <a href="https://github.com/coreybutler/nvm-windows">NVM-Windows</a>. If you choose that option, you can skip to <a href="#install-node">Install Node</a>.</p>
 <p><a href="https://chocolatey.org/">Chocolatey</a> allows us to download and install open source packages from the Web. Chocolatey is as secure as the practices of the user. Mitigate risk by downloading known safe packages for your development machine. We will use <a href="https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7">Windows PowerShell</a> to install Chocolatey. Enter <code>PowerShell</code> in your Windows Start Menu and choose “Run as Administrator” from the menu.</p>
 <p><img src="https://harveyramer.com/img/sc5ox6zxr9.png" alt=""></p>
 <p>In your PowerShell terminal, enter the command:</p>
@@ -62,7 +62,7 @@
 <p><img src="https://harveyramer.com/img/cmd_4rbXM91m6u.png" alt=""></p>
 <p>Close that terminal window and open a new one (again, as Administrator). This allows the terminal to look up environment information and see our newly installed package manager.</p>
 <p>Try the command <code>nvm version</code> → <code>1.1.7</code>. If you get a numeric version result, we’re good! Let’s install Node.js next.</p>
-<h2>Install Node.js</h2>
+<h2 id="install-node">Install Node.js</h2>
 <p>Now we can use NVM to download and install <a href="https://nodejs.org/en/about/">Node.js</a>! Open the Windows Terminal again (you should not need Administrator privileges). Enter the following command and verify your results.</p>
 <pre><code class="language-javascript">nvm install node@13.12.0
 </code></pre>
@@ -155,11 +155,11 @@ nvm use 12.16.2
     <h5>Archives</h5>
     <ol>
           <li>
-            <a href="/tags/technology">technology</a>
+            <a href="/tags/business">business</a>
           </li>
         
           <li>
-            <a href="/tags/business">business</a>
+            <a href="/tags/technology">technology</a>
           </li>
         </ol>
   </nav>

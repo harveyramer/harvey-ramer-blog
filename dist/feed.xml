@@ -4,7 +4,7 @@
   <subtitle>Harvey enjoys creating web applications with React, Node.js, and MongoDB. He writes about how worldviews, technology, business and relationship differences can become a collaborative asset.</subtitle>
   <link href="https://www.harveyramer.com/feed.xml" rel="self"/>
   <link href="https://www.harveyramer.com/"/>
-  <updated>2021-10-18T18:36:19Z</updated>
+  <updated>2021-10-18T18:40:04Z</updated>
   <id>https://www.harveyramer.com/</id>
   <author>
     <name>Harvey Ramer</name>
@@ -1075,7 +1075,7 @@ router.get(&amp;quot;/&amp;quot;, (req, res) =&amp;gt; {
 &lt;p class=&quot;alert&quot;&gt;When a simple command should produce an output of a certain type, you will see:&lt;br /&gt;
 &lt;code&gt;command&lt;/code&gt; → &lt;code&gt;output&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;Install Chocolatey: the Windows Package Manager&lt;/h2&gt;
-&lt;p class=&quot;alert danger&quot;&gt;I no longer recommend Chocolatey due to security and maintenance concerns. Please consider alternatives. One I have used with success is &lt;a href=&quot;https://github.com/coreybutler/nvm-windows&quot;&gt;NVM-Windows&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;alert danger&quot;&gt;I no longer recommend Chocolatey due to security and maintenance concerns. Please consider alternatives. One I have used with success is &lt;a href=&quot;https://github.com/coreybutler/nvm-windows&quot;&gt;NVM-Windows&lt;/a&gt;. If you choose that option, you can skip to &lt;a href=&quot;https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/#install-node&quot;&gt;Install Node&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://chocolatey.org/&quot;&gt;Chocolatey&lt;/a&gt; allows us to download and install open source packages from the Web. Chocolatey is as secure as the practices of the user. Mitigate risk by downloading known safe packages for your development machine. We will use &lt;a href=&quot;https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7&quot;&gt;Windows PowerShell&lt;/a&gt; to install Chocolatey. Enter &lt;code&gt;PowerShell&lt;/code&gt; in your Windows Start Menu and choose “Run as Administrator” from the menu.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/sc5ox6zxr9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;In your PowerShell terminal, enter the command:&lt;/p&gt;
@@ -1091,7 +1091,7 @@ router.get(&amp;quot;/&amp;quot;, (req, res) =&amp;gt; {
 &lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/cmd_4rbXM91m6u.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Close that terminal window and open a new one (again, as Administrator). This allows the terminal to look up environment information and see our newly installed package manager.&lt;/p&gt;
 &lt;p&gt;Try the command &lt;code&gt;nvm version&lt;/code&gt; → &lt;code&gt;1.1.7&lt;/code&gt;. If you get a numeric version result, we’re good! Let’s install Node.js next.&lt;/p&gt;
-&lt;h2&gt;Install Node.js&lt;/h2&gt;
+&lt;h2 id=&quot;install-node&quot;&gt;Install Node.js&lt;/h2&gt;
 &lt;p&gt;Now we can use NVM to download and install &lt;a href=&quot;https://nodejs.org/en/about/&quot;&gt;Node.js&lt;/a&gt;! Open the Windows Terminal again (you should not need Administrator privileges). Enter the following command and verify your results.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;nvm install node@13.12.0
 &lt;/code&gt;&lt;/pre&gt;
