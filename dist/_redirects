@@ -3,6 +3,6 @@
 /2294/waking-up-early/                                          /
 /contact/                                                       /
 /resume/                                                        /
-/blog/*                                                         /article/:splat
 /article/                                                       /
+/blog/*                                                         /article/:splat
 /rss.xml                                                        /feed.xml
