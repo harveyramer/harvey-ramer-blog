@@ -72,16 +72,6 @@ main ul {
 main ol {
   list-style-type: decimal;
 }
-.callout {
-  text-indent: 0;
-  text-align: center;
-  margin: 2em 0;
-  border: 3px dotted rgb(213, 213, 213);
-  border-right: 0;
-  border-left: 0;
-  font-family: "Roboto Light", sans-serif;
-  padding: 1.75em 0;
-}
 
 main img {
   max-width: 100%;
