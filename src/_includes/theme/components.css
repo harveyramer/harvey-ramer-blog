@@ -75,7 +75,7 @@
 
 code {
   font-size: 0.8rem;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(253, 253, 253);
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   white-space: pre-line;
   word-break: break-all;
@@ -100,12 +100,23 @@ pre code {
   padding: 1em 2em;
   font-size: 0.8em;
   font-family: "Roboto Light", sans-serif;
-  border: 1px solid;
+  border: 1px solid rgb(213, 213, 213);
   border-radius: 0.5em;
   margin: 1em 0;
   text-indent: 0;
 }
 
 .alert.danger {
-  border-color: rgb(199, 0, 0);
+  border-color: rgb(231, 193, 193);
+}
+
+.callout {
+  text-indent: 0;
+  text-align: center;
+  margin: 2em 0;
+  border: 3px dotted rgb(213, 213, 213);
+  border-right: 0;
+  border-left: 0;
+  font-family: "Roboto Light", sans-serif;
+  padding: 1.75em 0;
 }
