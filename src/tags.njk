@@ -3,10 +3,12 @@ pagination:
   data: collections
   size: 1
   alias: tag
-permalink: /tags/{{ tag }}/
-title: {{tag}} Archive
+permalink: /tags/{{ tag | slug }}/
 layout: base
+renderData:
+  title: "{{ tag | capitalize }} Archive"
 ---
+
 <main>
   <span class="meta">{{ tag | upper }}</span>
   <h1>Article Archive</h1>
