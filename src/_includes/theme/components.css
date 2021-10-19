@@ -45,7 +45,7 @@
   color: inherit;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .author {
     margin: 4em 0;
     display: grid;
@@ -56,7 +56,6 @@
     display: block;
   }
   .author .avatar {
-    object-fit: contain;
     max-width: 5rem;
     height: auto;
     margin: 0 auto;
