@@ -4,5 +4,6 @@
 /contact/                                                       /
 /resume/                                                        /
 /article/                                                       /
+/tags/                                                          /
 /blog/*                                                         /article/:splat
 /rss.xml                                                        /feed.xml
