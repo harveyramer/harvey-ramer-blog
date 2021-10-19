@@ -75,7 +75,7 @@
 code {
   font-size: 0.8rem;
   background-color: rgb(245, 245, 245);
-  font-family: "Roboto Mono", sans-serif;
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   white-space: pre-line;
   word-break: break-all;
 }
