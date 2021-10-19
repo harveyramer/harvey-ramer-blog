@@ -1,12 +1,11 @@
 ---
+layout: base
 pagination:
   data: collections
   size: 1
   alias: tag
 permalink: /tags/{{ tag | slug }}/
-layout: base
-renderData:
-  title: "{{ tag | capitalize }} Archive"
+title: "{{ tag | capitalize }} Archive"
 ---
 
 <main>
