@@ -5,7 +5,8 @@ pagination:
   size: 1
   alias: tag
 permalink: /tags/{{ tag | slug }}/
-title: "{{ tag | capitalize }} Archive"
+eleventyComputed:
+  title: "{{ tag | capitalize }} Archive"
 ---
 
 <main>
