@@ -29,6 +29,8 @@ module.exports = config => {
   config.addPassthroughCopy('./src/files/');
   config.addPassthroughCopy('./src/_redirects');
   config.addPassthroughCopy('./src/_headers');
+  config.addPassthroughCopy('./src/browserconfig.xml');
+  config.addPassthroughCopy('./src/manifest.json');
 
   // Plugins
   config.addPlugin(eleventyGoogleFonts);
