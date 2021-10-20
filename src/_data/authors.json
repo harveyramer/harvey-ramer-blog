@@ -9,6 +9,6 @@
     "rss": "https://feedrabbit.com/subscriptions/new?url=https%3A%2F%2Fwww.harveyramer.com%2Ffeed.xml",
     "resume": "/files/harvey-ramer-resume.docx",
     "avatar": "/img/harvey-avatar.jpg",
-    "bio": "Harvey has been writing code for nearly twenty years. He enjoys creating web applications with React, Node.js, and MongoDB, but he enjoys talking and writing about the Christian worldview even more. He is fascinated by technology, startups, and how differences can become a collaborative asset."
+    "bio": "Harvey has been writing code for nearly twenty years. He builds web applications with React, Node.js, and MongoDB and deploys them to the cloud with CI/CD pipelines. He talks and writes about the Christian worldview, technology, startups, and how differences can become a collaborative asset."
   }
 ]
