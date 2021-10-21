@@ -3,12 +3,14 @@ layout: post
 title: Start Here to Make a Useful COVID-19 Tracker with Node.js
 date: 2020-04-09T16:57:36.723Z
 author: Harvey Ramer
+social_quote: If you've been wanting to learn Node.js, why not let pandemic worries spur you to action? Let's build a Web application to display the latest COVID-19 statistics. Never fear, we'll make it simple and fun.
 description: >-
-  Why not let worry spur you to action? Let's build a Web application to display
-  the latest COVID-19 statistics. Don't worry, we'll make it simple and fun.
+  If you've been wanting to learn Node.js, why not let pandemic worries spur you to action? Let's build a Web application to display the latest COVID-19 statistics. Never fear, we'll make it simple and fun.
 tags:
   - technology
 ---
+
+If you've been wanting to learn Node.js, why not let pandemic worries spur you to action? Let's build a Web application to display the latest COVID-19 statistics. Never fear, we'll make it simple and fun.
 
 Before beginning this tutorial, you will need [Node.js](https://nodejs.org/), [NPM](https://npmjs.org), [Git](https://git-scm.org), and[Visual Studio Code](https://code.visualstudio.com/) installed on your computer. If you need help, use my tutorial on [configuring a development environment](https://www.harveyramer.com/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
 

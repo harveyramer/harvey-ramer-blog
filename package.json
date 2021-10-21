@@ -34,8 +34,11 @@
   },
   "dependencies": {
     "@netlify/functions": "^0.7.2",
+    "@types/node": "^16.11.1",
     "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
     "clean-css": "^5.2.1",
+    "cloudinary": "^1.27.1",
+    "streamifier": "^0.1.1",
     "typescript": "^4.4.4"
   }
 }

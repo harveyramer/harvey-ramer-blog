@@ -17,15 +17,24 @@ description: Harvey Ramer, a web developer, shares his thoughts on technology, b
 {% set components %}
   {% include "../theme/components.css" %}
 {% endset %}
-
+{%
+  set pageMeta = { quote: social_quote, slug: page.fileSlug, title: title }
+%}
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ meta_title or title }}</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    {% if social_quote %}
+      <meta property="og:url" content="{{site.url}}{{page.url}}" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="{{title}}" />
+      <meta property="og:description" content="{{social_quote}}" />
+      <meta property="og:image" content="{{ pageMeta | ogImg }}" />
+    {% endif %}
+      <title>{{ meta_title or title }}</title>
     {% if description %}
-    <meta name="description" content="{{description}}">
+      <meta name="description" content="{{description}}">
     {% endif %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

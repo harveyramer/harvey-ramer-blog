@@ -3,11 +3,14 @@ layout: post
 title: "Get the Drop on the Cloud: Node.js and Azure"
 date: 2020-04-26T04:45:00.000Z
 author: Harvey Ramer
+social_quote: Deploying applications to the cloud can be intimidating. Don't worry though, this guide will stick to the bare essentials. When you've finished here, you will have a web application running on Azure.
 description: >-
   Deploying applications to the cloud can be intimidating. Don't worry though, this guide will stick to the bare essentials. When you've finished here, you will have a web application running on Azure.
 tags:
   - technology
 ---
+
+Deploying applications to the cloud can be intimidating. Don't worry though, this guide will stick to the bare essentials. When you've finished here, you will have a web application running on Azure.
 
 Take care of some things before you begin. The tools below will allow you to complete the tutorial work. There may be other VS Code extensions that will do the same job, so feel free to try any tools that make sense to you.
 

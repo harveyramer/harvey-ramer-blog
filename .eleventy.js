@@ -1,6 +1,7 @@
 const eleventyGoogleFonts = require("eleventy-google-fonts");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const CleanCSS = require("clean-css");
+const ogImg = require("./ogImg");
 const {
   fortawesomeBrandsPlugin,
 } = require('@vidhill/fortawesome-brands-11ty-shortcode');
@@ -50,7 +51,7 @@ module.exports = config => {
   // Filters
   config.addFilter("dateDisplay", require("./filters/dates.js"))
   config.addFilter('w3DateFilter', require("./filters/w3-date-filter.js"));
-  config.addFilter("cssmin", function (code) {
+  config.addFilter("cssmin", (code) => {
     return new CleanCSS({
       level: {
         1: {
@@ -61,6 +62,11 @@ module.exports = config => {
     }).minify(code).styles;
   });
   config.addFilter("keys", obj => Object.keys(obj));
+  config.addNunjucksAsyncFilter("ogImg", (meta, callback) => {
+    ogImg.make(meta).then((value) => {
+      callback(null, value);
+    });
+  });
 
   // Collections
   config.addCollection("articles", function (collectionApi) {

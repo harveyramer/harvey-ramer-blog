@@ -47,11 +47,6 @@
     </url>
   
     <url>
-      <loc>https://www.harveyramer.com/archive/</loc>
-      <lastmod>2021-10-17T23:03:21.264Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.harveyramer.com/</loc>
       <lastmod>2021-10-17T23:03:21.624Z</lastmod>
     </url>
@@ -62,8 +57,13 @@
     </url>
   
     <url>
+      <loc>https://www.harveyramer.com/archive/</loc>
+      <lastmod>2021-10-21T18:30:14.320Z</lastmod>
+    </url>
+  
+    <url>
       <loc>https://www.harveyramer.com/tags/all/</loc>
-      <lastmod>2021-10-20T00:01:06.292Z</lastmod>
+      <lastmod>2021-10-21T18:30:14.330Z</lastmod>
     </url>
   
 </urlset>

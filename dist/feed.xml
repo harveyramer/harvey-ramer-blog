@@ -4,7 +4,7 @@
   <subtitle>Harvey enjoys creating web applications with React, Node.js, and MongoDB. He writes about how worldviews, technology, business and relationship differences can become a collaborative asset.</subtitle>
   <link href="https://www.harveyramer.com/feed.xml" rel="self"/>
   <link href="https://www.harveyramer.com/"/>
-  <updated>2021-10-21T02:50:46Z</updated>
+  <updated>2021-10-21T22:50:24Z</updated>
   <id>https://www.harveyramer.com/</id>
   <author>
     <name>Harvey Ramer</name>
@@ -16,7 +16,8 @@
       <link href="https://www.harveyramer.com/article/2020-05-04-focus-on-the-easy-bits-ci-cd-with-azure-and-github/"/>
       <updated>2020-05-04T03:13:26Z</updated>
       <id>https://www.harveyramer.com/article/2020-05-04-focus-on-the-easy-bits-ci-cd-with-azure-and-github/</id>
-      <content type="html">&lt;h2&gt;CI/CD Overview&lt;/h2&gt;
+      <content type="html">&lt;p&gt;This tutorial will get you started with a basic CI/CD workflow using Github Actions to deploy a Web application to Azure.&lt;/p&gt;
+&lt;h2&gt;CI/CD Overview&lt;/h2&gt;
 &lt;p&gt;CI/CD is an acronym representing &lt;em&gt;continuous integration&lt;/em&gt; and &lt;em&gt;continuous delivery&lt;/em&gt;. According to CI/CD, the quality of software is correlated to how often it is deployed. If the deployment process is difficult, the quality of software will inevitably be low. If it is easy to make small changes and deploy them without much risk, software quality increases over time. It all starts with the practices and tools we use to create and manage software code.&lt;/p&gt;
 &lt;h3&gt;Basic Version Control Concepts&lt;/h3&gt;
 &lt;ul&gt;
@@ -153,7 +154,8 @@ git push
       <link href="https://www.harveyramer.com/article/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/"/>
       <updated>2020-04-26T04:45:00Z</updated>
       <id>https://www.harveyramer.com/article/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/</id>
-      <content type="html">&lt;p&gt;Take care of some things before you begin. The tools below will allow you to complete the tutorial work. There may be other VS Code extensions that will do the same job, so feel free to try any tools that make sense to you.&lt;/p&gt;
+      <content type="html">&lt;p&gt;Deploying applications to the cloud can be intimidating. Don’t worry though, this guide will stick to the bare essentials. When you’ve finished here, you will have a web application running on Azure.&lt;/p&gt;
+&lt;p&gt;Take care of some things before you begin. The tools below will allow you to complete the tutorial work. There may be other VS Code extensions that will do the same job, so feel free to try any tools that make sense to you.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://azure.microsoft.com/en-us/free/&quot;&gt;Create a free Azure account&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://code.visualstudio.com/docs/setup/setup-overview&quot;&gt;Install Visual Studio Code (VS Code)&lt;/a&gt;&lt;/li&gt;
@@ -308,7 +310,8 @@ git push
       <link href="https://www.harveyramer.com/article/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/"/>
       <updated>2020-04-10T20:45:37Z</updated>
       <id>https://www.harveyramer.com/article/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/</id>
-      <content type="html">&lt;p&gt;In our previous tutorial, we &lt;a href=&quot;https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/&quot;&gt;created a COVID-19 Tracker&lt;/a&gt;. The user interface was much like that cluttered artist studio. Rather than helping the user focus, we bombarded them with information. What can we do to make this information easier to digest?&lt;/p&gt;
+      <content type="html">&lt;p&gt;Imagine an artist transferring the clutter of her studio directly to the canvas. When we query an API or database, we often transfer that clutter to the user interface. There is a better way.&lt;/p&gt;
+&lt;p&gt;In our previous tutorial, we &lt;a href=&quot;https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/&quot;&gt;created a COVID-19 Tracker&lt;/a&gt;. The user interface was much like that cluttered artist studio. Rather than helping the user focus, we bombarded them with information. What can we do to make this information easier to digest?&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/chrome_8yyl9m8idf.png&quot; alt=&quot;Our cluttered user interface&quot; title=&quot;Our cluttered user interface&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Prerequisites&lt;/h2&gt;
 &lt;p&gt;Before completing this tutorial, complete the &lt;a href=&quot;https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/&quot;&gt;first tutorial&lt;/a&gt; or clone the &lt;a href=&quot;https://github.com/harveyramer/covid-19-demo-express-js-app/tree/tutorial-1&quot;&gt;Github repository for the tutorial&lt;/a&gt;. You will start to see comments in the code examples. Comments allow developers to leave context for those who follow, but have no impact on the execution of code.&lt;/p&gt;
@@ -592,7 +595,8 @@ git commit -m &amp;quot;Added country list filter.&amp;quot;
       <link href="https://www.harveyramer.com/article/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/"/>
       <updated>2020-04-09T16:57:36Z</updated>
       <id>https://www.harveyramer.com/article/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/</id>
-      <content type="html">&lt;p&gt;Before beginning this tutorial, you will need &lt;a href=&quot;https://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;, &lt;a href=&quot;https://npmjs.org/&quot;&gt;NPM&lt;/a&gt;, &lt;a href=&quot;https://git-scm.org/&quot;&gt;Git&lt;/a&gt;, and&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; installed on your computer. If you need help, use my tutorial on &lt;a href=&quot;https://www.harveyramer.com/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/&quot;&gt;configuring a development environment&lt;/a&gt;.&lt;/p&gt;
+      <content type="html">&lt;p&gt;If you’ve been wanting to learn Node.js, why not let pandemic worries spur you to action? Let’s build a Web application to display the latest COVID-19 statistics. Never fear, we’ll make it simple and fun.&lt;/p&gt;
+&lt;p&gt;Before beginning this tutorial, you will need &lt;a href=&quot;https://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;, &lt;a href=&quot;https://npmjs.org/&quot;&gt;NPM&lt;/a&gt;, &lt;a href=&quot;https://git-scm.org/&quot;&gt;Git&lt;/a&gt;, and&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; installed on your computer. If you need help, use my tutorial on &lt;a href=&quot;https://www.harveyramer.com/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/&quot;&gt;configuring a development environment&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Getting Started&lt;/h2&gt;
 &lt;p&gt;Open your Terminal (Windows users type &lt;code&gt;cmd&lt;/code&gt; in your Start Menu to find it). Make a directory for your new app, and open it in Visual Studio Code.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell-script&quot;&gt;mkdir covid19-tracker
@@ -1071,7 +1075,7 @@ router.get(&amp;quot;/&amp;quot;, (req, res) =&amp;gt; {
       <updated>2020-04-08T22:36:23Z</updated>
       <id>https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/</id>
       <content type="html">&lt;h2&gt;Overview&lt;/h2&gt;
-&lt;p&gt;If you want to learn programming, get set up can be a confusing barrier to entry. In this tutorial, I offer a straightforward way to install Node.js and all the tools you will need to start working with Node.js on Windows 10.&lt;/p&gt;
+&lt;p&gt;If you want to learn programming, getting set up can be a confusing barrier to entry. This tutorial offers a simple way to install Node.js and all the tools you will need to start working with Node.js on Windows 10.&lt;/p&gt;
 &lt;p class=&quot;alert&quot;&gt;When a simple command should produce an output of a certain type, you will see:&lt;br /&gt;
 &lt;code&gt;command&lt;/code&gt; → &lt;code&gt;output&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;Install Chocolatey: the Windows Package Manager&lt;/h2&gt;
@@ -1173,7 +1177,7 @@ nvm use 12.16.2
 &lt;p&gt;Our initial conversations with customers were promising. Everyone agreed the problem we were addressing was painful indeed. Energized by this discovery, we built a tool that would enable our customers to remove most of the pain we had identified.&lt;/p&gt;
 &lt;p&gt;We had exciting potential customer conversations and even ran a pilot project. Then we launched. The phone did not ring. The website did not generate the leads we expected. &lt;em&gt;Sales did not materialize.&lt;/em&gt;&lt;/p&gt;
 &lt;p class=&quot;callout&quot;&gt;A customer is someone who gives you money.&lt;/p&gt;
-&lt;p&gt;Everyone in the company knew we needed paying customers, but we had difficulty recruiting our first customers. Instead of collecting money, we had encouraging conversations with warm leads and ran too long on the slightest hint of interest they showed. The &lt;a href=&quot;http://theleanstartup.com/principles&quot;&gt;Lean Startup&lt;/a&gt; method &lt;em&gt;might&lt;/em&gt; have helped us get customers fully on board, but this lesson is harder to learn than it might seem.&lt;/p&gt;
+&lt;p&gt;Everyone in the company knew we needed to make sales, but we had difficulty recruiting our first paying customer. Instead of collecting money, we had encouraging conversations with warm leads and ran too long on the slightest hint of interest they showed. The &lt;a href=&quot;http://theleanstartup.com/principles&quot;&gt;Lean Startup&lt;/a&gt; method &lt;em&gt;might&lt;/em&gt; have helped us get customers fully on board, but this lesson is harder to learn than it might seem.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Everything starts with vision and ends with a customer&lt;/li&gt;
 &lt;li&gt;How long a project needs to be vision-led depends in part on its complexity&lt;/li&gt;
@@ -1206,7 +1210,7 @@ nvm use 12.16.2
       <content type="html">&lt;h2&gt;I Am Memphis-Based Web Developer&lt;/h2&gt;
 &lt;p&gt;Though it seems like only a few years ago, it has been about 20 years since I graduated from school with a degree in visual communications. As the cliche goes, life is what happens when you’re making other plans. I didn’t work as a designer for long. My customers wanted websites, not brochures. More was required.&lt;/p&gt;
 &lt;p&gt;Responding to what my customers wanted, I began designing websites. I focused on aesthetics and portfolio-building code, but soon I learned what mattered to my customers. They wanted new customers and relationship-forming opportunities. A website needed to extend their business—to produce revenue.&lt;/p&gt;
-&lt;p&gt;Websites would need interactive features like contact forms and e-commerce. Yet again, I needed new skills. I learned to use PHP and JavaScript build more engaging websites on top of open source tools, especially WordPress.&lt;/p&gt;
+&lt;p&gt;Websites needed interactive features like contact forms and e-commerce, so yet again, I needed new skills. I learned to use PHP and JavaScript build more engaging websites on top of open source tools, especially WordPress.&lt;/p&gt;
 &lt;h2&gt;What to Expect&lt;/h2&gt;
 &lt;p&gt;As time allows, I will add content to this website. I plan to write on Christian worldview issues related to theology and philosophy, technology, business, and even relationships. I tend to be clumsy in relating to others, so I hope to improve those skills with some reading and writing. There will be a smattering of articles related to business and marketing as well.&lt;/p&gt;
 </content>
