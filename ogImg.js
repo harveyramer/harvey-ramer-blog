@@ -12,9 +12,9 @@ module.exports = {
         reject("Missing properties.");
         return '';
       }
-      let text = encodeURIComponent(quote).replace(/%2C/g, '%E2%80%9A');
+      let text = encodeURIComponent(quote).replace(/%2C/g, '%E2%80%9A').replace(/%2F/g, '%E2%88%95');
       console.log(text);
-      const titleText = encodeURIComponent(title).replace(/%2F/g, '%E2%88%95');
+      const titleText = encodeURIComponent(title).replace(/%2C/g, '%E2%80%9A').replace(/%2F/g, '%E2%88%95');
       console.log(titleText);
       cloudinary.config({
         cloud_name: "harveyramer",
