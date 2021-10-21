@@ -3,6 +3,7 @@ layout: post
 title: 3 High-Quality Lessons from a Failed Startup
 date: 2020-01-06T21:26:17.194Z
 author: Harvey Ramer
+social_quote: Instead of collecting money, we had encouraging conversations with warm leads and ran too long on the slightest hint of interest they showed.
 description: >-
   In May of 2018, I joined a small team focused on a goal: removing the pain
   from a complex process involving multiple stakeholders. Despite the startup's failure, I learned three important lessons.
@@ -20,7 +21,7 @@ We had exciting potential customer conversations and even ran a pilot project. T
 
 A customer is someone who gives you money. {.callout}
 
-Everyone in the company knew we needed paying customers, but we had difficulty recruiting our first customers. Instead of collecting money, we had encouraging conversations with warm leads and ran too long on the slightest hint of interest they showed. The [Lean Startup](http://theleanstartup.com/principles) method _might_ have helped us get customers fully on board, but this lesson is harder to learn than it might seem.
+Everyone in the company knew we needed to make sales, but we had difficulty recruiting our first paying customer. Instead of collecting money, we had encouraging conversations with warm leads and ran too long on the slightest hint of interest they showed. The [Lean Startup](http://theleanstartup.com/principles) method _might_ have helped us get customers fully on board, but this lesson is harder to learn than it might seem.
 
 1. Everything starts with vision and ends with a customer
 2. How long a project needs to be vision-led depends in part on its complexity

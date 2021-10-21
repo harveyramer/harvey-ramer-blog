@@ -4,8 +4,9 @@ title: "Stop Coding Under Stress: How to Avoid Bugs and the End of the World"
 meta_title: Stop Coding Under Stress
 date: 2020-04-20T04:05:51.862Z
 author: Harvey Ramer
+social_quote: Software developers seem to spend most of their time sitting and thinking. How can that be stressful? Vague requirements, unrealistic expectations, and a humorless outlook can put programmers at risk.
 description: >-
-  Vague requirements, unrealistic expectations, and a humorless outlook can put programmers at risk.
+  Software developers seem to spend most of their time sitting and thinking. How can that be stressful? Vague requirements, unrealistic expectations, and a humorless outlook can put programmers at risk.
 tags:
   - technology
   - business
