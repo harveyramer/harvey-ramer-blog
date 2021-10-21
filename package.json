@@ -5,7 +5,8 @@
   "main": ".eleventy.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy",
+    "typeCheck": "cd ./src/_functions && npx tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,9 @@
     "markdown-it-mathjax3": "^3.0.0-0"
   },
   "dependencies": {
+    "@netlify/functions": "^0.7.2",
     "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
-    "clean-css": "^5.2.1"
+    "clean-css": "^5.2.1",
+    "typescript": "^4.4.4"
   }
 }
