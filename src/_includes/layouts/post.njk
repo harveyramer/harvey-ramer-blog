@@ -7,7 +7,7 @@ layout: base
     <span class="tags">
       {%- for tag in tags -%}
         {%if loop.index0 > 0%}, {%endif%}
-          <a href="/tags/{{tag}}">{{tag | upper}}</a>
+          <a href="/tags/{{tag}}/">{{tag | upper}}</a>
         {%- endfor -%}
       </span> —
     <time class="block" datetime="{{ date | w3DateFilter  }}">
