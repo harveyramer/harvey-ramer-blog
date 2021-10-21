@@ -65,6 +65,9 @@ module.exports = config => {
   config.addNunjucksAsyncFilter("ogImg", (meta, callback) => {
     ogImg.make(meta).then((value) => {
       callback(null, value);
+    }).catch((err) => {
+      console.error(err);
+      callback(null, null);
     });
   });
 
