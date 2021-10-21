@@ -18,8 +18,8 @@ module.exports = {
       console.log(titleText);
       cloudinary.config({
         cloud_name: "harveyramer",
-        api_key: "884773469499134",
-        api_secret: "bh0xBlttzCb9CL0nKTlC35IKrQg",
+        api_key: process.env.CLOUDINARY_KEY,
+        api_secret: process.env.CLOUDINARY_SECRET,
       });
       cloudinary.uploader.upload(PATH_TO_FILE, {
         overwrite: true,
