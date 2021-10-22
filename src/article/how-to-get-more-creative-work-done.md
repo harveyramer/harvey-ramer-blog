@@ -4,7 +4,7 @@ title: "How to Get More Creative Work Done in a Day"
 date: 2021-04-17
 author: Harvey Ramer
 social_quote: Every one of us has 24 hours available each day. Whether we realize it or not, we allocate those hours to the activities we value most. So perhaps when we say we need more time, we aren't discussing time at all.
-meta_description: Every one of us has 24 hours available each day. Whether we realize it or not, we allocate those hours to the activities we value most. So perhaps when we say we need more time, we aren't discussing time at all.
+description: Every one of us has 24 hours available each day. Whether we realize it or not, we allocate those hours to the activities we value most. So perhaps when we say we need more time, we aren't discussing time at all.
 tags:
   - business
 ---
