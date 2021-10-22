@@ -140,3 +140,9 @@ nav a:active {
   color: #1a0dab;
   border-color: #1a0dab;
 }
+
+blockquote {
+  padding: 1em;
+  font-style: italic;
+  font-size: 1.2em;
+}
