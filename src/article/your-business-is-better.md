@@ -2,6 +2,7 @@
 layout: post
 title: "Your Business Is Better, But for Whom?"
 date: 2020-11-12
+author: Harvey Ramer
 social_quote: People are not alike. At least not in the way most of us believe. During the 2020 presidential election, pundits endlessly discussed the Latino vote, Black vote, College-educated White vote, and the Evangelical vote. Too late, it seems, everyone has discovered there is no such thing as a monolithic vote by everyone who looks similar—even when that similarity is profound.
 description: People are not alike. At least not in the way most of us believe. What is better for you may not be better for me.
 tags:
