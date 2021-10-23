@@ -96,7 +96,7 @@ npm run test
 
 ### Authorizing Azure
 
-At the outset of this tutorial, you logged in to Azure with the command `az login`. This redirected you to a browser and authorized your local command line to access resources on your behalf. Now you will create a [Service Principal](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest) which will be used to authorize Github to deploy on your behalf. If you followed along on our [previous tutorial](/article/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure), you already have an application running in Azure. Replace the tokens `{My App Name}`, `{My Azure Subscription Id}`, and `{My App Service Plan Id}` then execute the following command.
+At the outset of this tutorial, you logged in to Azure with the command `az login`. This redirected you to a browser and authorized your local command line to access resources on your behalf. Now you will create a [Service Principal](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest) which will be used to authorize Github to deploy on your behalf. If you followed along on our [previous tutorial](/article/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/), you already have an application running in Azure. Replace the tokens `{My App Name}`, `{My Azure Subscription Id}`, and `{My App Service Plan Id}` then execute the following command.
 
 ```shell-script
 // Your command will look like this:

@@ -16,7 +16,7 @@ My goal was simple: to deploy a static site on AWS. But I wanted to make it a bi
 
 ## Why Not Use Native CloudFormation?
 
-![CloudFormation Sticker](https://harveyramer.com/img/cloudformation-sticker-sm.png)
+![CloudFormation Sticker](https://www.harveyramer.com/img/cloudformation-sticker-sm.png)
 
 CloudFormation is a powerful way to manage infrastructure as code. But it is not designed for human writers. Large teams use powerful enterprise tools to manage AWS infrastructure. But smaller teams sometimes do not have the expertise or resources to use those tools. For such teams, Amazon CDK brings a familiar feel to infrastructure as code.
 
