@@ -9,7 +9,7 @@ tags:
   - business
 ---
 
-LinkedIn offers tools that can grow your brand. Building credibility with your customers, prospects, and employees is not difficult. Begin by following my recommendations to tune your LinkedIn profile for maximum results. Then go on to [leverage a company page](https://www.harveyramer.com/article/free-easy-linkedin/) to amplify your professional brand.
+LinkedIn offers tools that can grow your brand. Building credibility with your customers, prospects, and employees is not difficult. Begin by following my recommendations to tune your LinkedIn profile for maximum results. Then go on to [leverage a company page](https://www.harveyramer.com/article/free-easy-grow-linkedin/) to amplify your professional brand.
 
 These nine steps will expand your influence on LinkedIn:
 
