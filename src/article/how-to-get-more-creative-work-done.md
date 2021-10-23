@@ -122,6 +122,4 @@ Unless your job requires answering **phone calls**, ignore them during your focu
 
 Yes, this works. It is simple to understand and apply but easily overlooked. When I am frustrated and discouraged, I usually discover I am neglecting this simple practice.
 
-I am fascinated with ideas—complex ones are the best. Mentally turning over a fascinating concept is exhilarating. New insights delight me. That strength is also a weakness. It rarely contributes to getting work done. Some work requires deep reflection and analysis, and I am grateful for work that uses this skill. But I need external systems to hold myself accountable. Otherwise, my most important contributions will lie dormant.
-
-Try these ideas. Let me know how they change your life.
+I am fascinated with ideas—complex ones are the best. Mentally turning over a fascinating concept is exhilarating. New insights delight me. That strength is also a weakness. It rarely contributes to getting work done. Some work requires deep reflection and analysis, and I am grateful for work that uses this skill. But I need external systems to hold myself accountable. Otherwise, my most important contributions will lie dormant. Try these ideas. Let me know how they change your life.

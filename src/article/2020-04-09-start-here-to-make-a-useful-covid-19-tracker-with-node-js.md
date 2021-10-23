@@ -12,7 +12,7 @@ tags:
 
 If you've been wanting to learn Node.js, why not let pandemic worries spur you to action? Let's build a Web application to display the latest COVID-19 statistics. Never fear, we'll make it simple and fun.
 
-Before beginning this tutorial, you will need [Node.js](https://nodejs.org/), [NPM](https://npmjs.org), [Git](https://git-scm.org), and[Visual Studio Code](https://code.visualstudio.com/) installed on your computer. If you need help, use my tutorial on [configuring a development environment](https://www.harveyramer.com/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
+Before beginning this tutorial, you will need [Node.js](https://nodejs.org/), [NPM](https://npmjs.org), [Git](https://git-scm.org), and[Visual Studio Code](https://code.visualstudio.com/) installed on your computer. If you need help, use my tutorial on [configuring a development environment](https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
 
 ## Getting Started
 
@@ -577,4 +577,4 @@ In this tutorial, you learned a bit about
 - compiling HTML with dynamic data via Pug
 - requesting data from an API with Axios
 
-You may have found interesting jumping-off-places to learn more, and I hope you did. You should have your first Web application running. To improve the utility of this demonstration application, make a list of things, and give it a try. Keep coding. It's always a challenge, but it gets easier. [A complete archive of code for this Web app](https://github.com/harveyramer/covid-19-demo-express-js-app) is available on Github. When you're ready, move on to the next tutorial to [add interactivity to your COVID-19 tracker](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js).
+You may have found interesting jumping-off-places to learn more, and I hope you did. You should have your first Web application running. To improve the utility of this demonstration application, make a list of things, and give it a try. Keep coding. It's always a challenge, but it gets easier. [A complete archive of code for this Web app](https://github.com/harveyramer/covid-19-demo-express-js-app) is available on Github. When you're ready, move on to the next tutorial to [add interactivity to your COVID-19 tracker](https://www.harveyramer.com/article/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js).

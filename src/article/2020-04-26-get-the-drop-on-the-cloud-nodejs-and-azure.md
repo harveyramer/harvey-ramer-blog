@@ -17,7 +17,7 @@ Take care of some things before you begin. The tools below will allow you to com
 1. [Create a free Azure account](https://azure.microsoft.com/en-us/free/)
 2. [Install Visual Studio Code (VS Code)](https://code.visualstudio.com/docs/setup/setup-overview)
 3. [Add the Azure Tools Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) to Visual Studio Code
-4. [Install NodeJS](https://www.harveyramer.com/blog/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/)
+4. [Install NodeJS](https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/)
 
 ![Azure App Service Extension Installed](https://harveyramer.com/img/installed-azure-tools.png "Azure App Service Extension Installed")
 
@@ -108,4 +108,4 @@ Make sure you have completed all the steps above. If your app still does not sta
 
 ## Footnotes
 
-[^1]: [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/) and [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
+[^1]: [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/article/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/) and [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/article/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)

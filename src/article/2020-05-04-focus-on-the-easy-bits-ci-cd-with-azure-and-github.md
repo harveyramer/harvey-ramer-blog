@@ -46,9 +46,9 @@ Unit tests are simple programs that prove the program behaves predictably. A cri
 
 1. [Github account configured to use SSH](https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk)
 2. If you are unfamiliar with Node.js, please review the my COVID-19 Tracker tutorials:
-   - [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/)
-   - [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
-   - [Get the Drop on the Cloud: Node.js and Azure](https://www.harveyramer.com/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/)
+   - [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/article/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/)
+   - [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/article/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/)
+   - [Get the Drop on the Cloud: Node.js and Azure](https://www.harveyramer.com/article/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/)
 3. Install the Azure CLI
    - [On Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest)
    - [On Mac](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest)
@@ -96,7 +96,7 @@ npm run test
 
 ### Authorizing Azure
 
-At the outset of this tutorial, you logged in to Azure with the command `az login`. This redirected you to a browser and authorized your local command line to access resources on your behalf. Now you will create a [Service Principal](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest) which will be used to authorize Github to deploy on your behalf. If you followed along on our [previous tutorial](/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure), you already have an application running in Azure. Replace the tokens `{My App Name}`, `{My Azure Subscription Id}`, and `{My App Service Plan Id}` then execute the following command.
+At the outset of this tutorial, you logged in to Azure with the command `az login`. This redirected you to a browser and authorized your local command line to access resources on your behalf. Now you will create a [Service Principal](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest) which will be used to authorize Github to deploy on your behalf. If you followed along on our [previous tutorial](/article/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure), you already have an application running in Azure. Replace the tokens `{My App Name}`, `{My Azure Subscription Id}`, and `{My App Service Plan Id}` then execute the following command.
 
 ```shell-script
 // Your command will look like this:

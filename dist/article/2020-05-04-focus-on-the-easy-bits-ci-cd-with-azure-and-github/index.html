@@ -99,9 +99,9 @@
 <li><a href="https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk">Github account configured to use SSH</a></li>
 <li>If you are unfamiliar with Node.js, please review the my COVID-19 Tracker tutorials:
 <ul>
-<li><a href="https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/">Start Here to Make a Useful COVID-19 Tracker with Node.js</a></li>
-<li><a href="https://www.harveyramer.com/blog/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/">Making an Even-More-Useful COVID-19 Tracker with Node.js</a></li>
-<li><a href="https://www.harveyramer.com/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/">Get the Drop on the Cloud: Node.js and Azure</a></li>
+<li><a href="https://www.harveyramer.com/article/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/">Start Here to Make a Useful COVID-19 Tracker with Node.js</a></li>
+<li><a href="https://www.harveyramer.com/article/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/">Making an Even-More-Useful COVID-19 Tracker with Node.js</a></li>
+<li><a href="https://www.harveyramer.com/article/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/">Get the Drop on the Cloud: Node.js and Azure</a></li>
 </ul>
 </li>
 <li>Install the Azure CLI
@@ -135,7 +135,7 @@ npm install
 <p><img src="https://www.harveyramer.com/img/unit-test-success.png" alt="Unit Test Success" title="Unit Test Success"></p>
 <h2>Configure Continuous Integration</h2>
 <h3>Authorizing Azure</h3>
-<p>At the outset of this tutorial, you logged in to Azure with the command <code>az login</code>. This redirected you to a browser and authorized your local command line to access resources on your behalf. Now you will create a <a href="https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest">Service Principal</a> which will be used to authorize Github to deploy on your behalf. If you followed along on our <a href="/blog/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure">previous tutorial</a>, you already have an application running in Azure. Replace the tokens <code>{My App Name}</code>, <code>{My Azure Subscription Id}</code>, and <code>{My App Service Plan Id}</code> then execute the following command.</p>
+<p>At the outset of this tutorial, you logged in to Azure with the command <code>az login</code>. This redirected you to a browser and authorized your local command line to access resources on your behalf. Now you will create a <a href="https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest">Service Principal</a> which will be used to authorize Github to deploy on your behalf. If you followed along on our <a href="/article/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure">previous tutorial</a>, you already have an application running in Azure. Replace the tokens <code>{My App Name}</code>, <code>{My Azure Subscription Id}</code>, and <code>{My App Service Plan Id}</code> then execute the following command.</p>
 <pre><code class="language-shell-script">// Your command will look like this:
 // az ad sp create-for-rbac --name &quot;covid19tutorial&quot; --role contributor --scopes /subscriptions/7d806f61-8462-123456789-101112-985277452dd7/resourceGroups/appsvc_linux_centralus --sdk-auth
 az ad sp create-for-rbac --name &quot;{My App Name}&quot; --role contributor --scopes /subscriptions/{My Azure Subscription Id}/resourceGroups/{My App Service Plan Id} --sdk-auth
@@ -253,11 +253,11 @@ git push
     <h5>Archives</h5>
     <ol>
           <li>
-            <a href="/tags/business/">business</a>
+            <a href="/tags/technology/">technology</a>
           </li>
         
           <li>
-            <a href="/tags/technology/">technology</a>
+            <a href="/tags/business/">business</a>
           </li>
         </ol>
   </nav>
