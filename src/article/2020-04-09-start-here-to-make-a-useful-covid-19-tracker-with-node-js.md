@@ -12,7 +12,7 @@ tags:
 
 If you've been wanting to learn Node.js, why not let pandemic worries spur you to action? Let's build a Web application to display the latest COVID-19 statistics. Never fear, we'll make it simple and fun.
 
-Before beginning this tutorial, you will need [Node.js](https://nodejs.org/), [NPM](https://npmjs.org), [Git](https://git-scm.com), and[Visual Studio Code](https://code.visualstudio.com/) installed on your computer. If you need help, use my tutorial on [configuring a development environment](https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
+Before beginning this tutorial, you will need [Node.js](https://nodejs.org/), [NPM](https://www.npmjs.com), [Git](https://git-scm.com), and[Visual Studio Code](https://code.visualstudio.com/) installed on your computer. If you need help, use my tutorial on [configuring a development environment](https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
 
 ## Getting Started
 
