@@ -12,7 +12,7 @@ tags:
 
 If you've been wanting to learn Node.js, why not let pandemic worries spur you to action? Let's build a Web application to display the latest COVID-19 statistics. Never fear, we'll make it simple and fun.
 
-Before beginning this tutorial, you will need [Node.js](https://nodejs.org/), [NPM](https://npmjs.org), [Git](https://git-scm.org), and[Visual Studio Code](https://code.visualstudio.com/) installed on your computer. If you need help, use my tutorial on [configuring a development environment](https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
+Before beginning this tutorial, you will need [Node.js](https://nodejs.org/), [NPM](https://npmjs.org), [Git](https://git-scm.com), and[Visual Studio Code](https://code.visualstudio.com/) installed on your computer. If you need help, use my tutorial on [configuring a development environment](https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/).
 
 ## Getting Started
 
@@ -26,14 +26,14 @@ code .
 
 In Visual Studio Code, open the terminal (`` Ctrl+`  ``) to initialize your new project.
 
-![Open the Terminal in Visual Studio Code](https://harveyramer.com/img/code_qck1owdhjr.png "Open the Terminal in Visual Studio Code")
+![Open the Terminal in Visual Studio Code](https://www.harveyramer.com/img/code_qck1owdhjr.png "Open the Terminal in Visual Studio Code")
 
 ```javascript
 npm init -y
 git init
 ```
 
-![Initializing a new Node.js project](https://harveyramer.com/img/code_vr7kovcecm.png "Initializing a new Node.js project")
+![Initializing a new Node.js project](https://www.harveyramer.com/img/code_vr7kovcecm.png "Initializing a new Node.js project")
 
 ## Install Express.js, Axios, and Pug
 
@@ -47,7 +47,7 @@ Now that we've initialized the project, we'll install some dependencies with the
 npm install express axios pug --save
 ```
 
-![Installing express and axios](https://harveyramer.com/img/code_cpv5ebkavw.png "Installing express and axios")
+![Installing express and axios](https://www.harveyramer.com/img/code_cpv5ebkavw.png "Installing express and axios")
 
 ## Hello World
 
@@ -109,11 +109,11 @@ In the Visual Studio Terminal, start the Express server via the NPM script we cr
 npm start
 ```
 
-![Running server](https://harveyramer.com/img/chrome_lgnp0rdpe8.png "Running server")
+![Running server](https://www.harveyramer.com/img/chrome_lgnp0rdpe8.png "Running server")
 
 Open <http://localhost:3000> in your browser.
 
-![Hello World in browser](https://harveyramer.com/img/chrome_bqk5uaxq7h.png "Hello World in browser")
+![Hello World in browser](https://www.harveyramer.com/img/chrome_bqk5uaxq7h.png "Hello World in browser")
 
 Ok. Now that you've tested your app, let's shut down your server. In the terminal, `Ctrl+C` and your server will stop running.
 
@@ -165,7 +165,7 @@ npm start
 
 Open http://localhost:3000 in your browser and click the **about this app** link to load the **About** page. These simple pages demonstrate a fully-functioning Web server responding to HTTP requests. This the foundation on which the Web is built!
 
-![Our grown-up Hello World app with multiple routes](https://harveyramer.com/img/chrome_r6cetpk0lp.png "Our grown-up Hello World app with multiple routes")
+![Our grown-up Hello World app with multiple routes](https://www.harveyramer.com/img/chrome_r6cetpk0lp.png "Our grown-up Hello World app with multiple routes")
 
 ## Housekeeping: Versioning Our Code
 
@@ -178,7 +178,7 @@ git add .
 git commit -m "A hello  world Web app"
 ```
 
-![Adding files to Git](https://harveyramer.com/img/code_e8crgvguuy.png "Adding files to Git")
+![Adding files to Git](https://www.harveyramer.com/img/code_e8crgvguuy.png "Adding files to Git")
 
 ## COVID-19 Tracker
 
@@ -415,7 +415,7 @@ block content
 
 There is quite a bit going on in these files, feel free to investigate to your heart's content. We are going on to bigger things. To validate your work, stop your server if it's running (Ctrl+C in the Visual Studio Code Terminal) and restart it (`npm start`). When you browse to [localhost:3000](http://localhost:3000), you should see something like the view below.
 
-![Static data mocking up the user interface](https://harveyramer.com/img/chrome_sxmi7gwakd.png "Static data mocking up the user interface")
+![Static data mocking up the user interface](https://www.harveyramer.com/img/chrome_sxmi7gwakd.png "Static data mocking up the user interface")
 
 This COVID-19 data is static. We added it inside the **home.pug** file. Next we will get real data from an API. It is time to preserve all of this hard work. Navigate to the root directory of your project (see above, Housekeeping: Versioning Our Code).
 
@@ -564,7 +564,7 @@ router.get("/", (req, res) => {
 
 This code makes an asynchronous call to the COVID-19 API and returns the data for our view. When you restart your server and browse to [localhost:3000](http://localhost:3000), you should see something like this.
 
-![A list of COVID-19 cases by country](https://harveyramer.com/img/chrome_8yyl9m8idf.png "A list of COVID-19 cases by country")
+![A list of COVID-19 cases by country](https://www.harveyramer.com/img/chrome_8yyl9m8idf.png "A list of COVID-19 cases by country")
 
 ## What We Have Learned
 
@@ -577,4 +577,4 @@ In this tutorial, you learned a bit about
 - compiling HTML with dynamic data via Pug
 - requesting data from an API with Axios
 
-You may have found interesting jumping-off-places to learn more, and I hope you did. You should have your first Web application running. To improve the utility of this demonstration application, make a list of things, and give it a try. Keep coding. It's always a challenge, but it gets easier. [A complete archive of code for this Web app](https://github.com/harveyramer/covid-19-demo-express-js-app) is available on Github. When you're ready, move on to the next tutorial to [add interactivity to your COVID-19 tracker](https://www.harveyramer.com/article/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js).
+You may have found interesting jumping-off-places to learn more, and I hope you did. You should have your first Web application running. To improve the utility of this demonstration application, make a list of things, and give it a try. Keep coding. It's always a challenge, but it gets easier. [A complete archive of code for this Web app](https://github.com/harveyramer/covid-19-demo-express-js-app) is available on Github. When you're ready, move on to the next tutorial to [add interactivity to your COVID-19 tracker](https://www.harveyramer.com/article/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/).

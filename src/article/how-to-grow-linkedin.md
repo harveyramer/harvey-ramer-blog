@@ -69,7 +69,7 @@ When you complete this step, browse a few profiles of your colleagues. Identify 
 
 _Reciprocity is a powerful thing._ After your endorsements, send a personal message asking them to endorse you in return.
 
-If you want to research how the marketplace describes your skills, read [The Expert Trick to Hone Your Skills Section on LinkedIn](https://mashable.com/2015/02/21/non-technical-skills-linkedin/).
+If you want to research how the marketplace describes your skills, read [The Expert Trick to Hone Your Skills Section on LinkedIn](https://mashable.com/archive/non-technical-skills-linkedin).
 
 ## Include a Professional Photo
 

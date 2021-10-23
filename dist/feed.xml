@@ -4,7 +4,7 @@
   <subtitle>Harvey enjoys creating web applications with React, Node.js, and MongoDB. He writes about how worldviews, technology, business and relationship differences can become a collaborative asset.</subtitle>
   <link href="https://www.harveyramer.com/feed.xml" rel="self"/>
   <link href="https://www.harveyramer.com/"/>
-  <updated>2021-10-23T17:52:01Z</updated>
+  <updated>2021-10-23T18:06:33Z</updated>
   <id>https://www.harveyramer.com/</id>
   <author>
     <name>Harvey Ramer</name>
@@ -338,7 +338,7 @@ you’ll end up someplace else.”&lt;br /&gt;
 &lt;li&gt;When you complete the endorsement, a &lt;strong&gt;Check Mark&lt;/strong&gt; icon will be visible next to the endorsed skill.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;em&gt;Reciprocity is a powerful thing.&lt;/em&gt; After your endorsements, send a personal message asking them to endorse you in return.&lt;/p&gt;
-&lt;p&gt;If you want to research how the marketplace describes your skills, read &lt;a href=&quot;https://mashable.com/2015/02/21/non-technical-skills-linkedin/&quot;&gt;The Expert Trick to Hone Your Skills Section on LinkedIn&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to research how the marketplace describes your skills, read &lt;a href=&quot;https://mashable.com/archive/non-technical-skills-linkedin&quot;&gt;The Expert Trick to Hone Your Skills Section on LinkedIn&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Include a Professional Photo&lt;/h2&gt;
 &lt;p&gt;Images are powerful. Use them on LinkedIn. Your photo should be professional, friendly, and authentically you. Put your best foot forward.&lt;/p&gt;
 &lt;p&gt;Professional photographers are worth the investment. That said, if you need to save money, there are alternatives. Loved ones can often capture candid-but-professional images.&lt;/p&gt;
@@ -531,7 +531,7 @@ npm install
 &lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/unit-test-success.png&quot; alt=&quot;Unit Test Success&quot; title=&quot;Unit Test Success&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Configure Continuous Integration&lt;/h2&gt;
 &lt;h3&gt;Authorizing Azure&lt;/h3&gt;
-&lt;p&gt;At the outset of this tutorial, you logged in to Azure with the command &lt;code&gt;az login&lt;/code&gt;. This redirected you to a browser and authorized your local command line to access resources on your behalf. Now you will create a &lt;a href=&quot;https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&quot;&gt;Service Principal&lt;/a&gt; which will be used to authorize Github to deploy on your behalf. If you followed along on our &lt;a href=&quot;https://www.harveyramer.com/article/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure&quot;&gt;previous tutorial&lt;/a&gt;, you already have an application running in Azure. Replace the tokens &lt;code&gt;{My App Name}&lt;/code&gt;, &lt;code&gt;{My Azure Subscription Id}&lt;/code&gt;, and &lt;code&gt;{My App Service Plan Id}&lt;/code&gt; then execute the following command.&lt;/p&gt;
+&lt;p&gt;At the outset of this tutorial, you logged in to Azure with the command &lt;code&gt;az login&lt;/code&gt;. This redirected you to a browser and authorized your local command line to access resources on your behalf. Now you will create a &lt;a href=&quot;https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&quot;&gt;Service Principal&lt;/a&gt; which will be used to authorize Github to deploy on your behalf. If you followed along on our &lt;a href=&quot;https://www.harveyramer.com/article/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/&quot;&gt;previous tutorial&lt;/a&gt;, you already have an application running in Azure. Replace the tokens &lt;code&gt;{My App Name}&lt;/code&gt;, &lt;code&gt;{My Azure Subscription Id}&lt;/code&gt;, and &lt;code&gt;{My App Service Plan Id}&lt;/code&gt; then execute the following command.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell-script&quot;&gt;// Your command will look like this:
 // az ad sp create-for-rbac --name &amp;quot;covid19tutorial&amp;quot; --role contributor --scopes /subscriptions/7d806f61-8462-123456789-101112-985277452dd7/resourceGroups/appsvc_linux_centralus --sdk-auth
 az ad sp create-for-rbac --name &amp;quot;{My App Name}&amp;quot; --role contributor --scopes /subscriptions/{My Azure Subscription Id}/resourceGroups/{My App Service Plan Id} --sdk-auth
@@ -613,10 +613,10 @@ git push
 &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack&quot;&gt;Add the Azure Tools Extension Pack&lt;/a&gt; to Visual Studio Code&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/&quot;&gt;Install NodeJS&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/installed-azure-tools.png&quot; alt=&quot;Azure App Service Extension Installed&quot; title=&quot;Azure App Service Extension Installed&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/installed-azure-tools.png&quot; alt=&quot;Azure App Service Extension Installed&quot; title=&quot;Azure App Service Extension Installed&quot; /&gt;&lt;/p&gt;
 &lt;h3&gt;Log In to Azure&lt;/h3&gt;
 &lt;p&gt;In VS Code, open the command palette (&lt;code&gt;Ctrl+Shift+P&lt;/code&gt;) and enter &lt;code&gt;&amp;gt; Azure: Sign In&lt;/code&gt;. You will be prompted to log in via a browser window. When complete, you will see your subscriptions listed in your Azure panel.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/log-in-to-azure-vscode.png&quot; alt=&quot;Signing in to Azure with VS Code&quot; title=&quot;Signing in to Azure with VS Code&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/log-in-to-azure-vscode.png&quot; alt=&quot;Signing in to Azure with VS Code&quot; title=&quot;Signing in to Azure with VS Code&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Start Coding&lt;/h2&gt;
 &lt;h3&gt;Installing the COVID-19 Tracker&lt;/h3&gt;
 &lt;p&gt;For this project, use the COVID-19 Tracker project.&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://www.harveyramer.com/article/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
@@ -638,7 +638,7 @@ git push
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Deploying to Azure App Service&lt;/h2&gt;
 &lt;p&gt;The extensions in the Azure Tools pack you installed make it easy to deploy a Web app. To show the Azure panel in VS Code, click on the Azure logo on the left. Then, click the &lt;em&gt;Deploy to Azure&lt;/em&gt; arrow button in the App Service menu bar.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/deploy-to-azure.png&quot; alt=&quot;Deploy to Azure App Service&quot; title=&quot;Deploy to Azure App Service&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/deploy-to-azure.png&quot; alt=&quot;Deploy to Azure App Service&quot; title=&quot;Deploy to Azure App Service&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;The Azure App Service extension’s wizard will help you deploy your app.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Select the &lt;em&gt;covid19-tracker&lt;/em&gt; folder to zip and deploy&lt;/li&gt;
@@ -649,7 +649,7 @@ git push
 &lt;li&gt;When asked, “Would you like to update your workspace configuration to run build commands on the target server?” Answer, &lt;em&gt;“Yes.”&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;To monitor the build process, show the output window.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/show-build-output.png&quot; alt=&quot;Show Azure deployment output window&quot; title=&quot;Show Azure deployment output window&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/show-build-output.png&quot; alt=&quot;Show Azure deployment output window&quot; title=&quot;Show Azure deployment output window&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;When deployment finishes, browse to your new website. It will use the unique name you specified, for example, &lt;em&gt;&lt;strong&gt;covid19tutorial-myname&lt;/strong&gt;.azurewebsites.net&lt;/em&gt;. Your app will not respond and may display an application error. This is normal. We have one more configuration step.&lt;/p&gt;
 &lt;h3&gt;Add an Application Setting&lt;/h3&gt;
 &lt;p&gt;You will need to add an &lt;em&gt;Application Setting&lt;/em&gt; to tell Azure App Service what version of Node.js to use.&lt;/p&gt;
@@ -659,18 +659,18 @@ git push
 &lt;li&gt;For your setting key, enter &lt;code&gt;WEBSITE_NODE_DEFAULT_VERSION&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;For your setting value, enter &lt;code&gt;12-lts&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/add-application-setting.png&quot; alt=&quot;Add WEBSITE_NODE_DEFAULT_VERSION application setting&quot; title=&quot;Add WEBSITE_NODE_DEFAULT_VERSION application setting&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/add-application-setting.png&quot; alt=&quot;Add WEBSITE_NODE_DEFAULT_VERSION application setting&quot; title=&quot;Add WEBSITE_NODE_DEFAULT_VERSION application setting&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Adding a new application setting causes the App Service to restart, which can take several minutes. If your Web app does not start in 10 minutes, see &lt;a href=&quot;https://www.harveyramer.com/article/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/#troubleshooting&quot;&gt;Troubleshooting&lt;/a&gt; below.&lt;/p&gt;
 &lt;h3&gt;Monitoring your App with Logs&lt;/h3&gt;
 &lt;p&gt;Since it takes several minutes for your app to warm up after being deployed to Azure, it helps to monitor the Log Stream for your application. To do that, Expand your application’s &lt;em&gt;Logs (Read-only)&lt;/em&gt; folder and click &lt;em&gt;Connect to Log Stream…&lt;/em&gt; An output panel in the terminal will allow you to monitor your application’s progress.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/monitor-application-logs.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/monitor-application-logs.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;When you see &lt;em&gt;Example app listening at &lt;a href=&quot;http://localhost:8080/&quot;&gt;http://localhost:8080&lt;/a&gt;&lt;/em&gt; your app is warmed up and ready to take some requests.&lt;/p&gt;
 &lt;h3&gt;Success&lt;/h3&gt;
 &lt;p&gt;Your first deployment of a Web app with Node.js to Azure can be a bit tricky. When you succeed, your &lt;a href=&quot;https://covid19tutorial.azurewebsites.net/&quot;&gt;COVID-19 Tracker&lt;/a&gt; will be live for the world to see. If you want to share it with friends, you may want to upgrade from the &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage&quot;&gt;free App Service Plan&lt;/a&gt;, which only runs for an hour each day.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/your-deployed-web-app.png&quot; alt=&quot;Your deployed Web app&quot; title=&quot;Your deployed Web app&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/your-deployed-web-app.png&quot; alt=&quot;Your deployed Web app&quot; title=&quot;Your deployed Web app&quot; /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h3&gt;
 &lt;p&gt;If your deployment fails on the first try, as mine did, it is likely a timing issue. Some resources your Web app depends on were not provisioned when it tried to start.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/service-unavailable.png&quot; alt=&quot;The service is unavailable&quot; title=&quot;The service is unavailable&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/service-unavailable.png&quot; alt=&quot;The service is unavailable&quot; title=&quot;The service is unavailable&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Make sure you have completed all the steps above. If your app still does not start after 10 minutes, either dig into Azure’s &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/app-service/app-service-web-nodejs-best-practices-and-troubleshoot-guide&quot;&gt;Node.js troubleshooting documentation&lt;/a&gt;, or use the nuclear option. I have found that deleting your Web Application and starting over resolves the problem.&lt;/p&gt;
 &lt;h2&gt;Footnotes&lt;/h2&gt;
 &lt;hr class=&quot;footnotes-sep&quot; /&gt;
@@ -951,13 +951,13 @@ input {
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3&gt;Check Your Work&lt;/h3&gt;
 &lt;p&gt;Verify this change by starting your server (&lt;code&gt;npm start&lt;/code&gt; in your Terminal) and navigating to &lt;a href=&quot;http://localhost:3000/&quot;&gt;http://localhost:3000&lt;/a&gt;. If it is already running, restart it (&lt;code&gt;Ctrl+C&lt;/code&gt; followed by &lt;code&gt;npm start&lt;/code&gt;). The global data and list of countries from our previous tutorial should display.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/chrome_msr65echxo.png&quot; alt=&quot;Global and country data&quot; title=&quot;Global and country data&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/chrome_msr65echxo.png&quot; alt=&quot;Global and country data&quot; title=&quot;Global and country data&quot; /&gt;&lt;/p&gt;
 &lt;h3&gt;Save Your Work&lt;/h3&gt;
 &lt;p&gt;In your Terminal save your changes with Git.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell-script&quot;&gt;git add .
 git commit -m &amp;quot;Adding global summary data.&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/code_b9hpp6nmfy.png&quot; alt=&quot;Committing changes with Gid&quot; title=&quot;Committing changes with Gid&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/code_b9hpp6nmfy.png&quot; alt=&quot;Committing changes with Gid&quot; title=&quot;Committing changes with Gid&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Filtering The List&lt;/h2&gt;
 &lt;h3&gt;Client Side JavaScript&lt;/h3&gt;
 &lt;p&gt;So far, we have been writing JavaScript to load data from an external API and render HTML in a browser. No JavaScript has executed in the context of the browser. It has been executed by Node.js and Express to produce our results. This is server side JavaScript.&lt;/p&gt;
@@ -1021,7 +1021,7 @@ span World
 &lt;p&gt;Each of these concepts merits deep study. The most effective deep study is &lt;em&gt;play&lt;/em&gt;. Look over the concepts and try them out. What do they do? How do they break? Learning requires the discovery of misconceptions. Mistakes are a must-have for effective growth.&lt;/p&gt;
 &lt;h3&gt;Check Your Changes&lt;/h3&gt;
 &lt;p&gt;Verify the client side filter you added by starting your server (&lt;code&gt;npm start&lt;/code&gt; in your Terminal) and navigating to &lt;a href=&quot;http://localhost:3000/&quot;&gt;http://localhost:3000&lt;/a&gt;. If it is already running, restart it (&lt;code&gt;Ctrl+C&lt;/code&gt; followed by &lt;code&gt;npm start&lt;/code&gt;). We should be able to enter text and see our list of countries filter.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/chrome_5bioa1ikxi.png&quot; alt=&quot;Filtering countries&quot; title=&quot;Filtering countries&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/chrome_5bioa1ikxi.png&quot; alt=&quot;Filtering countries&quot; title=&quot;Filtering countries&quot; /&gt;&lt;/p&gt;
 &lt;h3&gt;Save Your Changes&lt;/h3&gt;
 &lt;p&gt;In your Terminal save your changes with Git.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell-script&quot;&gt;git add .
@@ -1047,7 +1047,7 @@ git commit -m &amp;quot;Added country list filter.&amp;quot;
       <updated>2020-04-09T16:57:36Z</updated>
       <id>https://www.harveyramer.com/article/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/</id>
       <content type="html">&lt;p&gt;If you’ve been wanting to learn Node.js, why not let pandemic worries spur you to action? Let’s build a Web application to display the latest COVID-19 statistics. Never fear, we’ll make it simple and fun.&lt;/p&gt;
-&lt;p&gt;Before beginning this tutorial, you will need &lt;a href=&quot;https://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;, &lt;a href=&quot;https://npmjs.org/&quot;&gt;NPM&lt;/a&gt;, &lt;a href=&quot;https://git-scm.org/&quot;&gt;Git&lt;/a&gt;, and&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; installed on your computer. If you need help, use my tutorial on &lt;a href=&quot;https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/&quot;&gt;configuring a development environment&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Before beginning this tutorial, you will need &lt;a href=&quot;https://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;, &lt;a href=&quot;https://npmjs.org/&quot;&gt;NPM&lt;/a&gt;, &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;, and&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; installed on your computer. If you need help, use my tutorial on &lt;a href=&quot;https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/&quot;&gt;configuring a development environment&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Getting Started&lt;/h2&gt;
 &lt;p&gt;Open your Terminal (Windows users type &lt;code&gt;cmd&lt;/code&gt; in your Start Menu to find it). Make a directory for your new app, and open it in Visual Studio Code.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell-script&quot;&gt;mkdir covid19-tracker
@@ -1055,11 +1055,11 @@ cd covid19-tracker
 code .
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In Visual Studio Code, open the terminal (&lt;code&gt;Ctrl+` &lt;/code&gt;) to initialize your new project.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/code_qck1owdhjr.png&quot; alt=&quot;Open the Terminal in Visual Studio Code&quot; title=&quot;Open the Terminal in Visual Studio Code&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/code_qck1owdhjr.png&quot; alt=&quot;Open the Terminal in Visual Studio Code&quot; title=&quot;Open the Terminal in Visual Studio Code&quot; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;npm init -y
 git init
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/code_vr7kovcecm.png&quot; alt=&quot;Initializing a new Node.js project&quot; title=&quot;Initializing a new Node.js project&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/code_vr7kovcecm.png&quot; alt=&quot;Initializing a new Node.js project&quot; title=&quot;Initializing a new Node.js project&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Install Express.js, Axios, and Pug&lt;/h2&gt;
 &lt;p&gt;Now that we’ve initialized the project, we’ll install some dependencies with the Visual Studio Code terminal.&lt;/p&gt;
 &lt;ul&gt;
@@ -1069,7 +1069,7 @@ git init
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;npm install express axios pug --save
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/code_cpv5ebkavw.png&quot; alt=&quot;Installing express and axios&quot; title=&quot;Installing express and axios&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/code_cpv5ebkavw.png&quot; alt=&quot;Installing express and axios&quot; title=&quot;Installing express and axios&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Hello World&lt;/h2&gt;
 &lt;p&gt;Create an empty &lt;strong&gt;index.js&lt;/strong&gt; file in the terminal.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell-script&quot;&gt;mkdir src
@@ -1112,9 +1112,9 @@ app.listen(port, () =&amp;gt; console.log(`Example app listening at http://local
 &lt;p&gt;In the Visual Studio Terminal, start the Express server via the NPM script we created.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;npm start
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/chrome_lgnp0rdpe8.png&quot; alt=&quot;Running server&quot; title=&quot;Running server&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/chrome_lgnp0rdpe8.png&quot; alt=&quot;Running server&quot; title=&quot;Running server&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Open &lt;a href=&quot;http://localhost:3000/&quot;&gt;http://localhost:3000&lt;/a&gt; in your browser.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/chrome_bqk5uaxq7h.png&quot; alt=&quot;Hello World in browser&quot; title=&quot;Hello World in browser&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/chrome_bqk5uaxq7h.png&quot; alt=&quot;Hello World in browser&quot; title=&quot;Hello World in browser&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Ok. Now that you’ve tested your app, let’s shut down your server. In the terminal, &lt;code&gt;Ctrl+C&lt;/code&gt; and your server will stop running.&lt;/p&gt;
 &lt;h3&gt;Handle Two Different Routes&lt;/h3&gt;
 &lt;p&gt;In your &lt;code&gt;src&lt;/code&gt; directory, create a file named &lt;strong&gt;routes.js&lt;/strong&gt;. In your terminal, if you are already in the &lt;code&gt;src&lt;/code&gt; directory, do this.&lt;/p&gt;
@@ -1150,14 +1150,14 @@ app.listen(port, () =&amp;gt; console.log(`Example app listening at http://local
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;npm start
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Open &lt;a href=&quot;http://localhost:3000/&quot;&gt;http://localhost:3000&lt;/a&gt; in your browser and click the &lt;strong&gt;about this app&lt;/strong&gt; link to load the &lt;strong&gt;About&lt;/strong&gt; page. These simple pages demonstrate a fully-functioning Web server responding to HTTP requests. This the foundation on which the Web is built!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/chrome_r6cetpk0lp.png&quot; alt=&quot;Our grown-up Hello World app with multiple routes&quot; title=&quot;Our grown-up Hello World app with multiple routes&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/chrome_r6cetpk0lp.png&quot; alt=&quot;Our grown-up Hello World app with multiple routes&quot; title=&quot;Our grown-up Hello World app with multiple routes&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Housekeeping: Versioning Our Code&lt;/h2&gt;
 &lt;p&gt;Before we move on to write some exciting code, let’s commit our files to Git so we can make changes without losing any of our past work. In Visual Studio Code Terminal make sure you are in the root of your project. The path in your terminal should look something like &lt;code&gt;C:\Users\hramer\covid19-tracker&lt;/code&gt; and not like &lt;code&gt;C:\Users\hramer\covid19-tracker\src&lt;/code&gt;. If it looks like the latter, &lt;code&gt;cd..&lt;/code&gt; will fix your problem.&lt;/p&gt;
 &lt;p&gt;Let’s commit our code changes.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell-script&quot;&gt;git add .
 git commit -m &amp;quot;A hello  world Web app&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/code_e8crgvguuy.png&quot; alt=&quot;Adding files to Git&quot; title=&quot;Adding files to Git&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/code_e8crgvguuy.png&quot; alt=&quot;Adding files to Git&quot; title=&quot;Adding files to Git&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;COVID-19 Tracker&lt;/h2&gt;
 &lt;p&gt;We have created the framework we need to build our COVID-19 Tracker. Let’s build the real thing! First, we should make this look more like a real Web app. In Visual Studio Code Terminal, let’s use a library called Pug to help us manage our HTML. We used NPM to install Pug when we started this tutorial.&lt;/p&gt;
 &lt;p&gt;You can learn more about &lt;a href=&quot;https://pugjs.org/api/getting-started.html&quot;&gt;getting started with Pug&lt;/a&gt;. Let’s add our Pug views: one for each page, and a layout helper to manage the code shared by both views.&lt;/p&gt;
@@ -1375,7 +1375,7 @@ block content
         a(href=&#39;/about&#39;) about page
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;There is quite a bit going on in these files, feel free to investigate to your heart’s content. We are going on to bigger things. To validate your work, stop your server if it’s running (Ctrl+C in the Visual Studio Code Terminal) and restart it (&lt;code&gt;npm start&lt;/code&gt;). When you browse to &lt;a href=&quot;http://localhost:3000/&quot;&gt;localhost:3000&lt;/a&gt;, you should see something like the view below.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/chrome_sxmi7gwakd.png&quot; alt=&quot;Static data mocking up the user interface&quot; title=&quot;Static data mocking up the user interface&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/chrome_sxmi7gwakd.png&quot; alt=&quot;Static data mocking up the user interface&quot; title=&quot;Static data mocking up the user interface&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;This COVID-19 data is static. We added it inside the &lt;strong&gt;home.pug&lt;/strong&gt; file. Next we will get real data from an API. It is time to preserve all of this hard work. Navigate to the root directory of your project (see above, Housekeeping: Versioning Our Code).&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell-script&quot;&gt;git add .
 git commit -m &amp;quot;Static files mocking up our COVID-19 data&amp;quot;
@@ -1505,7 +1505,7 @@ router.get(&amp;quot;/&amp;quot;, (req, res) =&amp;gt; {
 });
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This code makes an asynchronous call to the COVID-19 API and returns the data for our view. When you restart your server and browse to &lt;a href=&quot;http://localhost:3000/&quot;&gt;localhost:3000&lt;/a&gt;, you should see something like this.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/chrome_8yyl9m8idf.png&quot; alt=&quot;A list of COVID-19 cases by country&quot; title=&quot;A list of COVID-19 cases by country&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/chrome_8yyl9m8idf.png&quot; alt=&quot;A list of COVID-19 cases by country&quot; title=&quot;A list of COVID-19 cases by country&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;What We Have Learned&lt;/h2&gt;
 &lt;p&gt;In this tutorial, you learned a bit about&lt;/p&gt;
 &lt;ul&gt;
@@ -1516,7 +1516,7 @@ router.get(&amp;quot;/&amp;quot;, (req, res) =&amp;gt; {
 &lt;li&gt;compiling HTML with dynamic data via Pug&lt;/li&gt;
 &lt;li&gt;requesting data from an API with Axios&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;You may have found interesting jumping-off-places to learn more, and I hope you did. You should have your first Web application running. To improve the utility of this demonstration application, make a list of things, and give it a try. Keep coding. It’s always a challenge, but it gets easier. &lt;a href=&quot;https://github.com/harveyramer/covid-19-demo-express-js-app&quot;&gt;A complete archive of code for this Web app&lt;/a&gt; is available on Github. When you’re ready, move on to the next tutorial to &lt;a href=&quot;https://www.harveyramer.com/article/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js&quot;&gt;add interactivity to your COVID-19 tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You may have found interesting jumping-off-places to learn more, and I hope you did. You should have your first Web application running. To improve the utility of this demonstration application, make a list of things, and give it a try. Keep coding. It’s always a challenge, but it gets easier. &lt;a href=&quot;https://github.com/harveyramer/covid-19-demo-express-js-app&quot;&gt;A complete archive of code for this Web app&lt;/a&gt; is available on Github. When you’re ready, move on to the next tutorial to &lt;a href=&quot;https://www.harveyramer.com/article/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js/&quot;&gt;add interactivity to your COVID-19 tracker&lt;/a&gt;.&lt;/p&gt;
 </content>
     </entry>
     
@@ -1532,25 +1532,25 @@ router.get(&amp;quot;/&amp;quot;, (req, res) =&amp;gt; {
 &lt;h2&gt;Install Chocolatey: the Windows Package Manager&lt;/h2&gt;
 &lt;p class=&quot;alert danger&quot;&gt;I no longer recommend Chocolatey due to security and maintenance concerns. Please consider alternatives. One I have used with success is &lt;a href=&quot;https://github.com/coreybutler/nvm-windows&quot;&gt;NVM-Windows&lt;/a&gt;. If you choose that option, you can skip to &lt;a href=&quot;https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/#install-node&quot;&gt;Install Node&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://chocolatey.org/&quot;&gt;Chocolatey&lt;/a&gt; allows us to download and install open source packages from the Web. Chocolatey is as secure as the practices of the user. Mitigate risk by downloading known safe packages for your development machine. We will use &lt;a href=&quot;https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7&quot;&gt;Windows PowerShell&lt;/a&gt; to install Chocolatey. Enter &lt;code&gt;PowerShell&lt;/code&gt; in your Windows Start Menu and choose “Run as Administrator” from the menu.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/sc5ox6zxr9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/sc5ox6zxr9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;In your PowerShell terminal, enter the command:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-powershell&quot;&gt;Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Expect output like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/powershell_Wb8r3lS2bU.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/powershell_Wb8r3lS2bU.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Install Node Version Manager (NVM)&lt;/h2&gt;
 &lt;p&gt;Now we can use our Chocolatey Package Manager to download and install &lt;a href=&quot;https://github.com/nvm-sh/nvm/blob/master/README.md&quot;&gt;NVM&lt;/a&gt;! It is common to work on projects that require different versions of Node.js. If we installed Node.js directly, switching between such projects would present a conundrum. But NVM will make that an easy problem to solve.&lt;/p&gt;
 &lt;p&gt;This time, use Windows Terminal. Type `cmd` in the Windows Start Menu and choose “Run as Administrator”. To install NVM, enter the following command and verify your results.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell-script&quot;&gt;choco install -y nvm
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/cmd_4rbXM91m6u.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/cmd_4rbXM91m6u.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Close that terminal window and open a new one (again, as Administrator). This allows the terminal to look up environment information and see our newly installed package manager.&lt;/p&gt;
 &lt;p&gt;Try the command &lt;code&gt;nvm version&lt;/code&gt; → &lt;code&gt;1.1.7&lt;/code&gt;. If you get a numeric version result, we’re good! Let’s install Node.js next.&lt;/p&gt;
 &lt;h2 id=&quot;install-node&quot;&gt;Install Node.js&lt;/h2&gt;
 &lt;p&gt;Now we can use NVM to download and install &lt;a href=&quot;https://nodejs.org/en/about/&quot;&gt;Node.js&lt;/a&gt;! Open the Windows Terminal again (you should not need Administrator privileges). Enter the following command and verify your results.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;nvm install node@13.12.0
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/cmd_pN3qtBIZHC.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/cmd_pN3qtBIZHC.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Before celebrating too much, let’s set our default Node.js version with the command, &lt;code&gt;nvm use 13.12.0&lt;/code&gt;. Then, validate your install. If you are able to see the version for node and npm, you are ready to write code on Node.js!&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;node -v&lt;/code&gt; → &lt;code&gt;v13.12.0&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;npm -v&lt;/code&gt; → &lt;code&gt;6.14.4&lt;/code&gt;&lt;/p&gt;
@@ -1559,7 +1559,7 @@ router.get(&amp;quot;/&amp;quot;, (req, res) =&amp;gt; {
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;console.log(&amp;quot;Hello World!&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Your “Hello World” statement will be printed to the terminal. Then, exit the REPL, by entering &lt;code&gt;.exit&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/cmd_SHOGeflu9a.png&quot; alt=&quot;Hello World!&quot; title=&quot;Hello World!&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/cmd_SHOGeflu9a.png&quot; alt=&quot;Hello World!&quot; title=&quot;Hello World!&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Add More Versions of Node.js (optional)&lt;/h2&gt;
 &lt;p&gt;As I mentioned earlier, it is common to contribute to multiple Node.js projects requiring different versions of Node.js. For example, you could choose to write your own project in Node.js version &lt;strong&gt;13.12.0&lt;/strong&gt;, but need to help another developer working on a project using Node.js &lt;strong&gt;12.16.2&lt;/strong&gt;. This will help you with that problem. To add another version of Node, open Windows Terminal.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;nvm install node@12.16.2
@@ -1569,22 +1569,22 @@ nvm use 12.16.2
 &lt;p&gt;&lt;code&gt;node -v&lt;/code&gt; → &lt;code&gt;v12.16.2&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;npm -v&lt;/code&gt; → &lt;code&gt;6.14.4&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;To switch back to version 13, after this, we would once again use the command: &lt;code&gt;nvm use 13.12.0&lt;/code&gt;. At any time, you can see your locally installed versions of Node.js with &lt;code&gt;nvm ls&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/cmd_RycmFqBtls.png&quot; alt=&quot;See local Node.js versions&quot; title=&quot;See local Node.js versions&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/cmd_RycmFqBtls.png&quot; alt=&quot;See local Node.js versions&quot; title=&quot;See local Node.js versions&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Install Git&lt;/h2&gt;
 &lt;p&gt;In most cases, you will write code that requires version control. For that purpose, nothing works better than Git. Let’s do that before we wrap up. It will be easy. I promise.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://git-scm.com/download/win&quot;&gt;Download the latest installer&lt;/a&gt; from the Git website (download should start automatically). When the download completes, install using the defaults. No fuss. We can configure Git later. You’ll finish in a flash.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/Git-2.26.0-64-bit.tmp_gcNQ427NNs.png&quot; alt=&quot;Happy install dialog&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/Git-2.26.0-64-bit.tmp_gcNQ427NNs.png&quot; alt=&quot;Happy install dialog&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;When the installation completes. Open a new Windows Terminal and enter the command &lt;code&gt;git --version&lt;/code&gt; → &lt;code&gt;git version 2.26.0.windows.1&lt;/code&gt;. If you see a version as described, Git is configured correctly.&lt;/p&gt;
 &lt;h2&gt;Install Visual Studio Code&lt;/h2&gt;
 &lt;p&gt;Visual Studio Code is my preferred development environment for Node.js. There are many excellent guides on &lt;a href=&quot;https://code.visualstudio.com/docs/introvideos/basics&quot;&gt;getting started&lt;/a&gt;. In short, download the latest binary of &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; for windows.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/chrome_9n74ygwamo.png&quot; alt=&quot;Downloading Visual Studio Code&quot; title=&quot;Downloading Visual Studio Code&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/chrome_9n74ygwamo.png&quot; alt=&quot;Downloading Visual Studio Code&quot; title=&quot;Downloading Visual Studio Code&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;When the download completes, install using the defaults. No fuss. You only have one final thing to do. Visit the &lt;a href=&quot;https://marketplace.visualstudio.com/VSCode&quot;&gt;Visual Studio Code Marketplace&lt;/a&gt;, and install intellisense and the extension pack for Node.js.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense&quot;&gt;Node.js Modules Intellisense&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack&quot;&gt;Node.js Extension Pack&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/chrome_rtjxzfmak7.png&quot; alt=&quot;Install Node.js Modules Intellisense&quot; title=&quot;Install Node.js Modules Intellisense&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/chrome_1klnojkfy0.png&quot; alt=&quot;Install Node.js Extension Pack&quot; title=&quot;Install Node.js Extension Pack&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/chrome_rtjxzfmak7.png&quot; alt=&quot;Install Node.js Modules Intellisense&quot; title=&quot;Install Node.js Modules Intellisense&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/chrome_1klnojkfy0.png&quot; alt=&quot;Install Node.js Extension Pack&quot; title=&quot;Install Node.js Extension Pack&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;When those are both installed, restart Visual Studio Code and poke around on to get a sense of the tools available to you.&lt;/p&gt;
 &lt;h2&gt;You’re Finished!&lt;/h2&gt;
 &lt;p&gt;You have configured NVM to manage two versions of Node.js. You installed Git to make sure you never lose any of your code changes. To top it off, you added and configured your own code editor. Congratulations!&lt;/p&gt;
@@ -1599,7 +1599,7 @@ nvm use 12.16.2
       <id>https://www.harveyramer.com/article/2020-01-16-how-to-quickly-deploy-an-angular-application-with-aws-cdk/</id>
       <content type="html">&lt;p&gt;My goal was simple: to deploy a static site on AWS. But I wanted to make it a bit more interesting by including an Angular application. I bootstrapped a vanilla Angular install any developer could use and deploy.&lt;/p&gt;
 &lt;h2&gt;Why Not Use Native CloudFormation?&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://harveyramer.com/img/cloudformation-sticker-sm.png&quot; alt=&quot;CloudFormation Sticker&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/cloudformation-sticker-sm.png&quot; alt=&quot;CloudFormation Sticker&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;CloudFormation is a powerful way to manage infrastructure as code. But it is not designed for human writers. Large teams use powerful enterprise tools to manage AWS infrastructure. But smaller teams sometimes do not have the expertise or resources to use those tools. For such teams, Amazon CDK brings a familiar feel to infrastructure as code.&lt;/p&gt;
 &lt;p&gt;In short, there is nothing wrong with CloudFormation. But maintaining CloudFormation templates is unwieldy for small development teams. CDK for the win!&lt;/p&gt;
 &lt;h2&gt;A CDK Overview&lt;/h2&gt;
