@@ -28,4 +28,4 @@ Given the importance of a clarified story, every engagement with FlareMark begin
 
 Your story is your beacon—your signal flare. To attract customers to your spot on the map, launch your signal flare and share your message.
 
-We draw attention to your story; we don't make it up. It's yours. Only you can tell it.
+Ethical marketers draw attention to your story; they don't make it up. It's yours. Only you can tell it.

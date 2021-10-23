@@ -27,7 +27,7 @@ Most small businesses shun paid search advertising. That oversight may cost them
 
 An effective digital marketing strategy will include:
 
-1. Creating [social media profiles](https://www.harveyramer.com/article/how-to-grow-linkedin/) and [company pages](https://www.harveyramer.com/article/free-easy-growlinkedin/)
+1. Creating [social media profiles](https://www.harveyramer.com/article/how-to-grow-linkedin/) and [company pages](https://www.harveyramer.com/article/free-easy-grow-linkedin/)
 2. Clarifying taglines and calls to action
 3. Ditching or defining technical terms
 
