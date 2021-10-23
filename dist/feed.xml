@@ -4,7 +4,7 @@
   <subtitle>Harvey enjoys creating web applications with React, Node.js, and MongoDB. He writes about how worldviews, technology, business and relationship differences can become a collaborative asset.</subtitle>
   <link href="https://www.harveyramer.com/feed.xml" rel="self"/>
   <link href="https://www.harveyramer.com/"/>
-  <updated>2021-10-23T18:16:03Z</updated>
+  <updated>2021-10-23T18:20:26Z</updated>
   <id>https://www.harveyramer.com/</id>
   <author>
     <name>Harvey Ramer</name>
@@ -574,7 +574,7 @@ git push
 &lt;p&gt;Check out your Actions tab to monitor deployment. On completion, visit your Web app’s About page (for example, &lt;strong&gt;*covid19tutorial-myname&lt;/strong&gt;.azurewebsites.net/about*) to see the paragraph you just deployed.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/success-verification.png&quot; alt=&quot;Successful deployment&quot; title=&quot;Successful deployment&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;This tutorial introduced CI/CD concepts and showed an example of &lt;em&gt;Continuous Integration&lt;/em&gt; by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as &lt;a href=&quot;https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests&quot;&gt;Pull Requests&lt;/a&gt;, &lt;a href=&quot;https://docs.github.com/en/github/getting-started-with-github/fork-a-repo&quot;&gt;forking Github repos&lt;/a&gt;, and the &lt;a href=&quot;https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps&quot;&gt;benefits of breaking large tasks into small chunks&lt;/a&gt;. These, you are encouraged to investigate on your own.&lt;/p&gt;
+&lt;p&gt;This tutorial introduced CI/CD concepts and showed an example of &lt;em&gt;Continuous Integration&lt;/em&gt; by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as &lt;a href=&quot;https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests&quot;&gt;Pull Requests&lt;/a&gt;, &lt;a href=&quot;https://docs.github.com/en/get-started/quickstart/fork-a-repo&quot;&gt;forking Github repos&lt;/a&gt;, and the &lt;a href=&quot;https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps&quot;&gt;benefits of breaking large tasks into small chunks&lt;/a&gt;. These, you are encouraged to investigate on your own.&lt;/p&gt;
 &lt;h2&gt;Extra Credit&lt;/h2&gt;
 &lt;h3&gt;Add an Environment Variable&lt;/h3&gt;
 &lt;p&gt;If you would like to run this project locally, you will need to add an environment variable. On line 6 of the &lt;code&gt;/src/index.js&lt;/code&gt; file, you can see why. The &lt;code&gt;process.env&lt;/code&gt; property holds all environment variables exposed to this program.&lt;/p&gt;
@@ -1047,7 +1047,7 @@ git commit -m &amp;quot;Added country list filter.&amp;quot;
       <updated>2020-04-09T16:57:36Z</updated>
       <id>https://www.harveyramer.com/article/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/</id>
       <content type="html">&lt;p&gt;If you’ve been wanting to learn Node.js, why not let pandemic worries spur you to action? Let’s build a Web application to display the latest COVID-19 statistics. Never fear, we’ll make it simple and fun.&lt;/p&gt;
-&lt;p&gt;Before beginning this tutorial, you will need &lt;a href=&quot;https://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;, &lt;a href=&quot;https://npmjs.org/&quot;&gt;NPM&lt;/a&gt;, &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;, and&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; installed on your computer. If you need help, use my tutorial on &lt;a href=&quot;https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/&quot;&gt;configuring a development environment&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Before beginning this tutorial, you will need &lt;a href=&quot;https://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;, &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;NPM&lt;/a&gt;, &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;, and&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; installed on your computer. If you need help, use my tutorial on &lt;a href=&quot;https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/&quot;&gt;configuring a development environment&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Getting Started&lt;/h2&gt;
 &lt;p&gt;Open your Terminal (Windows users type &lt;code&gt;cmd&lt;/code&gt; in your Start Menu to find it). Make a directory for your new app, and open it in Visual Studio Code.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell-script&quot;&gt;mkdir covid19-tracker
