@@ -5,5 +5,6 @@
 /resume/                                   /                  301
 /article/                                  /                  301
 /tags/                                     /                  301
+/about/                                    /                  301
 /blog/*                                    /article/:splat    301
 /rss.xml                                   /feed.xml          301
