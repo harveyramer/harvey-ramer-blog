@@ -164,7 +164,7 @@ Check out your Actions tab to monitor deployment. On completion, visit your Web 
 
 ## Conclusion
 
-This tutorial introduced CI/CD concepts and showed an example of _Continuous Integration_ by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), [forking Github repos](https://help.github.com/en/github/getting-started-with-github/fork-a-repo), and the [benefits of breaking large tasks into small chunks](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps). These, you are encouraged to investigate on your own.
+This tutorial introduced CI/CD concepts and showed an example of _Continuous Integration_ by deploying changes made in a feature branch to Azure. We skipped over some other concepts such as [Pull Requests](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), [forking Github repos](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo), and the [benefits of breaking large tasks into small chunks](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps). These, you are encouraged to investigate on your own.
 
 ## Extra Credit
 

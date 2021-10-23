@@ -141,7 +141,7 @@ Before we wrap up, here are some more tips on building connections:
 4. Share professional wins like completed projects or promotions.
 5. Find and contribute to groups related to your skills and interests.
 
-For more tips on building your LinkedIn connections, read [5 Ways to Use LinkedIn Groups to Build Influential Connections](https://socialmediaexaminer.com/5-ways-to-use-linkedin-groups-to-build-influential-connections/).
+For more tips on building your LinkedIn connections, read [5 Ways to Use LinkedIn Groups to Build Influential Connections](https://www.socialmediaexaminer.com/5-ways-to-use-linkedin-groups-to-build-influential-connections/).
 
 ## Congratulations on Your Completed Profile
 

@@ -78,8 +78,8 @@ Here is how we write for the web:
 4. Prefer lists over commas
 5. Use headings and subheadings for visual hierarchy
 6. Do not forget the spell checker
-7. When you stop writing, check and revise your writing with [Hemingway App](http://hemingwayapp.com/)
-8. Before you publish, a grammar checker like [Grammarly](https://app.grammarly.com/) can save you embarrassment.
+7. When you stop writing, check and revise your writing with [Hemingway App](https://hemingwayapp.com/)
+8. Before you publish, a grammar checker like [Grammarly](https://www.grammarly.com/) can save you embarrassment.
 
 Using this process helps you write with clarity and power. Such writing guides a reader's eye rather than frustrating them. Removing friction benefits your readers.
 
