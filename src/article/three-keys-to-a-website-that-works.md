@@ -43,9 +43,7 @@ Jane's website is all about her and what she does. Her business is the focal poi
 
 ## What Happens Next
 
-After Jane makes three simple changes, her business slowly improves. Search engines begin to pick up her content and bring visitors to her website. She reviews her website analytics and sees her average visit time increase. Her message is clear, and she has calls to action that draw visitors deeper into her website. There they learn more about her, build trust, and begin to buy from her.
-
-These simple but fundamental changes reap significant benefits.
+After Jane makes three simple changes, her business slowly improves. Search engines begin to pick up her content and bring visitors to her website. She reviews her website analytics and sees her average visit time increase. Her message is clear, and she has calls to action that draw visitors deeper into her website. There they learn more about her, build trust, and begin to buy from her. These simple-but-fundamental changes reap significant benefits.
 
 1. Invest in optimizing **content** for search engines,
 2. boosting the **speed** of your website, and
