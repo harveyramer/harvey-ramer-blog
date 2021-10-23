@@ -33,9 +33,7 @@ A successful website uses research to find phrases your potential customers are 
 
 Jane's website looks good, but it does not load quickly enough for Google to prioritize it as high-quality content. Google's research shows that [more than half](https://developers.google.com/web/updates/2018/07/search-ads-speed) of mobile users abandon a page if it has not loaded in 3 seconds or less. Speed is an indicator of quality, and Google buries slow websites deep in their search results. Since Jane's website is new, it hasn't been around long enough to reassure the search algorithm it _really is_ good.
 
-To get herself out of this hole, Jane must work hard to make sure her site loads in under three seconds on a 4G connection. Jane's customers demand it. Any perceptible wait time makes her customer more likely to leave without making a purchase.
-
-Even with a fast website, however, Jane's troubles are not over.
+To get herself out of this hole, Jane must work hard to make sure her site loads in under three seconds on a 4G connection. Jane's customers demand it. Any perceptible wait time makes her customer more likely to leave without making a purchase. Even with a fast website, however, Jane's troubles are not over.
 
 **Third,** she needs to work on her messaging. Since her website puts her business at the center, it needs a fundamental transformation.
 

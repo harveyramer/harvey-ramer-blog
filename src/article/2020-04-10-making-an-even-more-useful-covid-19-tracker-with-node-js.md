@@ -14,13 +14,13 @@ tags:
 
 Imagine an artist transferring the clutter of her studio directly to the canvas. When we query an API or database, we often transfer that clutter to the user interface. There is a better way.
 
-In our previous tutorial, we [created a COVID-19 Tracker](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/). The user interface was much like that cluttered artist studio. Rather than helping the user focus, we bombarded them with information. What can we do to make this information easier to digest?
+In our previous tutorial, we [created a COVID-19 Tracker](https://www.harveyramer.com/article/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/). The user interface was much like that cluttered artist studio. Rather than helping the user focus, we bombarded them with information. What can we do to make this information easier to digest?
 
 ![Our cluttered user interface](https://www.harveyramer.com/img/chrome_8yyl9m8idf.png "Our cluttered user interface")
 
 ## Prerequisites
 
-Before completing this tutorial, complete the [first tutorial](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/) or clone the [Github repository for the tutorial](https://github.com/harveyramer/covid-19-demo-express-js-app/tree/tutorial-1). You will start to see comments in the code examples. Comments allow developers to leave context for those who follow, but have no impact on the execution of code.
+Before completing this tutorial, complete the [first tutorial](https://www.harveyramer.com/article/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/) or clone the [Github repository for the tutorial](https://github.com/harveyramer/covid-19-demo-express-js-app/tree/tutorial-1). You will start to see comments in the code examples. Comments allow developers to leave context for those who follow, but have no impact on the execution of code.
 
 ```javascript
 /*

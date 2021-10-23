@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 3 Ways You Can Boost Your Website's Results
 date: 2020-09-02
 author: Harvey Ramer
@@ -26,7 +27,7 @@ Most small businesses shun paid search advertising. That oversight may cost them
 
 An effective digital marketing strategy will include:
 
-1. Creating [social media profiles](https://www.flaremark.com/blog/how-to-grow-your-professional-influence-linkedin/) and [company pages](https://www.flaremark.com/blog/free-easy-ways-grow-business-linkedin-page/)
+1. Creating [social media profiles](https://www.harveyramer.com/article/how-to-grow-linkedin/) and [company pages](https://www.harveyramer.com/article/free-easy-growlinkedin/)
 2. Clarifying taglines and calls to action
 3. Ditching or defining technical terms
 
@@ -84,6 +85,6 @@ Using this process helps you write with clarity and power. Such writing guides a
 
 ## Prefer Action Over Analysis
 
-This article contains time-tested, proven ways you can improve your website today. Take time to think it through. [Don't overthink it](https://www.flaremark.com/blog/choose-action-over-analysis/); test these ideas. See what works. You will have some wins when you do. If you would like professional help focused on business growth, [we are here to help](https://www.flaremark.com/hire-flaremark/).
+This article contains time-tested, proven ways you can improve your website today. Take time to think it through. [Don't overthink it](https://www.harveyramer.com/article/choose-action-over-analysis/); test these ideas. See what works. You will have some wins when you do.
 
 Most business websites fail to live up to their potential. Either they fail to attract visitors or repel the visitors who find them. If you get active on social media, clarify your tagline, and ditch jargon, you will begin to stand out from the rest.
