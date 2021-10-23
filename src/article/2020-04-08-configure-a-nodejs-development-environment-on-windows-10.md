@@ -23,7 +23,7 @@ When a simple command should produce an output of a certain type, you will see:
 
 I no longer recommend Chocolatey due to security and maintenance concerns. Please consider alternatives. One I have used with success is [NVM-Windows](https://github.com/coreybutler/nvm-windows). If you choose that option, you can skip to [Install Node](#install-node). {.alert.danger}
 
-[Chocolatey](https://chocolatey.org/) allows us to download and install open source packages from the Web. Chocolatey is as secure as the practices of the user. Mitigate risk by downloading known safe packages for your development machine. We will use [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7) to install Chocolatey. Enter `PowerShell` in your Windows Start Menu and choose "Run as Administrator" from the menu.
+[Chocolatey](https://chocolatey.org/) allows us to download and install open source packages from the Web. Chocolatey is as secure as the practices of the user. Mitigate risk by downloading known safe packages for your development machine. We will use [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7) to install Chocolatey. Enter `PowerShell` in your Windows Start Menu and choose "Run as Administrator" from the menu.
 
 ![](https://www.harveyramer.com/img/sc5ox6zxr9.png)
 

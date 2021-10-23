@@ -21,7 +21,7 @@ The workplace trend of [remote employment is here to stay](https://www.techrepub
 LinkedIn is booming, and businesses of all sizes should get active on the platform or miss out on a growth opportunity. Thankfully, there are free and easy ways you can [build your personal brand](https://www.harveyramer.com/article/how-to-grow-linkedin/) and grow your business with LinkedIn.
 
 > We’ve found that 50% of LinkedIn members are more likely to purchase from a company they engage with on LinkedIn.  
-> — <cite>Lana Khavinson, [LinkedIn](https://business.linkedin.com/marketing-solutions/blog/s/set-your-company-success-linkedin-company-pages-part-1)</cite>
+> — <cite>Lana Khavinson, [LinkedIn](https://business.linkedin.com/content/dam/business/marketing-solutions/global/en_US/campaigns/pdfs/Linkedin_SophGuide_020314.pdf)</cite>
 
 ## Create a LinkedIn Strategy
 
@@ -31,7 +31,7 @@ According to LinkedIn, consider sharing PowerPoints, PDFs, and Word Docs relevan
 
 ### How Employees Can Multiply Your Impact
 
-As you share interesting content on LinkedIn, let your employees know about it. Many employees are happy to share and discuss content their employer is sharing. Employee engagement can multiply your impact on social media. Set employee expectations with a [social media policy](https://business.linkedin.com/marketing-solutions/blog/linkedin-elevate/2017/how-to-create-a-social-media-policy-that-empowers-employee-advoc).
+As you share interesting content on LinkedIn, let your employees know about it. Many employees are happy to share and discuss content their employer is sharing. Employee engagement can multiply your impact on social media. Set employee expectations with a [social media policy](https://www.linkedin.com/business/marketing/blog/social-media-marketing/how-to-create-a-social-media-policy-that-empowers-employee-advocates).
 
 As your employees create content, **@mention** them, and reshare their posts. Everyone likes recognition. Use it to encourage social behavior that boosts the visibility of your employees and your business.
 
