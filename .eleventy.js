@@ -73,7 +73,9 @@ module.exports = config => {
 
   // Collections
   config.addCollection("articles", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("./src/article/*.md").reverse();
+    return collectionApi.getFilteredByGlob("./src/article/*.md").reverse().sort(function (a, b) {
+      return (b.data.pinned ? 1 : 0) - (a.data.pinned ? 1 : 0);
+    });
   });
 
   return {
