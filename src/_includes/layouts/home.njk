@@ -10,7 +10,7 @@ layout: base
     {% endif %}
   {%- endfor -%}
   <ol class="archive_list">
-    {%- for post in collections.articles.slice(0, 3) -%}
+    {%- for post in collections.articles.slice(0, 5) -%}
       <li>
         <h2 {% if post.data.pinned %}
             title="Pinned article"
