@@ -126,3 +126,8 @@ pre code {
   margin-top: -0.2em;
   margin-bottom: 1em;
 }
+
+/* Article Link */
+h2 svg {
+  height: 16px;
+}

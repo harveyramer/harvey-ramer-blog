@@ -1,28 +1,32 @@
 ---
-title: Harvey Ramer's Blog
+title: Harvey Ramer
 description: Harvey Ramer, a web developer, shares his thoughts on technology, business, and the Christian worldview.
 ---
 {% set reset %}
-  {% include "../theme/reset.css" %}
+{% include "../theme/reset.css" %}
 {% endset %}
 {% set fonts %}
-  {% include "../theme/fonts.css" %}
+{% include "../theme/fonts.css" %}
 {% endset %}
 {% set typography %}
-  {% include "../theme/typography.css" %}
+{% include "../theme/typography.css" %}
 {% endset %}
 {% set layout %}
-  {% include "../theme/layout.css" %}
+{% include "../theme/layout.css" %}
 {% endset %}
 {% set components %}
-  {% include "../theme/components.css" %}
+{% include "../theme/components.css" %}
 {% endset %}
-{%
-  set pageMeta = { quote: social_quote, slug: page.fileSlug, title: title }
-%}
+{% set pageMeta = {
+  quote: social_quote,
+  slug: page.fileSlug,
+  title: title
+} %}
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     {% if social_quote %}
@@ -30,31 +34,31 @@ description: Harvey Ramer, a web developer, shares his thoughts on technology, b
       <meta name="twitter:site" content="@harveyramer"/>
       <meta name="twitter:title" content="{{title}}"/>
       <meta name="twitter:description" content="{{social_quote}}"/>
-      <meta property="og:url" content="{{site.url}}{{page.url}}" />
-      <meta property="og:type" content="article" />
-      <meta property="og:title" content="{{title}}" />
-      <meta property="og:description" content="{{social_quote}}" />
-      <meta property="og:image" content="{{ pageMeta | ogImg }}" />
+      <meta property="og:url" content="{{site.url}}{{page.url}}"/>
+      <meta property="og:type" content="article"/>
+      <meta property="og:title" content="{{title}}"/>
+      <meta property="og:description" content="{{social_quote}}"/>
+      <meta property="og:image" content="{{ pageMeta | ogImg }}"/>
     {% endif %}
-      <title>{{ meta_title or title }}</title>
+    <title>{{ meta_title or title }}</title>
     {% if description %}
       <meta name="description" content="{{description}}">
     {% endif %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
-      {{ reset | cssmin | safe }}
-      {{ typography  | cssmin | safe }}
-      {{ layout | cssmin | safe }}
-      {{ components | cssmin | safe }}
+      {{reset | cssmin | safe}}
+      {{typography  | cssmin | safe}}
+      {{layout | cssmin | safe}}
+      {{components | cssmin | safe}}
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123129255-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
       gtag('config', 'UA-123129255-1');
     </script>
