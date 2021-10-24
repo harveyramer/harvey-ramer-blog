@@ -4,7 +4,7 @@
   <subtitle>Harvey enjoys creating web applications with React, Node.js, and MongoDB. He writes about how worldviews, technology, business and relationship differences can become a collaborative asset.</subtitle>
   <link href="https://www.harveyramer.com/feed.xml" rel="self"/>
   <link href="https://www.harveyramer.com/"/>
-  <updated>2021-10-23T18:25:20Z</updated>
+  <updated>2021-10-24T21:20:34Z</updated>
   <id>https://www.harveyramer.com/</id>
   <author>
     <name>Harvey Ramer</name>
@@ -1526,7 +1526,7 @@ router.get(&amp;quot;/&amp;quot;, (req, res) =&amp;gt; {
       <updated>2020-04-08T22:36:23Z</updated>
       <id>https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/</id>
       <content type="html">&lt;h2&gt;Overview&lt;/h2&gt;
-&lt;p&gt;If you want to learn programming, getting set up can be a confusing barrier to entry. This tutorial offers a simple way to install Node.js and all the tools you will need to start working with Node.js on Windows 10.&lt;/p&gt;
+&lt;p&gt;If you want to learn to write code, setting up a development environment can be a barrier to entry. This tutorial offers a simple way to install the tools you need to start working with Node.js on Windows 10.&lt;/p&gt;
 &lt;p class=&quot;alert&quot;&gt;When a simple command should produce an output of a certain type, you will see:&lt;br /&gt;
 &lt;code&gt;command&lt;/code&gt; → &lt;code&gt;output&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;Install Chocolatey: the Windows Package Manager&lt;/h2&gt;
