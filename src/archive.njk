@@ -16,6 +16,7 @@ description: Past articles written by Memphis-based web developer, Harvey Ramer.
           {% endif %}>
           <a href="{{ post.url }}">{{ post.data.title }}</a>
         </h2>
+        <p>{{post.data.social_quote}}<br/>
         <span class="meta">{{ post.data.author }},
           <time class="block" datetime="{{ post.data.date | w3DateFilter  }}">
             {{ post.data.date | dateDisplay }}
@@ -26,6 +27,7 @@ description: Past articles written by Memphis-based web developer, Harvey Ramer.
               {%- endfor -%}
             </span>
           </span>
+          </p>
         </li>
       {% endfor %}
     </ol>

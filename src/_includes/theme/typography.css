@@ -13,14 +13,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5em;
   margin-top: 1em;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 0.5em;
   margin-top: 1em;
@@ -58,7 +58,7 @@ main > p:first-of-type:first-letter {
   line-height: 40px;
   padding-top: 10px;
   padding-right: 3px;
-  padding-left: 3px;
+  padding-left: 3px; 
 }
 
 main ul,
@@ -99,7 +99,7 @@ footer .legal {
 footer,
 .footnotes {
   font-family: "Roboto Light", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
 }
 footer nav {
   display: inline-block;
