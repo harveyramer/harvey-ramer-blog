@@ -10,12 +10,10 @@ title: All Articles
     {%- for post in collections.articles -%}
       <li>
         <h2 {% if post.data.pinned %}
+            class="pinned"
             title="Pinned article"
           {% endif %}>
           <a href="{{ post.url }}">{{ post.data.title }}</a>
-          {% if post.data.pinned %}
-            {% fortawesomeSolid 'map-pin' %}
-          {% endif %}
         </h2>
         <span class="meta">{{ post.data.author }},
           <time class="block" datetime="{{ post.data.date | w3DateFilter  }}">
