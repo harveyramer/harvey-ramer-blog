@@ -2,6 +2,7 @@
 layout: base
 meta_title: "Past Articles"
 title: All Articles
+social_quote: Enjoy articles on Christian theology, technology, business, and how differences can become a collaborative asset.
 description: Past articles written by Memphis-based web developer, Harvey Ramer.
 ---
 
@@ -17,16 +18,16 @@ description: Past articles written by Memphis-based web developer, Harvey Ramer.
           <a href="{{ post.url }}">{{ post.data.title }}</a>
         </h2>
         <p class="excerpt">{{post.data.social_quote}}
-        <span class="meta">
-          <time class="block" datetime="{{ post.data.date | w3DateFilter  }}">
-            {{ post.data.date | dateDisplay }}
-          </time> — <span class="tags">
-            {%- for tag in post.data.tags -%}
-              {%if loop.index0 > 0%}, {%endif%}
-                <a href="/tags/{{tag}}/">{{tag | upper}}</a>
-              {%- endfor -%}
+          <span class="meta">
+            <time class="block" datetime="{{ post.data.date | w3DateFilter  }}">
+              {{ post.data.date | dateDisplay }}
+            </time> — <span class="tags">
+              {%- for tag in post.data.tags -%}
+                {%if loop.index0 > 0%}, {%endif%}
+                  <a href="/tags/{{tag}}/">{{tag | upper}}</a>
+                {%- endfor -%}
+              </span>
             </span>
-          </span>
           </p>
         </li>
       {% endfor %}
