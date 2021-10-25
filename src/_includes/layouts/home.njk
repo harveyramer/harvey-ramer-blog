@@ -20,6 +20,7 @@ layout: base
           {% endif %}>
           <a href="{{ post.url }}">{{ post.data.title }}</a>
         </h2>
+        <p class="excerpt">{{post.data.social_quote}}<br/>
         <span class="meta">{{ post.data.author }},
           <time class="block" datetime="{{ post.data.date | w3DateFilter  }}">
             {{ post.data.date | dateDisplay }}
@@ -30,6 +31,7 @@ layout: base
               {%- endfor -%}
             </span>
           </span>
+          </p>
         </li>
       {% endfor %}
     </ol>
