@@ -99,7 +99,7 @@ footer .legal {
 footer,
 .footnotes {
   font-family: "Roboto Light", sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
 }
 footer nav {
   display: inline-block;
@@ -148,6 +148,11 @@ blockquote {
 }
 
 .excerpt {
-  margin:.25rem 0;
+  margin:.25rem 0 0;
   font-size:.92rem;
+}
+.excerpt .meta {
+  padding-top: .5rem;
+  display:block;
+  /* border-top: 1px solid rgb(213, 213, 213); */
 }
