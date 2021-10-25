@@ -7,7 +7,7 @@ title: All Articles
 <main>
   <h1>{{ title }}</h1>
   <ol class="archive_list">
-    {%- for post in collections.articles -%}
+    {%- for post in collections.articles | pinnedSort -%}
       <li>
         <h2 {% if post.data.pinned %}
             class="pinned"
