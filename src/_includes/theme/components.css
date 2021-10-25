@@ -85,7 +85,9 @@ pre code {
   display: block;
   padding: 0.5rem;
 }
-
+.footnotes-list {
+  margin-left: 0;
+}
 .footnotes li {
   margin-bottom: 0.6em;
 }
