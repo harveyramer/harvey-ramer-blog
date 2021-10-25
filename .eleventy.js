@@ -70,18 +70,18 @@ module.exports = config => {
       callback(null, null);
     });
   });
-
-  // Collections
-  config.addCollection("articles", function (collectionApi) {
-    const collection = collectionApi.getFilteredByGlob("./src/article/*.md")
-      .reverse();
+  config.addFilter("pinnedSort", collection => {
     const sorted = collection
       .filter(a => !a.data.pinned);
     const pinned = collection.filter(a => a.data.pinned);
     return pinned.concat(sorted);
   });
-  config.addCollection("unsortedArticles", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("./src/article/*.md").reverse();
+  config.addFilter("limit", (arr, limit) => arr.slice(0, limit));
+
+  // Collections
+  config.addCollection("articles", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("./src/article/*.md")
+      .reverse();
   });
 
   return {
