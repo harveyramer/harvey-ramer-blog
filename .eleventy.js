@@ -73,9 +73,12 @@ module.exports = config => {
 
   // Collections
   config.addCollection("articles", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("./src/article/*.md").reverse().sort(function (a, b) {
-      return (b.data.pinned ? 1 : 0) - (a.data.pinned ? 1 : 0);
-    });
+    const collection = collectionApi.getFilteredByGlob("./src/article/*.md")
+      .reverse();
+    const sorted = collection
+      .filter(a => !a.data.pinned);
+    const pinned = collection.filter(a => a.data.pinned);
+    return pinned.concat(sorted);
   });
   config.addCollection("unsortedArticles", function (collectionApi) {
     return collectionApi.getFilteredByGlob("./src/article/*.md").reverse();
