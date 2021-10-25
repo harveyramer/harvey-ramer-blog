@@ -78,7 +78,6 @@ module.exports = config => {
   });
   config.addFilter("limit", (arr, limit) => arr.slice(0, limit));
   config.addFilter("sitemapClean", (arr) => {
-    console.log(arr.forEach(a => console.log(a.data.title)));
     return arr.filter(a => !!a.data.title);
   });
 
