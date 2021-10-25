@@ -4,15 +4,15 @@ layout: base
 {%- from "components/authorCard.njk" import authorCard -%}
 <main>
   <span class="meta">
+    <time class="block" datetime="{{ date | w3DateFilter  }}">
+        {{ date | dateDisplay }}
+      </time> — 
     <span class="tags">
       {%- for tag in tags -%}
         {%if loop.index0 > 0%}, {%endif%}
           <a href="/tags/{{tag}}/">{{tag | upper}}</a>
         {%- endfor -%}
-      </span> —
-    <time class="block" datetime="{{ date | w3DateFilter  }}">
-        {{ date | dateDisplay }}
-      </time>
+      </span>
     </span>
     <h1>{{ title }}</h1>
     {{ content | safe }}
