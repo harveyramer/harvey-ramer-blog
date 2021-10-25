@@ -13,14 +13,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 600;
   margin-bottom: 0.5em;
   margin-top: 1em;
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0.5em;
   margin-top: 1em;
@@ -145,4 +145,9 @@ blockquote {
   padding: 1em;
   font-style: italic;
   font-size: 1.2em;
+}
+
+.excerpt {
+  margin:.25rem 0;
+  font-size:.92rem;
 }

@@ -23,7 +23,7 @@ eleventyComputed:
             title="Pinned article"
           {% endif %}>
           <a href="{{ post.url }}">{{ post.data.title }}</a>
-        </h2><p>{{post.data.social_quote}}
+        </h2><p class="excerpt">{{post.data.social_quote}}
         {% if post.data.author %}<br/>
           <span class="meta">{{ post.data.author }},
           <time class="block" datetime="{{ post.data.date  }}">
