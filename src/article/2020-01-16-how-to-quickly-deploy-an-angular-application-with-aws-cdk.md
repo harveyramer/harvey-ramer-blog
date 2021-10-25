@@ -12,7 +12,7 @@ tags:
   - technology
 ---
 
-My goal was simple: to deploy a static site on AWS. But I wanted to make it a bit more interesting by including an Angular application. I bootstrapped a vanilla Angular install any developer could use and deploy.
+At re:Invent 2019, I saw The AWS Cloud Development Kit (CDK) and learned how it removes the pain of deploying resources to the AWS cloud. I was curious. So I decided to experiment with the CDK using TypeScript. My goal was simple: to deploy a static site on AWS. But I wanted to make it a bit more interesting by including an Angular application. I bootstrapped a vanilla Angular install any developer could use and deploy.
 
 ## Why Not Use Native CloudFormation?
 
