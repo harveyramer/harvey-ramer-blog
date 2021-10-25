@@ -77,6 +77,9 @@ module.exports = config => {
       return (b.data.pinned ? 1 : 0) - (a.data.pinned ? 1 : 0);
     });
   });
+  config.addCollection("unsortedArticles", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("./src/article/*.md").reverse();
+  });
 
   return {
     dir: {
