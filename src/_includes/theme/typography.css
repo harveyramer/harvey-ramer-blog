@@ -154,11 +154,11 @@ blockquote {
 .excerpt .meta {
   padding-top: 0.5rem;
   display: block;
-  /* border-top: 1px solid rgb(213, 213, 213); */
 }
 
 sup {
-  padding-left: 0.1em;
-  vertical-align: 0.4em;
-  font-size: 0.86em;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+  font-size: smaller;
 }
