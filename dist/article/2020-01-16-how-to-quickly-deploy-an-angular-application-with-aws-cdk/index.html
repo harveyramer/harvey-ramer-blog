@@ -70,18 +70,25 @@
 <p>CloudFormation is a powerful way to manage infrastructure as code. But it is not designed for human writers. Large teams use powerful enterprise tools to manage AWS infrastructure. But smaller teams sometimes do not have the expertise or resources to use those tools. For such teams, Amazon CDK brings a familiar feel to infrastructure as code.</p>
 <p>In short, there is nothing wrong with CloudFormation. But maintaining CloudFormation templates is unwieldy for small development teams. CDK for the win!</p>
 <h2>A CDK Overview</h2>
-<p>At the heart of CDK is a <a href="https://docs.aws.amazon.com/cdk/latest/guide/constructs.html">library of Constructs</a>. These structural building blocks represent cloud components. Constructs contain all the information needed to generate a valid CloudFormation template. Developers compose constructs to define higher level components, much like application code.</p>
+<p>At the heart of CDK is a library of Constructs<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>. These structural building blocks represent cloud components. Constructs contain all the information needed to generate a valid CloudFormation template. Developers compose constructs to define higher level components, much like application code.</p>
 <h2>Trying It Out for Yourself</h2>
-<p>If you want test CDK for your own Angular projects, I have simplified the process with a <a href="https://github.com/harveyramer/deploy-angular-with-cdk">Github repo.</a></p>
+<p>If you want test CDK for your own Angular projects,<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> I have simplified the process with a <a href="https://github.com/harveyramer/deploy-angular-with-cdk">Github repo.</a></p>
 <ol>
 <li>Clone the repo</li>
 <li>Follow the instructions in the Readme file</li>
 <li>Enjoy your static site hosted on S3 with CloudFront and Route53 DNS.</li>
 </ol>
 <p>Using this project, you will have an Angular application hosted on S3 in an hour or two. The initial deployment takes about 30 minutes to provision AWS infrastructure.</p>
-<p>If you find bugs or have questions, please <a href="http://localhost:8000/contact">contact me</a>.</p>
-<h2>Other Resources</h2>
-<p><a href="https://twitter.com/intent/user?screen_name=emeshbi">Elad Ben-Israel</a> from AWS offers a CDK Intro Workshop in <a href="https://cdkworkshop.com/20-typescript.html">TypeScript</a>, <a href="https://cdkworkshop.com/30-python.html">Python</a>, <a href="https://cdkworkshop.com/40-dotnet.html">.NET</a>, and <a href="https://cdkworkshop.com/50-java.html">Java</a>. Use this workshop to learn more about how to use CDK to manage your AWS infrastructure as code.</p>
+<h2>Footnotes</h2>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><a href="https://docs.aws.amazon.com/cdk/latest/guide/constructs.html">AWS CDK Library of Constructs</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><a href="https://twitter.com/intent/user?screen_name=emeshbi">Elad Ben-Israel</a> from AWS offers a CDK Intro Workshop in <a href="https://cdkworkshop.com/20-typescript.html">TypeScript</a>, <a href="https://cdkworkshop.com/30-python.html">Python</a>, <a href="https://cdkworkshop.com/40-dotnet.html">.NET</a>, and <a href="https://cdkworkshop.com/50-java.html">Java</a>. Use his workshop to learn more about how to use CDK to manage your AWS infrastructure as code. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
         
   <div class="author">

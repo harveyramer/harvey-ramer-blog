@@ -21,7 +21,7 @@ We had exciting potential customer conversations and even ran a pilot project. T
 
 A customer is someone who gives you money. {.callout}
 
-Everyone in the company knew we needed to make sales, but we had difficulty recruiting our first paying customer. Instead of collecting money, we had encouraging conversations with warm leads and ran too long on the slightest hint of interest they showed. The [Lean Startup](http://theleanstartup.com/principles) method _might_ have helped us get customers fully on board, but this lesson is harder to learn than it might seem.
+Everyone in the company knew we needed to make sales, but we had difficulty recruiting our first paying customer. Instead of collecting money, we had encouraging conversations with warm leads and ran too long on the slightest hint of interest they showed. The Lean Startup[^1] method _might_ have helped us get customers fully on board, but this lesson is harder to learn than it might seem.
 
 1. Everything starts with vision and ends with a customer
 2. How long a project needs to be vision-led depends in part on its complexity
@@ -51,3 +51,7 @@ We found and hired people who shared the vision and gave every ounce of their ta
 There is nothing better than knowing your team has your back. {.callout}
 
 I am humbled to have been part of a company whose leadership believed in and supported their team. Each team member played an important part, and they are some of the finest human beings I have ever known. **After it all ends, all we have is friendship.**
+
+## Footnotes
+
+[^1]: "Startup success can be engineered by following the process, which means it can be learned, which means it can be taught." — [The Lean Startup Methodology](http://theleanstartup.com/principles).
