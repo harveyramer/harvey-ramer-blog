@@ -19,7 +19,7 @@ Getting visitors to a website that tells the story of your business is vital. Wh
 
 ## What To Expect from Your Website
 
-According to a 2019 [Bright Local](https://www.brightlocal.com/research/google-analytics-for-local-businesses-study/) study of more than 11,000 companies, business websites get **50% of their visitors** from search engine queries. This _organic_ traffic does not cost business owners any money. **37% of their visitors** are _direct_, which means the user knew their web domain or followed a link in an email or text message. About **10% of their visitors** are _referrals_ from a link embedded in another website. **Only a small percentage** of their visitors discover them on social media. Social media marketing, especially, has growth potential.
+According to a 2019 Bright Local[^1] study of more than 11,000 companies, business websites get **50% of their visitors** from search engine queries. This _organic_ traffic does not cost business owners any money. **37% of their visitors** are _direct_, which means the user knew their web domain or followed a link in an email or text message. About **10% of their visitors** are _referrals_ from a link embedded in another website. **Only a small percentage** of their visitors discover them on social media. Social media marketing, especially, has growth potential.
 
 Most small businesses shun paid search advertising. That oversight may cost them. Even micro-enterprises can use it to attract a ready supply of ready-to-buy visitors. While we are bullish on search engine advertising, we recommend caution. Only when your website engages users will there be a return on investment. Your average sale value impacts the advertising strategy you choose. With a higher average sale value and profit margin, you have more room to experiment with paid search.
 
@@ -27,7 +27,7 @@ Most small businesses shun paid search advertising. That oversight may cost them
 
 An effective digital marketing strategy will include:
 
-1. Creating [social media profiles](https://www.harveyramer.com/article/how-to-grow-linkedin/) and [company pages](https://www.harveyramer.com/article/free-easy-grow-linkedin/)
+1. Creating social media profiles[^2] and company pages [^3]
 2. Clarifying taglines and calls to action
 3. Ditching or defining technical terms
 
@@ -35,7 +35,7 @@ An effective digital marketing strategy will include:
 
 Not every business will have the same success with a social media strategy. But it always works as an outreach tool. It lets you talk to future customers at scale before they visit your website.
 
-Every small business can boost visibility with a free profile on [LinkedIn](https://www.linkedin.com), [Facebook](https://www.facebook.com/business), [Instagram](https://business.instagram.com/), [Pinterest](https://business.pinterest.com/), and [Twitter](https://business.twitter.com/en/basics/create-a-twitter-business-profile.html). Having business profiles does not mean you must invest equally in content creation on each platform. Despite limited engagement, social media profiles will have value. They let prospective customers find your business where they hang out.
+Every small business can boost visibility with a free profile on LinkedIn, Instagram, Pinterest, and Twitter[^4]. Having business profiles does not mean you must invest equally in content creation on each platform. Despite limited engagement, social media profiles will have value. They let prospective customers find your business where they hang out.
 
 A successful digital strategy does not demand the same amount of work on each platform. A business selling to other business owners may post on LinkedIn every day but rarely on Facebook, Instagram, or Twitter. Another company whose clientele is mainly female may invest heavily in their Pinterest presence.
 
@@ -85,6 +85,14 @@ Using this process helps you write with clarity and power. Such writing guides a
 
 ## Prefer Action Over Analysis
 
-This article contains time-tested, proven ways you can improve your website today. Take time to think it through. [Don't overthink it](https://www.harveyramer.com/article/choose-action-over-analysis/); test these ideas. See what works. You will have some wins when you do.
+This article contains time-tested, proven ways you can improve your website today. Take time to think it through. Don't overthink it[^5]; test these ideas. See what works. You will have some wins when you do.
 
 Most business websites fail to live up to their potential. Either they fail to attract visitors or repel the visitors who find them. If you get active on social media, clarify your tagline, and ditch jargon, you will begin to stand out from the rest.
+
+## Footnotes
+
+[^1]: [Google Analytics for Local Businesses Study](https://www.brightlocal.com/research/google-analytics-for-local-businesses-study/)
+[^2]: [9 Easy Ways You Can Boost Your LinkedIn Influence](https://www.harveyramer.com/article/how-to-grow-linkedin/)
+[^3]: [Free and Easy Ways You Can Grow Your Business with a LinkedIn Page](https://www.harveyramer.com/article/free-easy-grow-linkedin/)
+[^4]: Get started with [LinkedIn](https://www.linkedin.com), [Facebook](https://www.facebook.com/business), [Instagram](https://business.instagram.com/), [Pinterest](https://business.pinterest.com/), and [Twitter](https://business.twitter.com/en/basics/create-a-twitter-business-profile.html).
+[^5]: [Choose Action Over Analysis](https://www.harveyramer.com/article/choose-action-over-analysis/)
