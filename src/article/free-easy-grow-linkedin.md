@@ -12,16 +12,16 @@ tags:
 
 Few things are more gratifying and financially rewarding than a healthy, growing business. And one of the best platforms for business marketing growth is social media. Unlike anything else, it lets you meet your customers where they are and form personal connections before they make a buying decision.
 
-LinkedIn is the premier social platform for business professionals. They voted it the [most trusted social network](https://www.businessinsider.com/linkedin-pinterest-instagram-top-spots-2019-digital-trust-report-facebook-stays-last) in 2019. According to [LinkedIn](https://news.linkedin.com/about-us#1), their directory includes more than **706 million users** and **50 million companies**.
+LinkedIn is the premier social platform for business professionals. They voted it the most trusted social network in 2019[^1]. According to LinkedIn[^2], their directory includes more than **706 million users** and **50 million companies**.
 
 With such massive numbers, the platform deserves to be a vital part of your business marketing portfolio—especially if you are a B2B company. LinkedIn search lets your **prospecting and sales teams** find qualified leads from those _50 million companies_ with ease.
 
-The workplace trend of [remote employment is here to stay](https://www.techrepublic.com/article/remote-work-is-here-to-stay-gartner-finds/). As remote work expands, virtual connections will become ever more powerful. As a business-focused social network, LinkedIn will become even more integral to the workplace. This fiscal year, **revenue has grown 20%** year over year, and **content sharing is up 50%.** Driven by the isolation of the pandemic, **live video streaming has risen nearly 90%** since March of 2020.
+The workplace trend of remote employment is here to stay[^3]. As remote work expands, virtual connections will become ever more powerful. As a business-focused social network, LinkedIn will become even more integral to the workplace. This fiscal year, **revenue has grown 20%** year over year, and **content sharing is up 50%.** Driven by the isolation of the pandemic, **live video streaming has risen nearly 90%** since March of 2020.
 
-LinkedIn is booming, and businesses of all sizes should get active on the platform or miss out on a growth opportunity. Thankfully, there are free and easy ways you can [build your personal brand](https://www.harveyramer.com/article/how-to-grow-linkedin/) and grow your business with LinkedIn.
+LinkedIn is booming, and businesses of all sizes should get active on the platform or miss out on a growth opportunity. Thankfully, there are free and easy ways you can build your personal brand[^4] and grow your business with LinkedIn.
 
 > We’ve found that 50% of LinkedIn members are more likely to purchase from a company they engage with on LinkedIn.  
-> — <cite>Lana Khavinson, [LinkedIn](https://business.linkedin.com/content/dam/business/marketing-solutions/global/en_US/campaigns/pdfs/Linkedin_SophGuide_020314.pdf)</cite>
+> — <cite>Lana Khavinson[^5]</cite>
 
 ## Create a LinkedIn Strategy
 
@@ -31,9 +31,9 @@ According to LinkedIn, consider sharing PowerPoints, PDFs, and Word Docs relevan
 
 ### How Employees Can Multiply Your Impact
 
-As you share interesting content on LinkedIn, let your employees know about it. Many employees are happy to share and discuss content their employer is sharing. Employee engagement can multiply your impact on social media. Set employee expectations with a [social media policy](https://www.linkedin.com/business/marketing/blog/social-media-marketing/how-to-create-a-social-media-policy-that-empowers-employee-advocates).
+As you share interesting content on LinkedIn, let your employees know about it. Many employees are happy to share and discuss content their employer is sharing. Employee engagement can multiply your impact on social media. Set employee expectations with a social media policy[^6].
 
-As your employees create content, **@mention** them, and reshare their posts. Everyone likes recognition. Use it to encourage social behavior that boosts the visibility of your employees and your business.
+As your employees create content, **@mention** them, and re-share their posts. Everyone likes recognition. Use it to encourage social behavior that boosts the visibility of your employees and your business.
 
 ### How to Join the Conversation
 
@@ -48,7 +48,7 @@ Sharing knowledge is an excellent way to promote your business, especially if yo
 Thought leadership is perhaps an over-used buzzword, but it can open doors for your business. Over time, publish a few articles of approximately 2,000 words in length that go deep and show your expertise. Avoid showing off. Invite people to understand your area of expertise. Give them something for free to help them understand your unique value.
 
 > Thought leadership is about sharing insights and ideas ... that provoke new ways of thinking, spark discussions and debates, and inspire action.  
-> — <cite>[The Sophisticated Marketer's Guide to Thought Leadership](https://business.linkedin.com/content/dam/business/marketing-solutions/global/en_US/campaigns/pdfs/sophisticated-guide-thought-leadership.pdf)</cite>
+> — <cite>LinkedIn[^7]</cite>
 
 The Sophisticated Marketer's Guide to Thought Leadership defines a **thought leader** clearly. A thought leader knows their topic well enough to form "a clear, unique and defensible point of view about it." They are willing to **freely share** that perspective.
 
@@ -125,7 +125,7 @@ Monitoring hashtags is an opportunity to learn from others. More importantly, th
 Doing the following things will encourage others to begin following your brand on LinkedIn. As this happens, the power of the platform to amplify your brand message will become apparent.
 
 > According to eMarketer, 72% of US business professionals think LinkedIn is the most effective platform to exchange professional ideas and interests, and 77% consider it to be the social platform where they expect to see professional content.  
-> — <cite>Paige Weiners, [Blue Fountain Media](https://www.bluefountainmedia.com/blog/grow-your-linkedin-business-page)</cite>
+> — <cite>Paige Weiners[^8]</cite>
 
 ### Employment History
 
@@ -162,17 +162,30 @@ A natural place to link to your LinkedIn page is from your email signature. I ha
 Post content frequently. In the busy professional world, silence often means invisibility. If customers forget about you, they will not buy from you.
 
 > Brands that post once a month gain followers six times faster than those that don't. Companies that post weekly see two times the engagement. Brands that post once a day gain even more traction.  
-> — <cite>Katie Sehl, [HootSuite](https://blog.hootsuite.com/linkedin-for-business/)</cite>
+> — <cite>Katie Sehl[^9]</cite>
 
 Mention brands, industry leaders, hashtags, and engaging content created by others. Be generous. You can educate your customers by pointing out any resources they may have missed.
 
 Find good times to post. Ideal times can vary by brand and industry, but there are general guidelines that can improve your effectiveness.
 
 > HootSuite research finds the best times to post on LinkedIn are 7:45 a.m., 10:45 a.m., 12:45 p.m., and 5:45 p.m. EST. The best day for B2B brands is Wednesday. For B2C brands, Mondays and Wednesdays are best.  
-> — <cite>Katie Sehl, [HootSuite](https://blog.hootsuite.com/linkedin-for-business/)</cite>
+> — <cite>Katie Sehl[^9]</cite>
 
 ## Grow Your Business with a LinkedIn Page
 
 The advice is easy to do, but it does take time and attention. Spend time. Engage your employees and stakeholders. When guided by your brand and vision, a LinkedIn page is a powerful extension of your marketing and sales efforts.
 
-Engage with the **706 million users** and **50 million companies** on LinkedIn. [Help the businesses that need what you offer](https://www.harveyramer.com/article/your-business-is-better/) succeed and prosper as a result.
+Engage with the **706 million users** and **50 million companies** on LinkedIn. You will help the businesses that need what you offer[^10] succeed and prosper as a result.
+
+## Footnotes
+
+[^1]: [LinkedIn, Pinterest, Instagram most trusted platforms; Facebook least](https://www.businessinsider.com/linkedin-pinterest-instagram-top-spots-2019-digital-trust-report-facebook-stays-last)
+[^2]: [About Us: LinkedIn](https://news.linkedin.com/about-us#1)
+[^3]: [remote employment is here to stay](https://www.techrepublic.com/article/remote-work-is-here-to-stay-gartner-finds/)
+[^4]: [9 Easy Ways You Can Boost Your LinkedIn Influence](https://www.harveyramer.com/article/how-to-grow-linkedin/)
+[^5]: [The Sophisticated Marketer's Guide to LinkedIn](https://business.linkedin.com/content/dam/business/marketing-solutions/global/en_US/campaigns/pdfs/Linkedin_SophGuide_020314.pdf)
+[^6]: [How to Create a Social Media Policy that Empowers Employee Advocacy](https://www.linkedin.com/business/marketing/blog/social-media-marketing/how-to-create-a-social-media-policy-that-empowers-employee-advocates)
+[^7]: [The Sophisticated Marketer's Guide to Thought Leadership](https://business.linkedin.com/content/dam/business/marketing-solutions/global/en_US/campaigns/pdfs/sophisticated-guide-thought-leadership.pdf)
+[^8]: [10 Ways to Grow Your LinkedIn Business Page Organically](https://www.bluefountainmedia.com/blog/grow-your-linkedin-business-page)
+[^9]: [How to Use LinkedIn for Business: A Step-by-Step Guide for Marketers](https://blog.hootsuite.com/linkedin-for-business/)
+[^10]: [Your Business Is Better, But for Whom?](https://www.harveyramer.com/article/your-business-is-better/)

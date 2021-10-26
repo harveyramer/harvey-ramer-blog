@@ -9,7 +9,7 @@ tags:
   - business
 ---
 
-LinkedIn offers tools that can grow your brand. Building credibility with your customers, prospects, and employees is not difficult. Begin by following my recommendations to tune your LinkedIn profile for maximum results. Then go on to [leverage a company page](https://www.harveyramer.com/article/free-easy-grow-linkedin/) to amplify your professional brand.
+LinkedIn offers tools that can grow your brand. Building credibility with your customers, prospects, and employees is not difficult. Begin by following my recommendations to tune your LinkedIn profile for maximum results. Then go on to leverage a company page[^1] to amplify your professional brand.
 
 These nine steps will expand your influence on LinkedIn:
 
@@ -32,7 +32,7 @@ Are you already on LinkedIn? Move along to the next point. If not, sign up to st
 3. Submit the form by clicking **Agree & Join.**
 4. Follow the prompts to complete the process.
 
-LinkedIn will prompt you to import contacts from your computer as part of signing up. It feels like an invasion of privacy. Allowing LinkedIn to access your contacts will help you make better use of the platform. If you feel uncomfortable with that step, please skip it. You can [import your contacts](https://www.linkedin.com/help/linkedin/answer/2909/creating-and-uploading-a-contacts-file?lang=en) later if you wish.
+LinkedIn will prompt you to import contacts from your computer as part of signing up. It feels like an invasion of privacy. Allowing LinkedIn to access your contacts will help you make better use of the platform. If you feel uncomfortable with that step, please skip it. You can import your contacts[^2] later if you wish.
 
 With that finished, continue reading to define your professional brand on LinkedIn.
 
@@ -137,7 +137,7 @@ Before we wrap up, here are some more tips on building connections:
 
 1. Share high-quality content related to your skills. Set a schedule and stick to it.
 2. Avoid off-topic posts. LinkedIn is not Facebook.
-3. [Mention](https://www.linkedin.com/help/linkedin/answer/34936/mention-people-in-your-posts?lang=en) colleagues to publicly congratulate them and the company.
+3. Mention[^3] colleagues to publicly congratulate them and the company.
 4. Share professional wins like completed projects or promotions.
 5. Find and contribute to groups related to your skills and interests.
 
@@ -149,4 +149,11 @@ This process was not complicated, but I am sure it felt like work. Thank you for
 
 Every day this month, find several valuable insights shared by your colleagues. Encourage them with comments and shares. We are no longer face-to-face, but we can still have a profound positive impact on each other.
 
-As a business owner, make it a high priority to use LinkedIn effectively to grow your professional brand. As you clarify who you are and who you serve, [your business will flourish](https://www.harveyramer.com/article/your-business-is-better/).
+As a business owner, make it a high priority to use LinkedIn effectively to grow your professional brand. As you clarify who you are and who you serve, your business will flourish[^4].
+
+## Footnotes
+
+[^1]: [Free and Easy Ways You Can Grow Your Business with a LinkedIn Page](https://www.harveyramer.com/article/free-easy-grow-linkedin/)
+[^2]: [Creating and Uploading a Contacts File: LinkedIn](https://www.linkedin.com/help/linkedin/answer/2909/creating-and-uploading-a-contacts-file?lang=en)
+[^3]: [Mention People in Your Posts: LinkedIn](https://www.linkedin.com/help/linkedin/answer/34936/mention-people-in-your-posts?lang=en)
+[^4]: [Your Business Is Better, But for Whom?](https://www.harveyramer.com/article/your-business-is-better/)

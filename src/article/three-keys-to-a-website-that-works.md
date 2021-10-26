@@ -31,7 +31,7 @@ A successful website uses research to find phrases your potential customers are 
 
 ### Fast Websites Get Results
 
-Jane's website looks good, but it does not load quickly enough for Google to prioritize it as high-quality content. Google's research shows that [more than half](https://developers.google.com/web/updates/2018/07/search-ads-speed) of mobile users abandon a page if it has not loaded in 3 seconds or less. Speed is an indicator of quality, and Google buries slow websites deep in their search results. Since Jane's website is new, it hasn't been around long enough to reassure the search algorithm it _really is_ good.
+Jane's website looks good, but it does not load quickly enough for Google to prioritize it as high-quality content. Google's research shows that more than half[^1] of mobile users abandon a page if it has not loaded in 3 seconds or less. Speed is an indicator of quality, and Google buries slow websites deep in their search results. Since Jane's website is new, it hasn't been around long enough to reassure the search algorithm it _really is_ good.
 
 To get herself out of this hole, Jane must work hard to make sure her site loads in under three seconds on a 4G connection. Jane's customers demand it. Any perceptible wait time makes her customer more likely to leave without making a purchase. Even with a fast website, however, Jane's troubles are not over.
 
@@ -50,3 +50,7 @@ After Jane makes three simple changes, her business slowly improves. Search engi
 3. focusing your **message.**
 
 When the customer is at the center of all you do, you will get better results over time.
+
+## Footnotes
+
+[^1]: "For many sites this equates to a huge missed opportunity, especially when more than half of visits are abandoned if a mobile page takes over 3 seconds to load." — [Speed is now a landing page factor for Google Search and Ads ](https://developers.google.com/web/updates/2018/07/search-ads-speed). Google, 09/23/2019.
