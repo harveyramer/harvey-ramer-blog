@@ -9,16 +9,16 @@ tags:
   - business
 ---
 
-Beside me are books filled with business advice and technological innovations. A laptop with an internet connection enables me to write this article. Mind-blowing discoveries and groundbreaking ideas are at my finger-tips.
+Beside me are books filled with business advice and technological innovations. A laptop with an internet connection enables me to write this article. Mind-blowing discoveries and groundbreaking ideas are at my fingertips.
 
 We live amid an [information explosion](https://en.wikipedia.org/wiki/Information_explosion). We have more knowledge available to us now than at any other time in history. Yet, many of us fail to enjoy its benefits. Why is this?
 
 > "You can't stop the waves, but you can learn to surf."  
 > — John Kabat-Zinn
 
-I cannot speak for everyone, but I have noticed a pattern in my own life. I am fascinated with ideas that have potential. I spend time and effort to learn how I can apply those ideas. But instead of taking immediate action, I file away a new strategy or tactic for future use.
+I cannot speak for everyone, but I have noticed a pattern in my own life. I am fascinated with ideas that have potential. I spend time and put forth significant effort learning how to apply those ideas. But instead of taking immediate action, I file away a new strategy or tactic for future use.
 
-We learn to collect ideas in school. Lessons filled our heads with interesting and useful ideas. But, they demanded nothing of us in return. As adults, we strive to keep up. We memorize more and more facts to deal with the unrelenting volume of ideas pouring into our lives. Like unrelenting breakers, the information rolls over us. Due to all this [information overload](https://en.wikipedia.org/wiki/Information_overload), some of us stop learning. We surrender.
+We became idea collectors in school, and our teachers cheered us on. Their lessons filled our heads with fascinating ideas. But they often demanded nothing of us in return except the ability to remember concepts for a test. As adults, we strive to keep up that work. We memorize more and more facts to deal with the unrelenting volume of ideas pouring into our lives. Like unrelenting breakers, the information rolls over us. Due to all this [information overload](https://en.wikipedia.org/wiki/Information_overload), some of us stop learning. We surrender.
 
 There is an alternative. We commit to applying what we learn. We equate learning with action. We no longer seek to master the memorization of unapplied ideas.
 
