@@ -24,11 +24,11 @@ In short, there is nothing wrong with CloudFormation. But maintaining CloudForma
 
 ## A CDK Overview
 
-At the heart of CDK is a [library of Constructs](https://docs.aws.amazon.com/cdk/latest/guide/constructs.html). These structural building blocks represent cloud components. Constructs contain all the information needed to generate a valid CloudFormation template. Developers compose constructs to define higher level components, much like application code.
+At the heart of CDK is a library of Constructs[^1]. These structural building blocks represent cloud components. Constructs contain all the information needed to generate a valid CloudFormation template. Developers compose constructs to define higher level components, much like application code.
 
 ## Trying It Out for Yourself
 
-If you want test CDK for your own Angular projects, I have simplified the process with a [Github repo.](https://github.com/harveyramer/deploy-angular-with-cdk)
+If you want test CDK for your own Angular projects,[^2] I have simplified the process with a [Github repo.](https://github.com/harveyramer/deploy-angular-with-cdk)
 
 1. Clone the repo
 2. Follow the instructions in the Readme file
@@ -36,8 +36,7 @@ If you want test CDK for your own Angular projects, I have simplified the proces
 
 Using this project, you will have an Angular application hosted on S3 in an hour or two. The initial deployment takes about 30 minutes to provision AWS infrastructure.
 
-If you find bugs or have questions, please [contact me](http://localhost:8000/contact).
+## Footnotes
 
-## Other Resources
-
-[Elad Ben-Israel](https://twitter.com/intent/user?screen_name=emeshbi) from AWS offers a CDK Intro Workshop in [TypeScript](https://cdkworkshop.com/20-typescript.html), [Python](https://cdkworkshop.com/30-python.html), [.NET](https://cdkworkshop.com/40-dotnet.html), and [Java](https://cdkworkshop.com/50-java.html). Use this workshop to learn more about how to use CDK to manage your AWS infrastructure as code.
+[^1]: [AWS CDK Library of Constructs](https://docs.aws.amazon.com/cdk/latest/guide/constructs.html)
+[^2]: [Elad Ben-Israel](https://twitter.com/intent/user?screen_name=emeshbi) from AWS offers a CDK Intro Workshop in [TypeScript](https://cdkworkshop.com/20-typescript.html), [Python](https://cdkworkshop.com/30-python.html), [.NET](https://cdkworkshop.com/40-dotnet.html), and [Java](https://cdkworkshop.com/50-java.html). Use his workshop to learn more about how to use CDK to manage your AWS infrastructure as code.
