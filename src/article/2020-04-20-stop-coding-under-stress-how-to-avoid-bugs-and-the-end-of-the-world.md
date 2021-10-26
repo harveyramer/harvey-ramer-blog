@@ -1,5 +1,6 @@
 ---
 layout: post
+pinned: true
 title: "Stop Coding Under Stress: How to Avoid Bugs and the End of the World"
 meta_title: Stop Coding Under Stress
 date: 2020-04-20T04:05:51.862Z
