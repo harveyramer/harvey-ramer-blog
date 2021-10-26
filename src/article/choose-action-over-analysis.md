@@ -18,7 +18,7 @@ We live amid an [information explosion](https://en.wikipedia.org/wiki/Informatio
 
 I cannot speak for everyone, but I have noticed a pattern in my own life. I am fascinated with ideas that have potential. I spend time and put forth significant effort learning how to apply those ideas. But instead of taking immediate action, I file away a new strategy or tactic for future use.
 
-We became idea collectors in school, and our teachers cheered us on. Their lessons filled our heads with fascinating ideas. But they often demanded nothing of us in return except the ability to remember concepts for a test. As adults, we strive to keep up that work. We memorize more and more facts to deal with the unrelenting volume of ideas pouring into our lives. Like unrelenting breakers, the information rolls over us. Due to all this [information overload](https://en.wikipedia.org/wiki/Information_overload), some of us stop learning. We surrender.
+We became idea collectors in school, and our teachers cheered us on. Their lessons filled our heads with fascinating ideas, and they often demanded nothing of us in return except the ability to remember concepts for a test. As adults, we strive to keep up that work. We memorize more and more facts to deal with the unrelenting volume of ideas pouring into our lives. Like unrelenting breakers, the information rolls over us. Due to all this [information overload](https://en.wikipedia.org/wiki/Information_overload), some of us stop learning. We surrender.
 
 There is an alternative. We commit to applying what we learn. We equate learning with action. We no longer seek to master the memorization of unapplied ideas.
 
