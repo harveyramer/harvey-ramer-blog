@@ -99,6 +99,68 @@ you’ll end up someplace else.”&lt;br /&gt;
     </entry>
     
     <entry>
+      <title>Core Web Vitals for Business Owners Who Want to Keep Their Search Rankings
+        ></title>
+      <link href="https://www.harveyramer.com/article/core-web-vitals-intro/"/>
+      <updated>2021-04-09T00:00:00Z</updated>
+      <id>https://www.harveyramer.com/article/core-web-vitals-intro/</id>
+      <content type="html">&lt;p&gt;Measuring a website’s user experience has always been a challenge. Which metrics should we measure, and what tools give us accurate information? To fix this problem, Google has introduced Core Web Vitals—the metrics they use to evaluate your website’s user experience.&lt;/p&gt;
+&lt;p&gt;Google is reporting these metrics in all of its monitoring and analytics tools. They want it to be easy for non-technical users to evaluate their website without recruiting technical help. That is a critical breakthrough, especially since in May 2021, &lt;a href=&quot;https://developers.google.com/search/blog/2020/11/timing-for-page-experience&quot;&gt;web vitals began to influence your ranking&lt;/a&gt; in the Google search results.&lt;/p&gt;
+&lt;h2&gt;What Are Core Web Vitals?&lt;/h2&gt;
+&lt;p&gt;Core Web Vitals are the statistics Google believes represent a quality web page user experience. They measure three aspects of performance:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Loading (LCP - Largest Contentful Paint)&lt;/li&gt;
+&lt;li&gt;Interactivity (FID - First Input Delay)&lt;/li&gt;
+&lt;li&gt;Visual Stability (CLS - Cumulative Layout Shift)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;According to Google, websites should:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Be finished with LCP (Largest Contentful Paint) in 2.5 seconds or less&lt;/li&gt;
+&lt;li&gt;Have a FID (First Input Delay) of fewer than 100 milliseconds&lt;/li&gt;
+&lt;li&gt;Maintain a CLS (Cumulative Layout Shift) of less than 0.1.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;How Can I Assess My Website?&lt;/h2&gt;
+&lt;p&gt;The best tool for beginners is &lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/&quot;&gt;PageSpeed Insights&lt;/a&gt;. It is easy to use, but it provides detailed technical information you can share with others.&lt;/p&gt;
+&lt;p&gt;Your initial website performance may be discouraging. But without taking a measurement, you’ll never know how to improve. After all, we can only improve what we measure.&lt;/p&gt;
+&lt;p&gt;Go ahead and test your website now. Congratulations! You’ve taken the first step toward a better user experience for your customers.&lt;/p&gt;
+&lt;h2&gt;How Can I Boost My Website’s Speed?&lt;/h2&gt;
+&lt;p&gt;While PageSpeed Insights is easy for non-technical people to use, improving your results requires expertise. The factors that affect performance include the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Server load and computing power&lt;/li&gt;
+&lt;li&gt;Network speed and latency&lt;/li&gt;
+&lt;li&gt;The number of images, their size and optimization level&lt;/li&gt;
+&lt;li&gt;The amount of JavaScript and CSS, caching, and minification&lt;/li&gt;
+&lt;li&gt;Third-party scripts that may load slowly and prevent the site from loading&lt;/li&gt;
+&lt;li&gt;Embedded code that should be in external files for minification and asynchronous loading&lt;/li&gt;
+&lt;li&gt;Web fonts&lt;/li&gt;
+&lt;li&gt;Audio and video files&lt;/li&gt;
+&lt;li&gt;DNS lookups&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With your speed test results in hand, your IT resources can analyze them and prioritize the needed improvements. If you don’t have internal expertise, talk to a company like FlareMark. We are happy to help.&lt;/p&gt;
+&lt;p&gt;Google has shared some technical guidance&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://www.harveyramer.com/article/core-web-vitals-intro/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; on ways to measure web vitals you may want to review before you begin.&lt;/p&gt;
+&lt;h2&gt;Will Poor Website Performance Hurt My Business?&lt;/h2&gt;
+&lt;p&gt;As I mentioned above, Google has been using Core Web Vitals as a ranking signal since May 2021. How much a site’s slowness hurts its search results is hard to say. Because Google values websites based on age and reputation, the ranking changes may roll out gradually. However, Google plans to highlight fast sites in the search results. Not having a “Fast Website” label may impede click-through even if you maintain an excellent search position.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“… we plan to test a visual indicator that highlights pages in search results that have great page experience.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A new era of emphasis on page performance has arrived. And upgrading the server behind a poorly engineered website will not resolve the problem. Google measures everything from the server-side to the final animation in your web browser. It is time to get serious about website engineering from the back end to the front end if you want to stand out from the crowd. Performance is more important than ever for search engine optimization.&lt;/p&gt;
+&lt;p&gt;But how should you prioritize Core Web Vitals for your business?&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://www.harveyramer.com/article/core-web-vitals-intro/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt; It all depends on the user experience of your customers. This means what it takes to be fast will vary from company to company. If, for example, your business services rural customers who do not have a fast connection, your website may need to be considerably lighter than a tech company focused on a metropolitan region.&lt;/p&gt;
+&lt;h2&gt;What Should I Do Now?&lt;/h2&gt;
+&lt;p&gt;Web vitals is a critical part of your website’s success as of May 2021. The first step is to measure and report those statistics to your team. Then, recruit help to create to a more performant website. Making improvements in website performance is often complex, but you can get started today. Don’t wait until your rankings drop in the search engine results.&lt;/p&gt;
+&lt;h2&gt;Footnotes&lt;/h2&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://web.dev/vitals-measurement-getting-started/&quot;&gt;Getting started with measuring Web Vitals&lt;/a&gt;. Google, May 27, 2020. &lt;a href=&quot;https://www.harveyramer.com/article/core-web-vitals-intro/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://web.dev/vitals-business-impact/&quot;&gt;The business impact of Core Web Vitals&lt;/a&gt;. Google, May 18, 2021. &lt;a href=&quot;https://www.harveyramer.com/article/core-web-vitals-intro/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+    </entry>
+    
+    <entry>
       <title>3 Keys to a Useful Website That Actually Works
         ></title>
       <link href="https://www.harveyramer.com/article/three-keys-to-a-website-that-works/"/>
