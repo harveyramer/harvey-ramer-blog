@@ -2,6 +2,7 @@
 layout: post
 title: "Core Web Vitals for Business Owners Who Want to Keep Their Search Rankings"
 meta_title: "Core Web Vitals Affect Your Search Rankings"
+author: Harvey Ramer
 date: 2021-04-09
 social_quote: Measuring a website's user experience has always been a challenge. Which metrics should we measure, and what tools can give us accurate information? To fix this problem, Google has introduced Core Web Vitals—the metrics they use to evaluate your website's user experience.
 description: Start measuring Google's Core Web Vitals for your website now. Then you'll avoid being surprised when your Google rankings begin to reflect website performance.
@@ -11,7 +12,7 @@ tags:
 
 Measuring a website's user experience has always been a challenge. Which metrics should we measure, and what tools give us accurate information? To fix this problem, Google has introduced Core Web Vitals—the metrics they use to evaluate your website's user experience.
 
-Google is reporting these metrics in all of its monitoring and analytics tools. They want it to be easy for non-technical users to evaluate their website without recruiting technical help. That is a critical breakthrough, especially since in May 2021, [web vitals began to influence your ranking](https://developers.google.com/search/blog/2020/11/timing-for-page-experience) in the Google search results.
+Google is reporting these metrics in all of its monitoring and analytics tools. They want it to be easy for non-technical users to evaluate their website without recruiting technical help. That is a critical breakthrough, especially since in May 2021, web vitals began to influence your ranking[^1] in the Google search results.
 
 ## What Are Core Web Vitals?
 
@@ -51,7 +52,7 @@ While PageSpeed Insights is easy for non-technical people to use, improving your
 
 With your speed test results in hand, your IT resources can analyze them and prioritize the needed improvements. If you don't have internal expertise, talk to a company like FlareMark. We are happy to help.
 
-Google has shared some technical guidance[^1] on ways to measure web vitals you may want to review before you begin.
+Google has shared some technical guidance[^2] on ways to measure web vitals you may want to review before you begin.
 
 ## Will Poor Website Performance Hurt My Business?
 
@@ -61,7 +62,7 @@ As I mentioned above, Google has been using Core Web Vitals as a ranking signal 
 
 A new era of emphasis on page performance has arrived. And upgrading the server behind a poorly engineered website will not resolve the problem. Google measures everything from the server-side to the final animation in your web browser. It is time to get serious about website engineering from the back end to the front end if you want to stand out from the crowd. Performance is more important than ever for search engine optimization.
 
-But how should you prioritize Core Web Vitals for your business?[^2] It all depends on the user experience of your customers. This means what it takes to be fast will vary from company to company. If, for example, your business services rural customers who do not have a fast connection, your website may need to be considerably lighter than a tech company focused on a metropolitan region.
+But how should you prioritize Core Web Vitals for your business?[^3] It all depends on the user experience of your customers. This means what it takes to be fast will vary from company to company. If, for example, your business services rural customers who do not have a fast connection, your website may need to be considerably lighter than a tech company focused on a metropolitan region.
 
 ## What Should I Do Now?
 
@@ -69,5 +70,6 @@ Web vitals is a critical part of your website's success as of May 2021. The firs
 
 ## Footnotes
 
-[^1]: [Getting started with measuring Web Vitals](https://web.dev/vitals-measurement-getting-started/). Google, May 27, 2020.
-[^2]: [The business impact of Core Web Vitals](https://web.dev/vitals-business-impact/). Google, May 18, 2021.
+[^1]: [Timing for bringing page experience to Google Search](https://developers.google.com/search/blog/2020/11/timing-for-page-experience). Google, November 10, 2020.
+[^2]: [Getting started with measuring Web Vitals](https://web.dev/vitals-measurement-getting-started/). Google, May 27, 2020.
+[^3]: [The business impact of Core Web Vitals](https://web.dev/vitals-business-impact/). Google, May 18, 2021.

@@ -58,7 +58,7 @@ main > p:first-of-type:first-letter {
   line-height: 40px;
   padding-top: 10px;
   padding-right: 3px;
-  padding-left: 3px; 
+  padding-left: 3px;
 }
 
 main ul,
@@ -148,11 +148,17 @@ blockquote {
 }
 
 .excerpt {
-  margin:.25rem 0 0;
-  font-size:.92rem;
+  margin: 0.25rem 0 0;
+  font-size: 0.92rem;
 }
 .excerpt .meta {
-  padding-top: .5rem;
-  display:block;
+  padding-top: 0.5rem;
+  display: block;
   /* border-top: 1px solid rgb(213, 213, 213); */
+}
+
+sup {
+  padding-left: 0.1em;
+  vertical-align: 0.4em;
+  font-size: 0.86em;
 }
