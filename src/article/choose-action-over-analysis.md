@@ -29,7 +29,7 @@ When an idea catches our attention, we ask, "Am I ready to apply this idea if it
 
 We stop learning about everything others tell us we should do. Instead, we focus on the next valuable thing for our business or personal growth. We focus on learning those things that allow us to make progress toward our goal.
 
-What is your next business challenge? Are you committed to taking action? Succeed by learning what you need to know to overcome it step by step. Get started by taking three steps to [make your website work better](https://www.harveyramer.com/article/three-ways-to-boost-website-results/) for your business.
+What is your next business challenge? Are you committed to taking action? Succeed by learning what you need to know to overcome it step by step. Get started by taking three steps to make your website work better[^3] for your business.
 
 ## Footnotes
 
