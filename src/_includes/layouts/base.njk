@@ -44,10 +44,9 @@ description: Harvey Ramer, a web developer, shares his thoughts on technology, b
     {% if description %}
       <meta name="description" content="{{description}}">
     {% endif %}
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
       {{reset | cssmin | safe}}
+      {{fonts  | cssmin | safe}}
       {{typography  | cssmin | safe}}
       {{layout | cssmin | safe}}
       {{components | cssmin | safe}}
