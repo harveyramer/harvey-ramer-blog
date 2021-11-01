@@ -18,17 +18,8 @@ footer {
   padding: 0 1rem;
   flex-shrink: 0;
 }
-/* .container {
-  max-width: 35em;
-  margin: 0 auto;
-  position: relative;
-  min-height: 100vh;
+
+img {
+  max-width: 100%;
+  height: auto;
 }
-main {
-  margin-top: 3em;
-  padding: 0 1rem;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-} */
