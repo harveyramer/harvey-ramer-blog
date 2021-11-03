@@ -7,6 +7,7 @@ social_quote: This tutorial will get you started with a basic CI/CD workflow usi
 description: This tutorial will get you started with a basic CI/CD workflow using Github Actions to deploy a Web application to Azure.
 tags:
   - technology
+  - tutorials
 ---
 
 This tutorial will get you started with a basic CI/CD workflow using Github Actions to deploy a Web application to Azure.
