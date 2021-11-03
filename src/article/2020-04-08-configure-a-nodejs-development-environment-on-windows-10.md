@@ -9,6 +9,7 @@ description: >-
   Don't get distracted by setting up a development environment on your way to learning Node.js. Everything you need to install Node.js and begin writing server-side JavaScript on Windows 10 is right here.
 tags:
   - technology
+  - tutorials
 ---
 
 ## Overview
