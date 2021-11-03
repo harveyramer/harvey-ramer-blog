@@ -8,6 +8,7 @@ description: >-
   Deploying applications to the cloud can be intimidating. Don't worry though, this guide will stick to the bare essentials. When you've finished here, you will have a web application running on Azure.
 tags:
   - technology
+  - tutorials
 ---
 
 Deploying applications to the cloud can be intimidating. Don't worry though, this guide will stick to the bare essentials. When you've finished here, you will have a web application running on Azure.
