@@ -32,11 +32,15 @@
       <title>{{ post.data.title }}
         {% if post.data.pinned %}
            - FEATURED
-          {% endif %}</title>
+          {% endif %}
+      </title>
       <link href="{{ absolutePostUrl }}"/>
       <updated>{{ post.date | dateToRfc3339 }}</updated>
       <id>{{ absolutePostUrl }}</id>
-      <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+      <content type="html">
+        {{ post.fileSlug | ogFeedImg }}
+        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+      </content>
     </entry>
   {%- endfor %}
 </feed>
