@@ -62,6 +62,15 @@ module.exports = config => {
     }).minify(code).styles;
   });
   config.addFilter("keys", obj => Object.keys(obj));
+  config.addNunjucksAsyncFilter("ogFeedImg", (slug, callback) => {
+    ogImg.get(slug).then((value) => {
+      const img = value ? `<p><img src="${value}" alt="${slug}" /></p>` : '';
+      callback(null, img);
+    }).catch((err) => {
+      console.error(err);
+      callback(null, null);
+    });
+  });
   config.addNunjucksAsyncFilter("ogImg", (meta, callback) => {
     ogImg.make(meta).then((value) => {
       callback(null, value);
