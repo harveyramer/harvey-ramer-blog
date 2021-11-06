@@ -1,6 +1,5 @@
 ---
 layout: post
-pinned: true
 title: Configure a Node.js Development Environment on Windows 10
 date: 2020-04-08T22:36:23.975Z
 author: Harvey Ramer
