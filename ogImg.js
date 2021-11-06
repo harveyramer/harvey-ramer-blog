@@ -26,7 +26,7 @@ module.exports = {
       cloudinary.search
         .expression(`resource_type:image AND filename=${filename}`)
         .max_results(1)
-        .execute().then(result => resolve(result.resources[0]?.secure_url));
+        .execute().then(result => resolve(result.resources[0] ? result.resources[0].secure_url : ''));
     });
   },
   make: ({ quote, slug, title }) => {
