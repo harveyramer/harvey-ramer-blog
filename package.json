@@ -36,7 +36,7 @@
     "@netlify/functions": "^0.7.2",
     "@types/node": "^16.11.1",
     "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
-    "clean-css": "^5.2.1",
+    "clean-css": "^5.2.2",
     "cloudinary": "^1.27.1",
     "dotenv": "^10.0.0",
     "streamifier": "^0.1.1",
