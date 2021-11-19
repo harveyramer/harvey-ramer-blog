@@ -5,14 +5,14 @@ date: 2021-04-17
 pinned: true
 author: Harvey Ramer
 social_quote: Every one of us has 24 hours available each day. Whether we realize it or not, we allocate those hours to the activities we value most. So perhaps when we say we need more time, we aren't discussing time at all.
-description: Every one of us has 24 hours available each day. Whether we realize it or not, we allocate those hours to the activities we value most. So perhaps when we say we need more time, we aren't discussing time at all.
+description: Productivity is hard, but the facts are simple. Every one of us has 24 hours available each day. Whether we realize it or not, we allocate those hours to the activities we value most.
 tags:
   - business
 ---
 
 _I'll do that when I have more time._ We all say those words, but what do we really mean by them?
 
-Every one of us has 24 hours available each day. And whether we realize it or not, we allocate those hours to the activities we value most. So perhaps when we say we need more time, we aren't discussing time at all. Maybe we know deep down we are ignoring the things we value most. We have fallen into a routine of reacting to life instead of doing the work that matters most.
+Productivity is hard, but the facts are simple. Every one of us has 24 hours available each day. And whether we realize it or not, we allocate those hours to the activities we value most. So perhaps when we say we need more time, we aren't discussing time at all. Maybe we know deep down we are ignoring the things we value most. We have fallen into a routine of reacting to life instead of doing the work that matters most.
 
 ## Reactive or Proactive?
 
