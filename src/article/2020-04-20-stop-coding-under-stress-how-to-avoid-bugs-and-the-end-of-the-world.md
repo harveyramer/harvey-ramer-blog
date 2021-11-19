@@ -12,9 +12,9 @@ tags:
   - business
 ---
 
-Software engineers and web developers spend most of their time sitting and thinking. How can that be stressful? Vague requirements, unrealistic expectations, and a humorless outlook can put programmers at risk.
+Software engineers spend most of their time sitting and thinking. Web developers do the same. So how can jobs like this be stressful? Vague requirements, unrealistic expectations, and a humorless outlook can put any programmer at risk. Stress affects technical people profoundly.
 
-Unmanaged stress is a killer. Its effects are often discussed in the media[^1] and scientific journals[^2], but many of us try to live as though it doesn't exist. "Why am I irritable?" we ask, as excess cortisol floods through our bloodstream and our brain's amygdala arouses a fight-or-flight reflex. Our heart starts thumping, beads of sweat form on our brow, and our minds shut out everything except the object of our fear.
+The nasty effects of unmanaged stress are often discussed in the media[^1] and scientific journals[^2], but many of us try to live as though it doesn't exist. "Why am I irritable?" we ask, as excess cortisol floods through our bloodstream and our brain's amygdala arouses a fight-or-flight reflex. Our heart starts thumping, beads of sweat form on our brow, and our minds shut out everything except the object of our fear.
 
 Fight-or-flight may work when fleeing a grizzly bear (though experts advise against it[^3]). But it fails us when the object of our stress is an abstract concept. To where must one flee to avoid a feeling of overwhelm?
 
