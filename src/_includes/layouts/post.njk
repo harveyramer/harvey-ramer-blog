@@ -5,8 +5,8 @@ layout: base
 <main>
   <span class="meta">
     <time class="block" datetime="{{ date | w3DateFilter  }}">
-        {{ date | dateDisplay }}
-      </time> — 
+      {{ date | dateDisplay }}
+    </time> — 
     <span class="tags">
       {%- for tag in tags -%}
         {%if loop.index0 > 0%}, {%endif%}
@@ -14,8 +14,13 @@ layout: base
         {%- endfor -%}
       </span>
     </span>
+
     <h1>{{ title }}</h1>
+
     {{ content | safe }}
+
+    {% include "../partials/share.njk" %}
+
     {%- for a in authors -%}
       {% if author === a.name%}
         {{authorCard(a)}}

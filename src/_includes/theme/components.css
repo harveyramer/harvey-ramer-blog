@@ -38,11 +38,29 @@
   margin-top: 0.5rem;
   text-align: right;
 }
-.author .social a {
+
+.share-this {
+  margin-top: 3em;
+  text-align: center;
+  padding: 1em 0;
+  background-color: #f5f5f5;
+  border: 1px solid #e4e4e4;
+  border-radius: 0.7em;
+}
+
+.author .social a,
+.share-this a {
   display: inline-block;
-  width: 1rem;
+  width: 1.25rem;
   margin: 0.25rem;
   color: inherit;
+}
+.share-this a {
+  width: 2rem;
+  margin: 0.25rem;
+}
+.share-this h5 {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 450px) {
@@ -67,7 +85,8 @@
   .author .authorName {
     text-align: center;
   }
-  .author .social {
+  .author .social,
+  .share-this {
     text-align: center;
   }
 }
