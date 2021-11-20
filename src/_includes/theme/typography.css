@@ -127,6 +127,7 @@ nav h5 {
 nav li {
   display: inline-block;
   margin-right: 0.5em;
+  margin-bottom: 0.5em;
   line-height: 2.2em;
 }
 nav a {
