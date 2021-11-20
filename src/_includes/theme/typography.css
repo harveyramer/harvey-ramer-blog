@@ -118,7 +118,8 @@ nav [aria-current="page"]:active {
   background: rgb(42, 42, 42);
   color: #fff;
 }
-nav h5 {
+nav h5,
+.share-this h5 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin-top: 1.75em;
