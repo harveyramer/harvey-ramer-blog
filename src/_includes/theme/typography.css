@@ -41,6 +41,7 @@ main p {
   text-align: justify;
   text-indent: 1.5em;
 }
+main blockquote { text-align: left; }
 main h2 + p,
 main h3 + p,
 main h4 + p,
