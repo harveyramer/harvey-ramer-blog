@@ -42,8 +42,8 @@ main p {
   text-indent: 1.5em;
 }
 main blockquote,
-main blockquote p { 
-  text-align: left; 
+main blockquote p {
+  text-align: left;
 }
 main h2 + p,
 main h3 + p,
@@ -57,12 +57,11 @@ main p:first-of-type {
 main > p:first-of-type:first-letter {
   color: rgb(53, 53, 53);
   float: left;
-  font-size: 3.04em;
-  font-size: 70px;
-  line-height: 40px;
-  padding-top: 10px;
-  padding-right: 3px;
-  padding-left: 3px;
+  font-size: 3.9em;
+  line-height: 0.7;
+  padding: 0.07em;
+  padding-left: 0.03em;
+  padding-bottom: 0;
 }
 
 main ul,
@@ -150,7 +149,7 @@ nav a:active {
 blockquote {
   padding: 1em;
   font-style: italic;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .excerpt {
