@@ -18,6 +18,9 @@ footer {
   padding: 0 1rem;
   flex-shrink: 0;
 }
+footer .legal {
+  font-size: 0.8em;
+}
 
 img {
   max-width: 100%;
