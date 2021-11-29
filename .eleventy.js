@@ -45,8 +45,11 @@ module.exports = config => {
   config.addPlugin(fortawesomeBrandsPlugin);
 
   // Shortcodes
-
   config.addShortcode('fortawesomeSolid', fortawesomeSolidShortcode);
+  config.addShortcode("thisYear", () => {
+    const date = new Date();
+    return date.getFullYear().toString();
+  });
 
   // Filters
   config.addFilter("dateDisplay", require("./filters/dates.js"))
