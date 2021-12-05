@@ -33,7 +33,7 @@
     "markdown-it-mathjax3": "^3.0.0-0"
   },
   "dependencies": {
-    "@netlify/functions": "^0.7.2",
+    "@netlify/functions": "^0.8.0",
     "@types/node": "^16.11.1",
     "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
     "clean-css": "^5.2.1",
