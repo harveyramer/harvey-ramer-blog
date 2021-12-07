@@ -42,7 +42,8 @@ main p {
   text-indent: 1.5em;
 }
 main blockquote,
-main blockquote p {
+main blockquote p,
+main span.meta {
   text-align: left;
 }
 main h2 + p,
