@@ -5,7 +5,7 @@ date: 2020-04-26T04:45:00.000Z
 author: Harvey Ramer
 social_quote: Deploying applications to the cloud can be intimidating. Don't worry though, this guide will stick to the bare essentials. When you've finished here, you will have a web application running on Azure.
 description: >-
-  Deploying applications to the cloud can be intimidating. Don't worry though, this guide will stick to the bare essentials. When you've finished here, you will have a web application running on Azure.
+  When you've finished here, you will have a Node.js web application running on Azure.
 tags:
   - technology
   - tutorials
@@ -89,7 +89,7 @@ Adding a new application setting causes the App Service to restart, which can ta
 
 Since it takes several minutes for your app to warm up after being deployed to Azure, it helps to monitor the Log Stream for your application. To do that, Expand your application's _Logs (Read-only)_ folder and click _Connect to Log Stream..._ An output panel in the terminal will allow you to monitor your application's progress.
 
-![](https://www.harveyramer.com/img/monitor-application-logs.png)
+![Web application log monitoring.](https://www.harveyramer.com/img/monitor-application-logs.png)
 
 When you see _Example app listening at http://localhost:8080_ your app is warmed up and ready to take some requests.
 

@@ -5,7 +5,7 @@ date: 2021-04-17
 pinned: true
 author: Harvey Ramer
 social_quote: Productivity is hard, but the facts are simple. Every one of us has 24 hours available each day. Whether we realize it or not, we allocate those hours to the activities we value most. So perhaps when we say we need more time, we aren't discussing time at all.
-description: Productivity is hard, but the facts are simple. Every one of us has 24 hours available each day. Whether we realize it or not, we allocate those hours to the activities we value most.
+description: Productivity is hard, but the facts are simple. Every one of us has 24 hours available each day.
 tags:
   - business
 ---

@@ -873,7 +873,7 @@ git push
 &lt;p&gt;Adding a new application setting causes the App Service to restart, which can take several minutes. If your Web app does not start in 10 minutes, see &lt;a href=&quot;https://www.harveyramer.com/article/2020-04-26-get-the-drop-on-the-cloud-nodejs-and-azure/#troubleshooting&quot;&gt;Troubleshooting&lt;/a&gt; below.&lt;/p&gt;
 &lt;h3&gt;Monitoring your App with Logs&lt;/h3&gt;
 &lt;p&gt;Since it takes several minutes for your app to warm up after being deployed to Azure, it helps to monitor the Log Stream for your application. To do that, Expand your application’s &lt;em&gt;Logs (Read-only)&lt;/em&gt; folder and click &lt;em&gt;Connect to Log Stream…&lt;/em&gt; An output panel in the terminal will allow you to monitor your application’s progress.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/monitor-application-logs.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/monitor-application-logs.png&quot; alt=&quot;Web application log monitoring.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;When you see &lt;em&gt;Example app listening at &lt;a href=&quot;http://localhost:8080/&quot;&gt;http://localhost:8080&lt;/a&gt;&lt;/em&gt; your app is warmed up and ready to take some requests.&lt;/p&gt;
 &lt;h3&gt;Success&lt;/h3&gt;
 &lt;p&gt;Your first deployment of a Web app with Node.js to Azure can be a bit tricky. When you succeed, your &lt;a href=&quot;https://covid19tutorial.azurewebsites.net/&quot;&gt;COVID-19 Tracker&lt;/a&gt; will be live for the world to see. If you want to share it with friends, you may want to upgrade from the &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage&quot;&gt;free App Service Plan&lt;/a&gt;, which only runs for an hour each day.&lt;/p&gt;
@@ -1777,25 +1777,25 @@ router.get(&amp;quot;/&amp;quot;, (req, res) =&amp;gt; {
 &lt;h2&gt;Install Chocolatey: the Windows Package Manager&lt;/h2&gt;
 &lt;p class=&quot;alert danger&quot;&gt;I no longer recommend Chocolatey due to security and maintenance concerns. Please consider alternatives. One I have used with success is &lt;a href=&quot;https://github.com/coreybutler/nvm-windows&quot;&gt;NVM-Windows&lt;/a&gt;. If you choose that option, you can skip to &lt;a href=&quot;https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/#install-node&quot;&gt;Install Node&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://chocolatey.org/&quot;&gt;Chocolatey&lt;/a&gt; allows us to download and install open source packages from the Web. Chocolatey is as secure as the practices of the user. Mitigate risk by downloading known safe packages for your development machine. We will use &lt;a href=&quot;https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7&quot;&gt;Windows PowerShell&lt;/a&gt; to install Chocolatey. Enter &lt;code&gt;PowerShell&lt;/code&gt; in your Windows Start Menu and choose “Run as Administrator” from the menu.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/sc5ox6zxr9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/sc5ox6zxr9.png&quot; alt=&quot;Run PowerShell as administrator.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;In your PowerShell terminal, enter the command:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-powershell&quot;&gt;Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Expect output like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/powershell_Wb8r3lS2bU.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/powershell_Wb8r3lS2bU.png&quot; alt=&quot;PowerShell output.&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Install Node Version Manager (NVM)&lt;/h2&gt;
 &lt;p&gt;Now we can use our Chocolatey Package Manager to download and install &lt;a href=&quot;https://github.com/nvm-sh/nvm/blob/master/README.md&quot;&gt;NVM&lt;/a&gt;! It is common to work on projects that require different versions of Node.js. If we installed Node.js directly, switching between such projects would present a conundrum. But NVM will make that an easy problem to solve.&lt;/p&gt;
 &lt;p&gt;This time, use Windows Terminal. Type `cmd` in the Windows Start Menu and choose “Run as Administrator”. To install NVM, enter the following command and verify your results.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell-script&quot;&gt;choco install -y nvm
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/cmd_4rbXM91m6u.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/cmd_4rbXM91m6u.png&quot; alt=&quot;Installing NVM with Chocolatey.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Close that terminal window and open a new one (again, as Administrator). This allows the terminal to look up environment information and see our newly installed package manager.&lt;/p&gt;
 &lt;p&gt;Try the command &lt;code&gt;nvm version&lt;/code&gt; → &lt;code&gt;1.1.7&lt;/code&gt;. If you get a numeric version result, we’re good! Let’s install Node.js next.&lt;/p&gt;
 &lt;h2 id=&quot;install-node&quot;&gt;Install Node.js&lt;/h2&gt;
 &lt;p&gt;Now we can use NVM to download and install &lt;a href=&quot;https://nodejs.org/en/about/&quot;&gt;Node.js&lt;/a&gt;! Open the Windows Terminal again (you should not need Administrator privileges). Enter the following command and verify your results.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;nvm install node@13.12.0
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/cmd_pN3qtBIZHC.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/cmd_pN3qtBIZHC.png&quot; alt=&quot;Install Node with NVM.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Before celebrating too much, let’s set our default Node.js version with the command, &lt;code&gt;nvm use 13.12.0&lt;/code&gt;. Then, validate your install. If you are able to see the version for node and npm, you are ready to write code on Node.js!&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;node -v&lt;/code&gt; → &lt;code&gt;v13.12.0&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;npm -v&lt;/code&gt; → &lt;code&gt;6.14.4&lt;/code&gt;&lt;/p&gt;

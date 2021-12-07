@@ -5,7 +5,7 @@ date: 2020-04-08T22:36:23.975Z
 author: Harvey Ramer
 social_quote: If you want to learn to write code, setting up a development environment can be a barrier to entry. This tutorial offers a simple way to install the tools you need to start working with Node.js on Windows 10.
 description: >-
-  Don't get distracted by setting up a development environment on your way to learning Node.js. Everything you need to install Node.js and begin writing server-side JavaScript on Windows 10 is right here.
+  Everything you need to install Node.js and begin writing server-side JavaScript on Windows 10 is right here.
 tags:
   - technology
   - tutorials
@@ -24,7 +24,7 @@ I no longer recommend Chocolatey due to security and maintenance concerns. Pleas
 
 [Chocolatey](https://chocolatey.org/) allows us to download and install open source packages from the Web. Chocolatey is as secure as the practices of the user. Mitigate risk by downloading known safe packages for your development machine. We will use [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7) to install Chocolatey. Enter `PowerShell` in your Windows Start Menu and choose "Run as Administrator" from the menu.
 
-![](https://www.harveyramer.com/img/sc5ox6zxr9.png)
+![Run PowerShell as administrator.](https://www.harveyramer.com/img/sc5ox6zxr9.png)
 
 In your PowerShell terminal, enter the command:
 
@@ -34,7 +34,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 
 Expect output like this:
 
-![](https://www.harveyramer.com/img/powershell_Wb8r3lS2bU.png)
+![PowerShell output.](https://www.harveyramer.com/img/powershell_Wb8r3lS2bU.png)
 
 ## Install Node Version Manager (NVM)
 
@@ -46,7 +46,7 @@ This time, use Windows Terminal. Type \`cmd\` in the Windows Start Menu and choo
 choco install -y nvm
 ```
 
-![](https://www.harveyramer.com/img/cmd_4rbXM91m6u.png)
+![Installing NVM with Chocolatey.](https://www.harveyramer.com/img/cmd_4rbXM91m6u.png)
 
 Close that terminal window and open a new one (again, as Administrator). This allows the terminal to look up environment information and see our newly installed package manager.
 
@@ -60,7 +60,7 @@ Now we can use NVM to download and install [Node.js](https://nodejs.org/en/about
 nvm install node@13.12.0
 ```
 
-![](https://www.harveyramer.com/img/cmd_pN3qtBIZHC.png)
+![Install Node with NVM.](https://www.harveyramer.com/img/cmd_pN3qtBIZHC.png)
 
 Before celebrating too much, let's set our default Node.js version with the command, `nvm use 13.12.0`. Then, validate your install. If you are able to see the version for node and npm, you are ready to write code on Node.js!
 
