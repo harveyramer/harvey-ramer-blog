@@ -5,8 +5,7 @@ date: 2020-01-06T21:26:17.194Z
 author: Harvey Ramer
 social_quote: Instead of collecting money, we had encouraging conversations with warm leads and ran too long on the slightest hint of interest they showed.
 description: >-
-  In May of 2018, I joined a small team focused on a goal: removing the pain
-  from a complex process involving multiple stakeholders. Despite the startup's failure, I learned three important lessons.
+  I learned these three important lessons when I lost my job at a startup.
 tags:
   - business
 ---

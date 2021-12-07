@@ -5,9 +5,7 @@ date: 2020-04-10T20:45:37.468Z
 author: Harvey Ramer
 social_quote: Imagine an artist transferring the clutter of her studio directly to the canvas. When we query an API or database, we often transfer that clutter to the user interface. There is a better way.
 description: >-
-  Imagine an artist transferring the clutter of her studio directly to the canvas. When we query an API or database, we often transfer that clutter to the user interface. There is a better way.
-featuredpost: false
-featuredimage: /img/art_supplies_clutter_-unsplash-.jpg
+  When we query an API or database, we often transfer clutter to the user interface. There is a better way.
 tags:
   - technology
   - tutorials

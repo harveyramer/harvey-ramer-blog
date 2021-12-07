@@ -6,8 +6,7 @@ author: Harvey Ramer
 social_quote: Large teams use powerful enterprise tools to manage their cloud infrastructure. But smaller companies sometimes do not have the expertise or resources to use those tools. AWS CDK lets everyone create and maintain their infrastructure as code.
 description: >-
   The AWS Cloud Development Kit (CDK) has taken much of the pain out of
-  deploying resources to the AWS cloud. After hearing about it at re:Invent
-  2019, I decided to experiment with the CDK using TypeScript.
+  deploying resources to the AWS cloud.
 tags:
   - technology
   - tutorials
