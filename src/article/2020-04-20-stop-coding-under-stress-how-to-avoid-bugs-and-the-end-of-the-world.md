@@ -84,7 +84,7 @@ With some knowledge of your company's needs you can plan to learn on your own ti
 
 Business stakeholders often give deadlines to their superiors to justify your next project without any knowledge of the details. As you plan your work, communicate about potential missed deadlines as soon as you become aware of them. Explain the likely delay so your stakeholders can justify the change with the company leadership. Otherwise, your concerns will backfire—making you seem hesitant and fearful rather than assertive and responsible.
 
-**Forgive yourself.** As professionals, we hold a high opinion of our abilities and expect a great deal of ourselves. We add to our stress when, if we fall short of our own internal standard, we berate ourselves. In most cases, no one else cares about your missed expectations of yourself. _Set goals. Work hard. Forgive yourself._
+**Forgive yourself.** As professionals, we hold a high opinion of our abilities and expect a great deal of ourselves. We add to our stress when, if we fall short of our own internal standard, we berate ourselves. In most cases, no one else cares about your personal missed expectations. _Set goals. Work hard. Forgive yourself._
 
 **Cultivate a Sense of Humor** It's easy to forgive yourself if you learn not to take yourself too seriously. For most of my life, I have been intense, driven, and self-critical. It's hard to forgive myself if the weight of the world rests on my shoulders. But here's something to remember: none of us bears our burdens alone. Team members, customers, friends, and loved ones who see our flaws continue to work with us, buy from us, spend time with us, and love us. Sometimes, we can join them in laughing at our mistakes. This helps us let go and move forward.
 
@@ -92,7 +92,7 @@ Letting go can make our work fun and our products fun to use. "Good design is of
 
 ## Save the World
 
-Stress management may not save the world, but it may save us from early aging and health problems. We can take a load off our coworkers, customers, friends, and loved ones. And, managing or eliminating stress _can_ save our lives.
+Stress management may not save the world, but it may save us from early aging and health problems. We can take a load off of our coworkers, customers, friends, and loved ones. And, managing or eliminating stress _can_ save our lives.
 
 Stress is a killer. One of my friends has experienced this in a profound way. During his career, he had several heart attacks due to stress. He says, "I now know stress almost killed me. Not sure how you can control yours, but you need to." Take his words to heart. You might save the world—or at least _your world._
 
