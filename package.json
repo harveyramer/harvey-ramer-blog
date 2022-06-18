@@ -41,6 +41,6 @@
     "dotenv": "^10.0.0",
     "netlify-cli": "^8.0.16",
     "streamifier": "^0.1.1",
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.2"
   }
 }
