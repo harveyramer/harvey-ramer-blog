@@ -37,7 +37,7 @@
     "@types/node": "^16.11.1",
     "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
     "clean-css": "^5.2.1",
-    "cloudinary": "^1.27.1",
+    "cloudinary": "^1.28.1",
     "dotenv": "^10.0.0",
     "netlify-cli": "^8.0.16",
     "streamifier": "^0.1.1",
