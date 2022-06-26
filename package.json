@@ -21,26 +21,26 @@
   },
   "homepage": "https://github.com/harveyramer/harvey-ramer-blog#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "@sup39/markdown-it-attr": "^1.2.0",
-    "@vidhill/fortawesome-free-regular-11ty-shortcode": "^1.0.3",
-    "@vidhill/fortawesome-solid-11ty-shortcode": "^1.0.1",
-    "eleventy-google-fonts": "^0.0.5",
-    "markdown-it": "^12.2.0",
-    "markdown-it-bracketed-spans": "^1.0.1",
-    "markdown-it-footnote": "^3.0.3",
-    "markdown-it-mathjax3": "^3.0.0-0"
+    "@11ty/eleventy":"^1.0.1",
+    "@11ty/eleventy-plugin-rss":"^1.2.0",
+    "@sup39/markdown-it-attr":"^1.2.2",
+    "@vidhill/fortawesome-free-regular-11ty-shortcode":"^1.0.3",
+    "@vidhill/fortawesome-solid-11ty-shortcode":"^1.0.1",
+    "eleventy-google-fonts":"^0.1.0",
+    "markdown-it":"^13.0.1",
+    "markdown-it-bracketed-spans":"^1.0.1",
+    "markdown-it-footnote":"^3.0.3",
+    "markdown-it-mathjax3":"^4.3.1"
   },
   "dependencies": {
-    "@netlify/functions": "^0.7.2",
-    "@types/node": "^16.11.1",
-    "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
-    "clean-css": "^5.2.1",
-    "cloudinary": "^1.27.1",
-    "dotenv": "^10.0.0",
-    "netlify-cli": "^8.0.16",
-    "streamifier": "^0.1.1",
-    "typescript": "^4.4.4"
+    "@netlify/functions":"^1.0.0",
+    "@types/node": "^18.0.0",
+    "@vidhill/fortawesome-brands-11ty-shortcode":"^1.0.2",
+    "clean-css":"^5.3.0",
+    "cloudinary":"^1.30.0",
+    "dotenv": "^16.0.1",
+    "netlify-cli":"^10.6.2",
+    "streamifier":"^0.1.1",
+    "typescript":"^4.7.4"
   }
 }
