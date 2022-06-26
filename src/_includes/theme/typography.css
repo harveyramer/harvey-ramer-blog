@@ -46,6 +46,11 @@ main blockquote p,
 main span.meta {
   text-align: left;
 }
+span.microhead {
+  display: inline-block;
+  padding: .1em 0;
+  border-bottom:4px solid rgb(53, 53, 53);
+}
 main h2 + p,
 main h3 + p,
 main h4 + p,
