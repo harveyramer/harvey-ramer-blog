@@ -4,7 +4,7 @@
   <subtitle>Harvey enjoys creating web applications with React, Node.js, and MongoDB. He writes about how worldviews, technology, business and relationship differences can become a collaborative asset.</subtitle>
   <link href="https://www.harveyramer.com/feed.xml" rel="self"/>
   <link href="https://www.harveyramer.com/"/>
-  <updated>2023-05-18T00:00:00Z</updated>
+  <updated>2023-05-22T00:00:00Z</updated>
   <id>https://www.harveyramer.com/</id>
   <author>
     <name>Harvey Ramer</name>
@@ -17,10 +17,10 @@
         
       </title>
       <link href="https://www.harveyramer.com/article/azure-cli-windows-11-linux-subsystem/"/>
-      <updated>2023-05-18T00:00:00Z</updated>
+      <updated>2023-05-22T00:00:00Z</updated>
       <id>https://www.harveyramer.com/article/azure-cli-windows-11-linux-subsystem/</id>
       <content type="html">
-        &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/harveyramer/image/upload/v1684765990/azure-cli-windows-11-linux-subsystem.png&quot; alt=&quot;azure-cli-windows-11-linux-subsystem&quot; /&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/harveyramer/image/upload/v1684766354/azure-cli-windows-11-linux-subsystem.png&quot; alt=&quot;azure-cli-windows-11-linux-subsystem&quot; /&gt;&lt;/p&gt;
         &lt;p&gt;I recently obtained a Windows 11 laptop and immediately gravitated towards the powerful Windows Subsystem for Linux available through the command prompt. I have always preferred the Linux CLI and the open source tools available there over the Windows PowerShell ecosystem, and access to a Linux CLI within Windows is a huge win! We can configure our Azure development environment with ease via the Ubuntu CLI.&lt;/p&gt;
 &lt;p&gt;To access the Linux CLI in Windows 11, you may first need to install it. Thankfully, they’ve made this easy as well! Open a command prompt as an administrator and enter this command:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;wsl --install
@@ -94,7 +94,7 @@ az functionapp function delete --resource-group MyResourceGroup --name MyFunctio
     <entry>
       <title>
         How to Get More Creative Work Done in a Day
-         - FEATURED 
+        
       </title>
       <link href="https://www.harveyramer.com/article/how-to-get-more-creative-work-done/"/>
       <updated>2021-04-17T00:00:00Z</updated>
@@ -977,7 +977,7 @@ git push
     <entry>
       <title>
         Stop Coding Under Stress: How to Avoid Bugs and the End of the World
-         - FEATURED 
+        
       </title>
       <link href="https://www.harveyramer.com/article/2020-04-20-stop-coding-under-stress-how-to-avoid-bugs-and-the-end-of-the-world/"/>
       <updated>2020-04-20T04:05:51Z</updated>
@@ -1843,7 +1843,7 @@ router.get(&amp;quot;/&amp;quot;, (req, res) =&amp;gt; {
     <entry>
       <title>
         Configure a Node.js Development Environment on Windows 10
-         - FEATURED 
+        
       </title>
       <link href="https://www.harveyramer.com/article/2020-04-08-configure-a-nodejs-development-environment-on-windows-10/"/>
       <updated>2020-04-08T22:36:23Z</updated>
