@@ -3,15 +3,15 @@ layout: post
 title: "Installing the Azure CLI on the Linux Subsystem in Windows 11"
 date: 2023-05-18
 author: Harvey Ramer
-social_quote: People are not alike. At least not in the way most of us believe. During the 2020 presidential election, pundits endlessly discussed the Latino vote, Black vote, College-educated White vote, and the Evangelical vote. Too late, it seems, everyone has discovered there is no such thing as a monolithic vote by everyone who looks similar—even when that similarity is profound.
-description: People are not alike. At least not in the way most of us believe. What is better for you may not be better for me.
+social_quote: Learn how to install the Azure CLI on the Linux Subsystem in Windows 11. This step-by-step guide covers the installation process and authenticating with Azure to manage your resources.
+description: Learn how to install the Azure CLI on the Linux Subsystem in Windows 11. 
 tags:
   - tutorials
 ---
 
-I recently obtained a Windows 11 laptop, and immediately gravitated to the powerful Windows Subsystem for Linux available through the command prompt. I have always preferred the Linux CLI and the open source tools available there over the Windows PowerShell ecosystem, and access to a Linux CLI within Windows is a huge win! We can configure our Azure development environment with ease via the Ubuntu CLI.
+I recently obtained a Windows 11 laptop and immediately gravitated towards the powerful Windows Subsystem for Linux available through the command prompt. I have always preferred the Linux CLI and the open source tools available there over the Windows PowerShell ecosystem, and access to a Linux CLI within Windows is a huge win! We can configure our Azure development environment with ease via the Ubuntu CLI.
 
-To access the Linux CLI in Windows 11, you may need to install it. Thankfully, they've made this easy as well! Open a command prompt as an administrator and enter this command:
+To access the Linux CLI in Windows 11, you may first need to install it. Thankfully, they've made this easy as well! Open a command prompt as an administrator and enter this command:
 
 ```
 wsl --install
@@ -21,7 +21,7 @@ When the subsystem finishes installing, you will be asked to restart your comput
 
 ## Customize Your Linux Distribution (If You Must)
 
-The default Linux OS is a flavor of Ubuntu, and I kept that default. If you have a preference for another Linux distribution, you can specify it when installing WSL. To see the available distributions, run the command below in Windows Powershell.
+The default Linux OS is Ubuntu, which I kept. If you have a preference for another Linux distribution, you can specify it when installing WSL. To see the available distributions, run the command below in Windows Powershell.
 
 ```
 PS C:\Users\linuxguy> wsl -l -o
@@ -47,9 +47,9 @@ Please customize at your own risk. This tutorial assumes you are using the defau
 
 ## Installing Azure CLI
 
-Let's get down to business! Select your WSL CLI. 
+Let's get down to business! Next, select your WSL CLI.
 
-![Select your Ubuntu CLI in the Windows Subsystem for Linux](/img/blog/select-wsl-cli.png)
+![Select the Ubuntu CLI in the Windows Subsystem for Linux](/img/blog/select-wsl-cli.png)
 
 The Microsoft team has provided a [simple single command](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt#option-1-install-with-one-command) to install the CLI. If you prefer a multi-step process to install the CLI, [that option](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt#option-2-step-by-step-installation-instructions) is also available.
 
@@ -82,7 +82,7 @@ Your CLI is up-to-date.
 
 ## Log In to Azure Cloud
 
-To interact with your Azure resources, you must authenticate the CLI client. In your Ubuntu CLI, type the command, `az login`. When you do, your browser will open and prompt you to authenticate. On success, you will be able to return to your CLI by closing the browser window.
+To interact with your Azure resources, you need to authenticate the CLI client. In your Ubuntu CLI, type the command, `az login`. When you do, your browser will open and prompt you to authenticate. On success, you will be able to return to your CLI by closing the browser window.
 
 When your `az login` command has completed, you will see a list of the resources available to you. To discover available commands, you can use `az find function` where `function` is a word for which you hope to discover a command. See the output for the `find` command below.
 
@@ -98,4 +98,4 @@ Delete a function.
 az functionapp function delete --resource-group MyResourceGroup --name MyFunctionAppName --function-name MyFunctionName
 ```
 
-Hopefully, this short tutorial will get you up and running quickly. Please reach out if you have any questions.
+Hopefully, this tutorial will help you get started quickly. Please don't hesitate to reach out if you have any questions.

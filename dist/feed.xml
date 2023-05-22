@@ -21,13 +21,13 @@
       <id>https://www.harveyramer.com/article/azure-cli-windows-11-linux-subsystem/</id>
       <content type="html">
         &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/harveyramer/image/upload/v1684765990/azure-cli-windows-11-linux-subsystem.png&quot; alt=&quot;azure-cli-windows-11-linux-subsystem&quot; /&gt;&lt;/p&gt;
-        &lt;p&gt;I recently obtained a Windows 11 laptop, and immediately gravitated to the powerful Windows Subsystem for Linux available through the command prompt. I have always preferred the Linux CLI and the open source tools available there over the Windows PowerShell ecosystem, and access to a Linux CLI within Windows is a huge win! We can configure our Azure development environment with ease via the Ubuntu CLI.&lt;/p&gt;
-&lt;p&gt;To access the Linux CLI in Windows 11, you may need to install it. Thankfully, they’ve made this easy as well! Open a command prompt as an administrator and enter this command:&lt;/p&gt;
+        &lt;p&gt;I recently obtained a Windows 11 laptop and immediately gravitated towards the powerful Windows Subsystem for Linux available through the command prompt. I have always preferred the Linux CLI and the open source tools available there over the Windows PowerShell ecosystem, and access to a Linux CLI within Windows is a huge win! We can configure our Azure development environment with ease via the Ubuntu CLI.&lt;/p&gt;
+&lt;p&gt;To access the Linux CLI in Windows 11, you may first need to install it. Thankfully, they’ve made this easy as well! Open a command prompt as an administrator and enter this command:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;wsl --install
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;When the subsystem finishes installing, you will be asked to restart your computer. At some point in the process, you will be asked to choose a password for your Linux machine. Don’t forget to save that password for reference! I prefer 1Password as a system for keeping my credentials safe.&lt;/p&gt;
 &lt;h2&gt;Customize Your Linux Distribution (If You Must)&lt;/h2&gt;
-&lt;p&gt;The default Linux OS is a flavor of Ubuntu, and I kept that default. If you have a preference for another Linux distribution, you can specify it when installing WSL. To see the available distributions, run the command below in Windows Powershell.&lt;/p&gt;
+&lt;p&gt;The default Linux OS is Ubuntu, which I kept. If you have a preference for another Linux distribution, you can specify it when installing WSL. To see the available distributions, run the command below in Windows Powershell.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;PS C:\Users\linuxguy&amp;gt; wsl -l -o
 The following is a list of valid distributions that can be installed.
 Install using &#39;wsl.exe --install &amp;lt;Distro&amp;gt;&#39;.
@@ -48,8 +48,8 @@ openSUSE-Tumbleweed                    openSUSE Tumbleweed
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Please customize at your own risk. This tutorial assumes you are using the default Ubuntu distribution.&lt;/p&gt;
 &lt;h2&gt;Installing Azure CLI&lt;/h2&gt;
-&lt;p&gt;Let’s get down to business! Select your WSL CLI.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/blog/select-wsl-cli.png&quot; alt=&quot;Select your Ubuntu CLI in the Windows Subsystem for Linux&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Let’s get down to business! Next, select your WSL CLI.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.harveyramer.com/img/blog/select-wsl-cli.png&quot; alt=&quot;Select the Ubuntu CLI in the Windows Subsystem for Linux&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;The Microsoft team has provided a &lt;a href=&quot;https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt#option-1-install-with-one-command&quot;&gt;simple single command&lt;/a&gt; to install the CLI. If you prefer a multi-step process to install the CLI, &lt;a href=&quot;https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt#option-2-step-by-step-installation-instructions&quot;&gt;that option&lt;/a&gt; is also available.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 &lt;/code&gt;&lt;/pre&gt;
@@ -74,7 +74,7 @@ Legal docs and information: aka.ms/AzureCliLegal
 Your CLI is up-to-date.
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Log In to Azure Cloud&lt;/h2&gt;
-&lt;p&gt;To interact with your Azure resources, you must authenticate the CLI client. In your Ubuntu CLI, type the command, &lt;code&gt;az login&lt;/code&gt;. When you do, your browser will open and prompt you to authenticate. On success, you will be able to return to your CLI by closing the browser window.&lt;/p&gt;
+&lt;p&gt;To interact with your Azure resources, you need to authenticate the CLI client. In your Ubuntu CLI, type the command, &lt;code&gt;az login&lt;/code&gt;. When you do, your browser will open and prompt you to authenticate. On success, you will be able to return to your CLI by closing the browser window.&lt;/p&gt;
 &lt;p&gt;When your &lt;code&gt;az login&lt;/code&gt; command has completed, you will see a list of the resources available to you. To discover available commands, you can use &lt;code&gt;az find function&lt;/code&gt; where &lt;code&gt;function&lt;/code&gt; is a word for which you hope to discover a command. See the output for the &lt;code&gt;find&lt;/code&gt; command below.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Finding examples...
 
@@ -86,7 +86,7 @@ az functionapp function show --function-name MyFunctionName --name MyFunctionApp
 Delete a function.
 az functionapp function delete --resource-group MyResourceGroup --name MyFunctionAppName --function-name MyFunctionName
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Hopefully, this short tutorial will get you up and running quickly. Please reach out if you have any questions.&lt;/p&gt;
+&lt;p&gt;Hopefully, this tutorial will help you get started quickly. Please don’t hesitate to reach out if you have any questions.&lt;/p&gt;
 
       </content>
     </entry>
