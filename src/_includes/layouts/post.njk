@@ -4,7 +4,9 @@ layout: base
 {%- from "components/authorCard.njk" import authorCard -%}
 <main>
   <span class="meta">
-    <time class="block" datetime="{{ date | w3DateFilter  }}">
+      {% if post.data.date %}
+        <time class="block" datetime="{{ date | w3DateFilter  }}">
+      {%endif%}
       {{ date | dateDisplay }}
     </time> — 
     <span class="tags">
@@ -19,11 +21,11 @@ layout: base
 
     {{ content | safe }}
 
-    {% include "../partials/share.njk" %}
-
     {%- for a in authors -%}
       {% if author === a.name%}
         {{authorCard(a)}}
       {% endif %}
     {%- endfor -%}
+
+    {% include "../partials/share.njk" %}
   </main>
