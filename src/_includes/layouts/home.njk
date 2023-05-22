@@ -22,7 +22,9 @@ layout: base
         </h2>
         <p class="excerpt">{{post.data.social_quote}}
         <span class="meta">
-          <time class="block" datetime="{{ post.data.date | w3DateFilter  }}">
+          {% if post.data.date %}
+            <time class="block" datetime="{{ post.data.date | w3DateFilter  }}">
+          {%endif%}
             {{ post.data.date | dateDisplay }}
           </time> — <span class="tags">
             {%- for tag in post.data.tags -%}

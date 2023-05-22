@@ -1,3 +1,4 @@
+require('dotenv').config();
 const eleventyGoogleFonts = require("eleventy-google-fonts");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const CleanCSS = require("clean-css");

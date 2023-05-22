@@ -15,15 +15,15 @@
     
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:site" content="@harveyramer"/>
-      <meta name="twitter:title" content="Your Business Is Better, But for Whom?"/>
+      <meta name="twitter:title" content="Installing the Azure CLI on the Linux Subsystem in Windows 11"/>
       <meta name="twitter:description" content="People are not alike. At least not in the way most of us believe. During the 2020 presidential election, pundits endlessly discussed the Latino vote, Black vote, College-educated White vote, and the Evangelical vote. Too late, it seems, everyone has discovered there is no such thing as a monolithic vote by everyone who looks similar—even when that similarity is profound."/>
-      <meta property="og:url" content="https://www.harveyramer.com/article/your-business-is-better/"/>
+      <meta property="og:url" content="https://www.harveyramer.com/article/azure-cli-windows-11-linux-subsystem/"/>
       <meta property="og:type" content="article"/>
-      <meta property="og:title" content="Your Business Is Better, But for Whom?"/>
+      <meta property="og:title" content="Installing the Azure CLI on the Linux Subsystem in Windows 11"/>
       <meta property="og:description" content="People are not alike. At least not in the way most of us believe. During the 2020 presidential election, pundits endlessly discussed the Latino vote, Black vote, College-educated White vote, and the Evangelical vote. Too late, it seems, everyone has discovered there is no such thing as a monolithic vote by everyone who looks similar—even when that similarity is profound."/>
       <meta property="og:image" content=""/>
     
-    <title>Your Business Is Better, But for Whom?</title>
+    <title>Installing the Azure CLI on the Linux Subsystem in Windows 11</title>
     
       <meta name="description" content="People are not alike. At least not in the way most of us believe. What is better for you may not be better for me.">
     
@@ -59,40 +59,80 @@
       <main>
   <span class="meta">
       
-      November 11th, 2020
+      May 17th, 2023
     </time> — 
     <span class="tags">
-          <a href="/tags/business/">BUSINESS</a></span>
+          <a href="/tags/tutorials/">TUTORIALS</a></span>
     </span>
 
-    <h1>Your Business Is Better, But for Whom?</h1>
+    <h1>Installing the Azure CLI on the Linux Subsystem in Windows 11</h1>
 
-    <p>People are not alike. At least not in the way most of us believe. During the 2020 presidential election, pundits endlessly discussed the Latino vote, Black vote, College-educated White vote, and the Evangelical vote. Too late, it seems, everyone has discovered there is no such thing as a monolithic vote by everyone who looks similar—even when that similarity is profound.</p>
-<p>As our culture fragments politically, it reveals a fact about human beings that has always been true but under-appreciated. We are weird. Each of us wired in ways that appear similar, but deceptively so. Yes, it is possible to write a great American novel or to create a blockbuster movie, but those are outliers. Finding a path to reach most of our culture is daunting for those with limited resources. Frankly, the mass market is already well-served. So how can your business find an audience of willing customers?</p>
-<p>That brings us to the idea of “better.” Since human beings are so diverse, we are wise to proceed with caution on well-meaning recommendations from others. The idea of a better or best clothing boutique is passé. And there is not a digital marketing agency better than all the rest.</p>
-<blockquote>
-<p>When a marketer arrives and says, “This is better,” he’s wrong. He actually means, &quot;This is better for someone and it might be better for you.<br>
-— Seth Godin<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
-</blockquote>
-<p>Here is some good news. You can compete by finding a group of customers who, while diverse in other ways, prefer your approach to business. You are “better” for them. Your job is “to find a spot on the map with edges that (some) people want to find,” says Seth Godin. “Not a selfish, unique selling proposition done to maximize profit, but a generous beacon, a signal flare sent up so that people who are looking for you can easily find you. We’re this, not that.”</p>
-<p>Our job as business owners is to create value for others by improving their lives using our knowledge, God-given abilities, and hard work. But that is not enough. To reach the edges of the map, to send up our signal flare, we must become storytellers. And our story must be uncomplicated and compelling.</p>
-<blockquote>
-<p>The fact is, pretty websites don’t sell things. Words sell things. And if we haven’t clarified our message, our customers won’t listen.<br>
-— Donald Miller<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
-</blockquote>
-<p>Given the importance of a clarified story, every engagement with FlareMark begins with a conceptual branding process. We help you identify the central idea that will attract customers to your suite of products and services. With a clarified story to power our efforts, we design your logo, website, and other marketing collateral.</p>
-<p>Your story is your beacon—your signal flare. To attract customers to your spot on the map, launch your signal flare and share your message.</p>
-<p>Ethical marketers draw attention to your story; they don’t make it up. It’s yours. Only you can tell it.</p>
-<h2>Footnotes</h2>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>Godin, Seth. <em><a href="https://seths.blog/tim/">This Is Marketing</a>.</em> Portfolio, 2018. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn2" class="footnote-item"><p>Miller, Donald. <em><a href="https://buildingastorybrand.com/">Building a Story Brand</a>.</em> HarperCollins Leadership, 2017. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
+    <p>I recently obtained a Windows 11 laptop, and immediately gravitated to the powerful Windows Subsystem for Linux available through the command prompt. I have always preferred the Linux CLI and the open source tools available there over the Windows PowerShell ecosystem, and access to a Linux CLI within Windows is a huge win! We can configure our Azure development environment with ease via the Ubuntu CLI.</p>
+<p>To access the Linux CLI in Windows 11, you may need to install it. Thankfully, they’ve made this easy as well! Open a command prompt as an administrator and enter this command:</p>
+<pre><code>wsl --install
+</code></pre>
+<p>When the subsystem finishes installing, you will be asked to restart your computer. At some point in the process, you will be asked to choose a password for your Linux machine. Don’t forget to save that password for reference! I prefer 1Password as a system for keeping my credentials safe.</p>
+<h2>Customize Your Linux Distribution (If You Must)</h2>
+<p>The default Linux OS is a flavor of Ubuntu, and I kept that default. If you have a preference for another Linux distribution, you can specify it when installing WSL. To see the available distributions, run the command below in Windows Powershell.</p>
+<pre><code>PS C:\Users\linuxguy&gt; wsl -l -o
+The following is a list of valid distributions that can be installed.
+Install using 'wsl.exe --install &lt;Distro&gt;'.
+
+NAME                                   FRIENDLY NAME
+Ubuntu                                 Ubuntu
+Debian                                 Debian GNU/Linux
+kali-linux                             Kali Linux Rolling
+Ubuntu-18.04                           Ubuntu 18.04 LTS
+Ubuntu-20.04                           Ubuntu 20.04 LTS
+Ubuntu-22.04                           Ubuntu 22.04 LTS
+OracleLinux_7_9                        Oracle Linux 7.9
+OracleLinux_8_7                        Oracle Linux 8.7
+OracleLinux_9_1                        Oracle Linux 9.1
+SUSE-Linux-Enterprise-Server-15-SP4    SUSE Linux Enterprise Server 15 SP4
+openSUSE-Leap-15.4                     openSUSE Leap 15.4
+openSUSE-Tumbleweed                    openSUSE Tumbleweed
+</code></pre>
+<p>Please customize at your own risk. This tutorial assumes you are using the default Ubuntu distribution.</p>
+<h2>Installing Azure CLI</h2>
+<p>Let’s get down to business! Select your WSL CLI.</p>
+<p><img src="/img/blog/select-wsl-cli.png" alt="Select your Ubuntu CLI in the Windows Subsystem for Linux"></p>
+<p>The Microsoft team has provided a <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt#option-1-install-with-one-command">simple single command</a> to install the CLI. If you prefer a multi-step process to install the CLI, <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt#option-2-step-by-step-installation-instructions">that option</a> is also available.</p>
+<pre><code>curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+</code></pre>
+<p>When that process is finished, type <code>az --version</code> in your Ubuntu command prompt, and you will see something like this:</p>
+<pre><code>azure-cli                         2.48.1
+
+core                              2.48.1
+telemetry                          1.0.8
+
+Dependencies:
+msal                              1.20.0
+azure-mgmt-resource               22.0.0
+
+Python location '/opt/az/bin/python3'
+Extensions directory '/home/linuxguy/.azure/cliextensions'
+
+Python (Linux) 3.10.10 (main, Apr 25 2023, 04:23:10) [GCC 11.3.0]
+
+Legal docs and information: aka.ms/AzureCliLegal
+
+
+Your CLI is up-to-date.
+</code></pre>
+<h2>Log In to Azure Cloud</h2>
+<p>To interact with your Azure resources, you must authenticate the CLI client. In your Ubuntu CLI, type the command, <code>az login</code>. When you do, your browser will open and prompt you to authenticate. On success, you will be able to return to your CLI by closing the browser window.</p>
+<p>When your <code>az login</code> command has completed, you will see a list of the resources available to you. To discover available commands, you can use <code>az find function</code> where <code>function</code> is a word for which you hope to discover a command. See the output for the <code>find</code> command below.</p>
+<pre><code>Finding examples...
+
+Here are the most common ways to use [function]: 
+
+Show function details. (autogenerated)
+az functionapp function show --function-name MyFunctionName --name MyFunctionAppName --resource-group MyResourceGroup
+
+Delete a function.
+az functionapp function delete --resource-group MyResourceGroup --name MyFunctionAppName --function-name MyFunctionName
+</code></pre>
+<p>Hopefully, this short tutorial will get you up and running quickly. Please reach out if you have any questions.</p>
 
         
   <div class="author">
@@ -132,9 +172,9 @@
 
       <div class="share-this">
   <h5>Give back. Share this resource.</h5>
-  <a href="https://www.facebook.com/dialog/share?app_id=526426944640037&display=page&href=https://www.harveyramer.com/article/your-business-is-better/" rel="noopener" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg></a>
-  <a href="https://twitter.com/intent/tweet?text=People are not alike. At least not in the way most of us believe. What is better for you may not be better for me.&url=https://www.harveyramer.com/article/your-business-is-better/&via=harveyramer" rel="noopener" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
-  <a href="https://www.linkedin.com/shareArticle?url=https://www.harveyramer.com/article/your-business-is-better/&title=Your Business Is Better, But for Whom?&summary=People are not alike. At least not in the way most of us believe. What is better for you may not be better for me.&source=www.harveyramer.com" rel="noopener" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a>
+  <a href="https://www.facebook.com/dialog/share?app_id=526426944640037&display=page&href=https://www.harveyramer.com/article/azure-cli-windows-11-linux-subsystem/" rel="noopener" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg></a>
+  <a href="https://twitter.com/intent/tweet?text=People are not alike. At least not in the way most of us believe. What is better for you may not be better for me.&url=https://www.harveyramer.com/article/azure-cli-windows-11-linux-subsystem/&via=harveyramer" rel="noopener" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?url=https://www.harveyramer.com/article/azure-cli-windows-11-linux-subsystem/&title=Installing the Azure CLI on the Linux Subsystem in Windows 11&summary=People are not alike. At least not in the way most of us believe. What is better for you may not be better for me.&source=www.harveyramer.com" rel="noopener" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a>
 </div>
   </main>
       <footer>
@@ -153,7 +193,7 @@
     <h5>Archives</h5>
     <ol>
           <li>
-            <a href="/tags/business/" aria-current="page">business</a>
+            <a href="/tags/business/">business</a>
           </li>
         
           <li>
