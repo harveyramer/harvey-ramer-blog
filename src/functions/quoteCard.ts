@@ -11,15 +11,15 @@ interface Env {
 export default <ExportedHandler>{
   async fetch(request: Request, env: Env) {
     const { searchParams } = new URL(request.url);
-    const quote = searchParams.get('quote');
+    const text = searchParams.get('quote');
     const name = searchParams.get('name');
-    const title = searchParams.get('title');
-    if (!quote || !quote.length || !name || !name.length) {
+    const titleText = searchParams.get('title');
+    if (!text || !text.length || !name || !name.length) {
       return { "message": "Invalid.", statusCode: 404 };
     }
-    let text = encodeURIComponent(quote).replace(/%2C/g, '%E2%80%9A');
+    // let text = encodeURIComponent(quote).replace(/%2C/g, '%E2%80%9A');
     console.log(text);
-    const titleText = encodeURIComponent(title).replace(/%2F/g, '%E2%88%95');
+    // const titleText = encodeURIComponent(title).replace(/%2F/g, '%E2%88%95');
     console.log(titleText);
     cloudinary.config({
       cloud_name: "harveyramer",
