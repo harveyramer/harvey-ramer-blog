@@ -4,8 +4,9 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
+    "start:functions": "wrangler dev",
     "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy && npm run tsc",
+    "build": "npx @11ty/eleventy && npm run tsc && node function-config",
     "typeCheck": "tsc --noEmit",
     "tsc": "tsc"
   },
@@ -26,6 +27,7 @@
     "@cloudflare/workers-types": "^4.20240117.0",
     "@sup39/markdown-it-attr": "^1.2.2",
     "@types/node": "^20.11.5",
+    "@types/service-worker-mock": "2.0.1",
     "@vidhill/fortawesome-free-regular-11ty-shortcode": "^1.0.3",
     "@vidhill/fortawesome-solid-11ty-shortcode": "^1.0.1",
     "eleventy-google-fonts": "^0.1.0",
@@ -33,7 +35,9 @@
     "markdown-it-bracketed-spans": "^1.0.1",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-mathjax3": "^4.3.2",
-    "typescript": "^5.3.3"
+    "service-worker-mock": "2.0.5",
+    "typescript": "^5.3.3",
+    "wrangler": "^2.1.12"
   },
   "dependencies": {
     "@netlify/functions": "^2.5.1",
