@@ -39,7 +39,7 @@ module.exports = {
       const titleText = encodeURIComponent(title).replace(/%2C/g, '%E2%80%9A').replace(/%2F/g, '%E2%88%95');
       cloudinary.uploader.upload(PATH_TO_FILE, {
         overwrite: true,
-        alt: decodeURI(text),
+        alt: decodeURIComponent(text),
         public_id: slug,
         transformation: [
           { width: 1200, crop: "scale" },
@@ -48,7 +48,7 @@ module.exports = {
               font_family: "Alegreya",
               font_size: 40,
               font_color: "#383838",
-              text: `“${decodeURI(text)}”`,
+              text: `“${decodeURIComponent(text)}”`,
             },
             width: 1100,
             crop: "fit",
@@ -64,7 +64,7 @@ module.exports = {
               font_weight: "100",
               font_size: 20,
               font_color: "#383838",
-              text: `${decodeURI(titleText)}`,
+              text: `${decodeURIComponent(titleText)}`,
             },
             width: 1100,
             crop: "fit",
