@@ -8,7 +8,7 @@ const api_key = process.env.CLOUDINARY_KEY;
 const api_secret = process.env.CLOUDINARY_SECRET;
 
 if (!api_key || !api_secret) {
-  console.error("Missing config.")
+  console.error("Missing config.");
 };
 cloudinary.config({
   cloud_name: "harveyramer",
