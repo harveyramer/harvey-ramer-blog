@@ -5,9 +5,9 @@
   "main": ".eleventy.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy",
-    "typeCheck": "cd ./src/_functions && npx tsc --noEmit",
-    "tsc": "cd ./src/_functions && npx tsc"
+    "build": "npx @11ty/eleventy && npm run tsc",
+    "typeCheck": "tsc --noEmit",
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",
@@ -22,25 +22,25 @@
   "homepage": "https://github.com/harveyramer/harvey-ramer-blog#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-plugin-rss":"^1.2.0",
-    "@sup39/markdown-it-attr":"^1.2.2",
-    "@vidhill/fortawesome-free-regular-11ty-shortcode":"^1.0.3",
-    "@vidhill/fortawesome-solid-11ty-shortcode":"^1.0.1",
-    "eleventy-google-fonts":"^0.1.0",
-    "markdown-it":"^13.0.1",
-    "markdown-it-bracketed-spans":"^1.0.1",
-    "markdown-it-footnote":"^3.0.3",
-    "markdown-it-mathjax3": "^4.3.2"
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@cloudflare/workers-types": "^4.20240117.0",
+    "@sup39/markdown-it-attr": "^1.2.2",
+    "@types/node": "^20.11.5",
+    "@vidhill/fortawesome-free-regular-11ty-shortcode": "^1.0.3",
+    "@vidhill/fortawesome-solid-11ty-shortcode": "^1.0.1",
+    "eleventy-google-fonts": "^0.1.0",
+    "markdown-it": "^14.0.0",
+    "markdown-it-bracketed-spans": "^1.0.1",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-mathjax3": "^4.3.2",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@netlify/functions": "^1.6.0",
-    "@types/node": "^20.2.1",
-    "@vidhill/fortawesome-brands-11ty-shortcode":"^1.0.2",
-    "clean-css": "^5.3.2",
-    "cloudinary": "^1.37.0",
-    "dotenv": "^16.0.3",
-    "netlify-cli": "^15.1.1",
-    "streamifier":"^0.1.1",
-    "typescript": "^5.0.4"
+    "@netlify/functions": "^2.5.1",
+    "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
+    "clean-css": "^5.3.3",
+    "cloudinary": "^1.41.3",
+    "dotenv": "^16.3.2",
+    "streamifier": "^0.1.1"
   }
 }
