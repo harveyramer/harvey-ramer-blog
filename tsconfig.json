@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "functions",
     "target": "esnext",
-    "module": "esnext",
+    "module": "nodenext",
     "lib": ["esnext"],
     "types": ["@cloudflare/workers-types", "@types/node"],
     "skipLibCheck": true

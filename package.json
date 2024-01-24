@@ -4,9 +4,10 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "start:functions": "wrangler dev",
+    "dev": "wrangler dev",
     "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy && npm run tsc && node function-config",
+    "build": "npx @11ty/eleventy && npm run deploy",
+    "deploy": "wrangler publish --minify",
     "typeCheck": "tsc --noEmit",
     "tsc": "tsc"
   },
@@ -41,6 +42,7 @@
   },
   "dependencies": {
     "@netlify/functions": "^2.5.1",
+    "@tsndr/cloudflare-worker-router": "^3.2.4",
     "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
     "clean-css": "^5.3.3",
     "cloudinary": "^1.41.3",
