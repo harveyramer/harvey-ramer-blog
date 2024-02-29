@@ -1,5 +1,5 @@
 ---
 layout: home
-title: Harvey Ramer - Web Designer, Software Engineer (Node, JavaScript), Systems Architect
-social_quote: Connect with Harvey Ramer, a Florida-based Web developer, through his website.
+title: Web Designer & Software Engineer, Harvey Ramer
+social_quote: Harvey Ramer's insights on web design, software engineering with Node.js, and effective team collaboration.
 ---
