@@ -10,11 +10,4 @@ eleventyExcludeFromCollections: true
       <lastmod>{{ page.date.toISOString() }}</lastmod>
     </url>
   {% endfor %}
-  {%- for tag in collections.tagList -%}
-    {% if tag !== 'all' and tag !== 'articles' %}
-      <url>
-        <loc>{{ site.url }}/tags/{{tag}}/</loc>
-      </url>
-    {% endif %}
-  {%- endfor -%}
 </urlset>
