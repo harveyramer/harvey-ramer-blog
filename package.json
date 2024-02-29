@@ -25,10 +25,10 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "@cloudflare/workers-types": "^4.20240117.0",
+    "@cloudflare/workers-types": "^4.20240222.0",
     "@sup39/markdown-it-attr": "^1.2.2",
-    "@types/node": "^20.11.5",
-    "@types/service-worker-mock": "2.0.1",
+    "@types/node": "^20.11.24",
+    "@types/service-worker-mock": "2.0.4",
     "@vidhill/fortawesome-free-regular-11ty-shortcode": "^1.0.3",
     "@vidhill/fortawesome-solid-11ty-shortcode": "^1.0.1",
     "eleventy-google-fonts": "^0.1.0",
@@ -38,15 +38,15 @@
     "markdown-it-mathjax3": "^4.3.2",
     "service-worker-mock": "2.0.5",
     "typescript": "^5.3.3",
-    "wrangler": "^2.1.12"
+    "wrangler": "^3.30.0"
   },
   "dependencies": {
-    "@netlify/functions": "^2.5.1",
+    "@netlify/functions": "^2.6.0",
     "@tsndr/cloudflare-worker-router": "^3.2.4",
     "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.2",
     "clean-css": "^5.3.3",
-    "cloudinary": "^1.41.3",
-    "dotenv": "^16.3.2",
+    "cloudinary": "^2.0.1",
+    "dotenv": "^16.4.5",
     "streamifier": "^0.1.1"
   }
 }

@@ -1,18 +1,17 @@
 ---
-layout: base
 pagination:
   data: collections
   size: 1
   alias: tag
   filter: 
     - all
-permalink: /tags/{{ tag | slug }}/
+  addAllPagesToCollections: true
 eleventyComputed:
-  title: "{{ tag | capitalize }} | Ideas from Harvey Ramer"
-  description: "Articles about {{ tag | capitalize }} by Harvey Ramer, a web developer."
-eleventyExcludeFromCollections: true
+  meta_title: "{{ tag | capitalize }} | Ideas from Harvey Ramer"
+  meta_description: "Articles about {{ tag | capitalize }} by Harvey Ramer, a web developer."
+layout: base
+permalink: /tags/{{ tag }}/
 ---
-
 <main>
   <span class="meta microhead">{{ tag | upper }}</span>
   <h1>Article Archive</h1>

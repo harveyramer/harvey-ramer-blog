@@ -93,11 +93,27 @@ module.exports = config => {
   config.addFilter("sitemapClean", (arr) => {
     return arr.filter(a => !!a.data.title);
   });
+  function filterTagList(tags) {
+    return (tags || []).filter(
+      (tag) =>
+        ["all", "nav", "post", "posts", "page", "pages", "articles", "article"].indexOf(tag) === -1
+    );
+  }
+  config.addFilter("filterTagList", filterTagList);
 
   // Collections
   config.addCollection("articles", function (collectionApi) {
     return collectionApi.getFilteredByGlob("./src/article/*.md")
       .reverse();
+  });
+
+  // Create an array of all tags
+  config.addCollection("tagList", function (collection) {
+    let tagSet = new Set();
+    collection.getAll().forEach((item) => {
+      (item.data.tags || []).forEach((tag) => tagSet.add(tag));
+    });
+    return filterTagList([...tagSet]);
   });
 
   return {

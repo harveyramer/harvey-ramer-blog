@@ -5,9 +5,6 @@ description: Harvey Ramer, a web developer, shares his thoughts on technology, b
 {% set reset %}
 {% include "../theme/reset.css" %}
 {% endset %}
-{# {% set fonts %}
-{% include "../theme/fonts.css" %} #}
-{# {% endset %} #}
 {% set typography %}
 {% include "../theme/typography.css" %}
 {% endset %}
@@ -33,23 +30,22 @@ description: Harvey Ramer, a web developer, shares his thoughts on technology, b
     {% if social_quote %}
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:site" content="@harveyramer"/>
-      <meta name="twitter:title" content="{{title}}"/>
+      <meta name="twitter:title" content="{{ meta_title or title}}"/>
       <meta name="twitter:description" content="{{social_quote}}"/>
       <meta property="og:url" content="{{site.url}}{{page.url}}"/>
       <meta property="og:type" content="article"/>
-      <meta property="og:title" content="{{title}}"/>
+      <meta property="og:title" content="{{ meta_title or title}}"/>
       <meta property="og:description" content="{{social_quote}}"/>
       <meta property="og:image" content="{{ pageMeta | ogImg }}"/>
     {% endif %}
-    <title>{{ meta_title or title }}</title>
-    {% if description %}
-      <meta name="description" content="{{description}}">
+    <title>{{  meta_title or title  }}</title>
+    {% if description or meta_description %}
+      <meta name="description" content="{{description or meta_description}}">
     {% endif %}
 
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <style>
-      {# {{fonts  | cssmin | safe}} #}
       {{reset | cssmin | safe}}
       {{typography  | cssmin | safe}}
       {{layout | cssmin | safe}}
