@@ -70,20 +70,29 @@ description: Harvey Ramer, a web developer, shares his thoughts on technology, b
     <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#D8D8D8">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for harveyramer.com" href="/feed.xml"/>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2PP6T7QGZ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-N2PP6T7QGZ');
-    </script>
-  </head>
-  <body>
-    <div class="container">
-      {{ content | safe }}
-      {% include "../partials/footer.njk" %}
-    </div>
-  </body>
-</html>
+    {% if canonical %}
+      <link rel="canonical" href="{{ canonical }}">
+    {% else %}
+      {%if page.url == "/"%}
+        <link rel="canonical" href="{{site.url}}">
+      {% else %}
+        <link rel="canonical" href="{{site.url}}{{ page.url | url}}">
+        {%endif%}
+      {% endif %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2PP6T7QGZ"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-N2PP6T7QGZ');
+      </script>
+    </head>
+    <body>
+      <div class="container">
+        {{ content | safe }}
+        {% include "../partials/footer.njk" %}
+      </div>
+    </body>
+  </html>
