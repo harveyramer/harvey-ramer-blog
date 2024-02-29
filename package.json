@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "start": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=Eleventy* eleventy --serve",
     "build": "npx @11ty/eleventy && npm run deploy",
     "deploy": "wrangler publish --minify",
     "typeCheck": "tsc --noEmit",
