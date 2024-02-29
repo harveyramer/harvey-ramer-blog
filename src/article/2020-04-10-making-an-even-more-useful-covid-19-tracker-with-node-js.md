@@ -3,6 +3,7 @@ layout: post
 title: Making an Even-More-Useful COVID-19 Tracker with Node.js
 date: 2020-04-10T20:45:37.468Z
 author: Harvey Ramer
+permalink: article/covid-tracker-nodejs-2/
 social_quote: Imagine an artist transferring the clutter of her studio directly to the canvas. When we query an API or database, we often transfer that clutter to the user interface. There is a better way.
 description: >-
   When we query an API or database, we often transfer clutter to the user interface. There is a better way.

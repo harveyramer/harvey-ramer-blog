@@ -3,6 +3,7 @@ layout: post
 title: Configure a Node.js Development Environment on Windows 10
 date: 2020-04-08T22:36:23.975Z
 author: Harvey Ramer
+permalink: article/nodejs-windows10/
 social_quote: If you want to learn to write code, setting up a development environment can be a barrier to entry. This tutorial offers a simple way to install the tools you need to start working with Node.js on Windows 10.
 description: >-
   Everything you need to install Node.js and begin writing server-side JavaScript on Windows 10 is right here.

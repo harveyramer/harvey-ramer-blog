@@ -3,6 +3,7 @@ layout: post
 title: "Get the Drop on the Cloud: Node.js and Azure"
 date: 2020-04-26T04:45:00.000Z
 author: Harvey Ramer
+permalink: article/nodejs-azure/
 social_quote: Deploying applications to the cloud can be intimidating. Don't worry though, this guide will stick to the bare essentials. When you've finished here, you will have a web application running on Azure.
 description: >-
   When you've finished here, you will have a Node.js web application running on Azure.

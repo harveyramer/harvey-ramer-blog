@@ -3,6 +3,7 @@ layout: post
 title: Start Here to Make a Useful COVID-19 Tracker with Node.js
 date: 2020-04-09T16:57:36.723Z
 author: Harvey Ramer
+permalink: article/covid-tracker-nodejs/
 social_quote: If you've been wanting to learn Node.js, why not let pandemic worries spur you to action? Let's build a Web application to display the latest COVID-19 statistics. Never fear, we'll make it simple and fun.
 description: >-
   Let's build a Web application to display the latest COVID-19 statistics. Never fear, we'll make it simple and fun.
