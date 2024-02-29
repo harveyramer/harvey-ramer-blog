@@ -5,9 +5,9 @@ description: Harvey Ramer, a web developer, shares his thoughts on technology, b
 {% set reset %}
 {% include "../theme/reset.css" %}
 {% endset %}
-{% set fonts %}
-{% include "../theme/fonts.css" %}
-{% endset %}
+{# {% set fonts %}
+{% include "../theme/fonts.css" %} #}
+{# {% endset %} #}
 {% set typography %}
 {% include "../theme/typography.css" %}
 {% endset %}
@@ -45,8 +45,11 @@ description: Harvey Ramer, a web developer, shares his thoughts on technology, b
     {% if description %}
       <meta name="description" content="{{description}}">
     {% endif %}
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <style>
-      {{fonts  | cssmin | safe}}
+      {# {{fonts  | cssmin | safe}} #}
       {{reset | cssmin | safe}}
       {{typography  | cssmin | safe}}
       {{layout | cssmin | safe}}
@@ -79,6 +82,12 @@ description: Harvey Ramer, a web developer, shares his thoughts on technology, b
         <link rel="canonical" href="{{site.url}}{{ page.url | url}}">
         {%endif%}
       {% endif %}
+    </head>
+    <body>
+      <div class="container">
+        {{ content | safe }}
+        {% include "../partials/footer.njk" %}
+      </div>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2PP6T7QGZ"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
@@ -86,13 +95,8 @@ description: Harvey Ramer, a web developer, shares his thoughts on technology, b
           dataLayer.push(arguments);
         }
         gtag('js', new Date());
-        gtag('config', 'G-N2PP6T7QGZ');
+        gtag('config', 'G-N2PP6T7QGZ', {'anonymize_ip': true});
       </script>
-    </head>
-    <body>
-      <div class="container">
-        {{ content | safe }}
-        {% include "../partials/footer.njk" %}
-      </div>
+
     </body>
   </html>
