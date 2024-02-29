@@ -1,4 +1,7 @@
 <div class="social">
+  {% if params.coffee %}
+    <a href="{{params.coffee}}" title="Buy {{params.name}} a coffee!"><img src="/img/bmc-logo.svg" alt="Buy me a coffee"/></a>
+  {% endif %}
   {% if params.resume %}
     <a href="{{params.resume}}" title="{{params.name}}'s Downloadable Resume">{% fortawesomeSolid 'file-word' %}</a>
   {% endif %}
