@@ -12,7 +12,7 @@
   <nav class="tags" aria-labelledby="footer-page-nav">
     <h5>Archives</h5>
     <ol>
-      {%- for tag in collections | keys -%}
+      {%- for tag in collections.tagList -%}
         {% if tag !== 'all' and tag !== 'articles' %}
           <li>
             <a href="/tags/{{tag}}/"{% if tag in page.url %} aria-current="page"{% endif %}>{{ tag }}</a>
