@@ -8,3 +8,4 @@
 /about/                                    /                  301
 /blog/*                                    /article/:splat    301
 /rss.xml                                   /feed.xml          301
+/2020-04-20-stop-coding-under-stress-how-to-avoid-bugs-and-the-end-of-the-world/ /coding-stress-bugs-catastophes/ 301
