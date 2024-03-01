@@ -1,0 +1,7 @@
+{% macro resume(params, el = "div") %}
+    <div class="resume">
+        {% if params.resume %}
+            <a href="{{params.resume}}" title="{{params.name}}'s Downloadable Resume">{% fortawesomeSolid 'file-word' %}Download the resume</a>
+        {% endif %}
+    </div>
+{% endmacro %}

@@ -210,3 +210,15 @@ h2.pinned:before {
   /* Margin */
   margin-right: 0.25rem;
 }
+
+/* Resume */
+.resume {
+  margin: 2em 0;
+}
+.resume a svg {
+  display: inline-block;
+  width: 1.25rem;
+  margin-right: 0.3rem;
+  color: inherit;
+  vertical-align: bottom;
+}

@@ -1,0 +1,19 @@
+---
+layout: base
+---
+
+{%- from "components/resume.njk" import resume -%}
+
+<main>
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+  {{ content | safe }}
+  {%- for a in authors -%}
+    {% if a.name === "Harvey Ramer"%}
+      {% if a.resume %}
+        {{resume(a, "h1")}}
+      {% endif %}
+    {% endif %}
+  {%- endfor -%}
+
+</main>

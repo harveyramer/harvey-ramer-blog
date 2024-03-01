@@ -177,3 +177,7 @@ sub {
 sub {
   top: 0.4em;
 }
+
+.right {
+  text-align: right;
+}

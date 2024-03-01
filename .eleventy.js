@@ -25,6 +25,7 @@ module.exports = config => {
   config.addLayoutAlias('post', 'layouts/post.njk');
   config.addLayoutAlias('page', 'layouts/page.njk');
   config.addLayoutAlias('home', 'layouts/home.njk');
+  config.addLayoutAlias('resume', 'layouts/resume.njk');
 
   // Copy images and files to dist directory.
   config.addPassthroughCopy('./src/img/');
