@@ -26,6 +26,7 @@ Harvey Ramer is a full stack Web developer and JavaScript engineer who works wit
 - __Marketing:__ Search Engine Optimization, Search Marketing
 
 ## Professional Experience
+
 ### Senior Back End Engineer, Parlay App Inc.; Boston, MA — 2022 - 2023
 
 Harvey provides technical guidance, application development, and implementation support on the Parative Platform. He leads a transition from AWS DynamoDB to Postgres and AWS Amplify to NestJS GraphQL. He designs and develops an event-driven system to ingest large amounts of data via AWS API Gateway, SNS, SQS, Lambda, and S3. The event system uses the GraphQL API for CRUD and passes the event payload through a queue as microservices handle various side effects. The GraphQL API scales up with the Aurora Postgres databases to handle the load. He creates CI/CD flows for each system. These changes enable the team to deploy code with limited risk. Harvey also helps mature the collaboration systems and encourages best practices for the development team.

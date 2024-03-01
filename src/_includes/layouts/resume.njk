@@ -7,7 +7,6 @@ layout: base
 <main>
   <h1>{{ title }}</h1>
   {{ content | safe }}
-  {{ content | safe }}
   {%- for a in authors -%}
     {% if a.name === "Harvey Ramer"%}
       {% if a.resume %}
