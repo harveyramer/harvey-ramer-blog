@@ -2,7 +2,7 @@
 layout: post
 title: "Focus on the Easy Bits: CI/CD with Azure and Github"
 date: 2020-05-04T03:13:26.247Z
-author: Harvey Ramer
+author: Harvey A. Ramer
 permalink: article/cicd-azure-github/
 social_quote: This tutorial will get you started with a basic CI/CD workflow using Github Actions to deploy a Web application to Azure.
 description: This tutorial will get you started with a basic CI/CD workflow using Github Actions to deploy a Web application to Azure.

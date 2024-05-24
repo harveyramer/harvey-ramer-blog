@@ -5,7 +5,7 @@ layout: base
 <main class="home_page">
   {{ content | safe }}
   {%- for a in authors -%}
-    {% if a.name === "Harvey Ramer"%}
+    {% if a.name === "Harvey A. Ramer"%}
       {{authorCard(a, "h1")}}
     {% endif %}
   {%- endfor -%}

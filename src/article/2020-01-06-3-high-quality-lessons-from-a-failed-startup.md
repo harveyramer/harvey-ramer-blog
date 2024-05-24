@@ -2,7 +2,7 @@
 layout: post
 title: 3 High-Quality Lessons from a Failed Startup
 date: 2020-01-06T21:26:17.194Z
-author: Harvey Ramer
+author: Harvey A. Ramer
 permalink: article/3-lessons-failed-startup/
 social_quote: Instead of collecting money, we had encouraging conversations with warm leads and ran too long on the slightest hint of interest they showed.
 description: >-

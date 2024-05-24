@@ -2,7 +2,7 @@
 layout: post
 title: "Core Web Vitals for Business Owners Who Want to Keep Their Search Rankings"
 meta_title: "Core Web Vitals Affect Your Search Rankings"
-author: Harvey Ramer
+author: Harvey A. Ramer
 date: 2021-04-09
 social_quote: Measuring a website's user experience has always been a challenge. Which metrics should we measure, and what tools can give us accurate information? To fix this problem, Google has introduced Core Web Vitals—the metrics they use to evaluate your website's user experience.
 description: Start measuring Google's Core Web Vitals for your website now. Then you'll avoid being surprised when your Google rankings begin to reflect website performance.

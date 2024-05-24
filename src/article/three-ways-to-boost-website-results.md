@@ -2,7 +2,7 @@
 layout: post
 title: 3 Ways You Can Boost Your Website's Results
 date: 2020-09-02
-author: Harvey Ramer
+author: Harvey A. Ramer
 social_quote: Every small business owner wants a thriving bottom line. Revenue is the life-blood of a business. A website should contribute to our sales efforts, but it is hard to attract customers online.
 description: Your business website is often the first experience customers will have of your brand. Here are three ways to make it work for you.
 tags:

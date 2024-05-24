@@ -3,7 +3,7 @@ layout: post
 title: "Free and Easy Ways You Can Grow Your Business with a LinkedIn Page"
 meta_title: "You Can Grow Your Business with a LinkedIn Page"
 date: 2020-09-26
-author: Harvey Ramer
+author: Harvey A. Ramer
 social_quote: Few things are more gratifying and financially rewarding than a healthy, growing business. And one of the best platforms for business marketing results is social media. Unlike anything else, it lets you meet your customers where they are and form personal connections before they make a buying decision.
 description: One of the best platforms for business marketing growth is social media. It lets you meet your customers before they make a buying decision.
 tags:

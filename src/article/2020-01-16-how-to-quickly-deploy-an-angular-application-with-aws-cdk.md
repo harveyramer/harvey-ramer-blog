@@ -2,7 +2,7 @@
 layout: post
 title: How To Quickly Deploy an Angular Application with AWS CDK
 date: 2020-01-16T03:27:29.527Z
-author: Harvey Ramer
+author: Harvey A. Ramer
 permalink: article/angular-aws-cdk/
 social_quote: Large teams use powerful enterprise tools to manage their cloud infrastructure. But smaller companies sometimes do not have the expertise or resources to use those tools. AWS CDK lets everyone create and maintain their infrastructure as code.
 description: >-

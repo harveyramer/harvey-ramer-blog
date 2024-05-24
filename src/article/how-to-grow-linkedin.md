@@ -2,7 +2,7 @@
 layout: post
 title: "9 Easy Ways You Can Boost Your LinkedIn Influence"
 date: 2020-09-14
-author: Harvey Ramer
+author: Harvey A. Ramer
 social_quote: Boosting your professional influence on LinkedIn begins with a complete profile and compelling tagline. We break it down into 9 easy steps.
 description: Boosting your professional influence on LinkedIn begins with a complete profile and compelling tagline. We break it down into 9 easy steps.
 tags:

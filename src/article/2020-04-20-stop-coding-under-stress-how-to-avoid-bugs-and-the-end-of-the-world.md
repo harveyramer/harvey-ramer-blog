@@ -2,7 +2,7 @@
 layout: post
 title: "Stop Coding Under Stress: Avoiding Bugs & Catastrophes"
 date: 2020-04-20T04:05:51.862Z
-author: Harvey Ramer
+author: Harvey A. Ramer
 social_quote: Programmers and web developers spend most of their time sitting and thinking. How can that be stressful?
 permalink: article/coding-stress-bugs-catastophes/
 pinned: true

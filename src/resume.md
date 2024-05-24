@@ -1,11 +1,11 @@
 ---
 layout: resume
-title: Harvey Ramer's Resume
-social_quote: Read and download Harvey Ramer's resume, a skilled software engineer and designer.
+title: Harvey A. Ramer's Resume
+social_quote: Read and download Harvey A. Ramer's resume, a skilled software engineer and designer.
 ---
 
 <address class="right">
-Harvey Ramer<br>
+Harvey A. Ramer<br>
 6106 34th Ct E <br>
 Ellenton FL 34222<br>
 901-650-2438<br>
@@ -15,7 +15,7 @@ www.harveyramer.com
 
 ## Personal Profile
 
-Harvey Ramer is a full stack Web developer and JavaScript engineer who works with collaborative teams to create industry leading web applications. His sixteen-year career includes a Fortune 500 company’s e-commerce platform and a startup. As a leader, he helps others succeed through mentoring and collaborative problem solving. He is a ready learner, who is always focused on his employer’s success.
+Harvey is a full stack Web developer and JavaScript engineer who works with collaborative teams to create industry leading web applications. His sixteen-year career includes a Fortune 500 company’s e-commerce platform and a startup. As a leader, he helps others succeed through mentoring and collaborative problem solving. He is a ready learner, who is always focused on his employer’s success.
 
 ## Core competencies
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Choose Action Over Analysis"
 date: 2020-12-06
-author: Harvey Ramer
+author: Harvey A. Ramer
 social_quote: When an idea catches our attention, we ask, "Am I ready to apply this idea if it proves valuable?" If the answer is "No." we move on to other things without regret.
 description: Our school lessons filled our heads with interesting and useful ideas but often demanded nothing of us in return. This does not work in our grown-up world.
 tags:

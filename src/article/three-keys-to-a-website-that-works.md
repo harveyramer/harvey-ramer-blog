@@ -2,7 +2,7 @@
 layout: post
 title: "3 Keys to a Useful Website That Actually Works"
 date: 2021-03-15
-author: Harvey Ramer
+author: Harvey A. Ramer
 social_quote: Busy web designers often overlook the fundamentals of the user experience and neglect search engine visibility in favor of flashy websites.
 description: Busy web designers often overlook the fundamentals of the user experience and neglect search engine visibility in favor of flashy websites.
 tags:

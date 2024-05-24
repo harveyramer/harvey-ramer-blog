@@ -2,7 +2,7 @@
 layout: post
 title: "Installing the Azure CLI on the Linux Subsystem in Windows 11"
 date: 2023-05-22
-author: Harvey Ramer
+author: Harvey A. Ramer
 social_quote: Learn how to install the Azure CLI on the Linux Subsystem in Windows 11. This step-by-step guide covers the installation process and authenticating with Azure to manage your resources.
 description: Learn how to install the Azure CLI on the Linux Subsystem in Windows 11. 
 tags:
